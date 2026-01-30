@@ -1,0 +1,7 @@
+<map id="DICOMApp.ViewModel.ChartViewModel.UpdateChart" name="DICOMApp.ViewModel.ChartViewModel.UpdateChart">
+<area shape="rect" id="Node000001" title="Aktualizacja wykresu na podstawie podanych danych." alt="" coords="5,39,199,81"/>
+<area shape="rect" id="Node000002" href="$class_d_i_c_o_m_app_1_1_view_model_1_1_chart_view_model.html#a4dca75ec6d5400e11a846f097564a7b1" title="Metoda zwracająca datę z napisu." alt="" coords="247,5,449,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="199,44,234,42,228,43,200,49"/>
+<area shape="rect" id="Node000003" href="$class_d_i_c_o_m_app_1_1_view_model_1_1_chart_view_model.html#a6451ee5bb23dead4b96c4d9a4ac3e4d0" title="Metoda ustawiająca linię wykresu (dane)." alt="" coords="251,72,444,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="199,70,239,78,233,78,199,76"/>
+</map>

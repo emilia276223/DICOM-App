@@ -1,0 +1,10 @@
+<map id="DICOMApp.Repository.SQLDataBaseHandler" name="DICOMApp.Repository.SQLDataBaseHandler">
+<area shape="rect" id="Node000001" title="Klasa obsługująca bazę danych SQLite do przechowywania informacji o pacjentach, badaniach i obrazach." alt="" coords="131,441,334,772"/>
+<area shape="rect" id="Node000002" href="$interface_d_i_c_o_m_app_1_1_interfaces_1_1_i_data_handler.html" title="Interfejs klasy obsługującej zapisywanie i odczytywanie danych." alt="" coords="5,124,195,369"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="151,381,174,441,169,442,150,386"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="238,5,318,75"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="265,87,260,124,243,287,236,442,231,441,238,287,255,124,264,92"/>
+<area shape="rect" id="Node000004" href="$class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_connection_handler.html" title="Klasa obsługująca połączenie z bazą danych SQLite." alt="" coords="270,140,496,353"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="302,86,331,140,326,140,302,91"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="340,351,310,427,306,424,337,355"/>
+</map>

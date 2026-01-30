@@ -1,0 +1,9 @@
+<map id="DICOMApp.ViewModel.Lines.LineWithCapsViewModel.UpdateEnd" name="DICOMApp.ViewModel.Lines.LineWithCapsViewModel.UpdateEnd">
+<area shape="rect" id="Node000001" title="Metoda ustawiająca końcówkę linii." alt="" coords="5,39,242,81"/>
+<area shape="rect" id="Node000002" href="$class_d_i_c_o_m_app_1_1_view_model_1_1_lines_1_1_line_with_caps_view_model.html#a4bafd41ef1de9676eae9df779c6d2fe9" title="Metoda ustawiająca końcówkę linii." alt="" coords="290,39,527,81"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="242,57,277,60,272,60,242,63"/>
+<area shape="rect" id="Node000003" href="$class_d_i_c_o_m_app_1_1_view_model_1_1_lines_1_1_line_with_caps_view_model.html#a7a8339810fd981ac4b46ca298599c70d" title="Metoda ustawiająca brzegi linii tak, by były pod kątem prostym do linii." alt="" coords="575,5,819,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="527,44,562,42,557,43,528,49"/>
+<area shape="rect" id="Node000004" href="$class_d_i_c_o_m_app_1_1_view_model_1_1_line_view_model_base.html#a403a7218cf07d74349bbc228b983ddcb" title="Metoda ustawiająca długosc fizyczna linii Na podstawie podanego wcześniej skalera i skali obrazu." alt="" coords="590,72,804,115"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="527,71,577,79,572,79,527,76"/>
+</map>

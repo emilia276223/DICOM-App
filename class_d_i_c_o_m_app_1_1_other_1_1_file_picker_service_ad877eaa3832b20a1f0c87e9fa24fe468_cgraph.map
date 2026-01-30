@@ -1,0 +1,7 @@
+<map id="DICOMApp.Other.FilePickerService.PickDicomDirectory" name="DICOMApp.Other.FilePickerService.PickDicomDirectory">
+<area shape="rect" id="Node000001" title="Metoda umożliwiająca wybranie katalogu z plikami DICOM." alt="" coords="5,5,193,48"/>
+<area shape="rect" id="Node000002" href="$class_d_i_c_o_m_app_1_1_other_1_1_file_picker_service.html#afbc3d974825d0fd81b98c0a6e22c76c8" title="Metoda umożliwiająca wybranie folderu z plikami DICOM." alt="" coords="241,5,428,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="193,24,228,26,222,27,193,29"/>
+<area shape="rect" id="Node000003" href="$class_d_i_c_o_m_app_1_1_other_1_1_file_picker_service.html#a2cb3b192cda2d2b91ba210f7e64501b2" title="Metoda zwracająca wszystkie pliki z folderu." alt="" coords="476,5,692,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="428,24,463,27,458,27,428,29"/>
+</map>

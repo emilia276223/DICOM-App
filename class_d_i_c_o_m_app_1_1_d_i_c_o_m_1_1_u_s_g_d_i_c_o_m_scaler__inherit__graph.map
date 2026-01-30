@@ -1,0 +1,5 @@
+<map id="DICOMApp.DICOM.USGDICOMScaler" name="DICOMApp.DICOM.USGDICOMScaler">
+<area shape="rect" id="Node000001" title="Klasa obsługująca skalowanie DICOM dla obrazów ultrasonograficznych implementująca interfejs IDicomSc..." alt="" coords="5,139,248,336"/>
+<area shape="rect" id="Node000002" href="$interface_d_i_c_o_m_app_1_1_interfaces_1_1_i_dicom_scaler.html" title="Interfejs klasy obsługującej skalowanie DICOM." alt="" coords="33,5,220,91"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="128,103,129,139,124,138,126,108"/>
+</map>

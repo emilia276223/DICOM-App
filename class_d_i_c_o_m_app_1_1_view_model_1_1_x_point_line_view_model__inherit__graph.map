@@ -1,0 +1,11 @@
+<map id="DICOMApp.ViewModel.XPointLineViewModel" name="DICOMApp.ViewModel.XPointLineViewModel">
+<area shape="rect" id="Node000001" title=" " alt="" coords="138,565,328,843"/>
+<area shape="rect" id="Node000002" href="$class_d_i_c_o_m_app_1_1_view_model_1_1_line_view_model_base.html" title="Abstrakcyjna klasa bazowa modelująca linie." alt="" coords="26,261,230,496"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="171,508,191,566,186,566,170,513"/>
+<area shape="rect" id="Node000003" href="$class_d_i_c_o_m_app_1_1_view_model_1_1_view_model_base.html" title="Klasa bazowa modelu widoku." alt="" coords="5,123,250,192"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="128,205,130,262,125,261,127,210"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="70,5,185,75"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="128,87,130,123,125,123,127,92"/>
+<area shape="rect" id="Node000005" href="$interface_d_i_c_o_m_app_1_1_interfaces_1_1_i_line_view_model.html" title="Interfejs modelujący linie." alt="" coords="253,240,426,517"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="291,529,281,567,276,564,288,534"/>
+</map>

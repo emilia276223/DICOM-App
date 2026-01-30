@@ -1,0 +1,5 @@
+<map id="DICOMApp.Other.FilePickerService" name="DICOMApp.Other.FilePickerService">
+<area shape="rect" id="Node000001" title="Klasa obslugujaca wybieranie plików Za pomocą eksploratora plików umożliwia wybor plików." alt="" coords="5,181,184,395"/>
+<area shape="rect" id="Node000002" href="$interface_d_i_c_o_m_app_1_1_interfaces_1_1_i_file_picker_service.html" title="Interfejs obslugujacy wybor plikow." alt="" coords="10,5,180,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="95,146,97,182,92,181,94,151"/>
+</map>

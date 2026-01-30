@@ -1,0 +1,7 @@
+<map id="DICOMApp.Interfaces.ILineViewModel" name="DICOMApp.Interfaces.ILineViewModel">
+<area shape="rect" id="Node000001" title="Interfejs modelujący linie." alt="" coords="117,5,290,283"/>
+<area shape="rect" id="Node000002" href="$class_d_i_c_o_m_app_1_1_view_model_1_1_lines_1_1_line_with_caps_view_model.html" title="Klasa modelująca linie z brzegami." alt="" coords="5,331,191,736"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="163,294,155,332,150,330,161,299"/>
+<area shape="rect" id="Node000003" href="$class_d_i_c_o_m_app_1_1_view_model_1_1_x_point_line_view_model.html" title=" " alt="" coords="215,395,405,672"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="246,294,275,395,270,395,245,300"/>
+</map>

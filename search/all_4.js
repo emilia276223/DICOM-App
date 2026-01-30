@@ -1,0 +1,24 @@
+var searchData=
+[
+  ['changingmlmodel_0',['ChangingMlModel',['../class_d_i_c_o_m_app_1_1_m_l_model_1_1_changing_ml_model.html',1,'DICOMApp::MLModel']]],
+  ['changingmlmodel_2ecs_1',['ChangingMlModel.cs',['../_changing_ml_model_8cs.html',1,'']]],
+  ['chartview_2',['ChartView',['../class_d_i_c_o_m_app_1_1_chart_view.html',1,'DICOMApp.ChartView'],['../class_d_i_c_o_m_app_1_1_chart_view.html#a16a649601f6519b6136abdd855163c70',1,'DICOMApp.ChartView.ChartView()']]],
+  ['chartview_2eaxaml_2ecs_3',['ChartView.axaml.cs',['../_chart_view_8axaml_8cs.html',1,'']]],
+  ['chartviewmodel_4',['ChartViewModel',['../class_d_i_c_o_m_app_1_1_view_model_1_1_chart_view_model.html',1,'DICOMApp.ViewModel.ChartViewModel'],['../class_d_i_c_o_m_app_1_1_view_model_1_1_chart_view_model.html#a78888532966275df0ad078e8b460764b',1,'DICOMApp.ViewModel.ChartViewModel.ChartViewModel()']]],
+  ['chartviewmodel_2ecs_5',['ChartViewModel.cs',['../_chart_view_model_8cs.html',1,'']]],
+  ['checkunitname_6',['checkUnitName',['../class_d_i_c_o_m_app_1_1_d_i_c_o_m_1_1_u_s_g_d_i_c_o_m_scaler.html#ac856a6b9375e4d95f9611957ce85b030',1,'DICOMApp::DICOM::USGDICOMScaler']]],
+  ['class1_7',['Class1',['../class_d_i_c_o_m_app_1_1_services_1_1_class1.html',1,'DICOMApp::Services']]],
+  ['class1_2ecs_8',['Class1.cs',['../_class1_8cs.html',1,'']]],
+  ['clear_9',['Clear',['../class_d_i_c_o_m_app_1_1_view_model_1_1_element_list_view_model.html#ae360e6f674c053ed438a93d8a6981ceb',1,'DICOMApp::ViewModel::ElementListViewModel']]],
+  ['cleardatabase_10',['ClearDataBase',['../class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_schema_handler.html#a68f50767830276f148b9568b2f711657',1,'DICOMApp::Repository::SQLDataBaseSchemaHandler']]],
+  ['clearpatients_11',['ClearPatients',['../class_d_i_c_o_m_app_1_1_view_model_1_1_image_selection_view_model.html#ace48cde43aed34d7509844f4cbb0e251',1,'DICOMApp::ViewModel::ImageSelectionViewModel']]],
+  ['close_12',['Close',['../class_d_i_c_o_m_app_1_1_view_model_1_1_main_view_model.html#a4d0b2ba88f8eccc50057b492dea448ca',1,'DICOMApp::ViewModel::MainViewModel']]],
+  ['closeconnection_13',['CloseConnection',['../interface_d_i_c_o_m_app_1_1_interfaces_1_1_i_data_handler.html#a4119e004ba63e5509c568d009188a197',1,'DICOMApp.Interfaces.IDataHandler.CloseConnection()'],['../class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler.html#a4b5c4ae3f4e0166a7ce7671ea21ee712',1,'DICOMApp.Repository.SQLDataBaseHandler.CloseConnection()']]],
+  ['color_14',['Color',['../interface_d_i_c_o_m_app_1_1_interfaces_1_1_i_line_view_model.html#a0528b9bbc9d55b04b7cbc31a2bda661b',1,'DICOMApp::Interfaces::ILineViewModel']]],
+  ['copy_15',['Copy',['../class_d_i_c_o_m_app_1_1_data_1_1_image_data.html#af661a07633cacba8ed9437889ac7d9ca',1,'DICOMApp::Data::ImageData']]],
+  ['createbitmap_16',['CreateBitmap',['../class_d_i_c_o_m_app_1_1_data_1_1_image_data.html#a0583f9274f09f555c958299d531a13f0',1,'DICOMApp::Data::ImageData']]],
+  ['croppixels_17',['CropPixels',['../class_d_i_c_o_m_app_1_1_utils_1_1_d_i_c_o_m_reader.html#a90e478b0988cfef3497582c4db191ed1',1,'DICOMApp::Utils::DICOMReader']]],
+  ['cropwithaddingpadding_18',['CropWithAddingPadding',['../class_d_i_c_o_m_app_1_1_utils_1_1_d_i_c_o_m_reader.html#ab44719e956a94bbd28d01bca67df1654',1,'DICOMApp::Utils::DICOMReader']]],
+  ['csvexporthander_19',['CSVExportHander',['../class_d_i_c_o_m_app_1_1_repository_1_1_c_s_v_export_hander.html',1,'DICOMApp.Repository.CSVExportHander'],['../class_d_i_c_o_m_app_1_1_repository_1_1_c_s_v_export_hander.html#a89ac8b64e97a6edd52fb1f7f14366c60',1,'DICOMApp.Repository.CSVExportHander.CSVExportHander()']]],
+  ['csvexporthander_2ecs_20',['CSVExportHander.cs',['../_c_s_v_export_hander_8cs.html',1,'']]]
+];

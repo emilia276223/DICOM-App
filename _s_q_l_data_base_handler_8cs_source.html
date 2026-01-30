@@ -1,0 +1,419 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pl">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>DICOM-App: Plik źródłowy C:/Users/emili/Documents/DICOM-App/Repository/SQLDataBaseHandler.cs</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">DICOM-App<span id="projectnumber">&#160;version1.0</span>
+   </div>
+   <div id="projectbrief">Aplikacja do przeglądania obrazów DICOM oraz korzystania z pluginów AI</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano za pomocą Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_s_q_l_data_base_handler_8cs_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Wczytywanie...</div>
+<div class="SRStatus" id="Searching">Szukanie...</div>
+<div class="SRStatus" id="NoMatches">Brak dopasowań</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">SQLDataBaseHandler.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_s_q_l_data_base_handler_8cs.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_d_i_c_o_m_app_1_1_data.html">DICOMApp.Data</a>;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_d_i_c_o_m_app_1_1_interfaces.html">DICOMApp.Interfaces</a>;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_d_i_c_o_m_app_1_1_utils.html">DICOMApp.Utils</a>;</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">using </span>Microsoft.Data.Sqlite;</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">using </span>System;</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">using </span>System.Collections.Generic;</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">using </span>System.Globalization;</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">using </span>System.IO;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_d_i_c_o_m_app_1_1_repository.html">DICOMApp.Repository</a></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>{</div>
+<div class="foldopen" id="foldopen00019" data-start="{" data-end="};">
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler.html">   19</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_function" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler.html#aae74c636a3cc06579f65b9bfb2d9f09d">SQLDataBaseHandler</a> : <a class="code hl_interface" href="interface_d_i_c_o_m_app_1_1_interfaces_1_1_i_data_handler.html">IDataHandler</a>, IDisposable</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    {</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler.html#a9e274630be4d248e94fad9eefe3961e7">   21</a></span>        <span class="keyword">private</span> <a class="code hl_class" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_connection_handler.html">SQLDataBaseConnectionHandler</a>? <a class="code hl_variable" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler.html#a9e274630be4d248e94fad9eefe3961e7">_sqlConnection</a>;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler.html#a1934d45042e51ed879dbf8803f528507">   22</a></span>        <span class="keyword">private</span> SqliteConnection? <a class="code hl_variable" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler.html#a1934d45042e51ed879dbf8803f528507">_conn</a>;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler.html#a9e719911a92f731b6cf6f0c3d1767bfc">   23</a></span>        <span class="keyword">private</span> <span class="keywordtype">bool</span> <a class="code hl_variable" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler.html#a9e719911a92f731b6cf6f0c3d1767bfc">disposedValue</a>;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span></div>
+<div class="foldopen" id="foldopen00029" data-start="{" data-end="}">
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler.html#aae74c636a3cc06579f65b9bfb2d9f09d">   29</a></span>        <span class="keyword">public</span> <a class="code hl_function" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler.html#aae74c636a3cc06579f65b9bfb2d9f09d">SQLDataBaseHandler</a>()</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        {</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>            <span class="comment">// katalog do przechowywania bazy danych</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>            var dirPath = <a class="code hl_class" href="class_d_i_c_o_m_app_1_1_utils_1_1_app_directory_handler.html">AppDirectoryHandler</a>.<a class="code hl_property" href="class_d_i_c_o_m_app_1_1_utils_1_1_app_directory_handler.html#ab0978493804e6bdb88826879ff9de6b2">Instance</a>.<a class="code hl_function" href="class_d_i_c_o_m_app_1_1_utils_1_1_app_directory_handler.html#a80c1d50014ee9eadaa9269c4b55e96e8">GetDatabaseDirecory</a>();</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>            <span class="comment">// otwarcie polaczenia z baza danych</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>            <a class="code hl_variable" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler.html#a9e274630be4d248e94fad9eefe3961e7">_sqlConnection</a> = <span class="keyword">new</span> <a class="code hl_class" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_connection_handler.html">SQLDataBaseConnectionHandler</a>(</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>                dirPath,</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>                Path.Combine(dirPath, <span class="stringliteral">&quot;sql_database.db&quot;</span>)</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>            );</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>            <a class="code hl_variable" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler.html#a1934d45042e51ed879dbf8803f528507">_conn</a> = <a class="code hl_variable" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler.html#a9e274630be4d248e94fad9eefe3961e7">_sqlConnection</a>.OpenConnection();</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>            <a class="code hl_class" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_schema_handler.html">SQLDataBaseSchemaHandler</a>.<a class="code hl_function" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_schema_handler.html#af8ca1afe0a5d458689aa57e334b71d55">InitializeDatabase</a>(<a class="code hl_variable" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler.html#a1934d45042e51ed879dbf8803f528507">_conn</a>);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        }</div>
+</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span></div>
+<div class="foldopen" id="foldopen00049" data-start="{" data-end="}">
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler.html#a4b5c4ae3f4e0166a7ce7671ea21ee712">   49</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler.html#a4b5c4ae3f4e0166a7ce7671ea21ee712">CloseConnection</a>()</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        {</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler.html#a9e274630be4d248e94fad9eefe3961e7">_sqlConnection</a> != <span class="keyword">null</span>)</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            {</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>                <a class="code hl_variable" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler.html#a9e274630be4d248e94fad9eefe3961e7">_sqlConnection</a>.Dispose();</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>                <a class="code hl_variable" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler.html#a9e274630be4d248e94fad9eefe3961e7">_sqlConnection</a> = <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            }</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            <a class="code hl_variable" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler.html#a1934d45042e51ed879dbf8803f528507">_conn</a> = <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        }</div>
+</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span></div>
+<div class="foldopen" id="foldopen00065" data-start="{" data-end="}">
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler.html#a078919e77b4ef8397eee1e1b65283b31">   65</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler.html#a078919e77b4ef8397eee1e1b65283b31">SaveMagnifiedImageCenterInfo</a>(<span class="keywordtype">string</span> imageID, <span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y)</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        {</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler.html#a1934d45042e51ed879dbf8803f528507">_conn</a> == <span class="keyword">null</span>) <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>            <span class="keywordflow">try</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>            {</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>                <a class="code hl_variable" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler.html#a1934d45042e51ed879dbf8803f528507">_conn</a>.Open();</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>                <a class="code hl_class" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_inserts_handler.html">SQLDataBaseInsertsHandler</a>.<a class="code hl_function" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_inserts_handler.html#add19b5e191a1cd28276e5858d1d6b958">InsertMagnifiedImageCenterInfo</a>(<a class="code hl_variable" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler.html#a1934d45042e51ed879dbf8803f528507">_conn</a>, imageID, x, y);</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>                <a class="code hl_variable" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler.html#a1934d45042e51ed879dbf8803f528507">_conn</a>.Close();</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>            }</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>            <span class="keywordflow">catch</span> { }</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        }</div>
+</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span></div>
+<div class="foldopen" id="foldopen00078" data-start="{" data-end="}">
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler.html#a8fa71632151040816ddc2a438d538e65">   78</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler.html#a8fa71632151040816ddc2a438d538e65">SaveChosenPoints</a>(List&lt;double&gt; points, <span class="keywordtype">string</span> imageID, <span class="keywordtype">double</span> opticNerveLen, <a class="code hl_class" href="class_d_i_c_o_m_app_1_1_data_1_1_d_i_c_o_m_metadata.html">DICOMMetadata</a> info)</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        {</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>            <span class="comment">// sprawdzenie poprawnosci danych</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>            <span class="keywordflow">if</span> (points.Count != 8)</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>            {</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>                <span class="keywordflow">return</span>; <span class="comment">// nie ma co rzucać wyjątku, po prostu nie zapisujemy</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>            }</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>            <span class="keywordflow">try</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>            {</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>                <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler.html#a1934d45042e51ed879dbf8803f528507">_conn</a> == <span class="keyword">null</span>) <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>                <a class="code hl_variable" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler.html#a1934d45042e51ed879dbf8803f528507">_conn</a>.Open();</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>                <span class="comment">// dodanie pacjenta jesli nie istnieje w bazie</span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>                <a class="code hl_class" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_inserts_handler.html">SQLDataBaseInsertsHandler</a>.<a class="code hl_function" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_inserts_handler.html#a7aa9fd5c946479c98324095798129498">InsertPatient</a>(<a class="code hl_variable" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler.html#a1934d45042e51ed879dbf8803f528507">_conn</a>, info.<a class="code hl_property" href="class_d_i_c_o_m_app_1_1_data_1_1_d_i_c_o_m_metadata.html#a29438a395cec20841f41e2242b6e2ed9">PatientID</a>, info.<a class="code hl_property" href="class_d_i_c_o_m_app_1_1_data_1_1_d_i_c_o_m_metadata.html#adbdf075639c82a9a939220c214d7c4e1">PatientName</a>);</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>                <span class="comment">// dodanie badania jesli nie istnieje w bazie</span></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>                <a class="code hl_class" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_inserts_handler.html">SQLDataBaseInsertsHandler</a>.<a class="code hl_function" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_inserts_handler.html#a14933642d45ca0b058ad8beaa2dd22e4">InsertStudy</a>(<a class="code hl_variable" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler.html#a1934d45042e51ed879dbf8803f528507">_conn</a>, info.<a class="code hl_property" href="class_d_i_c_o_m_app_1_1_data_1_1_d_i_c_o_m_metadata.html#afe9319f61f8fc698b8bef14a61395cf0">StudyUID</a>, info.<a class="code hl_property" href="class_d_i_c_o_m_app_1_1_data_1_1_d_i_c_o_m_metadata.html#a29438a395cec20841f41e2242b6e2ed9">PatientID</a>, info.<a class="code hl_property" href="class_d_i_c_o_m_app_1_1_data_1_1_d_i_c_o_m_metadata.html#aebe4da5cf187ce20d64e28904f4cc5bb">StudyDate</a>);</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>                <span class="comment">// dodanie obrazu jesli nie istnieje w bazie</span></div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>                <a class="code hl_class" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_inserts_handler.html">SQLDataBaseInsertsHandler</a>.<a class="code hl_function" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_inserts_handler.html#a48c0e99018a645705515919c49363b0f">InsertImage</a>(<a class="code hl_variable" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler.html#a1934d45042e51ed879dbf8803f528507">_conn</a>, imageID, info.<a class="code hl_property" href="class_d_i_c_o_m_app_1_1_data_1_1_d_i_c_o_m_metadata.html#afe9319f61f8fc698b8bef14a61395cf0">StudyUID</a>);</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>                <span class="comment">// nadpisanie punktow i dlugosci nerwu wzrokowego</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>                <a class="code hl_class" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_inserts_handler.html">SQLDataBaseInsertsHandler</a>.<a class="code hl_function" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_inserts_handler.html#a651bf3154eeea28343f43a67cdab8df5">InsertImageInfo</a>(<a class="code hl_variable" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler.html#a1934d45042e51ed879dbf8803f528507">_conn</a>, points, imageID, opticNerveLen);</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>                <a class="code hl_variable" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler.html#a1934d45042e51ed879dbf8803f528507">_conn</a>.Close();</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>            }</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>            <span class="keywordflow">catch</span> (Exception e)</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>            {</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>                Console.WriteLine(e.Message);</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>            }</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>        }</div>
+</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span></div>
+<div class="foldopen" id="foldopen00119" data-start="{" data-end="}">
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno"><a class="line" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler.html#aec1386137a7ddeef7d7f2a48e0c069ee">  119</a></span>        <span class="keyword">public</span> List&lt;(string,double)&gt; <a class="code hl_function" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler.html#aec1386137a7ddeef7d7f2a48e0c069ee">GetOpticNerveLenValuesForStudiesOfPatient</a>(<span class="keywordtype">string</span> patientID)</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>        {</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>            <span class="keywordflow">try</span></div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>            {</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>                <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler.html#a1934d45042e51ed879dbf8803f528507">_conn</a> == <span class="keyword">null</span>) <span class="keywordflow">return</span> <span class="keyword">new</span> List&lt;(string, double)&gt;();</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>                <a class="code hl_variable" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler.html#a1934d45042e51ed879dbf8803f528507">_conn</a>.Open();</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>                <span class="keyword">using</span> (var cmd = <a class="code hl_variable" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler.html#a1934d45042e51ed879dbf8803f528507">_conn</a>.CreateCommand())</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>                {</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>                    cmd.CommandText =</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>                        <span class="stringliteral">&quot;&quot;</span><span class="stringliteral">&quot;</span></div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span><span class="stringliteral">                        SELECT study_id, studies.date, MAX(optic_nerve_size)</span></div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span><span class="stringliteral">                        FROM images</span></div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span><span class="stringliteral">                        JOIN studies ON studies.id = images.study_id</span></div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span><span class="stringliteral">                        WHERE optic_nerve_size IS NOT NULL</span></div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span><span class="stringliteral">                        AND studies.patient_id = @pid</span></div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span><span class="stringliteral">                        GROUP BY study_id</span></div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span><span class="stringliteral">                        &quot;</span><span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>                    cmd.Parameters.AddWithValue(<span class="stringliteral">&quot;pid&quot;</span>, patientID);</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span> </div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span> </div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>                    var res = <span class="keyword">new</span> List&lt;(string, double)&gt;();</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>                    <span class="keyword">using</span> (var resReader = cmd.ExecuteReader())</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>                    {</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>                        <span class="keywordflow">while</span> (resReader.Read())</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>                        {</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>                            var studyId = resReader.GetString(0);</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>                            var studyDate = resReader.GetString(1);</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>                            var maxSize = resReader.GetDouble(2);</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span> </div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>                            res.Add((studyDate, maxSize));</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>                        }</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>                    }</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>                    <a class="code hl_variable" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler.html#a1934d45042e51ed879dbf8803f528507">_conn</a>.Close();</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>                    <span class="keywordflow">return</span> res;</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>                }</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>            }</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>            <span class="keywordflow">catch</span> (SqliteException)</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>            {</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>                <span class="keywordflow">return</span> <span class="keyword">new</span> List&lt;(string, double)&gt;();</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>            }</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>        }</div>
+</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span></div>
+<div class="foldopen" id="foldopen00162" data-start="{" data-end="}">
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno"><a class="line" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler.html#a6b3b624b5bf7399d2fdf7a256b1b8a13">  162</a></span>        <span class="keyword">public</span> List&lt;List&lt;string&gt;&gt; <a class="code hl_function" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler.html#a6b3b624b5bf7399d2fdf7a256b1b8a13">GetAnonimizedData</a>()</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>        {</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler.html#a1934d45042e51ed879dbf8803f528507">_conn</a> == <span class="keyword">null</span>) <span class="keywordflow">return</span> <span class="keyword">new</span> List&lt;List&lt;string&gt;&gt;();</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>            <a class="code hl_variable" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler.html#a1934d45042e51ed879dbf8803f528507">_conn</a>.Open();</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>            var res = <span class="keyword">new</span> List&lt;List&lt;string&gt;&gt;();</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>            <span class="keyword">using</span> (var cmd = <a class="code hl_variable" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler.html#a1934d45042e51ed879dbf8803f528507">_conn</a>.CreateCommand())</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>            {</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>                <span class="comment">// wybieramy tylko obrazy z pełnymi informacjami</span></div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>                cmd.CommandText =</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>                    <span class="stringliteral">&quot;&quot;</span><span class="stringliteral">&quot;</span></div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span><span class="stringliteral">                        SELECT id, optic_nerve_size, d1x, d1y, d2x, d2y, d3x, d3y,  d4x, d4y</span></div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span><span class="stringliteral">                        FROM images</span></div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span><span class="stringliteral">                        WHERE optic_nerve_size IS NOT NULL</span></div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span><span class="stringliteral">                        AND d1x IS NOT NULL</span></div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span><span class="stringliteral">                        AND d2x IS NOT NULL</span></div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span><span class="stringliteral">                        AND d3x IS NOT NULL</span></div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span><span class="stringliteral">                        AND d4x IS NOT NULL</span></div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span><span class="stringliteral">                        AND d1y IS NOT NULL</span></div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span><span class="stringliteral">                        AND d2y IS NOT NULL</span></div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span><span class="stringliteral">                        AND d3y IS NOT NULL</span></div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span><span class="stringliteral">                        AND d4y IS NOT NULL</span></div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span><span class="stringliteral">                        &quot;</span><span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span> </div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>                <span class="comment">// stworzenie linii do zapisania do csv</span></div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>                <span class="keyword">using</span> (var resReader = cmd.ExecuteReader())</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>                {</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>                    <span class="keywordflow">while</span> (resReader.Read())</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>                    {</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>                        <span class="comment">// jeśli są to wartości to dodajemy je do listy</span></div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>                        List&lt;string&gt; data = [</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>                            resReader.GetString(0), <span class="comment">// imageID</span></div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>                            resReader.GetDouble(1).ToString(CultureInfo.InvariantCulture) <span class="comment">// opticNerveSize</span></div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>                        ]; </div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span> </div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>                        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 2; i &lt;= 9; i++)</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>                        {</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>                            data.Add(</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>                                resReader.GetDouble(i).ToString(CultureInfo.InvariantCulture)); <span class="comment">// points</span></div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>                        }</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>                        res.Add(data);</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>                    }</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>                }</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>            }</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>            <a class="code hl_variable" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler.html#a1934d45042e51ed879dbf8803f528507">_conn</a>.Close();</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>            <span class="keywordflow">return</span> res;</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>        }</div>
+</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span> </div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>        </div>
+<div class="foldopen" id="foldopen00211" data-start="{" data-end="}">
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno"><a class="line" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler.html#a871d1e43cfdc022ac9178c1848e309b8">  211</a></span>        <span class="keyword">public</span> List&lt;List&lt;string&gt;&gt; <a class="code hl_function" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler.html#a871d1e43cfdc022ac9178c1848e309b8">GetMagnifiedCentersData</a>()</div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>        {</div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler.html#a1934d45042e51ed879dbf8803f528507">_conn</a> == <span class="keyword">null</span>) <span class="keywordflow">return</span> <span class="keyword">new</span> List&lt;List&lt;string&gt;&gt;();</div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>            <a class="code hl_variable" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler.html#a1934d45042e51ed879dbf8803f528507">_conn</a>.Open();</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>            var res = <span class="keyword">new</span> List&lt;List&lt;string&gt;&gt;();</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>            <span class="keyword">using</span> (var cmd = <a class="code hl_variable" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler.html#a1934d45042e51ed879dbf8803f528507">_conn</a>.CreateCommand())</div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>            {</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>                <span class="comment">// wybieramy tylko obrazy z pełnymi informacjami</span></div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>                cmd.CommandText =</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>                    <span class="stringliteral">&quot;&quot;</span><span class="stringliteral">&quot;</span></div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span><span class="stringliteral">                        SELECT image_id, center_x, center_y</span></div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span><span class="stringliteral">                        FROM magnified_image_centers</span></div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span><span class="stringliteral">                        WHERE center_x IS NOT NULL</span></div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span><span class="stringliteral">                        AND center_y IS NOT NULL</span></div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span><span class="stringliteral">                        &quot;</span><span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span> </div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>                <span class="comment">// stworzenie linii do zapisania do csv</span></div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>                <span class="keyword">using</span> (var resReader = cmd.ExecuteReader())</div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>                {</div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>                    <span class="keywordflow">while</span> (resReader.Read())</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>                    {</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>                        <span class="comment">// jeśli są to wartości to dodajemy je do listy</span></div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>                        res.Add([</div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>                            resReader.GetString(0), <span class="comment">// imageID</span></div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>                            resReader.GetDouble(1).ToString(CultureInfo.InvariantCulture), <span class="comment">// center X</span></div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>                            resReader.GetDouble(2).ToString(CultureInfo.InvariantCulture) <span class="comment">// center Y</span></div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>                        ]);</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>                    }</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>                }</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>            }</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>            <a class="code hl_variable" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler.html#a1934d45042e51ed879dbf8803f528507">_conn</a>.Close();</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>            <span class="keywordflow">return</span> res;</div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>        }</div>
+</div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span> </div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>        </div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span> </div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span></div>
+<div class="foldopen" id="foldopen00252" data-start="{" data-end="}">
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno"><a class="line" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler.html#a9179c4759202b57534009c628d104b74">  252</a></span>        <span class="keyword">protected</span> <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler.html#a9179c4759202b57534009c628d104b74">Dispose</a>(<span class="keywordtype">bool</span> disposing)</div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>        {</div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>            <span class="keywordflow">if</span> (!<a class="code hl_variable" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler.html#a9e719911a92f731b6cf6f0c3d1767bfc">disposedValue</a>)</div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>            {</div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>                <a class="code hl_function" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler.html#a4b5c4ae3f4e0166a7ce7671ea21ee712">CloseConnection</a>();</div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>                <a class="code hl_variable" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler.html#a9e719911a92f731b6cf6f0c3d1767bfc">disposedValue</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>            }</div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>        }</div>
+</div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span></div>
+<div class="foldopen" id="foldopen00265" data-start="{" data-end="}">
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno"><a class="line" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler.html#a4a93c94b03ced1b42e4b6e7ddd976282">  265</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler.html#a4a93c94b03ced1b42e4b6e7ddd976282">Dispose</a>()</div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>        {</div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>            <span class="comment">// Nie zmieniaj tego kodu. Umieść kod czyszczący w metodzie „Dispose(bool disposing)”.</span></div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>            <a class="code hl_function" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler.html#a4a93c94b03ced1b42e4b6e7ddd976282">Dispose</a>(disposing: <span class="keyword">true</span>);</div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>            GC.SuppressFinalize(<span class="keyword">this</span>);</div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>        }</div>
+</div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span></div>
+<div class="foldopen" id="foldopen00276" data-start="{" data-end="}">
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno"><a class="line" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler.html#addcf0205c3666d7b981f1e42ab3ece39">  276</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler.html#addcf0205c3666d7b981f1e42ab3ece39">AddImageInfo</a>(<a class="code hl_class" href="class_d_i_c_o_m_app_1_1_data_1_1_d_i_c_o_m_metadata.html">DICOMMetadata</a> metadata, <span class="keywordtype">string</span> imageID)</div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>        {</div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>            var patientName = metadata.<a class="code hl_property" href="class_d_i_c_o_m_app_1_1_data_1_1_d_i_c_o_m_metadata.html#adbdf075639c82a9a939220c214d7c4e1">PatientName</a>;</div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>            var patientID = metadata.<a class="code hl_property" href="class_d_i_c_o_m_app_1_1_data_1_1_d_i_c_o_m_metadata.html#a29438a395cec20841f41e2242b6e2ed9">PatientID</a>;</div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>            var studyDate = metadata.<a class="code hl_property" href="class_d_i_c_o_m_app_1_1_data_1_1_d_i_c_o_m_metadata.html#aebe4da5cf187ce20d64e28904f4cc5bb">StudyDate</a>;</div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>            var studyID = metadata.<a class="code hl_property" href="class_d_i_c_o_m_app_1_1_data_1_1_d_i_c_o_m_metadata.html#afe9319f61f8fc698b8bef14a61395cf0">StudyUID</a>;</div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>            <span class="keywordflow">try</span></div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>            {</div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>                <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler.html#a1934d45042e51ed879dbf8803f528507">_conn</a> == <span class="keyword">null</span>) <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>                <a class="code hl_variable" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler.html#a1934d45042e51ed879dbf8803f528507">_conn</a>.Open();</div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>                <a class="code hl_class" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_inserts_handler.html">SQLDataBaseInsertsHandler</a>.<a class="code hl_function" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_inserts_handler.html#a7aa9fd5c946479c98324095798129498">InsertPatient</a>(<a class="code hl_variable" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler.html#a1934d45042e51ed879dbf8803f528507">_conn</a>, patientID, patientName);</div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>                <a class="code hl_class" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_inserts_handler.html">SQLDataBaseInsertsHandler</a>.<a class="code hl_function" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_inserts_handler.html#a14933642d45ca0b058ad8beaa2dd22e4">InsertStudy</a>(<a class="code hl_variable" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler.html#a1934d45042e51ed879dbf8803f528507">_conn</a>, studyID, patientID, studyDate);</div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>                <a class="code hl_class" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_inserts_handler.html">SQLDataBaseInsertsHandler</a>.<a class="code hl_function" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_inserts_handler.html#a48c0e99018a645705515919c49363b0f">InsertImage</a>(<a class="code hl_variable" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler.html#a1934d45042e51ed879dbf8803f528507">_conn</a>, imageID, studyID);</div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>                <a class="code hl_variable" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler.html#a1934d45042e51ed879dbf8803f528507">_conn</a>.Close();</div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>            }</div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>            <span class="keywordflow">catch</span> (SqliteException e)</div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>            {</div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>                Console.WriteLine(e.Message);</div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>            }</div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>        }</div>
+</div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>    }</div>
+</div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>}</div>
+<div class="ttc" id="aclass_d_i_c_o_m_app_1_1_data_1_1_d_i_c_o_m_metadata_html"><div class="ttname"><a href="class_d_i_c_o_m_app_1_1_data_1_1_d_i_c_o_m_metadata.html">DICOMApp.Data.DICOMMetadata</a></div><div class="ttdoc">Klasa przechowująca metadane DICOM obrazu:</div><div class="ttdef"><b>Definicja</b> <a href="_d_i_c_o_m_metadata_8cs_source.html#l00012">DICOMMetadata.cs:13</a></div></div>
+<div class="ttc" id="aclass_d_i_c_o_m_app_1_1_data_1_1_d_i_c_o_m_metadata_html_a29438a395cec20841f41e2242b6e2ed9"><div class="ttname"><a href="class_d_i_c_o_m_app_1_1_data_1_1_d_i_c_o_m_metadata.html#a29438a395cec20841f41e2242b6e2ed9">DICOMApp.Data.DICOMMetadata.PatientID</a></div><div class="ttdeci">string PatientID</div><div class="ttdoc">ID pacjenta.</div><div class="ttdef"><b>Definicja</b> <a href="_d_i_c_o_m_metadata_8cs_source.html#l00017">DICOMMetadata.cs:17</a></div></div>
+<div class="ttc" id="aclass_d_i_c_o_m_app_1_1_data_1_1_d_i_c_o_m_metadata_html_adbdf075639c82a9a939220c214d7c4e1"><div class="ttname"><a href="class_d_i_c_o_m_app_1_1_data_1_1_d_i_c_o_m_metadata.html#adbdf075639c82a9a939220c214d7c4e1">DICOMApp.Data.DICOMMetadata.PatientName</a></div><div class="ttdeci">string PatientName</div><div class="ttdoc">Imię i nazwisko pacjenta.</div><div class="ttdef"><b>Definicja</b> <a href="_d_i_c_o_m_metadata_8cs_source.html#l00022">DICOMMetadata.cs:22</a></div></div>
+<div class="ttc" id="aclass_d_i_c_o_m_app_1_1_data_1_1_d_i_c_o_m_metadata_html_aebe4da5cf187ce20d64e28904f4cc5bb"><div class="ttname"><a href="class_d_i_c_o_m_app_1_1_data_1_1_d_i_c_o_m_metadata.html#aebe4da5cf187ce20d64e28904f4cc5bb">DICOMApp.Data.DICOMMetadata.StudyDate</a></div><div class="ttdeci">string StudyDate</div><div class="ttdoc">Data badania.</div><div class="ttdef"><b>Definicja</b> <a href="_d_i_c_o_m_metadata_8cs_source.html#l00027">DICOMMetadata.cs:27</a></div></div>
+<div class="ttc" id="aclass_d_i_c_o_m_app_1_1_data_1_1_d_i_c_o_m_metadata_html_afe9319f61f8fc698b8bef14a61395cf0"><div class="ttname"><a href="class_d_i_c_o_m_app_1_1_data_1_1_d_i_c_o_m_metadata.html#afe9319f61f8fc698b8bef14a61395cf0">DICOMApp.Data.DICOMMetadata.StudyUID</a></div><div class="ttdeci">string StudyUID</div><div class="ttdoc">Unikalny identyfikator badania.</div><div class="ttdef"><b>Definicja</b> <a href="_d_i_c_o_m_metadata_8cs_source.html#l00032">DICOMMetadata.cs:32</a></div></div>
+<div class="ttc" id="aclass_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_connection_handler_html"><div class="ttname"><a href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_connection_handler.html">DICOMApp.Repository.SQLDataBaseConnectionHandler</a></div><div class="ttdoc">Klasa obsługująca połączenie z bazą danych SQLite.</div><div class="ttdef"><b>Definicja</b> <a href="_s_q_l_data_base_connection_handler_8cs_source.html#l00013">SQLDataBaseConnectionHandler.cs:14</a></div></div>
+<div class="ttc" id="aclass_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler_html_a078919e77b4ef8397eee1e1b65283b31"><div class="ttname"><a href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler.html#a078919e77b4ef8397eee1e1b65283b31">DICOMApp.Repository.SQLDataBaseHandler.SaveMagnifiedImageCenterInfo</a></div><div class="ttdeci">void SaveMagnifiedImageCenterInfo(string imageID, double x, double y)</div><div class="ttdoc">Zapisuje do obrazu informacje o srodku okna powększającego.</div><div class="ttdef"><b>Definicja</b> <a href="#l00065">SQLDataBaseHandler.cs:65</a></div></div>
+<div class="ttc" id="aclass_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler_html_a1934d45042e51ed879dbf8803f528507"><div class="ttname"><a href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler.html#a1934d45042e51ed879dbf8803f528507">DICOMApp.Repository.SQLDataBaseHandler._conn</a></div><div class="ttdeci">SqliteConnection? _conn</div><div class="ttdef"><b>Definicja</b> <a href="#l00022">SQLDataBaseHandler.cs:22</a></div></div>
+<div class="ttc" id="aclass_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler_html_a4a93c94b03ced1b42e4b6e7ddd976282"><div class="ttname"><a href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler.html#a4a93c94b03ced1b42e4b6e7ddd976282">DICOMApp.Repository.SQLDataBaseHandler.Dispose</a></div><div class="ttdeci">void Dispose()</div><div class="ttdoc">Zwolnia zasoby zarządzane przez klasę i zamyka połączenie z bazą danych.</div><div class="ttdef"><b>Definicja</b> <a href="#l00265">SQLDataBaseHandler.cs:265</a></div></div>
+<div class="ttc" id="aclass_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler_html_a4b5c4ae3f4e0166a7ce7671ea21ee712"><div class="ttname"><a href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler.html#a4b5c4ae3f4e0166a7ce7671ea21ee712">DICOMApp.Repository.SQLDataBaseHandler.CloseConnection</a></div><div class="ttdeci">void CloseConnection()</div><div class="ttdoc">Zamyka połączenie z bazą danych SQLite.</div><div class="ttdef"><b>Definicja</b> <a href="#l00049">SQLDataBaseHandler.cs:49</a></div></div>
+<div class="ttc" id="aclass_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler_html_a6b3b624b5bf7399d2fdf7a256b1b8a13"><div class="ttname"><a href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler.html#a6b3b624b5bf7399d2fdf7a256b1b8a13">DICOMApp.Repository.SQLDataBaseHandler.GetAnonimizedData</a></div><div class="ttdeci">List&lt; List&lt; string &gt; &gt; GetAnonimizedData()</div><div class="ttdoc">Zwraća listę list zawierający zanonimizowane dane dotyczące zaznaczeń na obrazach.</div><div class="ttdef"><b>Definicja</b> <a href="#l00162">SQLDataBaseHandler.cs:162</a></div></div>
+<div class="ttc" id="aclass_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler_html_a871d1e43cfdc022ac9178c1848e309b8"><div class="ttname"><a href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler.html#a871d1e43cfdc022ac9178c1848e309b8">DICOMApp.Repository.SQLDataBaseHandler.GetMagnifiedCentersData</a></div><div class="ttdeci">List&lt; List&lt; string &gt; &gt; GetMagnifiedCentersData()</div><div class="ttdoc">Zwraća listę srodków okanów powększających dla wszystkich obrazów danego pacjenta.</div><div class="ttdef"><b>Definicja</b> <a href="#l00211">SQLDataBaseHandler.cs:211</a></div></div>
+<div class="ttc" id="aclass_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler_html_a8fa71632151040816ddc2a438d538e65"><div class="ttname"><a href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler.html#a8fa71632151040816ddc2a438d538e65">DICOMApp.Repository.SQLDataBaseHandler.SaveChosenPoints</a></div><div class="ttdeci">void SaveChosenPoints(List&lt; double &gt; points, string imageID, double opticNerveLen, DICOMMetadata info)</div><div class="ttdoc">Zapisuje wyznaczone punkty do bazy danych lub pliku.</div><div class="ttdef"><b>Definicja</b> <a href="#l00078">SQLDataBaseHandler.cs:78</a></div></div>
+<div class="ttc" id="aclass_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler_html_a9179c4759202b57534009c628d104b74"><div class="ttname"><a href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler.html#a9179c4759202b57534009c628d104b74">DICOMApp.Repository.SQLDataBaseHandler.Dispose</a></div><div class="ttdeci">virtual void Dispose(bool disposing)</div><div class="ttdoc">Zwalnia zasoby i zamyka połączenie z bazą danych.</div><div class="ttdef"><b>Definicja</b> <a href="#l00252">SQLDataBaseHandler.cs:252</a></div></div>
+<div class="ttc" id="aclass_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler_html_a9e274630be4d248e94fad9eefe3961e7"><div class="ttname"><a href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler.html#a9e274630be4d248e94fad9eefe3961e7">DICOMApp.Repository.SQLDataBaseHandler._sqlConnection</a></div><div class="ttdeci">SQLDataBaseConnectionHandler? _sqlConnection</div><div class="ttdef"><b>Definicja</b> <a href="#l00021">SQLDataBaseHandler.cs:21</a></div></div>
+<div class="ttc" id="aclass_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler_html_a9e719911a92f731b6cf6f0c3d1767bfc"><div class="ttname"><a href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler.html#a9e719911a92f731b6cf6f0c3d1767bfc">DICOMApp.Repository.SQLDataBaseHandler.disposedValue</a></div><div class="ttdeci">bool disposedValue</div><div class="ttdef"><b>Definicja</b> <a href="#l00023">SQLDataBaseHandler.cs:23</a></div></div>
+<div class="ttc" id="aclass_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler_html_aae74c636a3cc06579f65b9bfb2d9f09d"><div class="ttname"><a href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler.html#aae74c636a3cc06579f65b9bfb2d9f09d">DICOMApp.Repository.SQLDataBaseHandler.SQLDataBaseHandler</a></div><div class="ttdeci">SQLDataBaseHandler()</div><div class="ttdoc">Tworzy handler bazy danych SQLite.</div><div class="ttdef"><b>Definicja</b> <a href="#l00029">SQLDataBaseHandler.cs:29</a></div></div>
+<div class="ttc" id="aclass_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler_html_addcf0205c3666d7b981f1e42ab3ece39"><div class="ttname"><a href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler.html#addcf0205c3666d7b981f1e42ab3ece39">DICOMApp.Repository.SQLDataBaseHandler.AddImageInfo</a></div><div class="ttdeci">void AddImageInfo(DICOMMetadata metadata, string imageID)</div><div class="ttdef"><b>Definicja</b> <a href="#l00276">SQLDataBaseHandler.cs:276</a></div></div>
+<div class="ttc" id="aclass_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler_html_aec1386137a7ddeef7d7f2a48e0c069ee"><div class="ttname"><a href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler.html#aec1386137a7ddeef7d7f2a48e0c069ee">DICOMApp.Repository.SQLDataBaseHandler.GetOpticNerveLenValuesForStudiesOfPatient</a></div><div class="ttdeci">List&lt;(string, double)&gt; GetOpticNerveLenValuesForStudiesOfPatient(string patientID)</div><div class="ttdoc">Zwraća listę długości nerwu wzrokowego dla wszystkich badań danego pacjenta.</div><div class="ttdef"><b>Definicja</b> <a href="#l00119">SQLDataBaseHandler.cs:119</a></div></div>
+<div class="ttc" id="aclass_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_inserts_handler_html"><div class="ttname"><a href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_inserts_handler.html">DICOMApp.Repository.SQLDataBaseInsertsHandler</a></div><div class="ttdef"><b>Definicja</b> <a href="_s_q_l_data_base_inserts_handler_8cs_source.html#l00007">SQLDataBaseInsertsHandler.cs:8</a></div></div>
+<div class="ttc" id="aclass_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_inserts_handler_html_a14933642d45ca0b058ad8beaa2dd22e4"><div class="ttname"><a href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_inserts_handler.html#a14933642d45ca0b058ad8beaa2dd22e4">DICOMApp.Repository.SQLDataBaseInsertsHandler.InsertStudy</a></div><div class="ttdeci">static void InsertStudy(SqliteConnection? conn, string studyID, string patientID, string studyDate)</div><div class="ttdoc">Dodanie badania jeśli jeszcze nie ma takiego w bazie.</div><div class="ttdef"><b>Definicja</b> <a href="_s_q_l_data_base_inserts_handler_8cs_source.html#l00041">SQLDataBaseInsertsHandler.cs:41</a></div></div>
+<div class="ttc" id="aclass_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_inserts_handler_html_a48c0e99018a645705515919c49363b0f"><div class="ttname"><a href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_inserts_handler.html#a48c0e99018a645705515919c49363b0f">DICOMApp.Repository.SQLDataBaseInsertsHandler.InsertImage</a></div><div class="ttdeci">static void InsertImage(SqliteConnection? conn, string imageID, string studyID)</div><div class="ttdoc">Dodanie obrazu jeśli jeszcze nie ma takiego w bazie.</div><div class="ttdef"><b>Definicja</b> <a href="_s_q_l_data_base_inserts_handler_8cs_source.html#l00065">SQLDataBaseInsertsHandler.cs:65</a></div></div>
+<div class="ttc" id="aclass_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_inserts_handler_html_a651bf3154eeea28343f43a67cdab8df5"><div class="ttname"><a href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_inserts_handler.html#a651bf3154eeea28343f43a67cdab8df5">DICOMApp.Repository.SQLDataBaseInsertsHandler.InsertImageInfo</a></div><div class="ttdeci">static void InsertImageInfo(SqliteConnection? conn, List&lt; double &gt; points, string imageID, double opticNerveLen)</div><div class="ttdoc">Dodanie informacji o punktach i długości nerwu wzrokowego do obrazu.</div><div class="ttdef"><b>Definicja</b> <a href="_s_q_l_data_base_inserts_handler_8cs_source.html#l00113">SQLDataBaseInsertsHandler.cs:113</a></div></div>
+<div class="ttc" id="aclass_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_inserts_handler_html_a7aa9fd5c946479c98324095798129498"><div class="ttname"><a href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_inserts_handler.html#a7aa9fd5c946479c98324095798129498">DICOMApp.Repository.SQLDataBaseInsertsHandler.InsertPatient</a></div><div class="ttdeci">static void InsertPatient(SqliteConnection? conn, string patientID, string patientName)</div><div class="ttdoc">Dodanie pacjenta jeśli jeszcze nie ma takiego w bazie.</div><div class="ttdef"><b>Definicja</b> <a href="_s_q_l_data_base_inserts_handler_8cs_source.html#l00015">SQLDataBaseInsertsHandler.cs:15</a></div></div>
+<div class="ttc" id="aclass_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_inserts_handler_html_add19b5e191a1cd28276e5858d1d6b958"><div class="ttname"><a href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_inserts_handler.html#add19b5e191a1cd28276e5858d1d6b958">DICOMApp.Repository.SQLDataBaseInsertsHandler.InsertMagnifiedImageCenterInfo</a></div><div class="ttdeci">static void InsertMagnifiedImageCenterInfo(SqliteConnection? conn, string imageID, double x, double y)</div><div class="ttdoc">Dodanie informacji o srodku okna powiększającego do obrazu.</div><div class="ttdef"><b>Definicja</b> <a href="_s_q_l_data_base_inserts_handler_8cs_source.html#l00089">SQLDataBaseInsertsHandler.cs:89</a></div></div>
+<div class="ttc" id="aclass_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_schema_handler_html"><div class="ttname"><a href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_schema_handler.html">DICOMApp.Repository.SQLDataBaseSchemaHandler</a></div><div class="ttdef"><b>Definicja</b> <a href="_s_q_l_data_base_schema_handler_8cs_source.html#l00010">SQLDataBaseSchemaHandler.cs:11</a></div></div>
+<div class="ttc" id="aclass_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_schema_handler_html_af8ca1afe0a5d458689aa57e334b71d55"><div class="ttname"><a href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_schema_handler.html#af8ca1afe0a5d458689aa57e334b71d55">DICOMApp.Repository.SQLDataBaseSchemaHandler.InitializeDatabase</a></div><div class="ttdeci">static void InitializeDatabase(SqliteConnection? conn)</div><div class="ttdef"><b>Definicja</b> <a href="_s_q_l_data_base_schema_handler_8cs_source.html#l00089">SQLDataBaseSchemaHandler.cs:89</a></div></div>
+<div class="ttc" id="aclass_d_i_c_o_m_app_1_1_utils_1_1_app_directory_handler_html"><div class="ttname"><a href="class_d_i_c_o_m_app_1_1_utils_1_1_app_directory_handler.html">DICOMApp.Utils.AppDirectoryHandler</a></div><div class="ttdef"><b>Definicja</b> <a href="_app_directory_handler_8cs_source.html#l00006">AppDirectoryHandler.cs:7</a></div></div>
+<div class="ttc" id="aclass_d_i_c_o_m_app_1_1_utils_1_1_app_directory_handler_html_a80c1d50014ee9eadaa9269c4b55e96e8"><div class="ttname"><a href="class_d_i_c_o_m_app_1_1_utils_1_1_app_directory_handler.html#a80c1d50014ee9eadaa9269c4b55e96e8">DICOMApp.Utils.AppDirectoryHandler.GetDatabaseDirecory</a></div><div class="ttdeci">string GetDatabaseDirecory()</div><div class="ttdef"><b>Definicja</b> <a href="_app_directory_handler_8cs_source.html#l00053">AppDirectoryHandler.cs:53</a></div></div>
+<div class="ttc" id="aclass_d_i_c_o_m_app_1_1_utils_1_1_app_directory_handler_html_ab0978493804e6bdb88826879ff9de6b2"><div class="ttname"><a href="class_d_i_c_o_m_app_1_1_utils_1_1_app_directory_handler.html#ab0978493804e6bdb88826879ff9de6b2">DICOMApp.Utils.AppDirectoryHandler.Instance</a></div><div class="ttdeci">static AppDirectoryHandler Instance</div><div class="ttdef"><b>Definicja</b> <a href="_app_directory_handler_8cs_source.html#l00011">AppDirectoryHandler.cs:12</a></div></div>
+<div class="ttc" id="ainterface_d_i_c_o_m_app_1_1_interfaces_1_1_i_data_handler_html"><div class="ttname"><a href="interface_d_i_c_o_m_app_1_1_interfaces_1_1_i_data_handler.html">DICOMApp.Interfaces.IDataHandler</a></div><div class="ttdoc">Interfejs klasy obsługującej zapisywanie i odczytywanie danych.</div><div class="ttdef"><b>Definicja</b> <a href="_i_data_handler_8cs_source.html#l00009">IDataHandler.cs:10</a></div></div>
+<div class="ttc" id="anamespace_d_i_c_o_m_app_1_1_data_html"><div class="ttname"><a href="namespace_d_i_c_o_m_app_1_1_data.html">DICOMApp.Data</a></div><div class="ttdef"><b>Definicja</b> <a href="_d_i_c_o_m_image_data_8cs_source.html#l00005">DICOMImageData.cs:6</a></div></div>
+<div class="ttc" id="anamespace_d_i_c_o_m_app_1_1_interfaces_html"><div class="ttname"><a href="namespace_d_i_c_o_m_app_1_1_interfaces.html">DICOMApp.Interfaces</a></div><div class="ttdef"><b>Definicja</b> <a href="_i_data_handler_8cs_source.html#l00004">IDataHandler.cs:5</a></div></div>
+<div class="ttc" id="anamespace_d_i_c_o_m_app_1_1_repository_html"><div class="ttname"><a href="namespace_d_i_c_o_m_app_1_1_repository.html">DICOMApp.Repository</a></div><div class="ttdef"><b>Definicja</b> <a href="_c_s_v_export_hander_8cs_source.html#l00004">CSVExportHander.cs:5</a></div></div>
+<div class="ttc" id="anamespace_d_i_c_o_m_app_1_1_utils_html"><div class="ttname"><a href="namespace_d_i_c_o_m_app_1_1_utils.html">DICOMApp.Utils</a></div><div class="ttdef"><b>Definicja</b> <a href="_app_directory_handler_8cs_source.html#l00004">AppDirectoryHandler.cs:5</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_f396504afdc959660871b003fa10164d.html">Documents</a></li><li class="navelem"><a href="dir_1afafb9ef185eaac7646cb0f4cd779d1.html">DICOM-App</a></li><li class="navelem"><a href="dir_9bd8db5a8c1d76d25697467d18745905.html">Repository</a></li><li class="navelem"><a href="_s_q_l_data_base_handler_8cs.html">SQLDataBaseHandler.cs</a></li>
+    <li class="footer">Wygenerowano za pomocą <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

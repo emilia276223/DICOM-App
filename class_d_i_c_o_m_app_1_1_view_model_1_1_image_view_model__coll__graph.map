@@ -1,0 +1,7 @@
+<map id="DICOMApp.ViewModel.ImageViewModel" name="DICOMApp.ViewModel.ImageViewModel">
+<area shape="rect" id="Node000001" title="Klasa modelująca widok obrazu." alt="" coords="55,296,241,467"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,80,120,149"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="79,161,124,296,118,296,77,166"/>
+<area shape="rect" id="Node000003" href="$class_d_i_c_o_m_app_1_1_data_1_1_image_data.html" title="Klasa przechowujaca dane obrazu Zawiera informacje o rozmiarze obrazu oraz tablicę pikseli (zapisanyc..." alt="" coords="144,5,323,224"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="200,222,183,281,178,278,197,226"/>
+</map>

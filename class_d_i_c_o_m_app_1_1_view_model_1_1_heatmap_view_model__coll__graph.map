@@ -1,0 +1,9 @@
+<map id="DICOMApp.ViewModel.HeatmapViewModel" name="DICOMApp.ViewModel.HeatmapViewModel">
+<area shape="rect" id="Node000001" title=" " alt="" coords="143,415,347,649"/>
+<area shape="rect" id="Node000002" href="$class_d_i_c_o_m_app_1_1_view_model_1_1_view_model_base.html" title="Klasa bazowa modelu widoku." alt="" coords="5,199,250,268"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="147,279,202,415,196,415,145,284"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="70,5,185,75"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="128,87,130,199,125,199,127,92"/>
+<area shape="rect" id="Node000004" href="$class_d_i_c_o_m_app_1_1_data_1_1_image_data.html" title="Klasa przechowujaca dane obrazu Zawiera informacje o rozmiarze obrazu oraz tablicę pikseli (zapisanyc..." alt="" coords="274,124,453,343"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="322,340,300,401,295,398,319,344"/>
+</map>

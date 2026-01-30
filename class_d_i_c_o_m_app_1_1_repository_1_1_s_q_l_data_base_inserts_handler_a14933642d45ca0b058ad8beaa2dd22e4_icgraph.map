@@ -1,0 +1,7 @@
+<map id="DICOMApp.Repository.SQLDataBaseInsertsHandler.InsertStudy" name="DICOMApp.Repository.SQLDataBaseInsertsHandler.InsertStudy">
+<area shape="rect" id="Node000001" title="Dodanie badania jeśli jeszcze nie ma takiego w bazie." alt="" coords="267,39,480,81"/>
+<area shape="rect" id="Node000002" href="$class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler.html#addcf0205c3666d7b981f1e42ab3ece39" title=" " alt="" coords="5,5,219,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="248,45,219,43,219,38,254,44"/>
+<area shape="rect" id="Node000003" href="$class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler.html#a8fa71632151040816ddc2a438d538e65" title="Zapisuje wyznaczone punkty do bazy danych lub pliku." alt="" coords="5,72,219,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="248,76,219,82,219,77,254,75"/>
+</map>

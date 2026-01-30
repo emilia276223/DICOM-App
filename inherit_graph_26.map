@@ -1,0 +1,31 @@
+<map id="Graficzna hierarchia klas" name="Graficzna hierarchia klas">
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,335,97,361"/>
+<area shape="rect" id="Node000001" href="$class_d_i_c_o_m_app_1_1_chart_view.html" title="Klasa ChartView." alt="" coords="180,5,334,32"/>
+<area shape="poly" id="edge30_Node000000_Node000001" title=" " alt="" coords="49,319,53,260,66,186,78,147,94,108,116,73,143,42,160,30,182,23,178,27,162,35,146,46,120,76,99,111,83,148,72,187,59,261,55,319"/>
+<area shape="rect" id="Node000002" href="$class_d_i_c_o_m_app_1_1_data_export_button.html" title="Klasa DataExportButton." alt="" coords="159,56,356,83"/>
+<area shape="poly" id="edge31_Node000000_Node000002" title=" " alt="" coords="51,319,58,270,73,209,100,146,120,118,143,93,163,81,160,85,146,97,124,121,105,149,79,210,64,271,57,320"/>
+<area shape="rect" id="Node000003" href="$class_d_i_c_o_m_app_1_1_dicom_information_view.html" title="Klasa DicomInformationView." alt="" coords="145,107,370,133"/>
+<area shape="poly" id="edge32_Node000000_Node000003" title=" " alt="" coords="54,319,64,279,81,231,107,184,123,162,143,143,164,132,161,136,146,147,127,166,111,187,86,234,69,280,60,320"/>
+<area shape="rect" id="Node000004" href="$class_d_i_c_o_m_app_1_1_element_list_view.html" title="Klasa ElementListView." alt="" coords="162,157,353,184"/>
+<area shape="poly" id="edge33_Node000000_Node000004" title=" " alt="" coords="59,319,89,255,113,222,143,194,167,182,164,187,146,198,117,225,94,258,64,321"/>
+<area shape="rect" id="Node000005" href="$class_d_i_c_o_m_app_1_1_folder_import_button.html" title="Klasa obslugujaca przycisk do wyboru folderu." alt="" coords="155,208,360,235"/>
+<area shape="poly" id="edge34_Node000000_Node000005" title=" " alt="" coords="67,320,99,281,120,261,143,244,172,233,168,237,146,249,123,265,103,284,72,323"/>
+<area shape="rect" id="Node000006" href="$class_d_i_c_o_m_app_1_1_heatmap_control.html" title="Klasa HeatmapControl." alt="" coords="163,259,352,285"/>
+<area shape="poly" id="edge35_Node000000_Node000006" title=" " alt="" coords="84,325,144,295,183,284,180,288,146,300,88,328"/>
+<area shape="rect" id="Node000007" href="$class_d_i_c_o_m_app_1_1_heatmap_view.html" title="Klasa HeatmapView." alt="" coords="170,309,345,336"/>
+<area shape="poly" id="edge36_Node000000_Node000007" title=" " alt="" coords="111,338,171,332,167,335,114,343"/>
+<area shape="rect" id="Node000008" href="$class_d_i_c_o_m_app_1_1_image_selection_view.html" title="Klasa PatientListToolbar." alt="" coords="151,360,364,387"/>
+<area shape="poly" id="edge37_Node000000_Node000008" title=" " alt="" coords="111,353,153,359,149,362,113,358"/>
+<area shape="rect" id="Node000009" href="$class_d_i_c_o_m_app_1_1_image_view.html" title="Klasa ImageView." alt="" coords="178,411,336,437"/>
+<area shape="poly" id="edge38_Node000000_Node000009" title=" " alt="" coords="86,367,146,396,184,409,179,411,144,401,87,372"/>
+<area shape="rect" id="Node000010" href="$class_d_i_c_o_m_app_1_1_line_view.html" title="Klasa LineView." alt="" coords="184,461,330,488"/>
+<area shape="poly" id="edge39_Node000000_Node000010" title=" " alt="" coords="69,372,103,412,123,431,146,447,187,464,182,466,143,452,120,435,99,415,70,377"/>
+<area shape="rect" id="Node000011" href="$class_d_i_c_o_m_app_1_1_magnified_image_view.html" title="Klasa MagnifiedImageView." alt="" coords="150,512,364,539"/>
+<area shape="poly" id="edge40_Node000000_Node000011" title=" " alt="" coords="62,373,94,438,117,471,146,498,168,511,163,512,143,502,113,474,89,441,61,379"/>
+<area shape="rect" id="Node000012" href="$class_d_i_c_o_m_app_1_1_pointer_mode_view.html" title="Klasa PointerModeView." alt="" coords="160,563,355,589"/>
+<area shape="poly" id="edge41_Node000000_Node000012" title=" " alt="" coords="57,374,69,416,86,462,111,509,127,530,146,549,166,562,160,562,143,553,123,534,107,512,81,465,64,417,57,379"/>
+<area shape="rect" id="Node000013" href="$class_d_i_c_o_m_app_1_1_x_line_view.html" title="Klasa XLineView." alt="" coords="180,613,335,640"/>
+<area shape="poly" id="edge42_Node000000_Node000013" title=" " alt="" coords="54,374,64,425,79,486,105,547,124,575,146,599,162,610,182,620,177,620,160,615,143,603,120,578,100,550,73,487,58,426,54,379"/>
+<area shape="rect" id="Node000014" href="$class_d_i_c_o_m_app_1_1_x_point_view.html" title="Klasa XPointView." alt="" coords="177,664,338,691"/>
+<area shape="poly" id="edge43_Node000000_Node000014" title=" " alt="" coords="52,375,59,435,72,509,83,548,99,585,120,620,146,650,161,660,179,670,173,670,158,665,143,654,116,623,94,588,78,549,66,510,53,436,52,380"/>
+</map>

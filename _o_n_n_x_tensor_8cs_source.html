@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pl">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>DICOM-App: Plik źródłowy C:/Users/emili/Documents/DICOM-App/MLModel/ONNXTensor.cs</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">DICOM-App<span id="projectnumber">&#160;version1.0</span>
+   </div>
+   <div id="projectbrief">Aplikacja do przeglądania obrazów DICOM oraz korzystania z pluginów AI</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano za pomocą Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_o_n_n_x_tensor_8cs_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Wczytywanie...</div>
+<div class="SRStatus" id="Searching">Szukanie...</div>
+<div class="SRStatus" id="NoMatches">Brak dopasowań</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">ONNXTensor.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_o_n_n_x_tensor_8cs.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_d_i_c_o_m_app_1_1_data.html">DICOMApp.Data</a>;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using </span>Microsoft.ML.OnnxRuntime.Tensors;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">using </span>System.Collections.Generic;</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_d_i_c_o_m_app_1_1_m_l_model.html">DICOMApp.MLModel</a></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>{</div>
+<div class="foldopen" id="foldopen00011" data-start="{" data-end="};">
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="class_d_i_c_o_m_app_1_1_m_l_model_1_1_o_n_n_x_tensor.html">   11</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_function" href="class_d_i_c_o_m_app_1_1_m_l_model_1_1_o_n_n_x_tensor.html#a8a16409669a506f27239ea0ed359bded">ONNXTensor</a></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    {</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="class_d_i_c_o_m_app_1_1_m_l_model_1_1_o_n_n_x_tensor.html#a8a16409669a506f27239ea0ed359bded">   16</a></span>        <span class="keyword">public</span> <a class="code hl_function" href="class_d_i_c_o_m_app_1_1_m_l_model_1_1_o_n_n_x_tensor.html#a8a16409669a506f27239ea0ed359bded">ONNXTensor</a>() { }</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span></div>
+<div class="foldopen" id="foldopen00025" data-start="{" data-end="}">
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="class_d_i_c_o_m_app_1_1_m_l_model_1_1_o_n_n_x_tensor.html#af583c22b0134a859206970a5fbc6b8fd">   25</a></span>        <span class="keyword">internal</span> (DenseTensor&lt;float&gt; <a class="code hl_variable" href="class_d_i_c_o_m_app_1_1_m_l_model_1_1_o_n_n_x_tensor.html#ad866fdbf896540b118ffb6d6acb52077">tensor</a>, <span class="keywordtype">int</span> <a class="code hl_variable" href="class_d_i_c_o_m_app_1_1_m_l_model_1_1_o_n_n_x_tensor.html#a74b872dcb2d89a28e2f503250f66621e">width</a>, <span class="keywordtype">int</span> height) <a class="code hl_function" href="class_d_i_c_o_m_app_1_1_m_l_model_1_1_o_n_n_x_tensor.html#af583c22b0134a859206970a5fbc6b8fd">ImageDataToTensor</a>(<a class="code hl_class" href="class_d_i_c_o_m_app_1_1_data_1_1_image_data.html">ImageData</a> imageData)</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        {</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>            <span class="keywordtype">int</span> <a class="code hl_variable" href="class_d_i_c_o_m_app_1_1_m_l_model_1_1_o_n_n_x_tensor.html#a74b872dcb2d89a28e2f503250f66621e">width</a> = imageData.<a class="code hl_property" href="class_d_i_c_o_m_app_1_1_data_1_1_image_data.html#a0295c7bdae7453ec57727be10bc85b90">Width</a>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>            <span class="keywordtype">int</span> height = imageData.<a class="code hl_property" href="class_d_i_c_o_m_app_1_1_data_1_1_image_data.html#a390b9ecf17360caaae08b55449815d8b">Height</a>;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>            var <a class="code hl_variable" href="class_d_i_c_o_m_app_1_1_m_l_model_1_1_o_n_n_x_tensor.html#ad866fdbf896540b118ffb6d6acb52077">tensor</a> = <span class="keyword">new</span> DenseTensor&lt;float&gt;(</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>                imageData.<a class="code hl_function" href="class_d_i_c_o_m_app_1_1_data_1_1_image_data.html#aa7055eedd4ad8de1c71758bcb6de43aa">GetFloatPixels</a>(),</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>                <span class="keyword">new</span>[] { 1, height, width, 1 }</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>            );</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>            <span class="keywordflow">return</span> (<a class="code hl_variable" href="class_d_i_c_o_m_app_1_1_m_l_model_1_1_o_n_n_x_tensor.html#ad866fdbf896540b118ffb6d6acb52077">tensor</a>, <a class="code hl_variable" href="class_d_i_c_o_m_app_1_1_m_l_model_1_1_o_n_n_x_tensor.html#a74b872dcb2d89a28e2f503250f66621e">width</a>, height);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        }</div>
+</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span></div>
+<div class="foldopen" id="foldopen00043" data-start="{" data-end="}">
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="class_d_i_c_o_m_app_1_1_m_l_model_1_1_o_n_n_x_tensor.html#af73b11873558de84441ee5cec198609e">   43</a></span>        <span class="keyword">internal</span> List&lt;ImageData&gt; <a class="code hl_function" href="class_d_i_c_o_m_app_1_1_m_l_model_1_1_o_n_n_x_tensor.html#af73b11873558de84441ee5cec198609e">TensorsToImageData</a>(Tensor&lt;float&gt; <a class="code hl_variable" href="class_d_i_c_o_m_app_1_1_m_l_model_1_1_o_n_n_x_tensor.html#ad866fdbf896540b118ffb6d6acb52077">tensor</a>)</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        {</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>            var <a class="code hl_variable" href="class_d_i_c_o_m_app_1_1_m_l_model_1_1_o_n_n_x_tensor.html#a74b872dcb2d89a28e2f503250f66621e">width</a> = <a class="code hl_variable" href="class_d_i_c_o_m_app_1_1_m_l_model_1_1_o_n_n_x_tensor.html#ad866fdbf896540b118ffb6d6acb52077">tensor</a>.Dimensions[2];</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>            var height = <a class="code hl_variable" href="class_d_i_c_o_m_app_1_1_m_l_model_1_1_o_n_n_x_tensor.html#ad866fdbf896540b118ffb6d6acb52077">tensor</a>.Dimensions[1];</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>            List&lt;ImageData&gt; images = <span class="keyword">new</span> List&lt;ImageData&gt;();</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> c = 0; c &lt; <a class="code hl_variable" href="class_d_i_c_o_m_app_1_1_m_l_model_1_1_o_n_n_x_tensor.html#ad866fdbf896540b118ffb6d6acb52077">tensor</a>.Dimensions[3]; c++)</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            {</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>                var pixels = <span class="keyword">new</span> <span class="keywordtype">float</span>[<a class="code hl_variable" href="class_d_i_c_o_m_app_1_1_m_l_model_1_1_o_n_n_x_tensor.html#a74b872dcb2d89a28e2f503250f66621e">width</a> * height];</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> y = 0; y &lt; height; y++)</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>                {</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>                    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> x = 0; x &lt; <a class="code hl_variable" href="class_d_i_c_o_m_app_1_1_m_l_model_1_1_o_n_n_x_tensor.html#a74b872dcb2d89a28e2f503250f66621e">width</a>; x++)</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>                    {</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>                        pixels[y * <a class="code hl_variable" href="class_d_i_c_o_m_app_1_1_m_l_model_1_1_o_n_n_x_tensor.html#a74b872dcb2d89a28e2f503250f66621e">width</a> + x] = <a class="code hl_variable" href="class_d_i_c_o_m_app_1_1_m_l_model_1_1_o_n_n_x_tensor.html#ad866fdbf896540b118ffb6d6acb52077">tensor</a>[0, y, x, c] * 100;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>                    }</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>                }</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>                images.Add(<span class="keyword">new</span> <a class="code hl_class" href="class_d_i_c_o_m_app_1_1_data_1_1_image_data.html">ImageData</a>(<a class="code hl_variable" href="class_d_i_c_o_m_app_1_1_m_l_model_1_1_o_n_n_x_tensor.html#a74b872dcb2d89a28e2f503250f66621e">width</a>, height, pixels));</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            }</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            <span class="keywordflow">return</span> images;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        }</div>
+</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>       </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    }</div>
+</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>}</div>
+<div class="ttc" id="aclass_d_i_c_o_m_app_1_1_data_1_1_image_data_html"><div class="ttname"><a href="class_d_i_c_o_m_app_1_1_data_1_1_image_data.html">DICOMApp.Data.ImageData</a></div><div class="ttdoc">Klasa przechowujaca dane obrazu Zawiera informacje o rozmiarze obrazu oraz tablicę pikseli (zapisanyc...</div><div class="ttdef"><b>Definicja</b> <a href="_image_data_8cs_source.html#l00012">ImageData.cs:13</a></div></div>
+<div class="ttc" id="aclass_d_i_c_o_m_app_1_1_data_1_1_image_data_html_a0295c7bdae7453ec57727be10bc85b90"><div class="ttname"><a href="class_d_i_c_o_m_app_1_1_data_1_1_image_data.html#a0295c7bdae7453ec57727be10bc85b90">DICOMApp.Data.ImageData.Width</a></div><div class="ttdeci">int Width</div><div class="ttdoc">Szerokość obrazu.</div><div class="ttdef"><b>Definicja</b> <a href="_image_data_8cs_source.html#l00017">ImageData.cs:17</a></div></div>
+<div class="ttc" id="aclass_d_i_c_o_m_app_1_1_data_1_1_image_data_html_a390b9ecf17360caaae08b55449815d8b"><div class="ttname"><a href="class_d_i_c_o_m_app_1_1_data_1_1_image_data.html#a390b9ecf17360caaae08b55449815d8b">DICOMApp.Data.ImageData.Height</a></div><div class="ttdeci">int Height</div><div class="ttdoc">Wysokość obrazu.</div><div class="ttdef"><b>Definicja</b> <a href="_image_data_8cs_source.html#l00022">ImageData.cs:22</a></div></div>
+<div class="ttc" id="aclass_d_i_c_o_m_app_1_1_data_1_1_image_data_html_aa7055eedd4ad8de1c71758bcb6de43aa"><div class="ttname"><a href="class_d_i_c_o_m_app_1_1_data_1_1_image_data.html#aa7055eedd4ad8de1c71758bcb6de43aa">DICOMApp.Data.ImageData.GetFloatPixels</a></div><div class="ttdeci">float[] GetFloatPixels()</div><div class="ttdoc">Metoda zwracająca tablicę pikseli obrazu w formacie float Na podstawie tablicy pikseli w formacie ARG...</div><div class="ttdef"><b>Definicja</b> <a href="_image_data_8cs_source.html#l00107">ImageData.cs:107</a></div></div>
+<div class="ttc" id="aclass_d_i_c_o_m_app_1_1_m_l_model_1_1_o_n_n_x_tensor_html_a74b872dcb2d89a28e2f503250f66621e"><div class="ttname"><a href="class_d_i_c_o_m_app_1_1_m_l_model_1_1_o_n_n_x_tensor.html#a74b872dcb2d89a28e2f503250f66621e">DICOMApp.MLModel.ONNXTensor.width</a></div><div class="ttdeci">DenseTensor&lt; float &gt; int width</div><div class="ttdef"><b>Definicja</b> <a href="#l00025">ONNXTensor.cs:25</a></div></div>
+<div class="ttc" id="aclass_d_i_c_o_m_app_1_1_m_l_model_1_1_o_n_n_x_tensor_html_a8a16409669a506f27239ea0ed359bded"><div class="ttname"><a href="class_d_i_c_o_m_app_1_1_m_l_model_1_1_o_n_n_x_tensor.html#a8a16409669a506f27239ea0ed359bded">DICOMApp.MLModel.ONNXTensor.ONNXTensor</a></div><div class="ttdeci">ONNXTensor()</div><div class="ttdoc">Konstruktor klasy.</div><div class="ttdef"><b>Definicja</b> <a href="#l00016">ONNXTensor.cs:16</a></div></div>
+<div class="ttc" id="aclass_d_i_c_o_m_app_1_1_m_l_model_1_1_o_n_n_x_tensor_html_ad866fdbf896540b118ffb6d6acb52077"><div class="ttname"><a href="class_d_i_c_o_m_app_1_1_m_l_model_1_1_o_n_n_x_tensor.html#ad866fdbf896540b118ffb6d6acb52077">DICOMApp.MLModel.ONNXTensor.tensor</a></div><div class="ttdeci">DenseTensor&lt; float &gt; tensor</div><div class="ttdoc">Metoda zwracająca tensor odpowiedni dla modelu na ImageData.</div><div class="ttdef"><b>Definicja</b> <a href="#l00025">ONNXTensor.cs:25</a></div></div>
+<div class="ttc" id="aclass_d_i_c_o_m_app_1_1_m_l_model_1_1_o_n_n_x_tensor_html_af583c22b0134a859206970a5fbc6b8fd"><div class="ttname"><a href="class_d_i_c_o_m_app_1_1_m_l_model_1_1_o_n_n_x_tensor.html#af583c22b0134a859206970a5fbc6b8fd">DICOMApp.MLModel.ONNXTensor.ImageDataToTensor</a></div><div class="ttdeci">DenseTensor&lt; float &gt; int int height ImageDataToTensor(ImageData imageData)</div><div class="ttdef"><b>Definicja</b> <a href="#l00025">ONNXTensor.cs:25</a></div></div>
+<div class="ttc" id="aclass_d_i_c_o_m_app_1_1_m_l_model_1_1_o_n_n_x_tensor_html_af73b11873558de84441ee5cec198609e"><div class="ttname"><a href="class_d_i_c_o_m_app_1_1_m_l_model_1_1_o_n_n_x_tensor.html#af73b11873558de84441ee5cec198609e">DICOMApp.MLModel.ONNXTensor.TensorsToImageData</a></div><div class="ttdeci">List&lt; ImageData &gt; TensorsToImageData(Tensor&lt; float &gt; tensor)</div><div class="ttdoc">Metoda zwracająca obrazy ImageData utworzone na podstawie tensora zwróconego przez model.</div><div class="ttdef"><b>Definicja</b> <a href="#l00043">ONNXTensor.cs:43</a></div></div>
+<div class="ttc" id="anamespace_d_i_c_o_m_app_1_1_data_html"><div class="ttname"><a href="namespace_d_i_c_o_m_app_1_1_data.html">DICOMApp.Data</a></div><div class="ttdef"><b>Definicja</b> <a href="_d_i_c_o_m_image_data_8cs_source.html#l00005">DICOMImageData.cs:6</a></div></div>
+<div class="ttc" id="anamespace_d_i_c_o_m_app_1_1_m_l_model_html"><div class="ttname"><a href="namespace_d_i_c_o_m_app_1_1_m_l_model.html">DICOMApp.MLModel</a></div><div class="ttdef"><b>Definicja</b> <a href="_changing_ml_model_8cs_source.html#l00004">ChangingMlModel.cs:5</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_f396504afdc959660871b003fa10164d.html">Documents</a></li><li class="navelem"><a href="dir_1afafb9ef185eaac7646cb0f4cd779d1.html">DICOM-App</a></li><li class="navelem"><a href="dir_fcef31ff30c231261f86826bd0ba1b72.html">MLModel</a></li><li class="navelem"><a href="_o_n_n_x_tensor_8cs.html">ONNXTensor.cs</a></li>
+    <li class="footer">Wygenerowano za pomocą <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

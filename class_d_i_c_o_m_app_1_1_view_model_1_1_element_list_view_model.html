@@ -1,0 +1,798 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pl">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>DICOM-App: Dokumentacja klasy DICOMApp.ViewModel.ElementListViewModel</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">DICOM-App<span id="projectnumber">&#160;version1.0</span>
+   </div>
+   <div id="projectbrief">Aplikacja do przeglądania obrazów DICOM oraz korzystania z pluginów AI</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano za pomocą Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('class_d_i_c_o_m_app_1_1_view_model_1_1_element_list_view_model.html','','class_d_i_c_o_m_app_1_1_view_model_1_1_element_list_view_model-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Wczytywanie...</div>
+<div class="SRStatus" id="Searching">Szukanie...</div>
+<div class="SRStatus" id="NoMatches">Brak dopasowań</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Dokumentacja klasy DICOMApp.ViewModel.ElementListViewModel</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Klasa modelująca widok listy elementów.  
+ <a href="#details">Więcej...</a></p>
+<div class="dynheader">
+Diagram dziedziczenia dla DICOMApp.ViewModel.ElementListViewModel</div>
+<div class="dyncontent">
+<div class="center"><img src="class_d_i_c_o_m_app_1_1_view_model_1_1_element_list_view_model__inherit__graph.png" border="0" usemap="#a_d_i_c_o_m_app_8_view_model_8_element_list_view_model_inherit__map" loading="lazy" alt="Inheritance graph"/></div>
+<map name="a_d_i_c_o_m_app_8_view_model_8_element_list_view_model_inherit__map" id="a_d_i_c_o_m_app_8_view_model_8_element_list_view_model_inherit__map">
+<area shape="rect" title="Klasa modelująca widok listy elementów." alt="" coords="28,240,228,688"/>
+<area shape="rect" href="class_d_i_c_o_m_app_1_1_view_model_1_1_view_model_base.html" title="Klasa bazowa modelu widoku." alt="" coords="5,123,250,192"/>
+<area shape="poly" title=" " alt="" coords="128,204,130,241,125,240,127,210"/>
+<area shape="rect" title=" " alt="" coords="70,5,185,75"/>
+<area shape="poly" title=" " alt="" coords="128,87,130,123,125,123,127,92"/>
+</map>
+</div>
+<div class="dynheader">
+Diagram współpracy dla DICOMApp.ViewModel.ElementListViewModel:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_d_i_c_o_m_app_1_1_view_model_1_1_element_list_view_model__coll__graph.png" border="0" usemap="#a_d_i_c_o_m_app_8_view_model_8_element_list_view_model_coll__map" loading="lazy" alt="Collaboration graph"/></div>
+<map name="a_d_i_c_o_m_app_8_view_model_8_element_list_view_model_coll__map" id="a_d_i_c_o_m_app_8_view_model_8_element_list_view_model_coll__map">
+<area shape="rect" title="Klasa modelująca widok listy elementów." alt="" coords="28,240,228,688"/>
+<area shape="rect" href="class_d_i_c_o_m_app_1_1_view_model_1_1_view_model_base.html" title="Klasa bazowa modelu widoku." alt="" coords="5,123,250,192"/>
+<area shape="poly" title=" " alt="" coords="128,204,130,241,125,240,127,210"/>
+<area shape="rect" title=" " alt="" coords="70,5,185,75"/>
+<area shape="poly" title=" " alt="" coords="128,87,130,123,125,123,127,92"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Metody publiczne</h2></td></tr>
+<tr class="memitem:ab5c78aabe92a05c228ddf42d72791162" id="r_ab5c78aabe92a05c228ddf42d72791162"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#ab5c78aabe92a05c228ddf42d72791162">ElementListViewModel</a> (Action onElementSelectionAction, string elementType)</td></tr>
+<tr class="memdesc:ab5c78aabe92a05c228ddf42d72791162"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konstruktor klasy.  <br /></td></tr>
+<tr class="memitem:a4a519e32bc32281884b95760b6347b24" id="r_a4a519e32bc32281884b95760b6347b24"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a4a519e32bc32281884b95760b6347b24">UpdateElements</a> (IEnumerable&lt; string &gt; newElements)</td></tr>
+<tr class="memdesc:a4a519e32bc32281884b95760b6347b24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda ustawia nową liste elementów.  <br /></td></tr>
+<tr class="memitem:a6dbca4d0ba2c5b7aa078049f96753db8" id="r_a6dbca4d0ba2c5b7aa078049f96753db8"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a6dbca4d0ba2c5b7aa078049f96753db8">AddElement</a> (string elementName)</td></tr>
+<tr class="memdesc:a6dbca4d0ba2c5b7aa078049f96753db8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda dodająca element do listy.  <br /></td></tr>
+<tr class="memitem:ae360e6f674c053ed438a93d8a6981ceb" id="r_ae360e6f674c053ed438a93d8a6981ceb"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ae360e6f674c053ed438a93d8a6981ceb">Clear</a> ()</td></tr>
+<tr class="memdesc:ae360e6f674c053ed438a93d8a6981ceb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda usuwająca wszystkie elementy z listy.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pac-methods" class="groupheader"><a id="pac-methods" name="pac-methods"></a>
+Funkcje pakietu</h2></td></tr>
+<tr class="memitem:acca25ae0d3303fb6b2194f2c660d1e3e" id="r_acca25ae0d3303fb6b2194f2c660d1e3e"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#acca25ae0d3303fb6b2194f2c660d1e3e">SetToPreviousElement</a> ()</td></tr>
+<tr class="memdesc:acca25ae0d3303fb6b2194f2c660d1e3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda ustawia wybrany element na poprzedni.  <br /></td></tr>
+<tr class="memitem:a9a32c14bcc6963c1aaada8faaa0db9be" id="r_a9a32c14bcc6963c1aaada8faaa0db9be"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a9a32c14bcc6963c1aaada8faaa0db9be">SetToNextElement</a> ()</td></tr>
+<tr class="memdesc:a9a32c14bcc6963c1aaada8faaa0db9be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda ustawia wybrany element na następny.  <br /></td></tr>
+<tr class="memitem:a9d67c2dd1fe63725b905f1433f018c07" id="r_a9d67c2dd1fe63725b905f1433f018c07"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a9d67c2dd1fe63725b905f1433f018c07">ToggleExpantion</a> ()</td></tr>
+<tr class="memdesc:a9d67c2dd1fe63725b905f1433f018c07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda zmieniająca stan widoku.  <br /></td></tr>
+<tr class="memitem:a42c3537247f783edbdc822882c23058c" id="r_a42c3537247f783edbdc822882c23058c"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a42c3537247f783edbdc822882c23058c">Hide</a> ()</td></tr>
+<tr class="memdesc:a42c3537247f783edbdc822882c23058c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda ukrywająca listę elementów.  <br /></td></tr>
+<tr class="memitem:a1071796f28733ccc77e501a7edf5be73" id="r_a1071796f28733ccc77e501a7edf5be73"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a1071796f28733ccc77e501a7edf5be73">Show</a> ()</td></tr>
+<tr class="memdesc:a1071796f28733ccc77e501a7edf5be73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda pokazująca listę elementów.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-methods" class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Metody prywatne</h2></td></tr>
+<tr class="memitem:a1d53a738ef1d72a780f190eff3b7fd82" id="r_a1d53a738ef1d72a780f190eff3b7fd82"><td class="memItemLeft">partial void&#160;</td><td class="memItemRight"><a class="el" href="#a1d53a738ef1d72a780f190eff3b7fd82">OnSelectedElementChanged</a> (string? oldValue, string? newValue)</td></tr>
+<tr class="memdesc:a1d53a738ef1d72a780f190eff3b7fd82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda wywoływana po zmianie wybranej wartosci.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Atrybuty prywatne</h2></td></tr>
+<tr class="memitem:a06448b6e8abc0bf185ac01713788c90c" id="r_a06448b6e8abc0bf185ac01713788c90c"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a06448b6e8abc0bf185ac01713788c90c">_isExpanded</a></td></tr>
+<tr class="memdesc:a06448b6e8abc0bf185ac01713788c90c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Czy widok jest rozwinięty.  <br /></td></tr>
+<tr class="memitem:ad2591a140a68027df655cbcc0433c00d" id="r_ad2591a140a68027df655cbcc0433c00d"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#ad2591a140a68027df655cbcc0433c00d">_isError</a></td></tr>
+<tr class="memdesc:ad2591a140a68027df655cbcc0433c00d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Czy jest błąd.  <br /></td></tr>
+<tr class="memitem:afa2269678b96eb2191710086c3313928" id="r_afa2269678b96eb2191710086c3313928"><td class="memItemLeft">string?&#160;</td><td class="memItemRight"><a class="el" href="#afa2269678b96eb2191710086c3313928">_selectedElement</a></td></tr>
+<tr class="memdesc:afa2269678b96eb2191710086c3313928"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wybrany element.  <br /></td></tr>
+<tr class="memitem:a1daef649f5041391b8f103c46ea29080" id="r_a1daef649f5041391b8f103c46ea29080"><td class="memItemLeft">ObservableCollection&lt; string &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a1daef649f5041391b8f103c46ea29080">_elementsList</a> = new ObservableCollection&lt;string&gt;()</td></tr>
+<tr class="memdesc:a1daef649f5041391b8f103c46ea29080"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lista elementów do wyboru.  <br /></td></tr>
+<tr class="memitem:a016fc11104bd1e3679a45d2fff2fe785" id="r_a016fc11104bd1e3679a45d2fff2fe785"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a016fc11104bd1e3679a45d2fff2fe785">_isListEmpty</a></td></tr>
+<tr class="memdesc:a016fc11104bd1e3679a45d2fff2fe785"><td class="mdescLeft">&#160;</td><td class="mdescRight">Czy lista jest pusta.  <br /></td></tr>
+<tr class="memitem:a5ddf8278b63fc81e4e20d2f81d362d4d" id="r_a5ddf8278b63fc81e4e20d2f81d362d4d"><td class="memItemLeft">Action&#160;</td><td class="memItemRight"><a class="el" href="#a5ddf8278b63fc81e4e20d2f81d362d4d">_onElementSelectionAction</a></td></tr>
+<tr class="memdesc:a5ddf8278b63fc81e4e20d2f81d362d4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Akcja wykonywana w momencie wyboru elementu.  <br /></td></tr>
+<tr class="memitem:abcc90949ba9f5fcd12f49d0626a82dce" id="r_abcc90949ba9f5fcd12f49d0626a82dce"><td class="memItemLeft">string&#160;</td><td class="memItemRight"><a class="el" href="#abcc90949ba9f5fcd12f49d0626a82dce">_elementType</a></td></tr>
+<tr class="memdesc:abcc90949ba9f5fcd12f49d0626a82dce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Teksty na przycisku i typ elementu.  <br /></td></tr>
+<tr class="memitem:a316ccf966cf5dbfe2b704eccd1b721d9" id="r_a316ccf966cf5dbfe2b704eccd1b721d9"><td class="memItemLeft">string&#160;</td><td class="memItemRight"><a class="el" href="#a316ccf966cf5dbfe2b704eccd1b721d9">_buttonText</a></td></tr>
+<tr class="memitem:a8f37d4acda751c60aef6b5e51e35c306" id="r_a8f37d4acda751c60aef6b5e51e35c306"><td class="memItemLeft">string&#160;</td><td class="memItemRight"><a class="el" href="#a8f37d4acda751c60aef6b5e51e35c306">_popupText</a></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Opis szczegółowy</h2>
+<div class="textblock"><p>Klasa modelująca widok listy elementów. </p>
+
+<p class="definition">Definicja w linii <a class="el" href="_element_list_view_model_8cs_source.html#l00012">12</a> pliku <a class="el" href="_element_list_view_model_8cs_source.html">ElementListViewModel.cs</a>.</p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Dokumentacja konstruktora i destruktora</h2>
+<a id="ab5c78aabe92a05c228ddf42d72791162" name="ab5c78aabe92a05c228ddf42d72791162"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5c78aabe92a05c228ddf42d72791162">&#9670;&#160;</a></span>ElementListViewModel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DICOMApp.ViewModel.ElementListViewModel.ElementListViewModel </td>
+          <td>(</td>
+          <td class="paramtype">Action</td>          <td class="paramname"><span class="paramname"><em>onElementSelectionAction</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>elementType</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Konstruktor klasy. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">onElementSelectionAction</td><td>Akcja wykonywana w momencie wyboru elementu</td></tr>
+    <tr><td class="paramname">elementType</td><td>Typ elementu</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Wyjątki</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">Exception</td><td>Wyrzuca wyjątek jeśli typ nie należy do możliwych typów elementów</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definicja w linii <a class="el" href="_element_list_view_model_8cs_source.html#l00056">56</a> pliku <a class="el" href="_element_list_view_model_8cs_source.html">ElementListViewModel.cs</a>.</p>
+
+<p class="reference">Odwołuje się do <a class="el" href="_element_list_view_model_8cs_source.html#l00048">_buttonText</a>, <a class="el" href="_element_list_view_model_8cs_source.html#l00048">_elementType</a>, <a class="el" href="_element_list_view_model_8cs_source.html#l00017">_isExpanded</a>, <a class="el" href="_element_list_view_model_8cs_source.html#l00038">_isListEmpty</a>, <a class="el" href="_element_list_view_model_8cs_source.html#l00043">_onElementSelectionAction</a> i <a class="el" href="_element_list_view_model_8cs_source.html#l00048">_popupText</a>.</p>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Dokumentacja funkcji składowych</h2>
+<a id="a6dbca4d0ba2c5b7aa078049f96753db8" name="a6dbca4d0ba2c5b7aa078049f96753db8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6dbca4d0ba2c5b7aa078049f96753db8">&#9670;&#160;</a></span>AddElement()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DICOMApp.ViewModel.ElementListViewModel.AddElement </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>elementName</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Metoda dodająca element do listy. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">elementName</td><td>Element do dodania do listy</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definicja w linii <a class="el" href="_element_list_view_model_8cs_source.html#l00104">104</a> pliku <a class="el" href="_element_list_view_model_8cs_source.html">ElementListViewModel.cs</a>.</p>
+
+</div>
+</div>
+<a id="ae360e6f674c053ed438a93d8a6981ceb" name="ae360e6f674c053ed438a93d8a6981ceb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae360e6f674c053ed438a93d8a6981ceb">&#9670;&#160;</a></span>Clear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DICOMApp.ViewModel.ElementListViewModel.Clear </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Metoda usuwająca wszystkie elementy z listy. </p>
+
+<p class="definition">Definicja w linii <a class="el" href="_element_list_view_model_8cs_source.html#l00116">116</a> pliku <a class="el" href="_element_list_view_model_8cs_source.html">ElementListViewModel.cs</a>.</p>
+
+</div>
+</div>
+<a id="a42c3537247f783edbdc822882c23058c" name="a42c3537247f783edbdc822882c23058c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42c3537247f783edbdc822882c23058c">&#9670;&#160;</a></span>Hide()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DICOMApp.ViewModel.ElementListViewModel.Hide </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel package">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Metoda ukrywająca listę elementów. </p>
+
+<p class="definition">Definicja w linii <a class="el" href="_element_list_view_model_8cs_source.html#l00197">197</a> pliku <a class="el" href="_element_list_view_model_8cs_source.html">ElementListViewModel.cs</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="_element_list_view_model_8cs_source.html#l00127">OnSelectedElementChanged()</a> i <a class="el" href="_element_list_view_model_8cs_source.html#l00178">ToggleExpantion()</a>.</p>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_d_i_c_o_m_app_1_1_view_model_1_1_element_list_view_model_a42c3537247f783edbdc822882c23058c_icgraph.png" border="0" usemap="#aclass_d_i_c_o_m_app_1_1_view_model_1_1_element_list_view_model_a42c3537247f783edbdc822882c23058c_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_d_i_c_o_m_app_1_1_view_model_1_1_element_list_view_model_a42c3537247f783edbdc822882c23058c_icgraph" id="aclass_d_i_c_o_m_app_1_1_view_model_1_1_element_list_view_model_a42c3537247f783edbdc822882c23058c_icgraph">
+<area shape="rect" title="Metoda ukrywająca listę elementów." alt="" coords="537,13,746,56"/>
+<area shape="rect" href="class_d_i_c_o_m_app_1_1_view_model_1_1_element_list_view_model.html#a1d53a738ef1d72a780f190eff3b7fd82" title="Metoda wywoływana po zmianie wybranej wartosci." alt="" coords="5,5,232,64"/>
+<area shape="poly" title=" " alt="" coords="519,31,489,33,280,33,232,34,232,29,280,28,489,28,524,31"/>
+<area shape="rect" href="class_d_i_c_o_m_app_1_1_view_model_1_1_element_list_view_model.html#a9d67c2dd1fe63725b905f1433f018c07" title="Metoda zmieniająca stan widoku." alt="" coords="280,43,489,85"/>
+<area shape="poly" title=" " alt="" coords="524,48,490,55,489,49,519,49"/>
+<area shape="poly" title=" " alt="" coords="262,51,232,50,232,45,267,51"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a1d53a738ef1d72a780f190eff3b7fd82" name="a1d53a738ef1d72a780f190eff3b7fd82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d53a738ef1d72a780f190eff3b7fd82">&#9670;&#160;</a></span>OnSelectedElementChanged()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">partial void DICOMApp.ViewModel.ElementListViewModel.OnSelectedElementChanged </td>
+          <td>(</td>
+          <td class="paramtype">string?</td>          <td class="paramname"><span class="paramname"><em>oldValue</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string?</td>          <td class="paramname"><span class="paramname"><em>newValue</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Metoda wywoływana po zmianie wybranej wartosci. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">oldValue</td><td>Poprzednio wybrany element</td></tr>
+    <tr><td class="paramname">newValue</td><td>Nowo wybrany element</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definicja w linii <a class="el" href="_element_list_view_model_8cs_source.html#l00127">127</a> pliku <a class="el" href="_element_list_view_model_8cs_source.html">ElementListViewModel.cs</a>.</p>
+
+<p class="reference">Odwołuje się do <a class="el" href="_element_list_view_model_8cs_source.html#l00043">_onElementSelectionAction</a>, <a class="el" href="_element_list_view_model_8cs_source.html#l00197">Hide()</a> i <a class="el" href="_element_list_view_model_8cs_source.html#l00178">ToggleExpantion()</a>.</p>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_d_i_c_o_m_app_1_1_view_model_1_1_element_list_view_model_a1d53a738ef1d72a780f190eff3b7fd82_cgraph.png" border="0" usemap="#aclass_d_i_c_o_m_app_1_1_view_model_1_1_element_list_view_model_a1d53a738ef1d72a780f190eff3b7fd82_cgraph" loading="lazy" alt=""/></div>
+<map name="aclass_d_i_c_o_m_app_1_1_view_model_1_1_element_list_view_model_a1d53a738ef1d72a780f190eff3b7fd82_cgraph" id="aclass_d_i_c_o_m_app_1_1_view_model_1_1_element_list_view_model_a1d53a738ef1d72a780f190eff3b7fd82_cgraph">
+<area shape="rect" title="Metoda wywoływana po zmianie wybranej wartosci." alt="" coords="5,5,232,64"/>
+<area shape="rect" href="class_d_i_c_o_m_app_1_1_view_model_1_1_element_list_view_model.html#a42c3537247f783edbdc822882c23058c" title="Metoda ukrywająca listę elementów." alt="" coords="537,13,746,56"/>
+<area shape="poly" title=" " alt="" coords="232,29,280,28,489,28,524,31,519,31,489,33,280,33,232,34"/>
+<area shape="rect" href="class_d_i_c_o_m_app_1_1_view_model_1_1_element_list_view_model.html#a9d67c2dd1fe63725b905f1433f018c07" title="Metoda zmieniająca stan widoku." alt="" coords="280,43,489,85"/>
+<area shape="poly" title=" " alt="" coords="232,45,267,51,262,51,232,50"/>
+<area shape="poly" title=" " alt="" coords="489,49,519,49,524,48,490,55"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a9a32c14bcc6963c1aaada8faaa0db9be" name="a9a32c14bcc6963c1aaada8faaa0db9be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a32c14bcc6963c1aaada8faaa0db9be">&#9670;&#160;</a></span>SetToNextElement()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DICOMApp.ViewModel.ElementListViewModel.SetToNextElement </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel package">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Metoda ustawia wybrany element na następny. </p>
+<p>Jeśli lista jest pusta lub wybrany element jest null to nic nie dzieje </p>
+
+<p class="definition">Definicja w linii <a class="el" href="_element_list_view_model_8cs_source.html#l00162">162</a> pliku <a class="el" href="_element_list_view_model_8cs_source.html">ElementListViewModel.cs</a>.</p>
+
+</div>
+</div>
+<a id="acca25ae0d3303fb6b2194f2c660d1e3e" name="acca25ae0d3303fb6b2194f2c660d1e3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acca25ae0d3303fb6b2194f2c660d1e3e">&#9670;&#160;</a></span>SetToPreviousElement()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DICOMApp.ViewModel.ElementListViewModel.SetToPreviousElement </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel package">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Metoda ustawia wybrany element na poprzedni. </p>
+<p>Jeśli lista jest pusta lub wybrany element jest null to nic nie dzieje </p>
+
+<p class="definition">Definicja w linii <a class="el" href="_element_list_view_model_8cs_source.html#l00147">147</a> pliku <a class="el" href="_element_list_view_model_8cs_source.html">ElementListViewModel.cs</a>.</p>
+
+</div>
+</div>
+<a id="a1071796f28733ccc77e501a7edf5be73" name="a1071796f28733ccc77e501a7edf5be73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1071796f28733ccc77e501a7edf5be73">&#9670;&#160;</a></span>Show()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DICOMApp.ViewModel.ElementListViewModel.Show </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel package">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Metoda pokazująca listę elementów. </p>
+
+<p class="definition">Definicja w linii <a class="el" href="_element_list_view_model_8cs_source.html#l00205">205</a> pliku <a class="el" href="_element_list_view_model_8cs_source.html">ElementListViewModel.cs</a>.</p>
+
+</div>
+</div>
+<a id="a9d67c2dd1fe63725b905f1433f018c07" name="a9d67c2dd1fe63725b905f1433f018c07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d67c2dd1fe63725b905f1433f018c07">&#9670;&#160;</a></span>ToggleExpantion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DICOMApp.ViewModel.ElementListViewModel.ToggleExpantion </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel package">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Metoda zmieniająca stan widoku. </p>
+<p>Jeśli następuje próba rozwinięcia widoku i lista elementów jest pusta to ustawia błąd </p>
+
+<p class="definition">Definicja w linii <a class="el" href="_element_list_view_model_8cs_source.html#l00178">178</a> pliku <a class="el" href="_element_list_view_model_8cs_source.html">ElementListViewModel.cs</a>.</p>
+
+<p class="reference">Odwołuje się do <a class="el" href="_element_list_view_model_8cs_source.html#l00197">Hide()</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="_element_list_view_model_8cs_source.html#l00127">OnSelectedElementChanged()</a>.</p>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_d_i_c_o_m_app_1_1_view_model_1_1_element_list_view_model_a9d67c2dd1fe63725b905f1433f018c07_cgraph.png" border="0" usemap="#aclass_d_i_c_o_m_app_1_1_view_model_1_1_element_list_view_model_a9d67c2dd1fe63725b905f1433f018c07_cgraph" loading="lazy" alt=""/></div>
+<map name="aclass_d_i_c_o_m_app_1_1_view_model_1_1_element_list_view_model_a9d67c2dd1fe63725b905f1433f018c07_cgraph" id="aclass_d_i_c_o_m_app_1_1_view_model_1_1_element_list_view_model_a9d67c2dd1fe63725b905f1433f018c07_cgraph">
+<area shape="rect" title="Metoda zmieniająca stan widoku." alt="" coords="5,5,215,48"/>
+<area shape="rect" href="class_d_i_c_o_m_app_1_1_view_model_1_1_element_list_view_model.html#a42c3537247f783edbdc822882c23058c" title="Metoda ukrywająca listę elementów." alt="" coords="263,5,472,48"/>
+<area shape="poly" title=" " alt="" coords="215,24,250,27,245,27,215,29"/>
+</map>
+</div>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_d_i_c_o_m_app_1_1_view_model_1_1_element_list_view_model_a9d67c2dd1fe63725b905f1433f018c07_icgraph.png" border="0" usemap="#aclass_d_i_c_o_m_app_1_1_view_model_1_1_element_list_view_model_a9d67c2dd1fe63725b905f1433f018c07_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_d_i_c_o_m_app_1_1_view_model_1_1_element_list_view_model_a9d67c2dd1fe63725b905f1433f018c07_icgraph" id="aclass_d_i_c_o_m_app_1_1_view_model_1_1_element_list_view_model_a9d67c2dd1fe63725b905f1433f018c07_icgraph">
+<area shape="rect" title="Metoda zmieniająca stan widoku." alt="" coords="280,13,489,56"/>
+<area shape="rect" href="class_d_i_c_o_m_app_1_1_view_model_1_1_element_list_view_model.html#a1d53a738ef1d72a780f190eff3b7fd82" title="Metoda wywoływana po zmianie wybranej wartosci." alt="" coords="5,5,232,64"/>
+<area shape="poly" title=" " alt="" coords="262,35,232,37,232,32,267,34"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a4a519e32bc32281884b95760b6347b24" name="a4a519e32bc32281884b95760b6347b24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a519e32bc32281884b95760b6347b24">&#9670;&#160;</a></span>UpdateElements()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DICOMApp.ViewModel.ElementListViewModel.UpdateElements </td>
+          <td>(</td>
+          <td class="paramtype">IEnumerable&lt; string &gt;</td>          <td class="paramname"><span class="paramname"><em>newElements</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Metoda ustawia nową liste elementów. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">newElements</td><td>Lista elementów</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definicja w linii <a class="el" href="_element_list_view_model_8cs_source.html#l00085">85</a> pliku <a class="el" href="_element_list_view_model_8cs_source.html">ElementListViewModel.cs</a>.</p>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Dokumentacja atrybutów składowych</h2>
+<a id="a316ccf966cf5dbfe2b704eccd1b721d9" name="a316ccf966cf5dbfe2b704eccd1b721d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a316ccf966cf5dbfe2b704eccd1b721d9">&#9670;&#160;</a></span>_buttonText</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string DICOMApp.ViewModel.ElementListViewModel._buttonText</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="_element_list_view_model_8cs_source.html#l00048">48</a> pliku <a class="el" href="_element_list_view_model_8cs_source.html">ElementListViewModel.cs</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="_element_list_view_model_8cs_source.html#l00056">ElementListViewModel()</a>.</p>
+
+</div>
+</div>
+<a id="a1daef649f5041391b8f103c46ea29080" name="a1daef649f5041391b8f103c46ea29080"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1daef649f5041391b8f103c46ea29080">&#9670;&#160;</a></span>_elementsList</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ObservableCollection&lt;string&gt; DICOMApp.ViewModel.ElementListViewModel._elementsList = new ObservableCollection&lt;string&gt;()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Lista elementów do wyboru. </p>
+
+<p class="definition">Definicja w linii <a class="el" href="_element_list_view_model_8cs_source.html#l00033">33</a> pliku <a class="el" href="_element_list_view_model_8cs_source.html">ElementListViewModel.cs</a>.</p>
+
+</div>
+</div>
+<a id="abcc90949ba9f5fcd12f49d0626a82dce" name="abcc90949ba9f5fcd12f49d0626a82dce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abcc90949ba9f5fcd12f49d0626a82dce">&#9670;&#160;</a></span>_elementType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string DICOMApp.ViewModel.ElementListViewModel._elementType</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Teksty na przycisku i typ elementu. </p>
+
+<p class="definition">Definicja w linii <a class="el" href="_element_list_view_model_8cs_source.html#l00048">48</a> pliku <a class="el" href="_element_list_view_model_8cs_source.html">ElementListViewModel.cs</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="_element_list_view_model_8cs_source.html#l00056">ElementListViewModel()</a>.</p>
+
+</div>
+</div>
+<a id="ad2591a140a68027df655cbcc0433c00d" name="ad2591a140a68027df655cbcc0433c00d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2591a140a68027df655cbcc0433c00d">&#9670;&#160;</a></span>_isError</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DICOMApp.ViewModel.ElementListViewModel._isError</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Czy jest błąd. </p>
+
+<p class="definition">Definicja w linii <a class="el" href="_element_list_view_model_8cs_source.html#l00022">22</a> pliku <a class="el" href="_element_list_view_model_8cs_source.html">ElementListViewModel.cs</a>.</p>
+
+</div>
+</div>
+<a id="a06448b6e8abc0bf185ac01713788c90c" name="a06448b6e8abc0bf185ac01713788c90c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06448b6e8abc0bf185ac01713788c90c">&#9670;&#160;</a></span>_isExpanded</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DICOMApp.ViewModel.ElementListViewModel._isExpanded</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Czy widok jest rozwinięty. </p>
+
+<p class="definition">Definicja w linii <a class="el" href="_element_list_view_model_8cs_source.html#l00017">17</a> pliku <a class="el" href="_element_list_view_model_8cs_source.html">ElementListViewModel.cs</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="_element_list_view_model_8cs_source.html#l00056">ElementListViewModel()</a>.</p>
+
+</div>
+</div>
+<a id="a016fc11104bd1e3679a45d2fff2fe785" name="a016fc11104bd1e3679a45d2fff2fe785"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a016fc11104bd1e3679a45d2fff2fe785">&#9670;&#160;</a></span>_isListEmpty</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DICOMApp.ViewModel.ElementListViewModel._isListEmpty</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Czy lista jest pusta. </p>
+
+<p class="definition">Definicja w linii <a class="el" href="_element_list_view_model_8cs_source.html#l00038">38</a> pliku <a class="el" href="_element_list_view_model_8cs_source.html">ElementListViewModel.cs</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="_element_list_view_model_8cs_source.html#l00056">ElementListViewModel()</a>.</p>
+
+</div>
+</div>
+<a id="a5ddf8278b63fc81e4e20d2f81d362d4d" name="a5ddf8278b63fc81e4e20d2f81d362d4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ddf8278b63fc81e4e20d2f81d362d4d">&#9670;&#160;</a></span>_onElementSelectionAction</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Action DICOMApp.ViewModel.ElementListViewModel._onElementSelectionAction</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Akcja wykonywana w momencie wyboru elementu. </p>
+
+<p class="definition">Definicja w linii <a class="el" href="_element_list_view_model_8cs_source.html#l00043">43</a> pliku <a class="el" href="_element_list_view_model_8cs_source.html">ElementListViewModel.cs</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="_element_list_view_model_8cs_source.html#l00056">ElementListViewModel()</a> i <a class="el" href="_element_list_view_model_8cs_source.html#l00127">OnSelectedElementChanged()</a>.</p>
+
+</div>
+</div>
+<a id="a8f37d4acda751c60aef6b5e51e35c306" name="a8f37d4acda751c60aef6b5e51e35c306"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f37d4acda751c60aef6b5e51e35c306">&#9670;&#160;</a></span>_popupText</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string DICOMApp.ViewModel.ElementListViewModel._popupText</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="_element_list_view_model_8cs_source.html#l00048">48</a> pliku <a class="el" href="_element_list_view_model_8cs_source.html">ElementListViewModel.cs</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="_element_list_view_model_8cs_source.html#l00056">ElementListViewModel()</a>.</p>
+
+</div>
+</div>
+<a id="afa2269678b96eb2191710086c3313928" name="afa2269678b96eb2191710086c3313928"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa2269678b96eb2191710086c3313928">&#9670;&#160;</a></span>_selectedElement</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string? DICOMApp.ViewModel.ElementListViewModel._selectedElement</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Wybrany element. </p>
+
+<p class="definition">Definicja w linii <a class="el" href="_element_list_view_model_8cs_source.html#l00027">27</a> pliku <a class="el" href="_element_list_view_model_8cs_source.html">ElementListViewModel.cs</a>.</p>
+
+</div>
+</div>
+<hr/>Dokumentacja dla tej klasy została wygenerowana z pliku:<ul>
+<li>C:/Users/emili/Documents/DICOM-App/ViewModel/<a class="el" href="_element_list_view_model_8cs_source.html">ElementListViewModel.cs</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="namespace_d_i_c_o_m_app.html">DICOMApp</a></li><li class="navelem"><a href="namespace_d_i_c_o_m_app_1_1_view_model.html">ViewModel</a></li><li class="navelem"><a href="class_d_i_c_o_m_app_1_1_view_model_1_1_element_list_view_model.html">ElementListViewModel</a></li>
+    <li class="footer">Wygenerowano za pomocą <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

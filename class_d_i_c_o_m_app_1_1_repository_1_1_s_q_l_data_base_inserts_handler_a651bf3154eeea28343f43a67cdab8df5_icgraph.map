@@ -1,0 +1,5 @@
+<map id="DICOMApp.Repository.SQLDataBaseInsertsHandler.InsertImageInfo" name="DICOMApp.Repository.SQLDataBaseInsertsHandler.InsertImageInfo">
+<area shape="rect" id="Node000001" title="Dodanie informacji o punktach i długości nerwu wzrokowego do obrazu." alt="" coords="267,5,498,48"/>
+<area shape="rect" id="Node000002" href="$class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler.html#a8fa71632151040816ddc2a438d538e65" title="Zapisuje wyznaczone punkty do bazy danych lub pliku." alt="" coords="5,5,219,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="249,27,219,29,219,24,254,27"/>
+</map>

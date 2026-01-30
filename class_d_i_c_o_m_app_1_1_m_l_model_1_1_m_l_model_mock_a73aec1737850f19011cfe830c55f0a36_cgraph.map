@@ -1,0 +1,7 @@
+<map id="DICOMApp.MLModel.MLModelMock.GetHeatmapsFromImageData" name="DICOMApp.MLModel.MLModelMock.GetHeatmapsFromImageData">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,238,48"/>
+<area shape="rect" id="Node000002" href="$class_d_i_c_o_m_app_1_1_data_1_1_image_data.html#af661a07633cacba8ed9437889ac7d9ca" title="Metoda tworząca kopię obiektu ImageData." alt="" coords="286,13,510,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="238,24,273,27,268,27,238,29"/>
+<area shape="rect" id="Node000003" href="$class_d_i_c_o_m_app_1_1_data_1_1_image_data.html#a444f31220f19a422527de57bc07bd5da" title="Konstruktor obrazu ImageData." alt="" coords="558,5,751,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="511,24,545,27,540,27,511,29"/>
+</map>

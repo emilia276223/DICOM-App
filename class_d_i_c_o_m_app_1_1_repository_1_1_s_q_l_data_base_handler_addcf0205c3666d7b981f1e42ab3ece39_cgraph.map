@@ -1,0 +1,9 @@
+<map id="DICOMApp.Repository.SQLDataBaseHandler.AddImageInfo" name="DICOMApp.Repository.SQLDataBaseHandler.AddImageInfo">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,72,219,115"/>
+<area shape="rect" id="Node000002" href="$class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_inserts_handler.html#a48c0e99018a645705515919c49363b0f" title="Dodanie obrazu jeśli jeszcze nie ma takiego w bazie." alt="" coords="267,5,480,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="198,69,275,51,270,54,199,74"/>
+<area shape="rect" id="Node000003" href="$class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_inserts_handler.html#a7aa9fd5c946479c98324095798129498" title="Dodanie pacjenta jeśli jeszcze nie ma takiego w bazie." alt="" coords="267,72,481,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="219,91,254,93,249,94,220,96"/>
+<area shape="rect" id="Node000004" href="$class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_inserts_handler.html#a14933642d45ca0b058ad8beaa2dd22e4" title="Dodanie badania jeśli jeszcze nie ma takiego w bazie." alt="" coords="267,139,480,181"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="199,113,275,134,270,135,198,118"/>
+</map>

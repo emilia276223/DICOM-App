@@ -1,0 +1,5 @@
+<map id="DICOMApp.DICOM.LinearDICOMScaler" name="DICOMApp.DICOM.LinearDICOMScaler">
+<area shape="rect" id="Node000001" title="Klasa obsługująca skalowanie DICOM dla obrazów ze skalą liniową" alt="" coords="5,139,254,251"/>
+<area shape="rect" id="Node000002" href="$interface_d_i_c_o_m_app_1_1_interfaces_1_1_i_dicom_scaler.html" title="Interfejs klasy obsługującej skalowanie DICOM." alt="" coords="36,5,223,91"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="131,103,132,140,127,138,128,108"/>
+</map>

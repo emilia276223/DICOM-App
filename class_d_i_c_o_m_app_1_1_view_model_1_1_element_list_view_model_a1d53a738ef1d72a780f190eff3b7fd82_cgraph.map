@@ -1,0 +1,8 @@
+<map id="DICOMApp.ViewModel.ElementListViewModel.OnSelectedElementChanged" name="DICOMApp.ViewModel.ElementListViewModel.OnSelectedElementChanged">
+<area shape="rect" id="Node000001" title="Metoda wywoływana po zmianie wybranej wartosci." alt="" coords="5,5,232,64"/>
+<area shape="rect" id="Node000002" href="$class_d_i_c_o_m_app_1_1_view_model_1_1_element_list_view_model.html#a42c3537247f783edbdc822882c23058c" title="Metoda ukrywająca listę elementów." alt="" coords="537,13,746,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="232,29,280,28,489,28,524,31,519,31,489,33,280,33,232,34"/>
+<area shape="rect" id="Node000003" href="$class_d_i_c_o_m_app_1_1_view_model_1_1_element_list_view_model.html#a9d67c2dd1fe63725b905f1433f018c07" title="Metoda zmieniająca stan widoku." alt="" coords="280,43,489,85"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="232,45,267,51,262,51,232,50"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="489,49,519,49,524,48,490,55"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="Graficzna hierarchia klas" name="Graficzna hierarchia klas">
+<area shape="rect" id="Node000000" href="$interface_d_i_c_o_m_app_1_1_interfaces_1_1_i_data_handler.html" title="Interfejs klasy obsługującej zapisywanie i odczytywanie danych." alt="" coords="5,5,193,48"/>
+<area shape="rect" id="Node000001" href="$class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler.html" title="Klasa obsługująca bazę danych SQLite do przechowywania informacji o pacjentach, badaniach i obrazach." alt="" coords="241,5,454,48"/>
+<area shape="poly" id="edge3_Node000000_Node000001" title=" " alt="" coords="208,24,243,26,238,27,209,29"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="54,76,144,103"/>
+<area shape="poly" id="edge5_Node000002_Node000001" title=" " alt="" coords="159,72,263,48,258,49,160,77"/>
+<area shape="rect" id="Node000003" href="$class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_connection_handler.html" title="Klasa obsługująca połączenie z bazą danych SQLite." alt="" coords="241,72,454,115"/>
+<area shape="poly" id="edge4_Node000002_Node000003" title=" " alt="" coords="160,88,243,91,237,92,160,93"/>
+</map>

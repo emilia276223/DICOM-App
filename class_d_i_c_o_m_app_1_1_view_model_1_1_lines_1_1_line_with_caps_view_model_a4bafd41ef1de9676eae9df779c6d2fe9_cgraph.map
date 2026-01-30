@@ -1,0 +1,7 @@
+<map id="DICOMApp.ViewModel.Lines.LineWithCapsViewModel.UpdateLine" name="DICOMApp.ViewModel.Lines.LineWithCapsViewModel.UpdateLine">
+<area shape="rect" id="Node000001" title="Metoda ustawiająca końcówkę linii." alt="" coords="5,39,243,81"/>
+<area shape="rect" id="Node000002" href="$class_d_i_c_o_m_app_1_1_view_model_1_1_lines_1_1_line_with_caps_view_model.html#a7a8339810fd981ac4b46ca298599c70d" title="Metoda ustawiająca brzegi linii tak, by były pod kątem prostym do linii." alt="" coords="291,5,535,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="242,44,278,42,272,43,243,49"/>
+<area shape="rect" id="Node000003" href="$class_d_i_c_o_m_app_1_1_view_model_1_1_line_view_model_base.html#a403a7218cf07d74349bbc228b983ddcb" title="Metoda ustawiająca długosc fizyczna linii Na podstawie podanego wcześniej skalera i skali obrazu." alt="" coords="306,72,520,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="243,71,293,79,288,79,243,76"/>
+</map>

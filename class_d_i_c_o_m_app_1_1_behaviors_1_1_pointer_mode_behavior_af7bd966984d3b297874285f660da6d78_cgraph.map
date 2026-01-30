@@ -1,0 +1,5 @@
+<map id="DICOMApp.Behaviors.PointerModeBehavior.PointerModeBehavior" name="DICOMApp.Behaviors.PointerModeBehavior.PointerModeBehavior">
+<area shape="rect" id="Node000001" title="Tworzy behavior obsługujący rozróżnianie trybów wskaźnika pomiędzy rysowaniem linii a lupą" alt="" coords="5,5,238,48"/>
+<area shape="rect" id="Node000002" href="$class_d_i_c_o_m_app_1_1_behaviors_1_1_pointer_mode_behavior.html#a434eb1cf8ebb600f6ac8f2df31110c2d" title="Aktywuje tryb rysowania linii." alt="" coords="286,5,482,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="238,24,273,27,267,27,238,29"/>
+</map>

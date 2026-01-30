@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pl">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>DICOM-App: Plik źródłowy C:/Users/emili/Documents/DICOM-App/Interfaces/IDataHandler.cs</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">DICOM-App<span id="projectnumber">&#160;version1.0</span>
+   </div>
+   <div id="projectbrief">Aplikacja do przeglądania obrazów DICOM oraz korzystania z pluginów AI</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano za pomocą Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_i_data_handler_8cs_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Wczytywanie...</div>
+<div class="SRStatus" id="Searching">Szukanie...</div>
+<div class="SRStatus" id="NoMatches">Brak dopasowań</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">IDataHandler.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_i_data_handler_8cs.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_d_i_c_o_m_app_1_1_data.html">DICOMApp.Data</a>;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using </span>System.Collections.Generic;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="foldopen" id="foldopen00004" data-start="{" data-end="}">
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno"><a class="line" href="namespace_d_i_c_o_m_app_1_1_interfaces.html">    4</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_d_i_c_o_m_app_1_1_interfaces.html">DICOMApp.Interfaces</a></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>{</div>
+<div class="foldopen" id="foldopen00009" data-start="{" data-end="};">
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="interface_d_i_c_o_m_app_1_1_interfaces_1_1_i_data_handler.html">    9</a></span>    <span class="keyword">public</span> <span class="keyword">interface </span><a class="code hl_interface" href="interface_d_i_c_o_m_app_1_1_interfaces_1_1_i_data_handler.html">IDataHandler</a></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    {</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="interface_d_i_c_o_m_app_1_1_interfaces_1_1_i_data_handler.html#af192df91639bd4a8a1e4bc0894fac4c0">   19</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="interface_d_i_c_o_m_app_1_1_interfaces_1_1_i_data_handler.html#af192df91639bd4a8a1e4bc0894fac4c0">SaveChosenPoints</a>(</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>            List&lt;double&gt; points,</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>            <span class="keywordtype">string</span> imageID,</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>            <span class="keywordtype">double</span> opticNerveLen,</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>            <a class="code hl_class" href="class_d_i_c_o_m_app_1_1_data_1_1_d_i_c_o_m_metadata.html">DICOMMetadata</a> info);</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="interface_d_i_c_o_m_app_1_1_interfaces_1_1_i_data_handler.html#a6a47757234d964d5c81afdd64c16299e">   30</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="interface_d_i_c_o_m_app_1_1_interfaces_1_1_i_data_handler.html#a6a47757234d964d5c81afdd64c16299e">AddImageInfo</a>(<a class="code hl_class" href="class_d_i_c_o_m_app_1_1_data_1_1_d_i_c_o_m_metadata.html">DICOMMetadata</a> metadata, <span class="keywordtype">string</span> imageID);</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="interface_d_i_c_o_m_app_1_1_interfaces_1_1_i_data_handler.html#a686d9aa8532a15586f75d55a2cedd538">   37</a></span>        <span class="keyword">public</span> List&lt;(string, double)&gt; <a class="code hl_function" href="interface_d_i_c_o_m_app_1_1_interfaces_1_1_i_data_handler.html#a686d9aa8532a15586f75d55a2cedd538">GetOpticNerveLenValuesForStudiesOfPatient</a>(<span class="keywordtype">string</span> patientID);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="interface_d_i_c_o_m_app_1_1_interfaces_1_1_i_data_handler.html#ae09560ba49321d028a51b194757c15a1">   43</a></span>        <span class="keyword">public</span> List&lt;List&lt;string&gt;&gt; <a class="code hl_function" href="interface_d_i_c_o_m_app_1_1_interfaces_1_1_i_data_handler.html#ae09560ba49321d028a51b194757c15a1">GetMagnifiedCentersData</a>();</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="interface_d_i_c_o_m_app_1_1_interfaces_1_1_i_data_handler.html#a6e227d4f9a4fade33c150a21ec15ac2b">   49</a></span>        <span class="keyword">public</span> List&lt;List&lt;string&gt;&gt; <a class="code hl_function" href="interface_d_i_c_o_m_app_1_1_interfaces_1_1_i_data_handler.html#a6e227d4f9a4fade33c150a21ec15ac2b">GetAnonimizedData</a>();</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="interface_d_i_c_o_m_app_1_1_interfaces_1_1_i_data_handler.html#a396c2223d8f415405a3d3aa620f1e15e">   57</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="interface_d_i_c_o_m_app_1_1_interfaces_1_1_i_data_handler.html#a396c2223d8f415405a3d3aa620f1e15e">SaveMagnifiedImageCenterInfo</a>(<span class="keywordtype">string</span> imageID, <span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="interface_d_i_c_o_m_app_1_1_interfaces_1_1_i_data_handler.html#a4119e004ba63e5509c568d009188a197">   62</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="interface_d_i_c_o_m_app_1_1_interfaces_1_1_i_data_handler.html#a4119e004ba63e5509c568d009188a197">CloseConnection</a>();</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    }</div>
+</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>}</div>
+</div>
+<div class="ttc" id="aclass_d_i_c_o_m_app_1_1_data_1_1_d_i_c_o_m_metadata_html"><div class="ttname"><a href="class_d_i_c_o_m_app_1_1_data_1_1_d_i_c_o_m_metadata.html">DICOMApp.Data.DICOMMetadata</a></div><div class="ttdoc">Klasa przechowująca metadane DICOM obrazu:</div><div class="ttdef"><b>Definicja</b> <a href="_d_i_c_o_m_metadata_8cs_source.html#l00012">DICOMMetadata.cs:13</a></div></div>
+<div class="ttc" id="ainterface_d_i_c_o_m_app_1_1_interfaces_1_1_i_data_handler_html"><div class="ttname"><a href="interface_d_i_c_o_m_app_1_1_interfaces_1_1_i_data_handler.html">DICOMApp.Interfaces.IDataHandler</a></div><div class="ttdoc">Interfejs klasy obsługującej zapisywanie i odczytywanie danych.</div><div class="ttdef"><b>Definicja</b> <a href="#l00009">IDataHandler.cs:10</a></div></div>
+<div class="ttc" id="ainterface_d_i_c_o_m_app_1_1_interfaces_1_1_i_data_handler_html_a396c2223d8f415405a3d3aa620f1e15e"><div class="ttname"><a href="interface_d_i_c_o_m_app_1_1_interfaces_1_1_i_data_handler.html#a396c2223d8f415405a3d3aa620f1e15e">DICOMApp.Interfaces.IDataHandler.SaveMagnifiedImageCenterInfo</a></div><div class="ttdeci">void SaveMagnifiedImageCenterInfo(string imageID, double x, double y)</div><div class="ttdoc">Zapisuje do obrazu informacje o srodku okna powększającego.</div></div>
+<div class="ttc" id="ainterface_d_i_c_o_m_app_1_1_interfaces_1_1_i_data_handler_html_a4119e004ba63e5509c568d009188a197"><div class="ttname"><a href="interface_d_i_c_o_m_app_1_1_interfaces_1_1_i_data_handler.html#a4119e004ba63e5509c568d009188a197">DICOMApp.Interfaces.IDataHandler.CloseConnection</a></div><div class="ttdeci">void CloseConnection()</div><div class="ttdoc">Zamyka połączenie z bazą danych.</div></div>
+<div class="ttc" id="ainterface_d_i_c_o_m_app_1_1_interfaces_1_1_i_data_handler_html_a686d9aa8532a15586f75d55a2cedd538"><div class="ttname"><a href="interface_d_i_c_o_m_app_1_1_interfaces_1_1_i_data_handler.html#a686d9aa8532a15586f75d55a2cedd538">DICOMApp.Interfaces.IDataHandler.GetOpticNerveLenValuesForStudiesOfPatient</a></div><div class="ttdeci">List&lt;(string, double)&gt; GetOpticNerveLenValuesForStudiesOfPatient(string patientID)</div><div class="ttdoc">Zwraća listę długości nerwu wzrokowego dla wszystkich badań danego pacjenta.</div></div>
+<div class="ttc" id="ainterface_d_i_c_o_m_app_1_1_interfaces_1_1_i_data_handler_html_a6a47757234d964d5c81afdd64c16299e"><div class="ttname"><a href="interface_d_i_c_o_m_app_1_1_interfaces_1_1_i_data_handler.html#a6a47757234d964d5c81afdd64c16299e">DICOMApp.Interfaces.IDataHandler.AddImageInfo</a></div><div class="ttdeci">void AddImageInfo(DICOMMetadata metadata, string imageID)</div><div class="ttdoc">Dodaje informacje o obrazie do bazy danych.</div></div>
+<div class="ttc" id="ainterface_d_i_c_o_m_app_1_1_interfaces_1_1_i_data_handler_html_a6e227d4f9a4fade33c150a21ec15ac2b"><div class="ttname"><a href="interface_d_i_c_o_m_app_1_1_interfaces_1_1_i_data_handler.html#a6e227d4f9a4fade33c150a21ec15ac2b">DICOMApp.Interfaces.IDataHandler.GetAnonimizedData</a></div><div class="ttdeci">List&lt; List&lt; string &gt; &gt; GetAnonimizedData()</div><div class="ttdoc">Zwraća listę list zawierający zanonimizowane dane dotyczące zaznaczeń na obrazach.</div></div>
+<div class="ttc" id="ainterface_d_i_c_o_m_app_1_1_interfaces_1_1_i_data_handler_html_ae09560ba49321d028a51b194757c15a1"><div class="ttname"><a href="interface_d_i_c_o_m_app_1_1_interfaces_1_1_i_data_handler.html#ae09560ba49321d028a51b194757c15a1">DICOMApp.Interfaces.IDataHandler.GetMagnifiedCentersData</a></div><div class="ttdeci">List&lt; List&lt; string &gt; &gt; GetMagnifiedCentersData()</div><div class="ttdoc">Zwraća listę srodków okanów powększających dla wszystkich obrazów danego pacjenta.</div></div>
+<div class="ttc" id="ainterface_d_i_c_o_m_app_1_1_interfaces_1_1_i_data_handler_html_af192df91639bd4a8a1e4bc0894fac4c0"><div class="ttname"><a href="interface_d_i_c_o_m_app_1_1_interfaces_1_1_i_data_handler.html#af192df91639bd4a8a1e4bc0894fac4c0">DICOMApp.Interfaces.IDataHandler.SaveChosenPoints</a></div><div class="ttdeci">void SaveChosenPoints(List&lt; double &gt; points, string imageID, double opticNerveLen, DICOMMetadata info)</div><div class="ttdoc">Zapisuje wyznaczone punkty do bazy danych lub pliku.</div></div>
+<div class="ttc" id="anamespace_d_i_c_o_m_app_1_1_data_html"><div class="ttname"><a href="namespace_d_i_c_o_m_app_1_1_data.html">DICOMApp.Data</a></div><div class="ttdef"><b>Definicja</b> <a href="_d_i_c_o_m_image_data_8cs_source.html#l00005">DICOMImageData.cs:6</a></div></div>
+<div class="ttc" id="anamespace_d_i_c_o_m_app_1_1_interfaces_html"><div class="ttname"><a href="namespace_d_i_c_o_m_app_1_1_interfaces.html">DICOMApp.Interfaces</a></div><div class="ttdef"><b>Definicja</b> <a href="#l00004">IDataHandler.cs:5</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_f396504afdc959660871b003fa10164d.html">Documents</a></li><li class="navelem"><a href="dir_1afafb9ef185eaac7646cb0f4cd779d1.html">DICOM-App</a></li><li class="navelem"><a href="dir_73aad82a50e2b06e68cc43622d198400.html">Interfaces</a></li><li class="navelem"><a href="_i_data_handler_8cs.html">IDataHandler.cs</a></li>
+    <li class="footer">Wygenerowano za pomocą <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

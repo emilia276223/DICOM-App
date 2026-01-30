@@ -1,0 +1,5 @@
+<map id="DICOMApp.MLModel.MLModelMock" name="DICOMApp.MLModel.MLModelMock">
+<area shape="rect" id="Node000001" title="Klasa mockująca model ML. Zwraca losowe punkty i heatmapy." alt="" coords="5,144,230,277"/>
+<area shape="rect" id="Node000002" href="$interface_d_i_c_o_m_app_1_1_interfaces_1_1_i_m_l_plugin.html" title="Interfejs dla klas umożliwiających predykcję na podstawie modelu AI." alt="" coords="15,5,220,96"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="119,108,120,145,115,144,117,113"/>
+</map>

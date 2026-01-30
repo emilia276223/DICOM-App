@@ -1,0 +1,14 @@
+<map id="DICOMApp.ViewModel.MainViewModel.LoadAndRegisterImage" name="DICOMApp.ViewModel.MainViewModel.LoadAndRegisterImage">
+<area shape="rect" id="Node000001" title="Metoda otwierająca nowy obraz i zapisująca go do katalogu oraz jako PNG do katalogu eksportu." alt="" coords="804,39,1023,81"/>
+<area shape="rect" id="Node000002" href="$class_d_i_c_o_m_app_1_1_view_model_1_1_main_view_model.html#aec5bb13983da4cd95098cdeb44b8d08b" title="Metoda otwierająca katalog z plikami DICOM i ładująca je wszystkie do aplikacji." alt="" coords="538,5,756,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="786,45,757,43,757,38,791,44"/>
+<area shape="rect" id="Node000003" href="$class_d_i_c_o_m_app_1_1_view_model_1_1_main_view_model.html#ac224ff021862a9947e35423370f8c6dc" title="Metoda otwierająca nowy obraz:" alt="" coords="538,72,756,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="786,76,757,82,757,77,791,75"/>
+<area shape="rect" id="Node000004" href="$class_d_i_c_o_m_app_1_1_view_model_1_1_main_view_model.html#a4627217688e8011048213eeae3d80856" title="Konstruktor obiektu MainViewModel." alt="" coords="5,43,224,85"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="541,69,490,63,352,56,225,59,224,54,352,51,490,57,547,68"/>
+<area shape="rect" id="Node000005" href="$class_d_i_c_o_m_app_1_1_view_model_1_1_main_view_model.html#a7226c66da94667cadfe42d283aa19031" title="Metoda wyświetlająca wybrany obraz na podstawie podanych parametrów." alt="" coords="272,72,490,115"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="520,94,491,96,490,91,525,93"/>
+<area shape="rect" id="Node000006" href="$class_d_i_c_o_m_app_1_1_view_model_1_1_main_view_model.html#a4942b6b049f2de392e52eaee2aa41837" title="Metoda otwierająca nowy obraz wybrany w eksploratorze plików." alt="" coords="272,139,490,181"/>
+<area shape="poly" id="edge6_Node000003_Node000006" title=" " alt="" coords="547,119,469,141,468,135,542,119"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="254,80,225,79,224,73,259,79"/>
+</map>

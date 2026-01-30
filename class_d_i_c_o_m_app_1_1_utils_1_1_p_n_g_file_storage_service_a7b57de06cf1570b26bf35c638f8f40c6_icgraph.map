@@ -1,0 +1,26 @@
+<map id="DICOMApp.Utils.PNGFileStorageService.GetPath" name="DICOMApp.Utils.PNGFileStorageService.GetPath">
+<area shape="rect" id="Node000001" title=" " alt="" coords="1631,72,1851,115"/>
+<area shape="rect" id="Node000002" href="$class_d_i_c_o_m_app_1_1_utils_1_1_p_n_g_file_storage_service.html#a0dae2adeb23941d8ba5f1da42f1866aa" title=" " alt="" coords="1364,5,1583,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1635,68,1562,51,1562,46,1641,68"/>
+<area shape="rect" id="Node000004" href="$class_d_i_c_o_m_app_1_1_utils_1_1_p_n_g_file_storage_service.html#a14a44c2b4fb58bd26c322ee7e454ad12" title="Metoda zwracająca obraz zapisany do pliku PNG jako Bitmap." alt="" coords="1364,72,1583,115"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="1613,93,1584,96,1584,91,1618,93"/>
+<area shape="rect" id="Node000005" href="$class_d_i_c_o_m_app_1_1_utils_1_1_p_n_g_file_storage_service.html#a770a6ac7ef6b460bd0ae0238439cead1" title="Metoda zapisująca obraz ImageData do pliku PNG W przypadku gdy plik istnieje, metoda nic nie robi." alt="" coords="1364,139,1583,181"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="1641,118,1563,141,1562,135,1635,119"/>
+<area shape="rect" id="Node000003" href="$class_d_i_c_o_m_app_1_1_repository_1_1_data_export_handler.html#a934e123e2eaa426c3cf3224c7a19386e" title="Metoda eksportująca dane." alt="" coords="1100,5,1287,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="1346,27,1288,29,1287,24,1351,26"/>
+<area shape="rect" id="Node000006" href="$class_d_i_c_o_m_app_1_1_utils_1_1_d_i_c_o_m_image_loader.html#a1eb397427fcf82429485ca3152768378" title="Metoda wczytuje obraz z pliku DICOM, zapisuje go do katalogu i do pliku PNG Zwraca obiekt DICOMImageD..." alt="" coords="1071,139,1316,181"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="1345,160,1317,163,1317,157,1351,160"/>
+<area shape="rect" id="Node000007" href="$class_d_i_c_o_m_app_1_1_view_model_1_1_main_view_model.html#afe9b9b04cc34f417ea584ea69485dac8" title="Metoda otwierająca nowy obraz i zapisująca go do katalogu oraz jako PNG do katalogu eksportu." alt="" coords="804,139,1023,181"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="1052,160,1023,163,1023,157,1058,160"/>
+<area shape="rect" id="Node000008" href="$class_d_i_c_o_m_app_1_1_view_model_1_1_main_view_model.html#aec5bb13983da4cd95098cdeb44b8d08b" title="Metoda otwierająca katalog z plikami DICOM i ładująca je wszystkie do aplikacji." alt="" coords="538,105,756,148"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="786,145,757,143,757,138,791,144"/>
+<area shape="rect" id="Node000009" href="$class_d_i_c_o_m_app_1_1_view_model_1_1_main_view_model.html#ac224ff021862a9947e35423370f8c6dc" title="Metoda otwierająca nowy obraz:" alt="" coords="538,172,756,215"/>
+<area shape="poly" id="edge8_Node000007_Node000009" title=" " alt="" coords="786,176,757,182,757,177,791,175"/>
+<area shape="rect" id="Node000010" href="$class_d_i_c_o_m_app_1_1_view_model_1_1_main_view_model.html#a4627217688e8011048213eeae3d80856" title="Konstruktor obiektu MainViewModel." alt="" coords="5,143,224,185"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="541,169,490,163,352,156,225,159,224,154,352,151,490,157,547,168"/>
+<area shape="rect" id="Node000011" href="$class_d_i_c_o_m_app_1_1_view_model_1_1_main_view_model.html#a7226c66da94667cadfe42d283aa19031" title="Metoda wyświetlająca wybrany obraz na podstawie podanych parametrów." alt="" coords="272,172,490,215"/>
+<area shape="poly" id="edge10_Node000009_Node000011" title=" " alt="" coords="520,194,491,196,490,191,525,193"/>
+<area shape="rect" id="Node000012" href="$class_d_i_c_o_m_app_1_1_view_model_1_1_main_view_model.html#a4942b6b049f2de392e52eaee2aa41837" title="Metoda otwierająca nowy obraz wybrany w eksploratorze plików." alt="" coords="272,239,490,281"/>
+<area shape="poly" id="edge12_Node000009_Node000012" title=" " alt="" coords="547,219,469,241,468,235,542,219"/>
+<area shape="poly" id="edge11_Node000011_Node000010" title=" " alt="" coords="254,180,225,179,224,173,259,179"/>
+</map>

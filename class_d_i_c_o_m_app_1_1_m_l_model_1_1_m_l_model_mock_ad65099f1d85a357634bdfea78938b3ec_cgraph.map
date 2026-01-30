@@ -1,0 +1,11 @@
+<map id="DICOMApp.MLModel.MLModelMock.GetPredictionFromImageData" name="DICOMApp.MLModel.MLModelMock.GetPredictionFromImageData">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,39,236,81"/>
+<area shape="rect" id="Node000002" href="$class_d_i_c_o_m_app_1_1_m_l_model_1_1_m_l_model_mock.html#a73aec1737850f19011cfe830c55f0a36" title=" " alt="" coords="284,5,516,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="235,44,271,42,266,43,236,49"/>
+<area shape="rect" id="Node000005" href="$class_d_i_c_o_m_app_1_1_m_l_model_1_1_m_l_model_mock.html#a8918a231e3d0b0cac01aed7db410c5ff" title=" " alt="" coords="298,72,502,115"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="236,71,286,79,280,80,236,76"/>
+<area shape="rect" id="Node000003" href="$class_d_i_c_o_m_app_1_1_data_1_1_image_data.html#af661a07633cacba8ed9437889ac7d9ca" title="Metoda tworząca kopię obiektu ImageData." alt="" coords="564,13,788,40"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="516,24,551,26,546,27,517,29"/>
+<area shape="rect" id="Node000004" href="$class_d_i_c_o_m_app_1_1_data_1_1_image_data.html#a444f31220f19a422527de57bc07bd5da" title="Konstruktor obrazu ImageData." alt="" coords="836,5,1030,48"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="789,24,823,27,818,27,789,29"/>
+</map>

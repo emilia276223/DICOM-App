@@ -1,0 +1,3 @@
+<map id="DICOMApp.MLModel.ONNXTensor" name="DICOMApp.MLModel.ONNXTensor">
+<area shape="rect" id="Node000001" title="Klasa obsługująca przetwarzanie danych dla modelu ONNX Z ImageData na Tensor oraz Tensor na ImageData..." alt="" coords="5,5,223,139"/>
+</map>

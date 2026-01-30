@@ -1,0 +1,36 @@
+<map id="Graficzna hierarchia klas" name="Graficzna hierarchia klas">
+<area shape="rect" id="Node000000" href="$interface_d_i_c_o_m_app_1_1_interfaces_1_1_i_line_view_model.html" title="Interfejs modelujący linie." alt="" coords="504,405,687,448"/>
+<area shape="rect" id="Node000001" href="$class_d_i_c_o_m_app_1_1_view_model_1_1_lines_1_1_line_with_caps_view_model.html" title="Klasa modelująca linie z brzegami." alt="" coords="758,239,955,281"/>
+<area shape="poly" id="edge10_Node000000_Node000001" title=" " alt="" coords="700,396,707,391,723,376,731,360,740,343,754,325,784,300,814,283,819,280,787,304,758,329,744,346,736,363,727,379,710,395,702,401"/>
+<area shape="rect" id="Node000003" href="$class_d_i_c_o_m_app_1_1_view_model_1_1_x_point_line_view_model.html" title=" " alt="" coords="756,339,957,381"/>
+<area shape="poly" id="edge11_Node000000_Node000003" title=" " alt="" coords="695,398,773,381,768,383,697,404"/>
+<area shape="rect" id="Node000012" href="$interface_d_i_c_o_m_app_1_1_behaviors_1_1_i_magnified_image_view_model.html" title="Interfejs okna powększającego z liniami powększonymi Stworzony na potrzeby oddzielenia trochę impleme..." alt="" coords="199,5,414,48"/>
+<area shape="rect" id="Node000011" href="$class_d_i_c_o_m_app_1_1_view_model_1_1_magnified_image_view_model.html" title="Klasa modelująca widok powiekszenia obrazu." alt="" coords="486,5,704,48"/>
+<area shape="poly" id="edge12_Node000012_Node000011" title=" " alt="" coords="428,24,488,25,484,28,431,29"/>
+<area shape="rect" id="Node000015" title=" " alt="" coords="5,284,131,311"/>
+<area shape="rect" id="Node000016" href="$class_d_i_c_o_m_app_1_1_view_model_1_1_image_view_model.html" title="Klasa modelująca widok obrazu." alt="" coords="208,247,405,289"/>
+<area shape="poly" id="edge13_Node000015_Node000016" title=" " alt="" coords="145,286,209,278,205,282,148,290"/>
+<area shape="rect" id="Node000004" href="$class_d_i_c_o_m_app_1_1_view_model_1_1_view_model_base.html" title="Klasa bazowa modelu widoku." alt="" coords="179,313,434,340"/>
+<area shape="poly" id="edge14_Node000015_Node000004" title=" " alt="" coords="145,305,195,311,191,314,148,309"/>
+<area shape="poly" id="edge24_Node000004_Node000011" title=" " alt="" coords="430,302,432,300,453,271,461,242,461,212,457,182,452,152,452,121,460,89,480,58,497,47,494,51,484,62,464,91,457,121,457,151,462,182,466,212,466,243,458,273,436,303,433,306"/>
+<area shape="rect" id="Node000005" href="$class_d_i_c_o_m_app_1_1_view_model_1_1_chart_view_model.html" title="Klasa modelująca wykres, przechowuje dane wykresu Implementuje interfejs IChartViewModel." alt="" coords="498,605,692,648"/>
+<area shape="poly" id="edge15_Node000004_Node000005" title=" " alt="" coords="319,352,343,404,378,468,425,535,453,565,484,591,504,605,498,604,480,595,449,569,421,538,374,471,338,406,317,357"/>
+<area shape="rect" id="Node000006" href="$class_d_i_c_o_m_app_1_1_view_model_1_1_element_list_view_model.html" title="Klasa modelująca widok listy elementów." alt="" coords="490,672,700,715"/>
+<area shape="poly" id="edge16_Node000004_Node000006" title=" " alt="" coords="315,353,336,417,369,499,391,543,418,585,448,624,484,658,502,672,497,671,480,662,444,627,413,588,387,545,364,502,331,419,314,358"/>
+<area shape="rect" id="Node000007" href="$class_d_i_c_o_m_app_1_1_view_model_1_1_heatmap_control_view_model.html" title="Klasa modelująca kontroler heatmap." alt="" coords="488,72,702,115"/>
+<area shape="poly" id="edge17_Node000004_Node000007" title=" " alt="" coords="429,302,432,299,448,279,456,258,458,237,456,215,456,170,464,147,480,125,498,113,494,117,484,129,469,150,462,171,462,215,463,237,461,260,453,282,436,303,433,306"/>
+<area shape="rect" id="Node000008" href="$class_d_i_c_o_m_app_1_1_view_model_1_1_heatmap_view_model.html" title=" " alt="" coords="488,139,702,181"/>
+<area shape="poly" id="edge18_Node000004_Node000008" title=" " alt="" coords="427,303,432,299,444,287,451,275,456,248,461,219,468,205,480,191,501,180,497,184,484,195,473,208,466,221,461,249,456,276,448,290,436,303,430,307"/>
+<area shape="rect" id="Node000009" href="$class_d_i_c_o_m_app_1_1_view_model_1_1_image_selection_view_model.html" title="Klasa modelująca widok wyboru obrazów." alt="" coords="496,272,694,315"/>
+<area shape="poly" id="edge19_Node000004_Node000009" title=" " alt="" coords="442,308,499,304,494,306,444,313"/>
+<area shape="rect" id="Node000010" href="$class_d_i_c_o_m_app_1_1_view_model_1_1_information_popup_view_model.html" title="Klasa modelująca widok eksportu danych." alt="" coords="482,339,708,381"/>
+<area shape="poly" id="edge20_Node000004_Node000010" title=" " alt="" coords="442,340,484,346,479,348,444,345"/>
+<area shape="rect" id="Node000002" href="$class_d_i_c_o_m_app_1_1_view_model_1_1_line_view_model_base.html" title="Abstrakcyjna klasa bazowa modelująca linie." alt="" coords="488,205,702,248"/>
+<area shape="poly" id="edge21_Node000004_Node000002" title=" " alt="" coords="417,306,433,299,447,290,456,279,466,268,481,258,509,247,505,250,483,262,469,272,460,283,450,294,435,304,420,310"/>
+<area shape="rect" id="Node000013" href="$class_d_i_c_o_m_app_1_1_view_model_1_1_main_view_model.html" title="ViewModel głównego okna." alt="" coords="486,472,704,515"/>
+<area shape="poly" id="edge25_Node000004_Node000013" title=" " alt="" coords="333,348,399,403,440,432,483,458,511,471,506,472,481,462,437,437,396,407,333,353"/>
+<area shape="rect" id="Node000014" href="$class_d_i_c_o_m_app_1_1_view_model_1_1_x_point_view_model.html" title="Klasa modelująca punkt rysowany jako X." alt="" coords="495,539,695,581"/>
+<area shape="poly" id="edge26_Node000004_Node000014" title=" " alt="" coords="324,350,352,390,388,437,432,484,483,524,507,538,501,538,481,529,429,488,384,440,347,393,323,356"/>
+<area shape="poly" id="edge22_Node000002_Node000001" title=" " alt="" coords="717,240,761,247,755,248,718,245"/>
+<area shape="poly" id="edge23_Node000002_Node000003" title=" " alt="" coords="695,251,710,258,735,273,758,291,825,338,820,338,755,295,732,278,707,262,695,257"/>
+</map>

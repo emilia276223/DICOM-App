@@ -1,0 +1,41 @@
+<map id="DICOMApp.Utils.AppDirectoryHandler.GetDicomDirectory" name="DICOMApp.Utils.AppDirectoryHandler.GetDicomDirectory">
+<area shape="rect" id="Node000001" title=" " alt="" coords="1935,156,2135,199"/>
+<area shape="rect" id="Node000002" href="$class_d_i_c_o_m_app_1_1_utils_1_1_app_directory_handler.html#ab0b2088f9d01fe974bec9a5d0468e357" title=" " alt="" coords="1675,5,1876,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1996,145,1946,108,1885,69,1846,51,1847,46,1888,64,1949,103,2001,147"/>
+<area shape="rect" id="Node000003" href="$class_d_i_c_o_m_app_1_1_utils_1_1_d_i_c_o_m_directory_handler.html#a0a16402dd001ba2ced8ec09ae0645ba5" title="Konstruuje pełną ścieżkę do pliku DICOM na podstawie ID pacjenta, daty badania i nazwy pliku." alt="" coords="804,63,1027,105"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="1978,148,1935,131,1886,116,1769,94,1649,79,1528,70,1411,66,1195,67,1028,77,1027,71,1195,62,1411,60,1529,65,1649,74,1770,89,1887,111,1937,126,1983,149"/>
+<area shape="rect" id="Node000006" href="$class_d_i_c_o_m_app_1_1_utils_1_1_d_i_c_o_m_directory_handler.html#ac9d19834f3cb65b4d563c9576158b55b" title="Zwraca listę obrazów dla danego badania pacjenta." alt="" coords="1664,249,1887,292"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="1962,204,1838,251,1836,246,1956,205"/>
+<area shape="rect" id="Node000009" href="$class_d_i_c_o_m_app_1_1_utils_1_1_d_i_c_o_m_directory_handler.html#ad6d309456dc8c2590e94c8d53723d13f" title=" " alt="" coords="1664,125,1887,168"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="1917,164,1887,163,1887,157,1922,164"/>
+<area shape="rect" id="Node000016" href="$class_d_i_c_o_m_app_1_1_utils_1_1_d_i_c_o_m_directory_handler.html#ae3dda751b0e069e6bb119d53420a291a" title="Zwraca listę pacjentów w katalogu DICOM." alt="" coords="1381,189,1603,232"/>
+<area shape="poly" id="edge17_Node000001_Node000016" title=" " alt="" coords="1917,185,1604,207,1603,201,1922,184"/>
+<area shape="rect" id="Node000017" href="$class_d_i_c_o_m_app_1_1_utils_1_1_d_i_c_o_m_directory_handler.html#a6b615d67e335578d2678291dd935bb9c" title="Zwraca listę badań dla danego pacjenta na podstawie jego ID." alt="" coords="1664,328,1887,371"/>
+<area shape="poly" id="edge19_Node000001_Node000017" title=" " alt="" coords="2005,209,1952,259,1888,306,1840,330,1839,325,1885,302,1948,255,2000,211"/>
+<area shape="rect" id="Node000004" href="$class_d_i_c_o_m_app_1_1_view_model_1_1_main_view_model.html#a7226c66da94667cadfe42d283aa19031" title="Metoda wyświetlająca wybrany obraz na podstawie podanych parametrów." alt="" coords="272,63,490,105"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="787,85,491,87,490,81,791,83"/>
+<area shape="rect" id="Node000005" href="$class_d_i_c_o_m_app_1_1_view_model_1_1_main_view_model.html#a4627217688e8011048213eeae3d80856" title="Konstruktor obiektu MainViewModel." alt="" coords="5,92,224,135"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="254,99,225,104,223,99,258,96"/>
+<area shape="rect" id="Node000007" href="$class_d_i_c_o_m_app_1_1_view_model_1_1_image_selection_view_model.html#a7a02af608ae6241d1ad64e5f5de3f5c7" title="Metoda wywoływana po zmianie wybranej wartosci w liscie badań Ustawia listę obrazów do wyboru." alt="" coords="1368,256,1616,299"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="1646,274,1617,277,1617,272,1652,274"/>
+<area shape="rect" id="Node000008" href="$class_d_i_c_o_m_app_1_1_view_model_1_1_image_selection_view_model.html#a1aa949559a890e90fbb45581a981354f" title="Konstruktor." alt="" coords="1081,248,1314,307"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="1349,277,1314,280,1314,275,1355,277"/>
+<area shape="rect" id="Node000010" href="$class_d_i_c_o_m_app_1_1_utils_1_1_d_i_c_o_m_directory_handler.html#a3c1346deca6c947d6738e06b5cd7ee2e" title="Dodaje plik DICOM do katalogu DICOM." alt="" coords="1381,123,1603,165"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="1646,146,1604,148,1604,142,1652,145"/>
+<area shape="rect" id="Node000011" href="$class_d_i_c_o_m_app_1_1_utils_1_1_d_i_c_o_m_image_loader.html#a1eb397427fcf82429485ca3152768378" title="Metoda wczytuje obraz z pliku DICOM, zapisuje go do katalogu i do pliku PNG Zwraca obiekt DICOMImageD..." alt="" coords="1075,127,1320,169"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="1362,146,1321,149,1320,144,1368,145"/>
+<area shape="rect" id="Node000012" href="$class_d_i_c_o_m_app_1_1_view_model_1_1_main_view_model.html#afe9b9b04cc34f417ea584ea69485dac8" title="Metoda otwierająca nowy obraz i zapisująca go do katalogu oraz jako PNG do katalogu eksportu." alt="" coords="806,129,1025,172"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="1057,150,1025,152,1025,147,1062,149"/>
+<area shape="rect" id="Node000013" href="$class_d_i_c_o_m_app_1_1_view_model_1_1_main_view_model.html#aec5bb13983da4cd95098cdeb44b8d08b" title="Metoda otwierająca katalog z plikami DICOM i ładująca je wszystkie do aplikacji." alt="" coords="538,188,756,231"/>
+<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="798,176,749,190,748,185,803,175"/>
+<area shape="rect" id="Node000014" href="$class_d_i_c_o_m_app_1_1_view_model_1_1_main_view_model.html#ac224ff021862a9947e35423370f8c6dc" title="Metoda otwierająca nowy obraz:" alt="" coords="538,121,756,164"/>
+<area shape="poly" id="edge13_Node000012_Node000014" title=" " alt="" coords="788,147,757,149,756,143,793,147"/>
+<area shape="poly" id="edge15_Node000014_Node000004" title=" " alt="" coords="530,118,481,109,481,103,535,117"/>
+<area shape="poly" id="edge14_Node000014_Node000005" title=" " alt="" coords="521,138,224,122,224,117,525,134"/>
+<area shape="rect" id="Node000015" href="$class_d_i_c_o_m_app_1_1_view_model_1_1_main_view_model.html#a4942b6b049f2de392e52eaee2aa41837" title="Metoda otwierająca nowy obraz wybrany w eksploratorze plików." alt="" coords="272,180,490,223"/>
+<area shape="poly" id="edge16_Node000014_Node000015" title=" " alt="" coords="530,169,482,182,480,177,535,167"/>
+<area shape="poly" id="edge18_Node000016_Node000008" title=" " alt="" coords="1383,236,1315,253,1314,248,1378,236"/>
+<area shape="rect" id="Node000018" href="$class_d_i_c_o_m_app_1_1_view_model_1_1_image_selection_view_model.html#a5c9cc82940ac1ab3b6b79be9e02a1302" title="Metoda wywoływana po zmianie wybranej wartosci w liscie pacjentów Ustawia listę badań pacjenta do wyb..." alt="" coords="1392,323,1593,381"/>
+<area shape="poly" id="edge20_Node000017_Node000018" title=" " alt="" coords="1646,351,1593,354,1593,348,1652,350"/>
+<area shape="poly" id="edge21_Node000018_Node000008" title=" " alt="" coords="1374,323,1314,310,1315,304,1379,323"/>
+</map>

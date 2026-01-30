@@ -1,0 +1,7 @@
+<map id="DICOMApp.Behaviors.PointerModeBehavior" name="DICOMApp.Behaviors.PointerModeBehavior">
+<area shape="rect" id="Node000001" title="Behavior obsługujący rozróżnianie trybów wskaźnika pomiędzy rysowaniem linii a lupą" alt="" coords="102,355,295,589"/>
+<area shape="rect" id="Node000002" href="$interface_d_i_c_o_m_app_1_1_interfaces_1_1_i_line_view_model.html" title="Interfejs modelujący linie." alt="" coords="5,5,178,283"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="137,280,158,339,152,339,136,285"/>
+<area shape="rect" id="Node000003" href="$interface_d_i_c_o_m_app_1_1_behaviors_1_1_i_magnified_image_view_model.html" title="Interfejs okna powększającego z liniami powększonymi Stworzony na potrzeby oddzielenia trochę impleme..." alt="" coords="203,51,407,237"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="276,235,244,340,239,337,273,239"/>
+</map>

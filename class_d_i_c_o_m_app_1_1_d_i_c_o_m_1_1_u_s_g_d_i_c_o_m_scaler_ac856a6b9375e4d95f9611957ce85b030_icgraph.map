@@ -1,0 +1,5 @@
+<map id="DICOMApp.DICOM.USGDICOMScaler.checkUnitName" name="DICOMApp.DICOM.USGDICOMScaler.checkUnitName">
+<area shape="rect" id="Node000001" title="Sprawdza, czy Unit Name w metadanych pliku jest cm &#45; jedyna możliwa wartość dla odległości." alt="" coords="311,5,603,48"/>
+<area shape="rect" id="Node000002" href="$class_d_i_c_o_m_app_1_1_d_i_c_o_m_1_1_u_s_g_d_i_c_o_m_scaler.html#a438cbb4ee0e8b2b8e2353e4257be6d79" title="Tworzy skaler dla pliku dicom na postawie podanych metadanych pliku." alt="" coords="5,5,263,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="293,27,263,29,263,24,298,27"/>
+</map>

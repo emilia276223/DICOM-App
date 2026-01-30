@@ -1,0 +1,13 @@
+<map id="DICOMApp.ViewModel.LineViewModelBase.UpdateLength" name="DICOMApp.ViewModel.LineViewModelBase.UpdateLength">
+<area shape="rect" id="Node000001" title="Metoda ustawiająca długosc fizyczna linii Na podstawie podanego wcześniej skalera i skali obrazu." alt="" coords="575,105,789,148"/>
+<area shape="rect" id="Node000002" href="$class_d_i_c_o_m_app_1_1_view_model_1_1_lines_1_1_line_with_caps_view_model.html#af5ecc87422859ff60cea1a96b133e0bf" title="Metoda ustawiająca początek i koniec linii." alt="" coords="301,5,516,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="618,99,526,63,492,51,492,46,528,57,624,98"/>
+<area shape="rect" id="Node000003" href="$class_d_i_c_o_m_app_1_1_view_model_1_1_x_point_line_view_model.html#a9786d17350f041e1afa6a2ba6a533397" title="Metoda ustawiająca początek i koniec linii." alt="" coords="308,72,508,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="557,112,509,108,509,103,562,112"/>
+<area shape="rect" id="Node000004" href="$class_d_i_c_o_m_app_1_1_view_model_1_1_lines_1_1_line_with_caps_view_model.html#a4bafd41ef1de9676eae9df779c6d2fe9" title="Metoda ustawiająca końcówkę linii." alt="" coords="290,139,527,181"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="557,142,528,148,527,143,562,141"/>
+<area shape="rect" id="Node000006" href="$class_d_i_c_o_m_app_1_1_view_model_1_1_x_point_line_view_model.html#a77d74321af9627036959e918db6e3ca1" title="Metoda zmieniająca aktualny koniec linii." alt="" coords="308,205,508,248"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="624,154,528,196,493,207,492,202,526,191,618,155"/>
+<area shape="rect" id="Node000005" href="$class_d_i_c_o_m_app_1_1_view_model_1_1_lines_1_1_line_with_caps_view_model.html#a7eb112b83b23322f1bb571ee363200f2" title="Metoda ustawiająca końcówkę linii." alt="" coords="5,139,242,181"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="272,161,243,163,242,157,277,159"/>
+</map>

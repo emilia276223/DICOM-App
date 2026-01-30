@@ -1,0 +1,5 @@
+<map id="DICOMApp.ViewModel.XPointLineViewModel.UpdateLine" name="DICOMApp.ViewModel.XPointLineViewModel.UpdateLine">
+<area shape="rect" id="Node000001" title="Metoda zmieniająca aktualny koniec linii." alt="" coords="5,5,206,48"/>
+<area shape="rect" id="Node000002" href="$class_d_i_c_o_m_app_1_1_view_model_1_1_line_view_model_base.html#a403a7218cf07d74349bbc228b983ddcb" title="Metoda ustawiająca długosc fizyczna linii Na podstawie podanego wcześniej skalera i skali obrazu." alt="" coords="254,5,468,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="206,24,240,26,235,27,206,29"/>
+</map>

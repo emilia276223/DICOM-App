@@ -1,0 +1,5 @@
+<map id="DICOMApp.MLModel.ONNXTensor.ImageDataToTensor" name="DICOMApp.MLModel.ONNXTensor.ImageDataToTensor">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,238,48"/>
+<area shape="rect" id="Node000002" href="$class_d_i_c_o_m_app_1_1_data_1_1_image_data.html#aa7055eedd4ad8de1c71758bcb6de43aa" title="Metoda zwracająca tablicę pikseli obrazu w formacie float Na podstawie tablicy pikseli w formacie ARG..." alt="" coords="286,5,479,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="238,24,273,27,267,27,238,29"/>
+</map>

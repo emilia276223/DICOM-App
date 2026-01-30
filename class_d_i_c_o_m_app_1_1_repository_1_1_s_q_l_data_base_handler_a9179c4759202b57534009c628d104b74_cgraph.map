@@ -1,0 +1,5 @@
+<map id="DICOMApp.Repository.SQLDataBaseHandler.Dispose" name="DICOMApp.Repository.SQLDataBaseHandler.Dispose">
+<area shape="rect" id="Node000001" title="Zwalnia zasoby i zamyka połączenie z bazą danych." alt="" coords="5,5,219,48"/>
+<area shape="rect" id="Node000002" href="$class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler.html#a4b5c4ae3f4e0166a7ce7671ea21ee712" title="Zamyka połączenie z bazą danych SQLite." alt="" coords="267,5,480,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="219,24,254,27,249,27,219,29"/>
+</map>

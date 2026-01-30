@@ -1,0 +1,5 @@
+<map id="DICOMApp.Interfaces.IDataHandler" name="DICOMApp.Interfaces.IDataHandler">
+<area shape="rect" id="Node000001" title="Interfejs klasy obsługującej zapisywanie i odczytywanie danych." alt="" coords="12,5,202,251"/>
+<area shape="rect" id="Node000002" href="$class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler.html" title="Klasa obsługująca bazę danych SQLite do przechowywania informacji o pacjentach, badaniach i obrazach." alt="" coords="5,299,208,651"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="107,263,109,299,104,299,106,268"/>
+</map>

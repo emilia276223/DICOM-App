@@ -1,0 +1,656 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pl">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>DICOM-App: Dokumentacja klasy DICOMApp.MLModel.MLPlugin</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">DICOM-App<span id="projectnumber">&#160;version1.0</span>
+   </div>
+   <div id="projectbrief">Aplikacja do przeglądania obrazów DICOM oraz korzystania z pluginów AI</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano za pomocą Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('class_d_i_c_o_m_app_1_1_m_l_model_1_1_m_l_plugin.html','','class_d_i_c_o_m_app_1_1_m_l_model_1_1_m_l_plugin-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Wczytywanie...</div>
+<div class="SRStatus" id="Searching">Szukanie...</div>
+<div class="SRStatus" id="NoMatches">Brak dopasowań</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Dokumentacja klasy DICOMApp.MLModel.MLPlugin</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Klasa umożliwiająca korzystanie z modelu zapisanego w pliku ONNX.  
+ <a href="#details">Więcej...</a></p>
+<div class="dynheader">
+Diagram dziedziczenia dla DICOMApp.MLModel.MLPlugin</div>
+<div class="dyncontent">
+<div class="center"><img src="class_d_i_c_o_m_app_1_1_m_l_model_1_1_m_l_plugin__inherit__graph.png" border="0" usemap="#a_d_i_c_o_m_app_8_m_l_model_8_m_l_plugin_inherit__map" loading="lazy" alt="Inheritance graph"/></div>
+<map name="a_d_i_c_o_m_app_8_m_l_model_8_m_l_plugin_inherit__map" id="a_d_i_c_o_m_app_8_m_l_model_8_m_l_plugin_inherit__map">
+<area shape="rect" title="Klasa umożliwiająca korzystanie z modelu zapisanego w pliku ONNX." alt="" coords="5,144,210,427"/>
+<area shape="rect" href="interface_d_i_c_o_m_app_1_1_interfaces_1_1_i_m_l_plugin.html" title="Interfejs dla klas umożliwiających predykcję na podstawie modelu AI." alt="" coords="5,5,210,96"/>
+<area shape="poly" title=" " alt="" coords="108,108,110,145,105,144,107,113"/>
+</map>
+</div>
+<div class="dynheader">
+Diagram współpracy dla DICOMApp.MLModel.MLPlugin:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_d_i_c_o_m_app_1_1_m_l_model_1_1_m_l_plugin__coll__graph.png" border="0" usemap="#a_d_i_c_o_m_app_8_m_l_model_8_m_l_plugin_coll__map" loading="lazy" alt="Collaboration graph"/></div>
+<map name="a_d_i_c_o_m_app_8_m_l_model_8_m_l_plugin_coll__map" id="a_d_i_c_o_m_app_8_m_l_model_8_m_l_plugin_coll__map">
+<area shape="rect" title="Klasa umożliwiająca korzystanie z modelu zapisanego w pliku ONNX." alt="" coords="123,211,328,472"/>
+<area shape="rect" href="interface_d_i_c_o_m_app_1_1_interfaces_1_1_i_m_l_plugin.html" title="Interfejs dla klas umożliwiających predykcję na podstawie modelu AI." alt="" coords="5,27,210,117"/>
+<area shape="poly" title=" " alt="" coords="134,128,171,210,166,211,133,133"/>
+<area shape="rect" href="class_d_i_c_o_m_app_1_1_m_l_model_1_1_o_n_n_x_tensor.html" title="Klasa obsługująca przetwarzanie danych dla modelu ONNX Z ImageData na Tensor oraz Tensor na ImageData..." alt="" coords="235,5,453,139"/>
+<area shape="poly" title=" " alt="" coords="316,136,292,196,287,193,313,141"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Metody publiczne</h2></td></tr>
+<tr class="memitem:a05790ed73b93bb0324df51e6a2ee6338" id="r_a05790ed73b93bb0324df51e6a2ee6338"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a05790ed73b93bb0324df51e6a2ee6338">MLPlugin</a> ()</td></tr>
+<tr class="memdesc:a05790ed73b93bb0324df51e6a2ee6338"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stworzenie instancji ML_Plugin.  <br /></td></tr>
+<tr class="memitem:a2b4f373b9580627b3fcaa644a89e77cc" id="r_a2b4f373b9580627b3fcaa644a89e77cc"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a2b4f373b9580627b3fcaa644a89e77cc">ReloadModel</a> (string path)</td></tr>
+<tr class="memdesc:a2b4f373b9580627b3fcaa644a89e77cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ponowne załadowanie modelu z podanego pliku.<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>Ścieżka do pliku z modelem</td></tr>
+  </table>
+  </dd>
+</dl>
+  <br /></td></tr>
+<tr class="memitem:ae3e818d6ddcdf493bc3f6d7ce21ca352" id="r_ae3e818d6ddcdf493bc3f6d7ce21ca352"><td class="memItemLeft"><a class="el" href="class_d_i_c_o_m_app_1_1_data_1_1_m_l_model_prediction.html">MLModelPrediction</a>&#160;</td><td class="memItemRight"><a class="el" href="#ae3e818d6ddcdf493bc3f6d7ce21ca352">GetPredictionFromImageData</a> (<a class="el" href="class_d_i_c_o_m_app_1_1_data_1_1_image_data.html">ImageData</a> imageData)</td></tr>
+<tr class="memdesc:ae3e818d6ddcdf493bc3f6d7ce21ca352"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wyliczenie predukcji na podstawie obrazu.<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">imageData</td><td>Obraz jako <a class="el" href="class_d_i_c_o_m_app_1_1_data_1_1_image_data.html" title="Klasa przechowujaca dane obrazu Zawiera informacje o rozmiarze obrazu oraz tablicę pikseli (zapisanyc...">ImageData</a></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd><a class="el" href="class_d_i_c_o_m_app_1_1_data_1_1_m_l_model_prediction.html" title="Klasa przechowująca wynik predykcji modelu.">MLModelPrediction</a> zawierający wynik predykcji</dd></dl>
+  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-methods" class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Metody prywatne</h2></td></tr>
+<tr class="memitem:a0aec18f398a4f880ded28080425d6779" id="r_a0aec18f398a4f880ded28080425d6779"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a0aec18f398a4f880ded28080425d6779">_createModelFile</a> ()</td></tr>
+<tr class="memdesc:a0aec18f398a4f880ded28080425d6779"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stworzenie pliku do zapisania modelu użuywanego przez program.  <br /></td></tr>
+<tr class="memitem:a801e28e913aec8a4b01e7526626817b6" id="r_a801e28e913aec8a4b01e7526626817b6"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a801e28e913aec8a4b01e7526626817b6">_loadModel</a> ()</td></tr>
+<tr class="memdesc:a801e28e913aec8a4b01e7526626817b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Załadowanie modelu.  <br /></td></tr>
+<tr class="memitem:aa607ac6613168078019e9834819fa62c" id="r_aa607ac6613168078019e9834819fa62c"><td class="memItemLeft">Tensor&lt; float &gt;&#160;</td><td class="memItemRight"><a class="el" href="#aa607ac6613168078019e9834819fa62c">GetHeatmapsPrediction</a> (<a class="el" href="class_d_i_c_o_m_app_1_1_data_1_1_image_data.html">ImageData</a> image)</td></tr>
+<tr class="memitem:a8f3c82f01a031c61098215144ed5cb68" id="r_a8f3c82f01a031c61098215144ed5cb68"><td class="memItemLeft">List&lt; <a class="el" href="class_d_i_c_o_m_app_1_1_data_1_1_image_data.html">ImageData</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a8f3c82f01a031c61098215144ed5cb68">ImageDataFromTensor</a> (Tensor&lt; float &gt; output)</td></tr>
+<tr class="memitem:a61cd482728af4f70be778b20fff497a4" id="r_a61cd482728af4f70be778b20fff497a4"><td class="memItemLeft">Avalonia.Point[]&#160;</td><td class="memItemRight"><a class="el" href="#a61cd482728af4f70be778b20fff497a4">ExtractPointsFromHeatmaps</a> (Tensor&lt; float &gt; output, int width, int height)</td></tr>
+<tr class="memdesc:a61cd482728af4f70be778b20fff497a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wyliczenie 4 punktów - maximów z przewidzianych heatmap.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Atrybuty prywatne</h2></td></tr>
+<tr class="memitem:aa77b301eb93640e8d96ba04e9d5cf7e6" id="r_aa77b301eb93640e8d96ba04e9d5cf7e6"><td class="memItemLeft">string&#160;</td><td class="memItemRight"><a class="el" href="#aa77b301eb93640e8d96ba04e9d5cf7e6">_modelPath</a></td></tr>
+<tr class="memitem:acb21ae5fdac07041a815fb4607e462c1" id="r_acb21ae5fdac07041a815fb4607e462c1"><td class="memItemLeft">InferenceSession&#160;</td><td class="memItemRight"><a class="el" href="#acb21ae5fdac07041a815fb4607e462c1">_session</a></td></tr>
+<tr class="memitem:aa980086c73b06ecf69b897465f94635d" id="r_aa980086c73b06ecf69b897465f94635d"><td class="memItemLeft">string&#160;</td><td class="memItemRight"><a class="el" href="#aa980086c73b06ecf69b897465f94635d">_input_name</a></td></tr>
+<tr class="memitem:af7feaa9c36df64e19bee4fd7514050bc" id="r_af7feaa9c36df64e19bee4fd7514050bc"><td class="memItemLeft"><a class="el" href="class_d_i_c_o_m_app_1_1_m_l_model_1_1_o_n_n_x_tensor.html">ONNXTensor</a>&#160;</td><td class="memItemRight"><a class="el" href="#af7feaa9c36df64e19bee4fd7514050bc">_onnxTensor</a></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Opis szczegółowy</h2>
+<div class="textblock"><p>Klasa umożliwiająca korzystanie z modelu zapisanego w pliku ONNX. </p>
+
+<p class="definition">Definicja w linii <a class="el" href="_m_l_plugin_8cs_source.html#l00017">17</a> pliku <a class="el" href="_m_l_plugin_8cs_source.html">MLPlugin.cs</a>.</p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Dokumentacja konstruktora i destruktora</h2>
+<a id="a05790ed73b93bb0324df51e6a2ee6338" name="a05790ed73b93bb0324df51e6a2ee6338"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05790ed73b93bb0324df51e6a2ee6338">&#9670;&#160;</a></span>MLPlugin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DICOMApp.MLModel.MLPlugin.MLPlugin </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Stworzenie instancji ML_Plugin. </p>
+
+<p class="definition">Definicja w linii <a class="el" href="_m_l_plugin_8cs_source.html#l00028">28</a> pliku <a class="el" href="_m_l_plugin_8cs_source.html">MLPlugin.cs</a>.</p>
+
+<p class="reference">Odwołuje się do <a class="el" href="_m_l_plugin_8cs_source.html#l00039">_createModelFile()</a>, <a class="el" href="_m_l_plugin_8cs_source.html#l00055">_loadModel()</a> i <a class="el" href="_m_l_plugin_8cs_source.html#l00022">_onnxTensor</a>.</p>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_d_i_c_o_m_app_1_1_m_l_model_1_1_m_l_plugin_a05790ed73b93bb0324df51e6a2ee6338_cgraph.png" border="0" usemap="#aclass_d_i_c_o_m_app_1_1_m_l_model_1_1_m_l_plugin_a05790ed73b93bb0324df51e6a2ee6338_cgraph" loading="lazy" alt=""/></div>
+<map name="aclass_d_i_c_o_m_app_1_1_m_l_model_1_1_m_l_plugin_a05790ed73b93bb0324df51e6a2ee6338_cgraph" id="aclass_d_i_c_o_m_app_1_1_m_l_model_1_1_m_l_plugin_a05790ed73b93bb0324df51e6a2ee6338_cgraph">
+<area shape="rect" title="Stworzenie instancji ML_Plugin." alt="" coords="5,39,214,81"/>
+<area shape="rect" href="class_d_i_c_o_m_app_1_1_m_l_model_1_1_m_l_plugin.html#a0aec18f398a4f880ded28080425d6779" title="Stworzenie pliku do zapisania modelu użuywanego przez program." alt="" coords="262,5,470,48"/>
+<area shape="poly" title=" " alt="" coords="213,44,249,42,243,43,215,49"/>
+<area shape="rect" href="class_d_i_c_o_m_app_1_1_m_l_model_1_1_m_l_plugin.html#a801e28e913aec8a4b01e7526626817b6" title="Załadowanie modelu." alt="" coords="262,72,470,115"/>
+<area shape="poly" title=" " alt="" coords="214,71,249,78,243,78,214,76"/>
+<area shape="rect" href="class_d_i_c_o_m_app_1_1_utils_1_1_app_directory_handler.html#a9220085d536b93421989df1ba1626a18" title=" " alt="" coords="518,5,736,48"/>
+<area shape="poly" title=" " alt="" coords="470,24,505,26,500,27,471,29"/>
+</map>
+</div>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Dokumentacja funkcji składowych</h2>
+<a id="a0aec18f398a4f880ded28080425d6779" name="a0aec18f398a4f880ded28080425d6779"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0aec18f398a4f880ded28080425d6779">&#9670;&#160;</a></span>_createModelFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DICOMApp.MLModel.MLPlugin._createModelFile </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Stworzenie pliku do zapisania modelu użuywanego przez program. </p>
+
+<p class="definition">Definicja w linii <a class="el" href="_m_l_plugin_8cs_source.html#l00039">39</a> pliku <a class="el" href="_m_l_plugin_8cs_source.html">MLPlugin.cs</a>.</p>
+
+<p class="reference">Odwołuje się do <a class="el" href="_m_l_plugin_8cs_source.html#l00019">_modelPath</a>, <a class="el" href="_app_directory_handler_8cs_source.html#l00072">DICOMApp.Utils.AppDirectoryHandler.GetONNXModelDirectory()</a> i <a class="el" href="_app_directory_handler_8cs_source.html#l00012">DICOMApp.Utils.AppDirectoryHandler.Instance</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="_m_l_plugin_8cs_source.html#l00028">MLPlugin()</a>.</p>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_d_i_c_o_m_app_1_1_m_l_model_1_1_m_l_plugin_a0aec18f398a4f880ded28080425d6779_cgraph.png" border="0" usemap="#aclass_d_i_c_o_m_app_1_1_m_l_model_1_1_m_l_plugin_a0aec18f398a4f880ded28080425d6779_cgraph" loading="lazy" alt=""/></div>
+<map name="aclass_d_i_c_o_m_app_1_1_m_l_model_1_1_m_l_plugin_a0aec18f398a4f880ded28080425d6779_cgraph" id="aclass_d_i_c_o_m_app_1_1_m_l_model_1_1_m_l_plugin_a0aec18f398a4f880ded28080425d6779_cgraph">
+<area shape="rect" title="Stworzenie pliku do zapisania modelu użuywanego przez program." alt="" coords="5,5,214,48"/>
+<area shape="rect" href="class_d_i_c_o_m_app_1_1_utils_1_1_app_directory_handler.html#a9220085d536b93421989df1ba1626a18" title=" " alt="" coords="262,5,480,48"/>
+<area shape="poly" title=" " alt="" coords="214,24,249,27,244,27,214,29"/>
+</map>
+</div>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_d_i_c_o_m_app_1_1_m_l_model_1_1_m_l_plugin_a0aec18f398a4f880ded28080425d6779_icgraph.png" border="0" usemap="#aclass_d_i_c_o_m_app_1_1_m_l_model_1_1_m_l_plugin_a0aec18f398a4f880ded28080425d6779_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_d_i_c_o_m_app_1_1_m_l_model_1_1_m_l_plugin_a0aec18f398a4f880ded28080425d6779_icgraph" id="aclass_d_i_c_o_m_app_1_1_m_l_model_1_1_m_l_plugin_a0aec18f398a4f880ded28080425d6779_icgraph">
+<area shape="rect" title="Stworzenie pliku do zapisania modelu użuywanego przez program." alt="" coords="262,5,470,48"/>
+<area shape="rect" href="class_d_i_c_o_m_app_1_1_m_l_model_1_1_m_l_plugin.html#a05790ed73b93bb0324df51e6a2ee6338" title="Stworzenie instancji ML_Plugin." alt="" coords="5,5,214,48"/>
+<area shape="poly" title=" " alt="" coords="244,27,214,29,214,24,249,27"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a801e28e913aec8a4b01e7526626817b6" name="a801e28e913aec8a4b01e7526626817b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a801e28e913aec8a4b01e7526626817b6">&#9670;&#160;</a></span>_loadModel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DICOMApp.MLModel.MLPlugin._loadModel </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Załadowanie modelu. </p>
+
+<p class="definition">Definicja w linii <a class="el" href="_m_l_plugin_8cs_source.html#l00055">55</a> pliku <a class="el" href="_m_l_plugin_8cs_source.html">MLPlugin.cs</a>.</p>
+
+<p class="reference">Odwołuje się do <a class="el" href="_m_l_plugin_8cs_source.html#l00021">_input_name</a>, <a class="el" href="_m_l_plugin_8cs_source.html#l00019">_modelPath</a> i <a class="el" href="_m_l_plugin_8cs_source.html#l00020">_session</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="_m_l_plugin_8cs_source.html#l00028">MLPlugin()</a> i <a class="el" href="_m_l_plugin_8cs_source.html#l00064">ReloadModel()</a>.</p>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_d_i_c_o_m_app_1_1_m_l_model_1_1_m_l_plugin_a801e28e913aec8a4b01e7526626817b6_icgraph.png" border="0" usemap="#aclass_d_i_c_o_m_app_1_1_m_l_model_1_1_m_l_plugin_a801e28e913aec8a4b01e7526626817b6_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_d_i_c_o_m_app_1_1_m_l_model_1_1_m_l_plugin_a801e28e913aec8a4b01e7526626817b6_icgraph" id="aclass_d_i_c_o_m_app_1_1_m_l_model_1_1_m_l_plugin_a801e28e913aec8a4b01e7526626817b6_icgraph">
+<area shape="rect" title="Załadowanie modelu." alt="" coords="262,39,470,81"/>
+<area shape="rect" href="class_d_i_c_o_m_app_1_1_m_l_model_1_1_m_l_plugin.html#a05790ed73b93bb0324df51e6a2ee6338" title="Stworzenie instancji ML_Plugin." alt="" coords="5,5,214,48"/>
+<area shape="poly" title=" " alt="" coords="244,45,214,43,214,38,249,44"/>
+<area shape="rect" href="class_d_i_c_o_m_app_1_1_m_l_model_1_1_m_l_plugin.html#a2b4f373b9580627b3fcaa644a89e77cc" title="Ponowne załadowanie modelu z podanego pliku." alt="" coords="5,72,214,115"/>
+<area shape="poly" title=" " alt="" coords="244,76,215,82,214,77,249,75"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a61cd482728af4f70be778b20fff497a4" name="a61cd482728af4f70be778b20fff497a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61cd482728af4f70be778b20fff497a4">&#9670;&#160;</a></span>ExtractPointsFromHeatmaps()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Avalonia.Point[] DICOMApp.MLModel.MLPlugin.ExtractPointsFromHeatmaps </td>
+          <td>(</td>
+          <td class="paramtype">Tensor&lt; float &gt;</td>          <td class="paramname"><span class="paramname"><em>output</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>width</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>height</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Wyliczenie 4 punktów - maximów z przewidzianych heatmap. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">output</td><td>Tensor zawierający dane heatmap</td></tr>
+    <tr><td class="paramname">width</td><td>Szerokość każdej z heatmap</td></tr>
+    <tr><td class="paramname">height</td><td>Wysokość każdej z heatmap</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>Przewidziane 4 punkty - każdy z nich w miejscu z wyliczonym największym ppb dla tego punktu</dd></dl>
+
+<p class="definition">Definicja w linii <a class="el" href="_m_l_plugin_8cs_source.html#l00106">106</a> pliku <a class="el" href="_m_l_plugin_8cs_source.html">MLPlugin.cs</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="_m_l_plugin_8cs_source.html#l00139">GetPredictionFromImageData()</a>.</p>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_d_i_c_o_m_app_1_1_m_l_model_1_1_m_l_plugin_a61cd482728af4f70be778b20fff497a4_icgraph.png" border="0" usemap="#aclass_d_i_c_o_m_app_1_1_m_l_model_1_1_m_l_plugin_a61cd482728af4f70be778b20fff497a4_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_d_i_c_o_m_app_1_1_m_l_model_1_1_m_l_plugin_a61cd482728af4f70be778b20fff497a4_icgraph" id="aclass_d_i_c_o_m_app_1_1_m_l_model_1_1_m_l_plugin_a61cd482728af4f70be778b20fff497a4_icgraph">
+<area shape="rect" title="Wyliczenie 4 punktów &#45; maximów z przewidzianych heatmap." alt="" coords="262,5,470,48"/>
+<area shape="rect" href="class_d_i_c_o_m_app_1_1_m_l_model_1_1_m_l_plugin.html#ae3e818d6ddcdf493bc3f6d7ce21ca352" title="Wyliczenie predukcji na podstawie obrazu.MLModelPrediction zawierający wynik predykcji" alt="" coords="5,5,214,48"/>
+<area shape="poly" title=" " alt="" coords="244,27,214,29,214,24,249,27"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa607ac6613168078019e9834819fa62c" name="aa607ac6613168078019e9834819fa62c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa607ac6613168078019e9834819fa62c">&#9670;&#160;</a></span>GetHeatmapsPrediction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Tensor&lt; float &gt; DICOMApp.MLModel.MLPlugin.GetHeatmapsPrediction </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_d_i_c_o_m_app_1_1_data_1_1_image_data.html">ImageData</a></td>          <td class="paramname"><span class="paramname"><em>image</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="_m_l_plugin_8cs_source.html#l00070">70</a> pliku <a class="el" href="_m_l_plugin_8cs_source.html">MLPlugin.cs</a>.</p>
+
+<p class="reference">Odwołuje się do <a class="el" href="_m_l_plugin_8cs_source.html#l00021">_input_name</a>, <a class="el" href="_m_l_plugin_8cs_source.html#l00019">_modelPath</a>, <a class="el" href="_m_l_plugin_8cs_source.html#l00022">_onnxTensor</a> i <a class="el" href="_m_l_plugin_8cs_source.html#l00020">_session</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="_m_l_plugin_8cs_source.html#l00139">GetPredictionFromImageData()</a>.</p>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_d_i_c_o_m_app_1_1_m_l_model_1_1_m_l_plugin_aa607ac6613168078019e9834819fa62c_icgraph.png" border="0" usemap="#aclass_d_i_c_o_m_app_1_1_m_l_model_1_1_m_l_plugin_aa607ac6613168078019e9834819fa62c_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_d_i_c_o_m_app_1_1_m_l_model_1_1_m_l_plugin_aa607ac6613168078019e9834819fa62c_icgraph" id="aclass_d_i_c_o_m_app_1_1_m_l_model_1_1_m_l_plugin_aa607ac6613168078019e9834819fa62c_icgraph">
+<area shape="rect" title=" " alt="" coords="262,5,470,48"/>
+<area shape="rect" href="class_d_i_c_o_m_app_1_1_m_l_model_1_1_m_l_plugin.html#ae3e818d6ddcdf493bc3f6d7ce21ca352" title="Wyliczenie predukcji na podstawie obrazu.MLModelPrediction zawierający wynik predykcji" alt="" coords="5,5,214,48"/>
+<area shape="poly" title=" " alt="" coords="244,27,214,29,214,24,249,27"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae3e818d6ddcdf493bc3f6d7ce21ca352" name="ae3e818d6ddcdf493bc3f6d7ce21ca352"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3e818d6ddcdf493bc3f6d7ce21ca352">&#9670;&#160;</a></span>GetPredictionFromImageData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_d_i_c_o_m_app_1_1_data_1_1_m_l_model_prediction.html">MLModelPrediction</a> DICOMApp.MLModel.MLPlugin.GetPredictionFromImageData </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_d_i_c_o_m_app_1_1_data_1_1_image_data.html">ImageData</a></td>          <td class="paramname"><span class="paramname"><em>imageData</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wyliczenie predukcji na podstawie obrazu.<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">imageData</td><td>Obraz jako <a class="el" href="class_d_i_c_o_m_app_1_1_data_1_1_image_data.html" title="Klasa przechowujaca dane obrazu Zawiera informacje o rozmiarze obrazu oraz tablicę pikseli (zapisanyc...">ImageData</a></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd><a class="el" href="class_d_i_c_o_m_app_1_1_data_1_1_m_l_model_prediction.html" title="Klasa przechowująca wynik predykcji modelu.">MLModelPrediction</a> zawierający wynik predykcji</dd></dl>
+ </p>
+
+<p>Implementuje <a class="el" href="interface_d_i_c_o_m_app_1_1_interfaces_1_1_i_m_l_plugin.html#a4a079c96cb400c97de01f4bb36fbc82c">DICOMApp.Interfaces.IMLPlugin</a>.</p>
+
+<p class="definition">Definicja w linii <a class="el" href="_m_l_plugin_8cs_source.html#l00139">139</a> pliku <a class="el" href="_m_l_plugin_8cs_source.html">MLPlugin.cs</a>.</p>
+
+<p class="reference">Odwołuje się do <a class="el" href="_m_l_plugin_8cs_source.html#l00106">ExtractPointsFromHeatmaps()</a>, <a class="el" href="_m_l_plugin_8cs_source.html#l00070">GetHeatmapsPrediction()</a> i <a class="el" href="_m_l_plugin_8cs_source.html#l00093">ImageDataFromTensor()</a>.</p>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_d_i_c_o_m_app_1_1_m_l_model_1_1_m_l_plugin_ae3e818d6ddcdf493bc3f6d7ce21ca352_cgraph.png" border="0" usemap="#aclass_d_i_c_o_m_app_1_1_m_l_model_1_1_m_l_plugin_ae3e818d6ddcdf493bc3f6d7ce21ca352_cgraph" loading="lazy" alt=""/></div>
+<map name="aclass_d_i_c_o_m_app_1_1_m_l_model_1_1_m_l_plugin_ae3e818d6ddcdf493bc3f6d7ce21ca352_cgraph" id="aclass_d_i_c_o_m_app_1_1_m_l_model_1_1_m_l_plugin_ae3e818d6ddcdf493bc3f6d7ce21ca352_cgraph">
+<area shape="rect" title="Wyliczenie predukcji na podstawie obrazu.MLModelPrediction zawierający wynik predykcji" alt="" coords="5,72,214,115"/>
+<area shape="rect" href="class_d_i_c_o_m_app_1_1_m_l_model_1_1_m_l_plugin.html#a61cd482728af4f70be778b20fff497a4" title="Wyliczenie 4 punktów &#45; maximów z przewidzianych heatmap." alt="" coords="262,5,470,48"/>
+<area shape="poly" title=" " alt="" coords="193,69,269,51,264,54,195,74"/>
+<area shape="rect" href="class_d_i_c_o_m_app_1_1_m_l_model_1_1_m_l_plugin.html#aa607ac6613168078019e9834819fa62c" title=" " alt="" coords="262,72,470,115"/>
+<area shape="poly" title=" " alt="" coords="214,91,249,93,243,94,214,96"/>
+<area shape="rect" href="class_d_i_c_o_m_app_1_1_m_l_model_1_1_m_l_plugin.html#a8f3c82f01a031c61098215144ed5cb68" title=" " alt="" coords="262,139,470,181"/>
+<area shape="poly" title=" " alt="" coords="194,113,269,134,264,135,194,118"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a8f3c82f01a031c61098215144ed5cb68" name="a8f3c82f01a031c61098215144ed5cb68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f3c82f01a031c61098215144ed5cb68">&#9670;&#160;</a></span>ImageDataFromTensor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt; <a class="el" href="class_d_i_c_o_m_app_1_1_data_1_1_image_data.html">ImageData</a> &gt; DICOMApp.MLModel.MLPlugin.ImageDataFromTensor </td>
+          <td>(</td>
+          <td class="paramtype">Tensor&lt; float &gt;</td>          <td class="paramname"><span class="paramname"><em>output</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="_m_l_plugin_8cs_source.html#l00093">93</a> pliku <a class="el" href="_m_l_plugin_8cs_source.html">MLPlugin.cs</a>.</p>
+
+<p class="reference">Odwołuje się do <a class="el" href="_m_l_plugin_8cs_source.html#l00022">_onnxTensor</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="_m_l_plugin_8cs_source.html#l00139">GetPredictionFromImageData()</a>.</p>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_d_i_c_o_m_app_1_1_m_l_model_1_1_m_l_plugin_a8f3c82f01a031c61098215144ed5cb68_icgraph.png" border="0" usemap="#aclass_d_i_c_o_m_app_1_1_m_l_model_1_1_m_l_plugin_a8f3c82f01a031c61098215144ed5cb68_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_d_i_c_o_m_app_1_1_m_l_model_1_1_m_l_plugin_a8f3c82f01a031c61098215144ed5cb68_icgraph" id="aclass_d_i_c_o_m_app_1_1_m_l_model_1_1_m_l_plugin_a8f3c82f01a031c61098215144ed5cb68_icgraph">
+<area shape="rect" title=" " alt="" coords="262,5,470,48"/>
+<area shape="rect" href="class_d_i_c_o_m_app_1_1_m_l_model_1_1_m_l_plugin.html#ae3e818d6ddcdf493bc3f6d7ce21ca352" title="Wyliczenie predukcji na podstawie obrazu.MLModelPrediction zawierający wynik predykcji" alt="" coords="5,5,214,48"/>
+<area shape="poly" title=" " alt="" coords="244,27,214,29,214,24,249,27"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2b4f373b9580627b3fcaa644a89e77cc" name="a2b4f373b9580627b3fcaa644a89e77cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b4f373b9580627b3fcaa644a89e77cc">&#9670;&#160;</a></span>ReloadModel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DICOMApp.MLModel.MLPlugin.ReloadModel </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>path</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ponowne załadowanie modelu z podanego pliku.<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>Ścieżka do pliku z modelem</td></tr>
+  </table>
+  </dd>
+</dl>
+ </p>
+
+<p>Implementuje <a class="el" href="interface_d_i_c_o_m_app_1_1_interfaces_1_1_i_m_l_plugin.html#ab4e0595445ce6e44dd9485ae4b60f31f">DICOMApp.Interfaces.IMLPlugin</a>.</p>
+
+<p class="definition">Definicja w linii <a class="el" href="_m_l_plugin_8cs_source.html#l00064">64</a> pliku <a class="el" href="_m_l_plugin_8cs_source.html">MLPlugin.cs</a>.</p>
+
+<p class="reference">Odwołuje się do <a class="el" href="_m_l_plugin_8cs_source.html#l00055">_loadModel()</a> i <a class="el" href="_m_l_plugin_8cs_source.html#l00019">_modelPath</a>.</p>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_d_i_c_o_m_app_1_1_m_l_model_1_1_m_l_plugin_a2b4f373b9580627b3fcaa644a89e77cc_cgraph.png" border="0" usemap="#aclass_d_i_c_o_m_app_1_1_m_l_model_1_1_m_l_plugin_a2b4f373b9580627b3fcaa644a89e77cc_cgraph" loading="lazy" alt=""/></div>
+<map name="aclass_d_i_c_o_m_app_1_1_m_l_model_1_1_m_l_plugin_a2b4f373b9580627b3fcaa644a89e77cc_cgraph" id="aclass_d_i_c_o_m_app_1_1_m_l_model_1_1_m_l_plugin_a2b4f373b9580627b3fcaa644a89e77cc_cgraph">
+<area shape="rect" title="Ponowne załadowanie modelu z podanego pliku." alt="" coords="5,5,214,48"/>
+<area shape="rect" href="class_d_i_c_o_m_app_1_1_m_l_model_1_1_m_l_plugin.html#a801e28e913aec8a4b01e7526626817b6" title="Załadowanie modelu." alt="" coords="262,5,470,48"/>
+<area shape="poly" title=" " alt="" coords="214,24,249,27,243,27,214,29"/>
+</map>
+</div>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Dokumentacja atrybutów składowych</h2>
+<a id="aa980086c73b06ecf69b897465f94635d" name="aa980086c73b06ecf69b897465f94635d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa980086c73b06ecf69b897465f94635d">&#9670;&#160;</a></span>_input_name</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string DICOMApp.MLModel.MLPlugin._input_name</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="_m_l_plugin_8cs_source.html#l00021">21</a> pliku <a class="el" href="_m_l_plugin_8cs_source.html">MLPlugin.cs</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="_m_l_plugin_8cs_source.html#l00055">_loadModel()</a> i <a class="el" href="_m_l_plugin_8cs_source.html#l00070">GetHeatmapsPrediction()</a>.</p>
+
+</div>
+</div>
+<a id="aa77b301eb93640e8d96ba04e9d5cf7e6" name="aa77b301eb93640e8d96ba04e9d5cf7e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa77b301eb93640e8d96ba04e9d5cf7e6">&#9670;&#160;</a></span>_modelPath</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string DICOMApp.MLModel.MLPlugin._modelPath</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="_m_l_plugin_8cs_source.html#l00019">19</a> pliku <a class="el" href="_m_l_plugin_8cs_source.html">MLPlugin.cs</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="_m_l_plugin_8cs_source.html#l00039">_createModelFile()</a>, <a class="el" href="_m_l_plugin_8cs_source.html#l00055">_loadModel()</a>, <a class="el" href="_m_l_plugin_8cs_source.html#l00070">GetHeatmapsPrediction()</a> i <a class="el" href="_m_l_plugin_8cs_source.html#l00064">ReloadModel()</a>.</p>
+
+</div>
+</div>
+<a id="af7feaa9c36df64e19bee4fd7514050bc" name="af7feaa9c36df64e19bee4fd7514050bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7feaa9c36df64e19bee4fd7514050bc">&#9670;&#160;</a></span>_onnxTensor</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_d_i_c_o_m_app_1_1_m_l_model_1_1_o_n_n_x_tensor.html">ONNXTensor</a> DICOMApp.MLModel.MLPlugin._onnxTensor</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="_m_l_plugin_8cs_source.html#l00022">22</a> pliku <a class="el" href="_m_l_plugin_8cs_source.html">MLPlugin.cs</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="_m_l_plugin_8cs_source.html#l00070">GetHeatmapsPrediction()</a>, <a class="el" href="_m_l_plugin_8cs_source.html#l00093">ImageDataFromTensor()</a> i <a class="el" href="_m_l_plugin_8cs_source.html#l00028">MLPlugin()</a>.</p>
+
+</div>
+</div>
+<a id="acb21ae5fdac07041a815fb4607e462c1" name="acb21ae5fdac07041a815fb4607e462c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb21ae5fdac07041a815fb4607e462c1">&#9670;&#160;</a></span>_session</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">InferenceSession DICOMApp.MLModel.MLPlugin._session</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="_m_l_plugin_8cs_source.html#l00020">20</a> pliku <a class="el" href="_m_l_plugin_8cs_source.html">MLPlugin.cs</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="_m_l_plugin_8cs_source.html#l00055">_loadModel()</a> i <a class="el" href="_m_l_plugin_8cs_source.html#l00070">GetHeatmapsPrediction()</a>.</p>
+
+</div>
+</div>
+<hr/>Dokumentacja dla tej klasy została wygenerowana z pliku:<ul>
+<li>C:/Users/emili/Documents/DICOM-App/MLModel/<a class="el" href="_m_l_plugin_8cs_source.html">MLPlugin.cs</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="namespace_d_i_c_o_m_app.html">DICOMApp</a></li><li class="navelem"><a href="namespace_d_i_c_o_m_app_1_1_m_l_model.html">MLModel</a></li><li class="navelem"><a href="class_d_i_c_o_m_app_1_1_m_l_model_1_1_m_l_plugin.html">MLPlugin</a></li>
+    <li class="footer">Wygenerowano za pomocą <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

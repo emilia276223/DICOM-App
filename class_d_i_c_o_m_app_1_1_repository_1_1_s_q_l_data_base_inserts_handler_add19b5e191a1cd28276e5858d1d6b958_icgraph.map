@@ -1,0 +1,5 @@
+<map id="DICOMApp.Repository.SQLDataBaseInsertsHandler.InsertMagnifiedImageCenterInfo" name="DICOMApp.Repository.SQLDataBaseInsertsHandler.InsertMagnifiedImageCenterInfo">
+<area shape="rect" id="Node000001" title="Dodanie informacji o srodku okna powiększającego do obrazu." alt="" coords="337,5,566,64"/>
+<area shape="rect" id="Node000002" href="$class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler.html#a078919e77b4ef8397eee1e1b65283b31" title="Zapisuje do obrazu informacje o srodku okna powększającego." alt="" coords="5,13,289,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="318,35,289,37,289,32,324,35"/>
+</map>

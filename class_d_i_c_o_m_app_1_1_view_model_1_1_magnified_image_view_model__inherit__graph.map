@@ -1,0 +1,9 @@
+<map id="DICOMApp.ViewModel.MagnifiedImageViewModel" name="DICOMApp.ViewModel.MagnifiedImageViewModel">
+<area shape="rect" id="Node000001" title="Klasa modelująca widok powiekszenia obrazu." alt="" coords="148,357,355,821"/>
+<area shape="rect" id="Node000002" href="$class_d_i_c_o_m_app_1_1_view_model_1_1_view_model_base.html" title="Klasa bazowa modelu widoku." alt="" coords="5,181,250,251"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="144,262,177,357,172,358,143,267"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="70,5,185,75"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="128,87,130,182,125,182,127,92"/>
+<area shape="rect" id="Node000004" href="$interface_d_i_c_o_m_app_1_1_behaviors_1_1_i_magnified_image_view_model.html" title="Interfejs okna powększającego z liniami powększonymi Stworzony na potrzeby oddzielenia trochę impleme..." alt="" coords="275,123,479,309"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="342,321,332,359,327,356,340,326"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="DICOMApp.ViewModel.ElementListViewModel.ToggleExpantion" name="DICOMApp.ViewModel.ElementListViewModel.ToggleExpantion">
+<area shape="rect" id="Node000001" title="Metoda zmieniająca stan widoku." alt="" coords="5,5,215,48"/>
+<area shape="rect" id="Node000002" href="$class_d_i_c_o_m_app_1_1_view_model_1_1_element_list_view_model.html#a42c3537247f783edbdc822882c23058c" title="Metoda ukrywająca listę elementów." alt="" coords="263,5,472,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="215,24,250,27,245,27,215,29"/>
+</map>

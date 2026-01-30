@@ -1,0 +1,13 @@
+<map id="DICOMApp.ViewModel.Lines.LineWithCapsViewModel" name="DICOMApp.ViewModel.Lines.LineWithCapsViewModel">
+<area shape="rect" id="Node000001" title="Klasa modelująca linie z brzegami." alt="" coords="260,608,446,1013"/>
+<area shape="rect" id="Node000002" href="$class_d_i_c_o_m_app_1_1_view_model_1_1_line_view_model_base.html" title="Abstrakcyjna klasa bazowa modelująca linie." alt="" coords="146,313,350,527"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="281,538,301,608,296,608,279,544"/>
+<area shape="rect" id="Node000003" href="$class_d_i_c_o_m_app_1_1_view_model_1_1_view_model_base.html" title="Klasa bazowa modelu widoku." alt="" coords="5,132,250,201"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="150,212,200,313,195,314,150,218"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="70,5,185,75"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="128,87,130,132,125,132,127,93"/>
+<area shape="rect" id="Node000005" href="$interface_d_i_c_o_m_app_1_1_interfaces_1_1_i_dicom_scaler.html" title="Interfejs klasy obsługującej skalowanie DICOM." alt="" coords="274,124,461,209"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="347,211,308,299,303,297,349,206"/>
+<area shape="rect" id="Node000006" href="$interface_d_i_c_o_m_app_1_1_interfaces_1_1_i_line_view_model.html" title="Interfejs modelujący linie." alt="" coords="373,281,546,559"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="419,570,411,609,406,607,417,575"/>
+</map>

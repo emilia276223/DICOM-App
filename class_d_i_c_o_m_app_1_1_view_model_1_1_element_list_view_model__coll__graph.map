@@ -1,0 +1,7 @@
+<map id="DICOMApp.ViewModel.ElementListViewModel" name="DICOMApp.ViewModel.ElementListViewModel">
+<area shape="rect" id="Node000001" title="Klasa modelująca widok listy elementów." alt="" coords="28,240,228,688"/>
+<area shape="rect" id="Node000002" href="$class_d_i_c_o_m_app_1_1_view_model_1_1_view_model_base.html" title="Klasa bazowa modelu widoku." alt="" coords="5,123,250,192"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="128,204,130,241,125,240,127,210"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="70,5,185,75"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="128,87,130,123,125,123,127,92"/>
+</map>

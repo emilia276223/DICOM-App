@@ -1,0 +1,7 @@
+<map id="DICOMApp.Utils.DICOMReader.GetImage" name="DICOMApp.Utils.DICOMReader.GetImage">
+<area shape="rect" id="Node000001" title="Wczytuje plik DICOM i zwraca przycięty obraz jako ImageData." alt="" coords="5,5,221,48"/>
+<area shape="rect" id="Node000002" href="$class_d_i_c_o_m_app_1_1_utils_1_1_d_i_c_o_m_reader.html#a90e478b0988cfef3497582c4db191ed1" title=" " alt="" coords="269,5,484,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="221,24,256,27,251,27,221,29"/>
+<area shape="rect" id="Node000003" href="$class_d_i_c_o_m_app_1_1_utils_1_1_d_i_c_o_m_reader.html#ab44719e956a94bbd28d01bca67df1654" title=" " alt="" coords="532,5,747,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="484,24,519,27,514,27,484,29"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="DICOMApp.Utils.AppDirectoryHandler.GetONNXModelDirectory" name="DICOMApp.Utils.AppDirectoryHandler.GetONNXModelDirectory">
+<area shape="rect" id="Node000001" title=" " alt="" coords="518,39,736,81"/>
+<area shape="rect" id="Node000002" href="$class_d_i_c_o_m_app_1_1_m_l_model_1_1_m_l_plugin.html#a0aec18f398a4f880ded28080425d6779" title="Stworzenie pliku do zapisania modelu użuywanego przez program." alt="" coords="262,5,470,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="500,44,470,43,470,37,505,44"/>
+<area shape="rect" id="Node000004" href="$class_d_i_c_o_m_app_1_1_utils_1_1_app_directory_handler.html#ab0b2088f9d01fe974bec9a5d0468e357" title=" " alt="" coords="266,72,466,115"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="505,76,467,83,466,78,500,76"/>
+<area shape="rect" id="Node000003" href="$class_d_i_c_o_m_app_1_1_m_l_model_1_1_m_l_plugin.html#a05790ed73b93bb0324df51e6a2ee6338" title="Stworzenie instancji ML_Plugin." alt="" coords="5,5,214,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="244,27,215,29,214,24,249,26"/>
+</map>

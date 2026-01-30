@@ -1,0 +1,5 @@
+<map id="DICOMApp.MLModel.MLPlugin.ImageDataFromTensor" name="DICOMApp.MLModel.MLPlugin.ImageDataFromTensor">
+<area shape="rect" id="Node000001" title=" " alt="" coords="262,5,470,48"/>
+<area shape="rect" id="Node000002" href="$class_d_i_c_o_m_app_1_1_m_l_model_1_1_m_l_plugin.html#ae3e818d6ddcdf493bc3f6d7ce21ca352" title="Wyliczenie predukcji na podstawie obrazu.MLModelPrediction zawierający wynik predykcji" alt="" coords="5,5,214,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="244,27,214,29,214,24,249,27"/>
+</map>

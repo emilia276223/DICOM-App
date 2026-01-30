@@ -1,0 +1,7 @@
+<map id="DICOMApp.Interfaces.IDicomScaler" name="DICOMApp.Interfaces.IDicomScaler">
+<area shape="rect" id="Node000001" title="Interfejs klasy obsługującej skalowanie DICOM." alt="" coords="171,5,358,91"/>
+<area shape="rect" id="Node000002" href="$class_d_i_c_o_m_app_1_1_d_i_c_o_m_1_1_linear_d_i_c_o_m_scaler.html" title="Klasa obsługująca skalowanie DICOM dla obrazów ze skalą liniową" alt="" coords="5,181,254,293"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="228,101,171,183,167,180,224,104"/>
+<area shape="rect" id="Node000003" href="$class_d_i_c_o_m_app_1_1_d_i_c_o_m_1_1_u_s_g_d_i_c_o_m_scaler.html" title="Klasa obsługująca skalowanie DICOM dla obrazów ultrasonograficznych implementująca interfejs IDicomSc..." alt="" coords="278,139,520,336"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="304,100,332,139,326,139,302,105"/>
+</map>

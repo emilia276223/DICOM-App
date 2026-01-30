@@ -1,0 +1,614 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pl">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>DICOM-App: Dokumentacja klasy DICOMApp.Behaviors.PointerPositionBehavior</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">DICOM-App<span id="projectnumber">&#160;version1.0</span>
+   </div>
+   <div id="projectbrief">Aplikacja do przeglądania obrazów DICOM oraz korzystania z pluginów AI</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano za pomocą Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('class_d_i_c_o_m_app_1_1_behaviors_1_1_pointer_position_behavior.html','','class_d_i_c_o_m_app_1_1_behaviors_1_1_pointer_position_behavior-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Wczytywanie...</div>
+<div class="SRStatus" id="Searching">Szukanie...</div>
+<div class="SRStatus" id="NoMatches">Brak dopasowań</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Dokumentacja klasy DICOMApp.Behaviors.PointerPositionBehavior</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Behavior umożliwiający powiązanie pozycji wskaźnika myszy z komendami.  
+ <a href="#details">Więcej...</a></p>
+<div class="dynheader">
+Diagram dziedziczenia dla DICOMApp.Behaviors.PointerPositionBehavior</div>
+<div class="dyncontent">
+<div class="center"><img src="class_d_i_c_o_m_app_1_1_behaviors_1_1_pointer_position_behavior__inherit__graph.png" border="0" usemap="#a_d_i_c_o_m_app_8_behaviors_8_pointer_position_behavior_inherit__map" loading="lazy" alt="Inheritance graph"/></div>
+<map name="a_d_i_c_o_m_app_8_behaviors_8_pointer_position_behavior_inherit__map" id="a_d_i_c_o_m_app_8_behaviors_8_pointer_position_behavior_inherit__map">
+<area shape="rect" title="Behavior umożliwiający powiązanie pozycji wskaźnika myszy z komendami." alt="" coords="5,123,234,400"/>
+<area shape="rect" title=" " alt="" coords="59,5,181,75"/>
+<area shape="poly" title=" " alt="" coords="120,87,122,123,117,122,119,92"/>
+</map>
+</div>
+<div class="dynheader">
+Diagram współpracy dla DICOMApp.Behaviors.PointerPositionBehavior:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_d_i_c_o_m_app_1_1_behaviors_1_1_pointer_position_behavior__coll__graph.png" border="0" usemap="#a_d_i_c_o_m_app_8_behaviors_8_pointer_position_behavior_coll__map" loading="lazy" alt="Collaboration graph"/></div>
+<map name="a_d_i_c_o_m_app_8_behaviors_8_pointer_position_behavior_coll__map" id="a_d_i_c_o_m_app_8_behaviors_8_pointer_position_behavior_coll__map">
+<area shape="rect" title="Behavior umożliwiający powiązanie pozycji wskaźnika myszy z komendami." alt="" coords="5,123,234,400"/>
+<area shape="rect" title=" " alt="" coords="59,5,181,75"/>
+<area shape="poly" title=" " alt="" coords="120,87,122,123,117,122,119,92"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-static-attribs" class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+Statyczne atrybuty publiczne</h2></td></tr>
+<tr class="memitem:ab6b63e72e2d766d6299644b12834925b" id="r_ab6b63e72e2d766d6299644b12834925b"><td class="memItemLeft">static readonly StyledProperty&lt; ICommand?&gt;&#160;</td><td class="memItemRight"><a class="el" href="#ab6b63e72e2d766d6299644b12834925b">PointerPressedCommandProperty</a></td></tr>
+<tr class="memdesc:ab6b63e72e2d766d6299644b12834925b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Powiązanie komendy zdarzenia naciśnięcia wskaźnika myszy.  <br /></td></tr>
+<tr class="memitem:af556181c69d0cad56ee4b133f5884590" id="r_af556181c69d0cad56ee4b133f5884590"><td class="memItemLeft">static readonly StyledProperty&lt; ICommand?&gt;&#160;</td><td class="memItemRight"><a class="el" href="#af556181c69d0cad56ee4b133f5884590">PointerReleasedCommandProperty</a></td></tr>
+<tr class="memdesc:af556181c69d0cad56ee4b133f5884590"><td class="mdescLeft">&#160;</td><td class="mdescRight">Powiązanie komendy zdarzenia zwolnienia wskaźnika myszy.  <br /></td></tr>
+<tr class="memitem:a4e9e51dd35f739b385d35715f64ac8e1" id="r_a4e9e51dd35f739b385d35715f64ac8e1"><td class="memItemLeft">static readonly StyledProperty&lt; ICommand?&gt;&#160;</td><td class="memItemRight"><a class="el" href="#a4e9e51dd35f739b385d35715f64ac8e1">PointerMovedCommandProperty</a></td></tr>
+<tr class="memdesc:a4e9e51dd35f739b385d35715f64ac8e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Powiązanie komendy zdarzenia ruchu wskaźnika myszy.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pro-methods" class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Metody chronione</h2></td></tr>
+<tr class="memitem:af22a3cbd4f3d92e9b2272770798d3c86" id="r_af22a3cbd4f3d92e9b2272770798d3c86"><td class="memItemLeft">override void&#160;</td><td class="memItemRight"><a class="el" href="#af22a3cbd4f3d92e9b2272770798d3c86">OnAttached</a> ()</td></tr>
+<tr class="memdesc:af22a3cbd4f3d92e9b2272770798d3c86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dodaje obsługę zdarzeń wskaźnika myszy do powiązanego obiektu.  <br /></td></tr>
+<tr class="memitem:adbb1067db27a753794964582c89b40c5" id="r_adbb1067db27a753794964582c89b40c5"><td class="memItemLeft">override void&#160;</td><td class="memItemRight"><a class="el" href="#adbb1067db27a753794964582c89b40c5">OnDetaching</a> ()</td></tr>
+<tr class="memdesc:adbb1067db27a753794964582c89b40c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dodaje obsługę zdarzeń wskaźnika myszy do powiązanego obiektu.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-properties" class="groupheader"><a id="properties" name="properties"></a>
+Właściwości</h2></td></tr>
+<tr class="memitem:a0aaf3c590fb80acc7c367241f6d3af23" id="r_a0aaf3c590fb80acc7c367241f6d3af23"><td class="memItemLeft">ICommand?&#160;</td><td class="memItemRight"><a class="el" href="#a0aaf3c590fb80acc7c367241f6d3af23">PointerPressedCommand</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a0aaf3c590fb80acc7c367241f6d3af23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ustawia lub pobiera komendę wywoływaną po naciśnięciu przycisku myszy.  <br /></td></tr>
+<tr class="memitem:a6ca74ebd4f8b86c563582b20d3d932c5" id="r_a6ca74ebd4f8b86c563582b20d3d932c5"><td class="memItemLeft">ICommand?&#160;</td><td class="memItemRight"><a class="el" href="#a6ca74ebd4f8b86c563582b20d3d932c5">PointerReleasedCommand</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a6ca74ebd4f8b86c563582b20d3d932c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ustawia lub pobiera komendę wywoływaną po zwolnieniu przycisku myszy.  <br /></td></tr>
+<tr class="memitem:a4d308c974c1cde723b83d4f1c2d292e9" id="r_a4d308c974c1cde723b83d4f1c2d292e9"><td class="memItemLeft">ICommand?&#160;</td><td class="memItemRight"><a class="el" href="#a4d308c974c1cde723b83d4f1c2d292e9">PointerMovedCommand</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a4d308c974c1cde723b83d4f1c2d292e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ustawia lub pobiera komendę wywoływaną po ruchu wskaźnika myszy.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-methods" class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Metody prywatne</h2></td></tr>
+<tr class="memitem:ab94ef926337b11c2e471d2123bcf533b" id="r_ab94ef926337b11c2e471d2123bcf533b"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ab94ef926337b11c2e471d2123bcf533b">OnPointerMoved</a> (object? sender, PointerEventArgs args)</td></tr>
+<tr class="memdesc:ab94ef926337b11c2e471d2123bcf533b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obsługuje zdarzenie ruchu wskaźnika myszy.  <br /></td></tr>
+<tr class="memitem:a128ed544eb7ac01778467704bc7502d7" id="r_a128ed544eb7ac01778467704bc7502d7"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a128ed544eb7ac01778467704bc7502d7">OnPointerPressed</a> (object? sender, PointerPressedEventArgs e)</td></tr>
+<tr class="memdesc:a128ed544eb7ac01778467704bc7502d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obsługuje zdarzenie naciśnięcia przycisku myszy.  <br /></td></tr>
+<tr class="memitem:addf09659bbd4c576ab020a95ab0ecde7" id="r_addf09659bbd4c576ab020a95ab0ecde7"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#addf09659bbd4c576ab020a95ab0ecde7">OnPointerReleased</a> (object? sender, PointerReleasedEventArgs e)</td></tr>
+<tr class="memdesc:addf09659bbd4c576ab020a95ab0ecde7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obsługuje zdarzenie zwolnienia przycisku myszy.  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Opis szczegółowy</h2>
+<div class="textblock"><p>Behavior umożliwiający powiązanie pozycji wskaźnika myszy z komendami. </p>
+
+<p class="definition">Definicja w linii <a class="el" href="_pointer_position_behavior_8cs_source.html#l00012">12</a> pliku <a class="el" href="_pointer_position_behavior_8cs_source.html">PointerPositionBehavior.cs</a>.</p>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Dokumentacja funkcji składowych</h2>
+<a id="af22a3cbd4f3d92e9b2272770798d3c86" name="af22a3cbd4f3d92e9b2272770798d3c86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af22a3cbd4f3d92e9b2272770798d3c86">&#9670;&#160;</a></span>OnAttached()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void DICOMApp.Behaviors.PointerPositionBehavior.OnAttached </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Dodaje obsługę zdarzeń wskaźnika myszy do powiązanego obiektu. </p>
+
+<p class="definition">Definicja w linii <a class="el" href="_pointer_position_behavior_8cs_source.html#l00066">66</a> pliku <a class="el" href="_pointer_position_behavior_8cs_source.html">PointerPositionBehavior.cs</a>.</p>
+
+<p class="reference">Odwołuje się do <a class="el" href="_pointer_position_behavior_8cs_source.html#l00097">OnPointerMoved()</a>, <a class="el" href="_pointer_position_behavior_8cs_source.html#l00109">OnPointerPressed()</a> i <a class="el" href="_pointer_position_behavior_8cs_source.html#l00122">OnPointerReleased()</a>.</p>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_d_i_c_o_m_app_1_1_behaviors_1_1_pointer_position_behavior_af22a3cbd4f3d92e9b2272770798d3c86_cgraph.png" border="0" usemap="#aclass_d_i_c_o_m_app_1_1_behaviors_1_1_pointer_position_behavior_af22a3cbd4f3d92e9b2272770798d3c86_cgraph" loading="lazy" alt=""/></div>
+<map name="aclass_d_i_c_o_m_app_1_1_behaviors_1_1_pointer_position_behavior_af22a3cbd4f3d92e9b2272770798d3c86_cgraph" id="aclass_d_i_c_o_m_app_1_1_behaviors_1_1_pointer_position_behavior_af22a3cbd4f3d92e9b2272770798d3c86_cgraph">
+<area shape="rect" title="Dodaje obsługę zdarzeń wskaźnika myszy do powiązanego obiektu." alt="" coords="5,72,202,115"/>
+<area shape="rect" href="class_d_i_c_o_m_app_1_1_behaviors_1_1_pointer_position_behavior.html#ab94ef926337b11c2e471d2123bcf533b" title="Obsługuje zdarzenie ruchu wskaźnika myszy." alt="" coords="258,5,478,48"/>
+<area shape="poly" title=" " alt="" coords="190,69,268,51,263,54,192,74"/>
+<area shape="rect" href="class_d_i_c_o_m_app_1_1_behaviors_1_1_pointer_position_behavior.html#a128ed544eb7ac01778467704bc7502d7" title="Obsługuje zdarzenie naciśnięcia przycisku myszy." alt="" coords="253,72,482,115"/>
+<area shape="poly" title=" " alt="" coords="202,91,240,93,235,94,203,96"/>
+<area shape="rect" href="class_d_i_c_o_m_app_1_1_behaviors_1_1_pointer_position_behavior.html#addf09659bbd4c576ab020a95ab0ecde7" title="Obsługuje zdarzenie zwolnienia przycisku myszy." alt="" coords="250,139,486,181"/>
+<area shape="poly" title=" " alt="" coords="191,113,268,134,263,135,191,118"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="adbb1067db27a753794964582c89b40c5" name="adbb1067db27a753794964582c89b40c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbb1067db27a753794964582c89b40c5">&#9670;&#160;</a></span>OnDetaching()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void DICOMApp.Behaviors.PointerPositionBehavior.OnDetaching </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Dodaje obsługę zdarzeń wskaźnika myszy do powiązanego obiektu. </p>
+
+<p class="definition">Definicja w linii <a class="el" href="_pointer_position_behavior_8cs_source.html#l00080">80</a> pliku <a class="el" href="_pointer_position_behavior_8cs_source.html">PointerPositionBehavior.cs</a>.</p>
+
+<p class="reference">Odwołuje się do <a class="el" href="_pointer_position_behavior_8cs_source.html#l00097">OnPointerMoved()</a>, <a class="el" href="_pointer_position_behavior_8cs_source.html#l00109">OnPointerPressed()</a> i <a class="el" href="_pointer_position_behavior_8cs_source.html#l00122">OnPointerReleased()</a>.</p>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_d_i_c_o_m_app_1_1_behaviors_1_1_pointer_position_behavior_adbb1067db27a753794964582c89b40c5_cgraph.png" border="0" usemap="#aclass_d_i_c_o_m_app_1_1_behaviors_1_1_pointer_position_behavior_adbb1067db27a753794964582c89b40c5_cgraph" loading="lazy" alt=""/></div>
+<map name="aclass_d_i_c_o_m_app_1_1_behaviors_1_1_pointer_position_behavior_adbb1067db27a753794964582c89b40c5_cgraph" id="aclass_d_i_c_o_m_app_1_1_behaviors_1_1_pointer_position_behavior_adbb1067db27a753794964582c89b40c5_cgraph">
+<area shape="rect" title="Dodaje obsługę zdarzeń wskaźnika myszy do powiązanego obiektu." alt="" coords="5,72,205,115"/>
+<area shape="rect" href="class_d_i_c_o_m_app_1_1_behaviors_1_1_pointer_position_behavior.html#ab94ef926337b11c2e471d2123bcf533b" title="Obsługuje zdarzenie ruchu wskaźnika myszy." alt="" coords="261,5,481,48"/>
+<area shape="poly" title=" " alt="" coords="192,69,270,51,266,54,194,74"/>
+<area shape="rect" href="class_d_i_c_o_m_app_1_1_behaviors_1_1_pointer_position_behavior.html#a128ed544eb7ac01778467704bc7502d7" title="Obsługuje zdarzenie naciśnięcia przycisku myszy." alt="" coords="256,72,486,115"/>
+<area shape="poly" title=" " alt="" coords="205,91,243,93,238,94,205,96"/>
+<area shape="rect" href="class_d_i_c_o_m_app_1_1_behaviors_1_1_pointer_position_behavior.html#addf09659bbd4c576ab020a95ab0ecde7" title="Obsługuje zdarzenie zwolnienia przycisku myszy." alt="" coords="253,139,489,181"/>
+<area shape="poly" title=" " alt="" coords="193,113,271,134,265,135,193,118"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab94ef926337b11c2e471d2123bcf533b" name="ab94ef926337b11c2e471d2123bcf533b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab94ef926337b11c2e471d2123bcf533b">&#9670;&#160;</a></span>OnPointerMoved()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DICOMApp.Behaviors.PointerPositionBehavior.OnPointerMoved </td>
+          <td>(</td>
+          <td class="paramtype">object?</td>          <td class="paramname"><span class="paramname"><em>sender</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">PointerEventArgs</td>          <td class="paramname"><span class="paramname"><em>args</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Obsługuje zdarzenie ruchu wskaźnika myszy. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sender</td><td>Objekt wysyłający zdarzenie</td></tr>
+    <tr><td class="paramname">args</td><td>Argumenty zdarzenia</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definicja w linii <a class="el" href="_pointer_position_behavior_8cs_source.html#l00097">97</a> pliku <a class="el" href="_pointer_position_behavior_8cs_source.html">PointerPositionBehavior.cs</a>.</p>
+
+<p class="reference">Odwołuje się do <a class="el" href="_pointer_position_behavior_8cs_source.html#l00058">PointerMovedCommand</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="_pointer_position_behavior_8cs_source.html#l00066">OnAttached()</a> i <a class="el" href="_pointer_position_behavior_8cs_source.html#l00080">OnDetaching()</a>.</p>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_d_i_c_o_m_app_1_1_behaviors_1_1_pointer_position_behavior_ab94ef926337b11c2e471d2123bcf533b_icgraph.png" border="0" usemap="#aclass_d_i_c_o_m_app_1_1_behaviors_1_1_pointer_position_behavior_ab94ef926337b11c2e471d2123bcf533b_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_d_i_c_o_m_app_1_1_behaviors_1_1_pointer_position_behavior_ab94ef926337b11c2e471d2123bcf533b_icgraph" id="aclass_d_i_c_o_m_app_1_1_behaviors_1_1_pointer_position_behavior_ab94ef926337b11c2e471d2123bcf533b_icgraph">
+<area shape="rect" title="Obsługuje zdarzenie ruchu wskaźnika myszy." alt="" coords="253,39,473,81"/>
+<area shape="rect" href="class_d_i_c_o_m_app_1_1_behaviors_1_1_pointer_position_behavior.html#af22a3cbd4f3d92e9b2272770798d3c86" title="Dodaje obsługę zdarzeń wskaźnika myszy do powiązanego obiektu." alt="" coords="7,5,203,48"/>
+<area shape="poly" title=" " alt="" coords="234,44,204,42,204,37,240,43"/>
+<area shape="rect" href="class_d_i_c_o_m_app_1_1_behaviors_1_1_pointer_position_behavior.html#adbb1067db27a753794964582c89b40c5" title="Dodaje obsługę zdarzeń wskaźnika myszy do powiązanego obiektu." alt="" coords="5,72,205,115"/>
+<area shape="poly" title=" " alt="" coords="234,77,205,83,205,78,240,76"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a128ed544eb7ac01778467704bc7502d7" name="a128ed544eb7ac01778467704bc7502d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a128ed544eb7ac01778467704bc7502d7">&#9670;&#160;</a></span>OnPointerPressed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DICOMApp.Behaviors.PointerPositionBehavior.OnPointerPressed </td>
+          <td>(</td>
+          <td class="paramtype">object?</td>          <td class="paramname"><span class="paramname"><em>sender</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">PointerPressedEventArgs</td>          <td class="paramname"><span class="paramname"><em>e</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Obsługuje zdarzenie naciśnięcia przycisku myszy. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sender</td><td>Objekt wysyłający zdarzenie</td></tr>
+    <tr><td class="paramname">e</td><td>Argumenty zdarzenia</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definicja w linii <a class="el" href="_pointer_position_behavior_8cs_source.html#l00109">109</a> pliku <a class="el" href="_pointer_position_behavior_8cs_source.html">PointerPositionBehavior.cs</a>.</p>
+
+<p class="reference">Odwołuje się do <a class="el" href="_pointer_position_behavior_8cs_source.html#l00039">PointerPressedCommand</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="_pointer_position_behavior_8cs_source.html#l00066">OnAttached()</a> i <a class="el" href="_pointer_position_behavior_8cs_source.html#l00080">OnDetaching()</a>.</p>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_d_i_c_o_m_app_1_1_behaviors_1_1_pointer_position_behavior_a128ed544eb7ac01778467704bc7502d7_icgraph.png" border="0" usemap="#aclass_d_i_c_o_m_app_1_1_behaviors_1_1_pointer_position_behavior_a128ed544eb7ac01778467704bc7502d7_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_d_i_c_o_m_app_1_1_behaviors_1_1_pointer_position_behavior_a128ed544eb7ac01778467704bc7502d7_icgraph" id="aclass_d_i_c_o_m_app_1_1_behaviors_1_1_pointer_position_behavior_a128ed544eb7ac01778467704bc7502d7_icgraph">
+<area shape="rect" title="Obsługuje zdarzenie naciśnięcia przycisku myszy." alt="" coords="253,39,482,81"/>
+<area shape="rect" href="class_d_i_c_o_m_app_1_1_behaviors_1_1_pointer_position_behavior.html#af22a3cbd4f3d92e9b2272770798d3c86" title="Dodaje obsługę zdarzeń wskaźnika myszy do powiązanego obiektu." alt="" coords="7,5,203,48"/>
+<area shape="poly" title=" " alt="" coords="235,44,204,42,203,36,240,43"/>
+<area shape="rect" href="class_d_i_c_o_m_app_1_1_behaviors_1_1_pointer_position_behavior.html#adbb1067db27a753794964582c89b40c5" title="Dodaje obsługę zdarzeń wskaźnika myszy do powiązanego obiektu." alt="" coords="5,72,205,115"/>
+<area shape="poly" title=" " alt="" coords="234,77,205,83,205,78,240,76"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="addf09659bbd4c576ab020a95ab0ecde7" name="addf09659bbd4c576ab020a95ab0ecde7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#addf09659bbd4c576ab020a95ab0ecde7">&#9670;&#160;</a></span>OnPointerReleased()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DICOMApp.Behaviors.PointerPositionBehavior.OnPointerReleased </td>
+          <td>(</td>
+          <td class="paramtype">object?</td>          <td class="paramname"><span class="paramname"><em>sender</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">PointerReleasedEventArgs</td>          <td class="paramname"><span class="paramname"><em>e</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Obsługuje zdarzenie zwolnienia przycisku myszy. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sender</td><td>Objekt wysyłający zdarzenie</td></tr>
+    <tr><td class="paramname">e</td><td>Argumenty zdarzenia</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definicja w linii <a class="el" href="_pointer_position_behavior_8cs_source.html#l00122">122</a> pliku <a class="el" href="_pointer_position_behavior_8cs_source.html">PointerPositionBehavior.cs</a>.</p>
+
+<p class="reference">Odwołuje się do <a class="el" href="_pointer_position_behavior_8cs_source.html#l00048">PointerReleasedCommand</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="_pointer_position_behavior_8cs_source.html#l00066">OnAttached()</a> i <a class="el" href="_pointer_position_behavior_8cs_source.html#l00080">OnDetaching()</a>.</p>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_d_i_c_o_m_app_1_1_behaviors_1_1_pointer_position_behavior_addf09659bbd4c576ab020a95ab0ecde7_icgraph.png" border="0" usemap="#aclass_d_i_c_o_m_app_1_1_behaviors_1_1_pointer_position_behavior_addf09659bbd4c576ab020a95ab0ecde7_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_d_i_c_o_m_app_1_1_behaviors_1_1_pointer_position_behavior_addf09659bbd4c576ab020a95ab0ecde7_icgraph" id="aclass_d_i_c_o_m_app_1_1_behaviors_1_1_pointer_position_behavior_addf09659bbd4c576ab020a95ab0ecde7_icgraph">
+<area shape="rect" title="Obsługuje zdarzenie zwolnienia przycisku myszy." alt="" coords="253,39,489,81"/>
+<area shape="rect" href="class_d_i_c_o_m_app_1_1_behaviors_1_1_pointer_position_behavior.html#af22a3cbd4f3d92e9b2272770798d3c86" title="Dodaje obsługę zdarzeń wskaźnika myszy do powiązanego obiektu." alt="" coords="7,5,203,48"/>
+<area shape="poly" title=" " alt="" coords="234,44,204,42,204,36,240,43"/>
+<area shape="rect" href="class_d_i_c_o_m_app_1_1_behaviors_1_1_pointer_position_behavior.html#adbb1067db27a753794964582c89b40c5" title="Dodaje obsługę zdarzeń wskaźnika myszy do powiązanego obiektu." alt="" coords="5,72,205,115"/>
+<area shape="poly" title=" " alt="" coords="234,77,205,83,205,78,240,76"/>
+</map>
+</div>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Dokumentacja atrybutów składowych</h2>
+<a id="a4e9e51dd35f739b385d35715f64ac8e1" name="a4e9e51dd35f739b385d35715f64ac8e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e9e51dd35f739b385d35715f64ac8e1">&#9670;&#160;</a></span>PointerMovedCommandProperty</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly StyledProperty&lt;ICommand?&gt; DICOMApp.Behaviors.PointerPositionBehavior.PointerMovedCommandProperty</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Wartość początkowa:</b><div class="fragment"><div class="line">                                                              =</div>
+<div class="line">AvaloniaProperty.Register&lt;<a class="code hl_class" href="class_d_i_c_o_m_app_1_1_behaviors_1_1_pointer_position_behavior.html">PointerPositionBehavior</a>, ICommand?&gt;(</div>
+<div class="line">    nameof(<a class="code hl_property" href="#a4d308c974c1cde723b83d4f1c2d292e9">PointerMovedCommand</a>))</div>
+<div class="ttc" id="aclass_d_i_c_o_m_app_1_1_behaviors_1_1_pointer_position_behavior_html"><div class="ttname"><a href="class_d_i_c_o_m_app_1_1_behaviors_1_1_pointer_position_behavior.html">DICOMApp.Behaviors.PointerPositionBehavior</a></div><div class="ttdoc">Behavior umożliwiający powiązanie pozycji wskaźnika myszy z komendami.</div><div class="ttdef"><b>Definicja</b> <a href="_pointer_position_behavior_8cs_source.html#l00012">PointerPositionBehavior.cs:13</a></div></div>
+<div class="ttc" id="aclass_d_i_c_o_m_app_1_1_behaviors_1_1_pointer_position_behavior_html_a4d308c974c1cde723b83d4f1c2d292e9"><div class="ttname"><a href="#a4d308c974c1cde723b83d4f1c2d292e9">DICOMApp.Behaviors.PointerPositionBehavior.PointerMovedCommand</a></div><div class="ttdeci">ICommand? PointerMovedCommand</div><div class="ttdoc">Ustawia lub pobiera komendę wywoływaną po ruchu wskaźnika myszy.</div><div class="ttdef"><b>Definicja</b> <a href="_pointer_position_behavior_8cs_source.html#l00057">PointerPositionBehavior.cs:58</a></div></div>
+</div><!-- fragment -->
+<p>Powiązanie komendy zdarzenia ruchu wskaźnika myszy. </p>
+
+<p class="definition">Definicja w linii <a class="el" href="_pointer_position_behavior_8cs_source.html#l00031">31</a> pliku <a class="el" href="_pointer_position_behavior_8cs_source.html">PointerPositionBehavior.cs</a>.</p>
+
+</div>
+</div>
+<a id="ab6b63e72e2d766d6299644b12834925b" name="ab6b63e72e2d766d6299644b12834925b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6b63e72e2d766d6299644b12834925b">&#9670;&#160;</a></span>PointerPressedCommandProperty</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly StyledProperty&lt;ICommand?&gt; DICOMApp.Behaviors.PointerPositionBehavior.PointerPressedCommandProperty</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Wartość początkowa:</b><div class="fragment"><div class="line">                                                                =</div>
+<div class="line">AvaloniaProperty.Register&lt;<a class="code hl_class" href="class_d_i_c_o_m_app_1_1_behaviors_1_1_pointer_position_behavior.html">PointerPositionBehavior</a>, ICommand?&gt;(</div>
+<div class="line">    nameof(<a class="code hl_property" href="#a0aaf3c590fb80acc7c367241f6d3af23">PointerPressedCommand</a>))</div>
+<div class="ttc" id="aclass_d_i_c_o_m_app_1_1_behaviors_1_1_pointer_position_behavior_html_a0aaf3c590fb80acc7c367241f6d3af23"><div class="ttname"><a href="#a0aaf3c590fb80acc7c367241f6d3af23">DICOMApp.Behaviors.PointerPositionBehavior.PointerPressedCommand</a></div><div class="ttdeci">ICommand? PointerPressedCommand</div><div class="ttdoc">Ustawia lub pobiera komendę wywoływaną po naciśnięciu przycisku myszy.</div><div class="ttdef"><b>Definicja</b> <a href="_pointer_position_behavior_8cs_source.html#l00038">PointerPositionBehavior.cs:39</a></div></div>
+</div><!-- fragment -->
+<p>Powiązanie komendy zdarzenia naciśnięcia wskaźnika myszy. </p>
+
+<p class="definition">Definicja w linii <a class="el" href="_pointer_position_behavior_8cs_source.html#l00017">17</a> pliku <a class="el" href="_pointer_position_behavior_8cs_source.html">PointerPositionBehavior.cs</a>.</p>
+
+</div>
+</div>
+<a id="af556181c69d0cad56ee4b133f5884590" name="af556181c69d0cad56ee4b133f5884590"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af556181c69d0cad56ee4b133f5884590">&#9670;&#160;</a></span>PointerReleasedCommandProperty</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly StyledProperty&lt;ICommand?&gt; DICOMApp.Behaviors.PointerPositionBehavior.PointerReleasedCommandProperty</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Wartość początkowa:</b><div class="fragment"><div class="line">                                                                 =</div>
+<div class="line">AvaloniaProperty.Register&lt;<a class="code hl_class" href="class_d_i_c_o_m_app_1_1_behaviors_1_1_pointer_position_behavior.html">PointerPositionBehavior</a>, ICommand?&gt;(</div>
+<div class="line">    nameof(<a class="code hl_property" href="#a6ca74ebd4f8b86c563582b20d3d932c5">PointerReleasedCommand</a>))</div>
+<div class="ttc" id="aclass_d_i_c_o_m_app_1_1_behaviors_1_1_pointer_position_behavior_html_a6ca74ebd4f8b86c563582b20d3d932c5"><div class="ttname"><a href="#a6ca74ebd4f8b86c563582b20d3d932c5">DICOMApp.Behaviors.PointerPositionBehavior.PointerReleasedCommand</a></div><div class="ttdeci">ICommand? PointerReleasedCommand</div><div class="ttdoc">Ustawia lub pobiera komendę wywoływaną po zwolnieniu przycisku myszy.</div><div class="ttdef"><b>Definicja</b> <a href="_pointer_position_behavior_8cs_source.html#l00047">PointerPositionBehavior.cs:48</a></div></div>
+</div><!-- fragment -->
+<p>Powiązanie komendy zdarzenia zwolnienia wskaźnika myszy. </p>
+
+<p class="definition">Definicja w linii <a class="el" href="_pointer_position_behavior_8cs_source.html#l00024">24</a> pliku <a class="el" href="_pointer_position_behavior_8cs_source.html">PointerPositionBehavior.cs</a>.</p>
+
+</div>
+</div>
+<a name="doc-property-members" id="doc-property-members"></a><h2 id="header-doc-property-members" class="groupheader">Dokumentacja właściwości</h2>
+<a id="a4d308c974c1cde723b83d4f1c2d292e9" name="a4d308c974c1cde723b83d4f1c2d292e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d308c974c1cde723b83d4f1c2d292e9">&#9670;&#160;</a></span>PointerMovedCommand</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ICommand? DICOMApp.Behaviors.PointerPositionBehavior.PointerMovedCommand</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Ustawia lub pobiera komendę wywoływaną po ruchu wskaźnika myszy. </p>
+
+<p class="definition">Definicja w linii <a class="el" href="_pointer_position_behavior_8cs_source.html#l00057">57</a> pliku <a class="el" href="_pointer_position_behavior_8cs_source.html">PointerPositionBehavior.cs</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="_pointer_position_behavior_8cs_source.html#l00097">OnPointerMoved()</a>.</p>
+
+</div>
+</div>
+<a id="a0aaf3c590fb80acc7c367241f6d3af23" name="a0aaf3c590fb80acc7c367241f6d3af23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0aaf3c590fb80acc7c367241f6d3af23">&#9670;&#160;</a></span>PointerPressedCommand</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ICommand? DICOMApp.Behaviors.PointerPositionBehavior.PointerPressedCommand</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Ustawia lub pobiera komendę wywoływaną po naciśnięciu przycisku myszy. </p>
+
+<p class="definition">Definicja w linii <a class="el" href="_pointer_position_behavior_8cs_source.html#l00038">38</a> pliku <a class="el" href="_pointer_position_behavior_8cs_source.html">PointerPositionBehavior.cs</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="_pointer_position_behavior_8cs_source.html#l00109">OnPointerPressed()</a>.</p>
+
+</div>
+</div>
+<a id="a6ca74ebd4f8b86c563582b20d3d932c5" name="a6ca74ebd4f8b86c563582b20d3d932c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ca74ebd4f8b86c563582b20d3d932c5">&#9670;&#160;</a></span>PointerReleasedCommand</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ICommand? DICOMApp.Behaviors.PointerPositionBehavior.PointerReleasedCommand</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Ustawia lub pobiera komendę wywoływaną po zwolnieniu przycisku myszy. </p>
+
+<p class="definition">Definicja w linii <a class="el" href="_pointer_position_behavior_8cs_source.html#l00047">47</a> pliku <a class="el" href="_pointer_position_behavior_8cs_source.html">PointerPositionBehavior.cs</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="_pointer_position_behavior_8cs_source.html#l00122">OnPointerReleased()</a>.</p>
+
+</div>
+</div>
+<hr/>Dokumentacja dla tej klasy została wygenerowana z pliku:<ul>
+<li>C:/Users/emili/Documents/DICOM-App/Behaviors/<a class="el" href="_pointer_position_behavior_8cs_source.html">PointerPositionBehavior.cs</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="namespace_d_i_c_o_m_app.html">DICOMApp</a></li><li class="navelem"><a href="namespace_d_i_c_o_m_app_1_1_behaviors.html">Behaviors</a></li><li class="navelem"><a href="class_d_i_c_o_m_app_1_1_behaviors_1_1_pointer_position_behavior.html">PointerPositionBehavior</a></li>
+    <li class="footer">Wygenerowano za pomocą <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

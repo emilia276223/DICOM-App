@@ -1,0 +1,5 @@
+<map id="DICOMApp.Behaviors.PointerPositionBehavior" name="DICOMApp.Behaviors.PointerPositionBehavior">
+<area shape="rect" id="Node000001" title="Behavior umożliwiający powiązanie pozycji wskaźnika myszy z komendami." alt="" coords="5,123,234,400"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="59,5,181,75"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="120,87,122,123,117,122,119,92"/>
+</map>

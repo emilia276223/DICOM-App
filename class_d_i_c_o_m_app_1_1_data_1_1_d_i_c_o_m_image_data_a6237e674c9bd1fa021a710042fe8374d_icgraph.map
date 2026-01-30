@@ -1,0 +1,5 @@
+<map id="DICOMApp.Data.DICOMImageData.GenerateStableHash" name="DICOMApp.Data.DICOMImageData.GenerateStableHash">
+<area shape="rect" id="Node000001" title="Generowanie hasha na podstawie podanego stringa." alt="" coords="260,5,466,48"/>
+<area shape="rect" id="Node000002" href="$class_d_i_c_o_m_app_1_1_data_1_1_d_i_c_o_m_image_data.html#a2bf55ca2b2fbe189adce928560950326" title="Konstruktor obrazu, na podstawie metadanych i obrazu Generuje identyfikator obrazu." alt="" coords="5,5,212,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="241,27,212,29,212,24,247,27"/>
+</map>

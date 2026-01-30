@@ -1,0 +1,5 @@
+<map id="DICOMApp.Repository.CSVExportHander.WriteMagnificationData" name="DICOMApp.Repository.CSVExportHander.WriteMagnificationData">
+<area shape="rect" id="Node000001" title="Zapisuje dane dotyczące magnifikacji do pliku CSV Zakłada strukturę kolumn: image_uid,..." alt="" coords="5,5,231,48"/>
+<area shape="rect" id="Node000002" href="$class_d_i_c_o_m_app_1_1_repository_1_1_c_s_v_export_hander.html#a23ef18d72040ecd8e667eea20275dfdb" title="Zapisuje dane do pliku CSV." alt="" coords="279,5,504,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="231,24,266,27,260,27,231,29"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="DICOMApp.MLModel.MLPlugin.GetPredictionFromImageData" name="DICOMApp.MLModel.MLPlugin.GetPredictionFromImageData">
+<area shape="rect" id="Node000001" title="Wyliczenie predukcji na podstawie obrazu.MLModelPrediction zawierający wynik predykcji" alt="" coords="5,72,214,115"/>
+<area shape="rect" id="Node000002" href="$class_d_i_c_o_m_app_1_1_m_l_model_1_1_m_l_plugin.html#a61cd482728af4f70be778b20fff497a4" title="Wyliczenie 4 punktów &#45; maximów z przewidzianych heatmap." alt="" coords="262,5,470,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="193,69,269,51,264,54,195,74"/>
+<area shape="rect" id="Node000003" href="$class_d_i_c_o_m_app_1_1_m_l_model_1_1_m_l_plugin.html#aa607ac6613168078019e9834819fa62c" title=" " alt="" coords="262,72,470,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="214,91,249,93,243,94,214,96"/>
+<area shape="rect" id="Node000004" href="$class_d_i_c_o_m_app_1_1_m_l_model_1_1_m_l_plugin.html#a8f3c82f01a031c61098215144ed5cb68" title=" " alt="" coords="262,139,470,181"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="194,113,269,134,264,135,194,118"/>
+</map>

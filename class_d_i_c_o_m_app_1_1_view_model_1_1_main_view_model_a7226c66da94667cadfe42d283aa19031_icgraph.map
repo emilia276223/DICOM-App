@@ -1,0 +1,5 @@
+<map id="DICOMApp.ViewModel.MainViewModel.OnImageSelected" name="DICOMApp.ViewModel.MainViewModel.OnImageSelected">
+<area shape="rect" id="Node000001" title="Metoda wyświetlająca wybrany obraz na podstawie podanych parametrów." alt="" coords="272,5,490,48"/>
+<area shape="rect" id="Node000002" href="$class_d_i_c_o_m_app_1_1_view_model_1_1_main_view_model.html#a4627217688e8011048213eeae3d80856" title="Konstruktor obiektu MainViewModel." alt="" coords="5,5,224,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="253,27,224,29,224,24,259,27"/>
+</map>

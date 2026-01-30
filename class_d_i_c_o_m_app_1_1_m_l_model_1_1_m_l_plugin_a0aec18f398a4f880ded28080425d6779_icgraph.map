@@ -1,0 +1,5 @@
+<map id="DICOMApp.MLModel.MLPlugin._createModelFile" name="DICOMApp.MLModel.MLPlugin._createModelFile">
+<area shape="rect" id="Node000001" title="Stworzenie pliku do zapisania modelu użuywanego przez program." alt="" coords="262,5,470,48"/>
+<area shape="rect" id="Node000002" href="$class_d_i_c_o_m_app_1_1_m_l_model_1_1_m_l_plugin.html#a05790ed73b93bb0324df51e6a2ee6338" title="Stworzenie instancji ML_Plugin." alt="" coords="5,5,214,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="244,27,214,29,214,24,249,27"/>
+</map>

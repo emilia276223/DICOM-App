@@ -1,0 +1,5 @@
+<map id="DICOMApp.Data.ImageData.GetBitmap" name="DICOMApp.Data.ImageData.GetBitmap">
+<area shape="rect" id="Node000001" title="Metoda zwracająca Bitmapę (Avalonia.Bitmap) stworzoną na podstawie danych obrazu zapisanych w obiekci..." alt="" coords="5,5,199,48"/>
+<area shape="rect" id="Node000002" href="$class_d_i_c_o_m_app_1_1_data_1_1_image_data.html#a0583f9274f09f555c958299d531a13f0" title="Metoda tworząca Bitmapę (Avalonia.Bitmap) na podstawie podanych parametrów." alt="" coords="247,5,440,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="199,24,234,26,229,27,199,29"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="DICOMApp.ViewModel.MagnifiedImageViewModel.Show" name="DICOMApp.ViewModel.MagnifiedImageViewModel.Show">
+<area shape="rect" id="Node000001" title="Pokazanie okna powększającego." alt="" coords="5,5,223,48"/>
+<area shape="rect" id="Node000002" href="$class_d_i_c_o_m_app_1_1_view_model_1_1_magnified_image_view_model.html#a59637dde74ca7db6696f5064f5b58546" title="Metoda aktualizowania okna powększającego na podstawie pozycji myszki W efekcie obraz powększający je..." alt="" coords="271,5,488,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="223,24,257,27,252,27,223,29"/>
+</map>

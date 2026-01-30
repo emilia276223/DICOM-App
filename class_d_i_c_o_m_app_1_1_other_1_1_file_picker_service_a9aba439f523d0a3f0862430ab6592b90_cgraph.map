@@ -1,0 +1,5 @@
+<map id="DICOMApp.Other.FilePickerService.PickImageFileAsync" name="DICOMApp.Other.FilePickerService.PickImageFileAsync">
+<area shape="rect" id="Node000001" title="Metoda umożliwiająca wybranie pliku obrazu Domyślny folder to katalog z pobranymi plikami Umożliwia w..." alt="" coords="5,5,195,48"/>
+<area shape="rect" id="Node000002" href="$class_d_i_c_o_m_app_1_1_other_1_1_file_picker_service.html#af2c92fd8937e3533d502a240d87140a3" title="Metoda umożliwiająca wybranie pliku z wybranego folderu." alt="" coords="243,5,430,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="195,24,230,26,224,27,195,29"/>
+</map>

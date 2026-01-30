@@ -1,0 +1,9 @@
+<map id="DICOMApp.Interfaces.IMLPlugin" name="DICOMApp.Interfaces.IMLPlugin">
+<area shape="rect" id="Node000001" title="Interfejs dla klas umożliwiających predykcję na podstawie modelu AI." alt="" coords="244,5,449,96"/>
+<area shape="rect" id="Node000002" href="$class_d_i_c_o_m_app_1_1_m_l_model_1_1_changing_ml_model.html" title="Klasa umożliwiająca zmiane modelu w czasie działania programu." alt="" coords="5,232,210,339"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="267,107,224,146,183,190,147,234,143,231,179,186,221,142,271,103"/>
+<area shape="rect" id="Node000003" href="$class_d_i_c_o_m_app_1_1_m_l_model_1_1_m_l_model_mock.html" title="Klasa mockująca model ML. Zwraca losowe punkty i heatmapy." alt="" coords="234,219,459,352"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="348,109,349,220,344,218,345,113"/>
+<area shape="rect" id="Node000004" href="$class_d_i_c_o_m_app_1_1_m_l_model_1_1_m_l_plugin.html" title="Klasa umożliwiająca korzystanie z modelu zapisanego w pliku ONNX." alt="" coords="483,144,688,427"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="424,102,472,142,485,156,480,156,469,146,424,108"/>
+</map>

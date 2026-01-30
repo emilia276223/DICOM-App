@@ -1,0 +1,275 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pl">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>DICOM-App: Dokumentacja klasy DICOMApp.Repository.DataExportHandler</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">DICOM-App<span id="projectnumber">&#160;version1.0</span>
+   </div>
+   <div id="projectbrief">Aplikacja do przeglądania obrazów DICOM oraz korzystania z pluginów AI</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano za pomocą Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('class_d_i_c_o_m_app_1_1_repository_1_1_data_export_handler.html','','class_d_i_c_o_m_app_1_1_repository_1_1_data_export_handler-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Wczytywanie...</div>
+<div class="SRStatus" id="Searching">Szukanie...</div>
+<div class="SRStatus" id="NoMatches">Brak dopasowań</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Dokumentacja klasy DICOMApp.Repository.DataExportHandler</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+Diagram dziedziczenia dla DICOMApp.Repository.DataExportHandler</div>
+<div class="dyncontent">
+<div class="center"><img src="class_d_i_c_o_m_app_1_1_repository_1_1_data_export_handler__inherit__graph.png" border="0" usemap="#a_d_i_c_o_m_app_8_repository_8_data_export_handler_inherit__map" loading="lazy" alt="Inheritance graph"/></div>
+<map name="a_d_i_c_o_m_app_8_repository_8_data_export_handler_inherit__map" id="a_d_i_c_o_m_app_8_repository_8_data_export_handler_inherit__map">
+<area shape="rect" title=" " alt="" coords="10,139,187,267"/>
+<area shape="rect" href="interface_d_i_c_o_m_app_1_1_interfaces_1_1_i_export_handler.html" title=" " alt="" coords="5,5,192,91"/>
+<area shape="poly" title=" " alt="" coords="100,103,101,140,96,138,98,108"/>
+</map>
+</div>
+<div class="dynheader">
+Diagram współpracy dla DICOMApp.Repository.DataExportHandler:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_d_i_c_o_m_app_1_1_repository_1_1_data_export_handler__coll__graph.png" border="0" usemap="#a_d_i_c_o_m_app_8_repository_8_data_export_handler_coll__map" loading="lazy" alt="Collaboration graph"/></div>
+<map name="a_d_i_c_o_m_app_8_repository_8_data_export_handler_coll__map" id="a_d_i_c_o_m_app_8_repository_8_data_export_handler_coll__map">
+<area shape="rect" title=" " alt="" coords="236,323,412,429"/>
+<area shape="rect" href="interface_d_i_c_o_m_app_1_1_interfaces_1_1_i_export_handler.html" title=" " alt="" coords="5,85,192,171"/>
+<area shape="poly" title=" " alt="" coords="144,179,206,249,275,322,270,323,202,252,143,184"/>
+<area shape="rect" href="class_d_i_c_o_m_app_1_1_repository_1_1_c_s_v_export_hander.html" title="Klasa obsługująca eksport danych do pliku CSV." alt="" coords="217,32,431,224"/>
+<area shape="poly" title=" " alt="" coords="326,222,326,307,322,304,322,226"/>
+<area shape="rect" href="interface_d_i_c_o_m_app_1_1_interfaces_1_1_i_data_handler.html" title="Interfejs klasy obsługującej zapisywanie i odczytywanie danych." alt="" coords="456,5,646,251"/>
+<area shape="poly" title=" " alt="" coords="461,249,417,301,403,314,400,309,413,297,456,252"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Metody publiczne</h2></td></tr>
+<tr class="memitem:ab733feb1674918335a3dd8ea12ce1657" id="r_ab733feb1674918335a3dd8ea12ce1657"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#ab733feb1674918335a3dd8ea12ce1657">DataExportHandler</a> (<a class="el" href="interface_d_i_c_o_m_app_1_1_interfaces_1_1_i_data_handler.html">IDataHandler</a> dbHandler)</td></tr>
+<tr class="memitem:a934e123e2eaa426c3cf3224c7a19386e" id="r_a934e123e2eaa426c3cf3224c7a19386e"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a934e123e2eaa426c3cf3224c7a19386e">ExportData</a> ()</td></tr>
+<tr class="memdesc:a934e123e2eaa426c3cf3224c7a19386e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda eksportująca dane.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Atrybuty prywatne</h2></td></tr>
+<tr class="memitem:a86fa41718e4a043d01c6929860ceafe5" id="r_a86fa41718e4a043d01c6929860ceafe5"><td class="memItemLeft">readonly <a class="el" href="class_d_i_c_o_m_app_1_1_repository_1_1_c_s_v_export_hander.html">CSVExportHander</a>&#160;</td><td class="memItemRight"><a class="el" href="#a86fa41718e4a043d01c6929860ceafe5">_csvHandler</a> = new <a class="el" href="class_d_i_c_o_m_app_1_1_repository_1_1_c_s_v_export_hander.html">CSVExportHander</a>()</td></tr>
+<tr class="memitem:a5af4ddc6e17fb11f7fd304620885313f" id="r_a5af4ddc6e17fb11f7fd304620885313f"><td class="memItemLeft">readonly <a class="el" href="interface_d_i_c_o_m_app_1_1_interfaces_1_1_i_data_handler.html">IDataHandler</a>&#160;</td><td class="memItemRight"><a class="el" href="#a5af4ddc6e17fb11f7fd304620885313f">_dbHandler</a></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Opis szczegółowy</h2>
+<div class="textblock">
+<p class="definition">Definicja w linii <a class="el" href="_data_export_handler_8cs_source.html#l00014">14</a> pliku <a class="el" href="_data_export_handler_8cs_source.html">DataExportHandler.cs</a>.</p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Dokumentacja konstruktora i destruktora</h2>
+<a id="ab733feb1674918335a3dd8ea12ce1657" name="ab733feb1674918335a3dd8ea12ce1657"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab733feb1674918335a3dd8ea12ce1657">&#9670;&#160;</a></span>DataExportHandler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DICOMApp.Repository.DataExportHandler.DataExportHandler </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_d_i_c_o_m_app_1_1_interfaces_1_1_i_data_handler.html">IDataHandler</a></td>          <td class="paramname"><span class="paramname"><em>dbHandler</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="_data_export_handler_8cs_source.html#l00020">20</a> pliku <a class="el" href="_data_export_handler_8cs_source.html">DataExportHandler.cs</a>.</p>
+
+<p class="reference">Odwołuje się do <a class="el" href="_data_export_handler_8cs_source.html#l00018">_dbHandler</a>.</p>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Dokumentacja funkcji składowych</h2>
+<a id="a934e123e2eaa426c3cf3224c7a19386e" name="a934e123e2eaa426c3cf3224c7a19386e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a934e123e2eaa426c3cf3224c7a19386e">&#9670;&#160;</a></span>ExportData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DICOMApp.Repository.DataExportHandler.ExportData </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Metoda eksportująca dane. </p>
+<dl class="section return"><dt>Zwraca</dt><dd>True jeśli dane zostały wyeksportowane, w przeciwnym przypadku false</dd></dl>
+
+<p>Implementuje <a class="el" href="interface_d_i_c_o_m_app_1_1_interfaces_1_1_i_export_handler.html#a8088be5714d96d66677db731ba812d53">DICOMApp.Interfaces.IExportHandler</a>.</p>
+
+<p class="definition">Definicja w linii <a class="el" href="_data_export_handler_8cs_source.html#l00026">26</a> pliku <a class="el" href="_data_export_handler_8cs_source.html">DataExportHandler.cs</a>.</p>
+
+<p class="reference">Odwołuje się do <a class="el" href="_data_export_handler_8cs_source.html#l00016">_csvHandler</a>, <a class="el" href="_data_export_handler_8cs_source.html#l00018">_dbHandler</a>, <a class="el" href="_p_n_g_file_storage_service_8cs_source.html#l00040">DICOMApp.Utils.PNGFileStorageService.ExportSavedPNGImage()</a>, <a class="el" href="_app_directory_handler_8cs_source.html#l00068">DICOMApp.Utils.AppDirectoryHandler.GetExportedDataDirectory()</a>, <a class="el" href="_app_directory_handler_8cs_source.html#l00057">DICOMApp.Utils.AppDirectoryHandler.GetExportedZIPFilename()</a> i <a class="el" href="_app_directory_handler_8cs_source.html#l00012">DICOMApp.Utils.AppDirectoryHandler.Instance</a>.</p>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_d_i_c_o_m_app_1_1_repository_1_1_data_export_handler_a934e123e2eaa426c3cf3224c7a19386e_cgraph.png" border="0" usemap="#aclass_d_i_c_o_m_app_1_1_repository_1_1_data_export_handler_a934e123e2eaa426c3cf3224c7a19386e_cgraph" loading="lazy" alt=""/></div>
+<map name="aclass_d_i_c_o_m_app_1_1_repository_1_1_data_export_handler_a934e123e2eaa426c3cf3224c7a19386e_cgraph" id="aclass_d_i_c_o_m_app_1_1_repository_1_1_data_export_handler_a934e123e2eaa426c3cf3224c7a19386e_cgraph">
+<area shape="rect" title="Metoda eksportująca dane." alt="" coords="5,105,193,148"/>
+<area shape="rect" href="class_d_i_c_o_m_app_1_1_utils_1_1_p_n_g_file_storage_service.html#a0dae2adeb23941d8ba5f1da42f1866aa" title=" " alt="" coords="243,39,462,81"/>
+<area shape="poly" title=" " alt="" coords="182,102,256,85,252,87,184,107"/>
+<area shape="rect" href="class_d_i_c_o_m_app_1_1_utils_1_1_app_directory_handler.html#ac6564dea77d5bda88472da2ce8619e8e" title=" " alt="" coords="241,105,465,148"/>
+<area shape="poly" title=" " alt="" coords="193,124,228,126,223,127,194,129"/>
+<area shape="rect" href="class_d_i_c_o_m_app_1_1_utils_1_1_app_directory_handler.html#a0a1c8f6c30bd034c78710062c3bc1dbd" title=" " alt="" coords="244,172,462,215"/>
+<area shape="poly" title=" " alt="" coords="183,146,257,167,251,168,183,151"/>
+<area shape="rect" href="class_d_i_c_o_m_app_1_1_utils_1_1_p_n_g_file_storage_service.html#a64d07fb9d131c69b467e9eb0db5278ec" title=" " alt="" coords="513,5,732,48"/>
+<area shape="poly" title=" " alt="" coords="462,44,500,41,495,43,463,49"/>
+<area shape="rect" href="class_d_i_c_o_m_app_1_1_utils_1_1_p_n_g_file_storage_service.html#a7b57de06cf1570b26bf35c638f8f40c6" title=" " alt="" coords="513,72,732,115"/>
+<area shape="poly" title=" " alt="" coords="463,71,500,78,495,78,463,76"/>
+</map>
+</div>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Dokumentacja atrybutów składowych</h2>
+<a id="a86fa41718e4a043d01c6929860ceafe5" name="a86fa41718e4a043d01c6929860ceafe5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86fa41718e4a043d01c6929860ceafe5">&#9670;&#160;</a></span>_csvHandler</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly <a class="el" href="class_d_i_c_o_m_app_1_1_repository_1_1_c_s_v_export_hander.html">CSVExportHander</a> DICOMApp.Repository.DataExportHandler._csvHandler = new <a class="el" href="class_d_i_c_o_m_app_1_1_repository_1_1_c_s_v_export_hander.html">CSVExportHander</a>()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="_data_export_handler_8cs_source.html#l00016">16</a> pliku <a class="el" href="_data_export_handler_8cs_source.html">DataExportHandler.cs</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="_data_export_handler_8cs_source.html#l00026">ExportData()</a>.</p>
+
+</div>
+</div>
+<a id="a5af4ddc6e17fb11f7fd304620885313f" name="a5af4ddc6e17fb11f7fd304620885313f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5af4ddc6e17fb11f7fd304620885313f">&#9670;&#160;</a></span>_dbHandler</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly <a class="el" href="interface_d_i_c_o_m_app_1_1_interfaces_1_1_i_data_handler.html">IDataHandler</a> DICOMApp.Repository.DataExportHandler._dbHandler</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="_data_export_handler_8cs_source.html#l00018">18</a> pliku <a class="el" href="_data_export_handler_8cs_source.html">DataExportHandler.cs</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="_data_export_handler_8cs_source.html#l00020">DataExportHandler()</a> i <a class="el" href="_data_export_handler_8cs_source.html#l00026">ExportData()</a>.</p>
+
+</div>
+</div>
+<hr/>Dokumentacja dla tej klasy została wygenerowana z pliku:<ul>
+<li>C:/Users/emili/Documents/DICOM-App/Repository/<a class="el" href="_data_export_handler_8cs_source.html">DataExportHandler.cs</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="namespace_d_i_c_o_m_app.html">DICOMApp</a></li><li class="navelem"><a href="namespace_d_i_c_o_m_app_1_1_repository.html">Repository</a></li><li class="navelem"><a href="class_d_i_c_o_m_app_1_1_repository_1_1_data_export_handler.html">DataExportHandler</a></li>
+    <li class="footer">Wygenerowano za pomocą <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

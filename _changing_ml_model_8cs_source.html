@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pl">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>DICOM-App: Plik źródłowy C:/Users/emili/Documents/DICOM-App/MLModel/ChangingMlModel.cs</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">DICOM-App<span id="projectnumber">&#160;version1.0</span>
+   </div>
+   <div id="projectbrief">Aplikacja do przeglądania obrazów DICOM oraz korzystania z pluginów AI</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano za pomocą Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_changing_ml_model_8cs_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Wczytywanie...</div>
+<div class="SRStatus" id="Searching">Szukanie...</div>
+<div class="SRStatus" id="NoMatches">Brak dopasowań</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">ChangingMlModel.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_changing_ml_model_8cs.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_d_i_c_o_m_app_1_1_data.html">DICOMApp.Data</a>;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_d_i_c_o_m_app_1_1_interfaces.html">DICOMApp.Interfaces</a>;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="foldopen" id="foldopen00004" data-start="{" data-end="}">
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno"><a class="line" href="namespace_d_i_c_o_m_app_1_1_m_l_model.html">    4</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_d_i_c_o_m_app_1_1_m_l_model.html">DICOMApp.MLModel</a></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>{</div>
+<div class="foldopen" id="foldopen00009" data-start="{" data-end="};">
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="class_d_i_c_o_m_app_1_1_m_l_model_1_1_changing_ml_model.html">    9</a></span>    <span class="keyword">internal</span> <span class="keyword">class </span><a class="code hl_class" href="class_d_i_c_o_m_app_1_1_m_l_model_1_1_changing_ml_model.html">ChangingMlModel</a> : <a class="code hl_interface" href="interface_d_i_c_o_m_app_1_1_interfaces_1_1_i_m_l_plugin.html">IMLPlugin</a></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    {</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="class_d_i_c_o_m_app_1_1_m_l_model_1_1_changing_ml_model.html#a84f674fb8182479b3981f5a1c3e5cd01">   14</a></span>        <span class="keyword">private</span> <a class="code hl_interface" href="interface_d_i_c_o_m_app_1_1_interfaces_1_1_i_m_l_plugin.html">IMLPlugin</a> <a class="code hl_variable" href="class_d_i_c_o_m_app_1_1_m_l_model_1_1_changing_ml_model.html#a84f674fb8182479b3981f5a1c3e5cd01">_instance</a> = <span class="keyword">new</span> <a class="code hl_class" href="class_d_i_c_o_m_app_1_1_m_l_model_1_1_m_l_model_mock.html">MLModelMock</a>();</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span></div>
+<div class="foldopen" id="foldopen00018" data-start="{" data-end="}">
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="class_d_i_c_o_m_app_1_1_m_l_model_1_1_changing_ml_model.html#a240dc72f6df170c180084a8ca49537a7">   18</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_d_i_c_o_m_app_1_1_data_1_1_m_l_model_prediction.html">MLModelPrediction</a> <a class="code hl_function" href="class_d_i_c_o_m_app_1_1_m_l_model_1_1_changing_ml_model.html#a240dc72f6df170c180084a8ca49537a7">GetPredictionFromImageData</a>(<a class="code hl_class" href="class_d_i_c_o_m_app_1_1_data_1_1_image_data.html">ImageData</a> imageData)</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        {</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>            <span class="keywordflow">return</span> <a class="code hl_variable" href="class_d_i_c_o_m_app_1_1_m_l_model_1_1_changing_ml_model.html#a84f674fb8182479b3981f5a1c3e5cd01">_instance</a>.GetPredictionFromImageData(imageData);</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        }</div>
+</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span></div>
+<div class="foldopen" id="foldopen00030" data-start="{" data-end="}">
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="class_d_i_c_o_m_app_1_1_m_l_model_1_1_changing_ml_model.html#ac214ae64c72e3c5c6c8ce9ce64e7037f">   30</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_d_i_c_o_m_app_1_1_m_l_model_1_1_changing_ml_model.html#ac214ae64c72e3c5c6c8ce9ce64e7037f">ReloadModel</a>(<span class="keywordtype">string</span> path)</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        {</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>            <span class="keywordflow">if</span> (path != <span class="keyword">null</span>)</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>            {</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>                <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_d_i_c_o_m_app_1_1_m_l_model_1_1_changing_ml_model.html#a84f674fb8182479b3981f5a1c3e5cd01">_instance</a> is <a class="code hl_class" href="class_d_i_c_o_m_app_1_1_m_l_model_1_1_m_l_plugin.html">MLPlugin</a>)</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>                {</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>                    <a class="code hl_variable" href="class_d_i_c_o_m_app_1_1_m_l_model_1_1_changing_ml_model.html#a84f674fb8182479b3981f5a1c3e5cd01">_instance</a>.ReloadModel(path);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>                }</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>                <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>                    <a class="code hl_variable" href="class_d_i_c_o_m_app_1_1_m_l_model_1_1_changing_ml_model.html#a84f674fb8182479b3981f5a1c3e5cd01">_instance</a> = <span class="keyword">new</span> <a class="code hl_class" href="class_d_i_c_o_m_app_1_1_m_l_model_1_1_m_l_plugin.html">MLPlugin</a>();</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>                    <a class="code hl_variable" href="class_d_i_c_o_m_app_1_1_m_l_model_1_1_changing_ml_model.html#a84f674fb8182479b3981f5a1c3e5cd01">_instance</a>.ReloadModel(path);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>                }</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>            }</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        }</div>
+</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    }</div>
+</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>}</div>
+</div>
+<div class="ttc" id="aclass_d_i_c_o_m_app_1_1_data_1_1_image_data_html"><div class="ttname"><a href="class_d_i_c_o_m_app_1_1_data_1_1_image_data.html">DICOMApp.Data.ImageData</a></div><div class="ttdoc">Klasa przechowujaca dane obrazu Zawiera informacje o rozmiarze obrazu oraz tablicę pikseli (zapisanyc...</div><div class="ttdef"><b>Definicja</b> <a href="_image_data_8cs_source.html#l00012">ImageData.cs:13</a></div></div>
+<div class="ttc" id="aclass_d_i_c_o_m_app_1_1_data_1_1_m_l_model_prediction_html"><div class="ttname"><a href="class_d_i_c_o_m_app_1_1_data_1_1_m_l_model_prediction.html">DICOMApp.Data.MLModelPrediction</a></div><div class="ttdoc">Klasa przechowująca wynik predykcji modelu.</div><div class="ttdef"><b>Definicja</b> <a href="_m_l_model_prediction_8cs_source.html#l00009">MLModelPrediction.cs:10</a></div></div>
+<div class="ttc" id="aclass_d_i_c_o_m_app_1_1_m_l_model_1_1_changing_ml_model_html"><div class="ttname"><a href="class_d_i_c_o_m_app_1_1_m_l_model_1_1_changing_ml_model.html">DICOMApp.MLModel.ChangingMlModel</a></div><div class="ttdoc">Klasa umożliwiająca zmiane modelu w czasie działania programu.</div><div class="ttdef"><b>Definicja</b> <a href="#l00009">ChangingMlModel.cs:10</a></div></div>
+<div class="ttc" id="aclass_d_i_c_o_m_app_1_1_m_l_model_1_1_changing_ml_model_html_a240dc72f6df170c180084a8ca49537a7"><div class="ttname"><a href="class_d_i_c_o_m_app_1_1_m_l_model_1_1_changing_ml_model.html#a240dc72f6df170c180084a8ca49537a7">DICOMApp.MLModel.ChangingMlModel.GetPredictionFromImageData</a></div><div class="ttdeci">MLModelPrediction GetPredictionFromImageData(ImageData imageData)</div><div class="ttdef"><b>Definicja</b> <a href="#l00018">ChangingMlModel.cs:18</a></div></div>
+<div class="ttc" id="aclass_d_i_c_o_m_app_1_1_m_l_model_1_1_changing_ml_model_html_a84f674fb8182479b3981f5a1c3e5cd01"><div class="ttname"><a href="class_d_i_c_o_m_app_1_1_m_l_model_1_1_changing_ml_model.html#a84f674fb8182479b3981f5a1c3e5cd01">DICOMApp.MLModel.ChangingMlModel._instance</a></div><div class="ttdeci">IMLPlugin _instance</div><div class="ttdoc">Instancja modelu.</div><div class="ttdef"><b>Definicja</b> <a href="#l00014">ChangingMlModel.cs:14</a></div></div>
+<div class="ttc" id="aclass_d_i_c_o_m_app_1_1_m_l_model_1_1_changing_ml_model_html_ac214ae64c72e3c5c6c8ce9ce64e7037f"><div class="ttname"><a href="class_d_i_c_o_m_app_1_1_m_l_model_1_1_changing_ml_model.html#ac214ae64c72e3c5c6c8ce9ce64e7037f">DICOMApp.MLModel.ChangingMlModel.ReloadModel</a></div><div class="ttdeci">void ReloadModel(string path)</div><div class="ttdef"><b>Definicja</b> <a href="#l00030">ChangingMlModel.cs:30</a></div></div>
+<div class="ttc" id="aclass_d_i_c_o_m_app_1_1_m_l_model_1_1_m_l_model_mock_html"><div class="ttname"><a href="class_d_i_c_o_m_app_1_1_m_l_model_1_1_m_l_model_mock.html">DICOMApp.MLModel.MLModelMock</a></div><div class="ttdoc">Klasa mockująca model ML. Zwraca losowe punkty i heatmapy.</div><div class="ttdef"><b>Definicja</b> <a href="_m_l_model_mock_8cs_source.html#l00012">MLModelMock.cs:13</a></div></div>
+<div class="ttc" id="aclass_d_i_c_o_m_app_1_1_m_l_model_1_1_m_l_plugin_html"><div class="ttname"><a href="class_d_i_c_o_m_app_1_1_m_l_model_1_1_m_l_plugin.html">DICOMApp.MLModel.MLPlugin</a></div><div class="ttdoc">Klasa umożliwiająca korzystanie z modelu zapisanego w pliku ONNX.</div><div class="ttdef"><b>Definicja</b> <a href="_m_l_plugin_8cs_source.html#l00017">MLPlugin.cs:18</a></div></div>
+<div class="ttc" id="ainterface_d_i_c_o_m_app_1_1_interfaces_1_1_i_m_l_plugin_html"><div class="ttname"><a href="interface_d_i_c_o_m_app_1_1_interfaces_1_1_i_m_l_plugin.html">DICOMApp.Interfaces.IMLPlugin</a></div><div class="ttdoc">Interfejs dla klas umożliwiających predykcję na podstawie modelu AI.</div><div class="ttdef"><b>Definicja</b> <a href="_i_m_l_plugin_8cs_source.html#l00009">IMLPlugin.cs:10</a></div></div>
+<div class="ttc" id="anamespace_d_i_c_o_m_app_1_1_data_html"><div class="ttname"><a href="namespace_d_i_c_o_m_app_1_1_data.html">DICOMApp.Data</a></div><div class="ttdef"><b>Definicja</b> <a href="_d_i_c_o_m_image_data_8cs_source.html#l00005">DICOMImageData.cs:6</a></div></div>
+<div class="ttc" id="anamespace_d_i_c_o_m_app_1_1_interfaces_html"><div class="ttname"><a href="namespace_d_i_c_o_m_app_1_1_interfaces.html">DICOMApp.Interfaces</a></div><div class="ttdef"><b>Definicja</b> <a href="_i_data_handler_8cs_source.html#l00004">IDataHandler.cs:5</a></div></div>
+<div class="ttc" id="anamespace_d_i_c_o_m_app_1_1_m_l_model_html"><div class="ttname"><a href="namespace_d_i_c_o_m_app_1_1_m_l_model.html">DICOMApp.MLModel</a></div><div class="ttdef"><b>Definicja</b> <a href="#l00004">ChangingMlModel.cs:5</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_f396504afdc959660871b003fa10164d.html">Documents</a></li><li class="navelem"><a href="dir_1afafb9ef185eaac7646cb0f4cd779d1.html">DICOM-App</a></li><li class="navelem"><a href="dir_fcef31ff30c231261f86826bd0ba1b72.html">MLModel</a></li><li class="navelem"><a href="_changing_ml_model_8cs.html">ChangingMlModel.cs</a></li>
+    <li class="footer">Wygenerowano za pomocą <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

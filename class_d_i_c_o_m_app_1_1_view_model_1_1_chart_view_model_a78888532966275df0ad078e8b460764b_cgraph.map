@@ -1,0 +1,11 @@
+<map id="DICOMApp.ViewModel.ChartViewModel.ChartViewModel" name="DICOMApp.ViewModel.ChartViewModel.ChartViewModel">
+<area shape="rect" id="Node000001" title="Konstruktor obiektu." alt="" coords="5,72,199,115"/>
+<area shape="rect" id="Node000002" href="$class_d_i_c_o_m_app_1_1_view_model_1_1_chart_view_model.html#a2153a77452bf2507264d64a16510212e" title="Metoda ustawiająca przykładowy wykres." alt="" coords="247,39,453,81"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="199,78,234,75,229,77,200,83"/>
+<area shape="rect" id="Node000005" href="$class_d_i_c_o_m_app_1_1_view_model_1_1_chart_view_model.html#a8020b66954c2bdba1ce5f6f032041f6b" title="Metoda ustawiająca oś X wykresu." alt="" coords="253,105,446,148"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="199,104,240,111,235,112,199,109"/>
+<area shape="rect" id="Node000003" href="$class_d_i_c_o_m_app_1_1_view_model_1_1_chart_view_model.html#a4dca75ec6d5400e11a846f097564a7b1" title="Metoda zwracająca datę z napisu." alt="" coords="501,5,703,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="453,44,488,42,483,43,454,49"/>
+<area shape="rect" id="Node000004" href="$class_d_i_c_o_m_app_1_1_view_model_1_1_chart_view_model.html#a6451ee5bb23dead4b96c4d9a4ac3e4d0" title="Metoda ustawiająca linię wykresu (dane)." alt="" coords="506,72,699,115"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="453,71,493,79,488,79,453,76"/>
+</map>

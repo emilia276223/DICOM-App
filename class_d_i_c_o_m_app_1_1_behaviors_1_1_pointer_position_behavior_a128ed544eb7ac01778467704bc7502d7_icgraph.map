@@ -1,0 +1,7 @@
+<map id="DICOMApp.Behaviors.PointerPositionBehavior.OnPointerPressed" name="DICOMApp.Behaviors.PointerPositionBehavior.OnPointerPressed">
+<area shape="rect" id="Node000001" title="Obsługuje zdarzenie naciśnięcia przycisku myszy." alt="" coords="253,39,482,81"/>
+<area shape="rect" id="Node000002" href="$class_d_i_c_o_m_app_1_1_behaviors_1_1_pointer_position_behavior.html#af22a3cbd4f3d92e9b2272770798d3c86" title="Dodaje obsługę zdarzeń wskaźnika myszy do powiązanego obiektu." alt="" coords="7,5,203,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="235,44,204,42,203,36,240,43"/>
+<area shape="rect" id="Node000003" href="$class_d_i_c_o_m_app_1_1_behaviors_1_1_pointer_position_behavior.html#adbb1067db27a753794964582c89b40c5" title="Dodaje obsługę zdarzeń wskaźnika myszy do powiązanego obiektu." alt="" coords="5,72,205,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="234,77,205,83,205,78,240,76"/>
+</map>

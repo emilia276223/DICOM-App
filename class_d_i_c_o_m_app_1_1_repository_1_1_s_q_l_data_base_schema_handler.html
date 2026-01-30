@@ -1,0 +1,389 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pl">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>DICOM-App: Dokumentacja klasy DICOMApp.Repository.SQLDataBaseSchemaHandler</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">DICOM-App<span id="projectnumber">&#160;version1.0</span>
+   </div>
+   <div id="projectbrief">Aplikacja do przeglądania obrazów DICOM oraz korzystania z pluginów AI</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano za pomocą Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_schema_handler.html','','class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_schema_handler-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Wczytywanie...</div>
+<div class="SRStatus" id="Searching">Szukanie...</div>
+<div class="SRStatus" id="NoMatches">Brak dopasowań</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Dokumentacja klasy DICOMApp.Repository.SQLDataBaseSchemaHandler</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+Diagram współpracy dla DICOMApp.Repository.SQLDataBaseSchemaHandler:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_schema_handler__coll__graph.png" border="0" usemap="#a_d_i_c_o_m_app_8_repository_8_s_q_l_data_base_schema_handler_coll__map" loading="lazy" alt="Collaboration graph"/></div>
+<map name="a_d_i_c_o_m_app_8_repository_8_s_q_l_data_base_schema_handler_coll__map" id="a_d_i_c_o_m_app_8_repository_8_s_q_l_data_base_schema_handler_coll__map">
+<area shape="rect" title=" " alt="" coords="5,5,208,213"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pac-static-methods" class="groupheader"><a id="pac-static-methods" name="pac-static-methods"></a>
+Statyczne funkcje pakietu</h2></td></tr>
+<tr class="memitem:a68f50767830276f148b9568b2f711657" id="r_a68f50767830276f148b9568b2f711657"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a68f50767830276f148b9568b2f711657">ClearDataBase</a> (SqliteConnection? conn)</td></tr>
+<tr class="memitem:af8ca1afe0a5d458689aa57e334b71d55" id="r_af8ca1afe0a5d458689aa57e334b71d55"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#af8ca1afe0a5d458689aa57e334b71d55">InitializeDatabase</a> (SqliteConnection? conn)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-static-methods" class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
+Statyczne metody prywatne</h2></td></tr>
+<tr class="memitem:a5d02ce1fcd8cf73820d7562e38b1da96" id="r_a5d02ce1fcd8cf73820d7562e38b1da96"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a5d02ce1fcd8cf73820d7562e38b1da96">InitializePatientsTable</a> (SqliteConnection conn)</td></tr>
+<tr class="memitem:abeee3b9f824069453fd60174ee464ae3" id="r_abeee3b9f824069453fd60174ee464ae3"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#abeee3b9f824069453fd60174ee464ae3">InitializeMagnifiedImageCenterTable</a> (SqliteConnection conn)</td></tr>
+<tr class="memitem:ad8e857564ece5f9665221a6f01961f5a" id="r_ad8e857564ece5f9665221a6f01961f5a"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#ad8e857564ece5f9665221a6f01961f5a">InitializeImagesTable</a> (SqliteConnection conn)</td></tr>
+<tr class="memitem:adbe9618fc9e5910ae03b8bfd2ea5c903" id="r_adbe9618fc9e5910ae03b8bfd2ea5c903"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#adbe9618fc9e5910ae03b8bfd2ea5c903">InitializeStudiesTable</a> (SqliteConnection conn)</td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Opis szczegółowy</h2>
+<div class="textblock">
+<p class="definition">Definicja w linii <a class="el" href="_s_q_l_data_base_schema_handler_8cs_source.html#l00010">10</a> pliku <a class="el" href="_s_q_l_data_base_schema_handler_8cs_source.html">SQLDataBaseSchemaHandler.cs</a>.</p>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Dokumentacja funkcji składowych</h2>
+<a id="a68f50767830276f148b9568b2f711657" name="a68f50767830276f148b9568b2f711657"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68f50767830276f148b9568b2f711657">&#9670;&#160;</a></span>ClearDataBase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DICOMApp.Repository.SQLDataBaseSchemaHandler.ClearDataBase </td>
+          <td>(</td>
+          <td class="paramtype">SqliteConnection?</td>          <td class="paramname"><span class="paramname"><em>conn</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel package">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="_s_q_l_data_base_schema_handler_8cs_source.html#l00012">12</a> pliku <a class="el" href="_s_q_l_data_base_schema_handler_8cs_source.html">SQLDataBaseSchemaHandler.cs</a>.</p>
+
+</div>
+</div>
+<a id="af8ca1afe0a5d458689aa57e334b71d55" name="af8ca1afe0a5d458689aa57e334b71d55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8ca1afe0a5d458689aa57e334b71d55">&#9670;&#160;</a></span>InitializeDatabase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DICOMApp.Repository.SQLDataBaseSchemaHandler.InitializeDatabase </td>
+          <td>(</td>
+          <td class="paramtype">SqliteConnection?</td>          <td class="paramname"><span class="paramname"><em>conn</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel package">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="_s_q_l_data_base_schema_handler_8cs_source.html#l00089">89</a> pliku <a class="el" href="_s_q_l_data_base_schema_handler_8cs_source.html">SQLDataBaseSchemaHandler.cs</a>.</p>
+
+<p class="reference">Odwołuje się do <a class="el" href="_s_q_l_data_base_schema_handler_8cs_source.html#l00055">InitializeImagesTable()</a>, <a class="el" href="_s_q_l_data_base_schema_handler_8cs_source.html#l00041">InitializeMagnifiedImageCenterTable()</a>, <a class="el" href="_s_q_l_data_base_schema_handler_8cs_source.html#l00026">InitializePatientsTable()</a> i <a class="el" href="_s_q_l_data_base_schema_handler_8cs_source.html#l00073">InitializeStudiesTable()</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="_s_q_l_data_base_handler_8cs_source.html#l00029">DICOMApp.Repository.SQLDataBaseHandler.SQLDataBaseHandler()</a>.</p>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_schema_handler_af8ca1afe0a5d458689aa57e334b71d55_cgraph.png" border="0" usemap="#aclass_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_schema_handler_af8ca1afe0a5d458689aa57e334b71d55_cgraph" loading="lazy" alt=""/></div>
+<map name="aclass_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_schema_handler_af8ca1afe0a5d458689aa57e334b71d55_cgraph" id="aclass_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_schema_handler_af8ca1afe0a5d458689aa57e334b71d55_cgraph">
+<area shape="rect" title=" " alt="" coords="5,117,258,160"/>
+<area shape="rect" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_schema_handler.html#ad8e857564ece5f9665221a6f01961f5a" title=" " alt="" coords="308,5,578,48"/>
+<area shape="poly" title=" " alt="" coords="174,115,235,85,305,57,330,52,326,54,307,63,237,90,176,119"/>
+<area shape="rect" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_schema_handler.html#abeee3b9f824069453fd60174ee464ae3" title=" " alt="" coords="317,72,570,131"/>
+<area shape="poly" title=" " alt="" coords="257,121,304,117,299,119,259,126"/>
+<area shape="rect" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_schema_handler.html#a5d02ce1fcd8cf73820d7562e38b1da96" title=" " alt="" coords="306,155,581,197"/>
+<area shape="poly" title=" " alt="" coords="258,151,293,157,288,158,258,156"/>
+<area shape="rect" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_schema_handler.html#adbe9618fc9e5910ae03b8bfd2ea5c903" title=" " alt="" coords="308,221,579,264"/>
+<area shape="poly" title=" " alt="" coords="181,158,307,207,333,217,328,217,305,212,180,163"/>
+</map>
+</div>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_schema_handler_af8ca1afe0a5d458689aa57e334b71d55_icgraph.png" border="0" usemap="#aclass_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_schema_handler_af8ca1afe0a5d458689aa57e334b71d55_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_schema_handler_af8ca1afe0a5d458689aa57e334b71d55_icgraph" id="aclass_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_schema_handler_af8ca1afe0a5d458689aa57e334b71d55_icgraph">
+<area shape="rect" title=" " alt="" coords="283,5,535,48"/>
+<area shape="rect" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler.html#aae74c636a3cc06579f65b9bfb2d9f09d" title="Tworzy handler bazy danych SQLite." alt="" coords="5,5,235,48"/>
+<area shape="poly" title=" " alt="" coords="264,27,235,29,235,24,270,27"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad8e857564ece5f9665221a6f01961f5a" name="ad8e857564ece5f9665221a6f01961f5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8e857564ece5f9665221a6f01961f5a">&#9670;&#160;</a></span>InitializeImagesTable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DICOMApp.Repository.SQLDataBaseSchemaHandler.InitializeImagesTable </td>
+          <td>(</td>
+          <td class="paramtype">SqliteConnection</td>          <td class="paramname"><span class="paramname"><em>conn</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="_s_q_l_data_base_schema_handler_8cs_source.html#l00055">55</a> pliku <a class="el" href="_s_q_l_data_base_schema_handler_8cs_source.html">SQLDataBaseSchemaHandler.cs</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="_s_q_l_data_base_schema_handler_8cs_source.html#l00089">InitializeDatabase()</a>.</p>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_schema_handler_ad8e857564ece5f9665221a6f01961f5a_icgraph.png" border="0" usemap="#aclass_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_schema_handler_ad8e857564ece5f9665221a6f01961f5a_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_schema_handler_ad8e857564ece5f9665221a6f01961f5a_icgraph" id="aclass_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_schema_handler_ad8e857564ece5f9665221a6f01961f5a_icgraph">
+<area shape="rect" title=" " alt="" coords="583,5,853,48"/>
+<area shape="rect" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_schema_handler.html#af8ca1afe0a5d458689aa57e334b71d55" title=" " alt="" coords="283,5,535,48"/>
+<area shape="poly" title=" " alt="" coords="565,27,535,29,535,24,570,27"/>
+<area shape="rect" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler.html#aae74c636a3cc06579f65b9bfb2d9f09d" title="Tworzy handler bazy danych SQLite." alt="" coords="5,5,235,48"/>
+<area shape="poly" title=" " alt="" coords="264,27,235,29,235,24,270,27"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="abeee3b9f824069453fd60174ee464ae3" name="abeee3b9f824069453fd60174ee464ae3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abeee3b9f824069453fd60174ee464ae3">&#9670;&#160;</a></span>InitializeMagnifiedImageCenterTable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DICOMApp.Repository.SQLDataBaseSchemaHandler.InitializeMagnifiedImageCenterTable </td>
+          <td>(</td>
+          <td class="paramtype">SqliteConnection</td>          <td class="paramname"><span class="paramname"><em>conn</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="_s_q_l_data_base_schema_handler_8cs_source.html#l00041">41</a> pliku <a class="el" href="_s_q_l_data_base_schema_handler_8cs_source.html">SQLDataBaseSchemaHandler.cs</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="_s_q_l_data_base_schema_handler_8cs_source.html#l00089">InitializeDatabase()</a>.</p>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_schema_handler_abeee3b9f824069453fd60174ee464ae3_icgraph.png" border="0" usemap="#aclass_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_schema_handler_abeee3b9f824069453fd60174ee464ae3_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_schema_handler_abeee3b9f824069453fd60174ee464ae3_icgraph" id="aclass_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_schema_handler_abeee3b9f824069453fd60174ee464ae3_icgraph">
+<area shape="rect" title=" " alt="" coords="583,5,835,64"/>
+<area shape="rect" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_schema_handler.html#af8ca1afe0a5d458689aa57e334b71d55" title=" " alt="" coords="283,13,535,56"/>
+<area shape="poly" title=" " alt="" coords="565,35,535,37,535,32,570,35"/>
+<area shape="rect" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler.html#aae74c636a3cc06579f65b9bfb2d9f09d" title="Tworzy handler bazy danych SQLite." alt="" coords="5,13,235,56"/>
+<area shape="poly" title=" " alt="" coords="264,35,235,37,235,32,270,34"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5d02ce1fcd8cf73820d7562e38b1da96" name="a5d02ce1fcd8cf73820d7562e38b1da96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d02ce1fcd8cf73820d7562e38b1da96">&#9670;&#160;</a></span>InitializePatientsTable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DICOMApp.Repository.SQLDataBaseSchemaHandler.InitializePatientsTable </td>
+          <td>(</td>
+          <td class="paramtype">SqliteConnection</td>          <td class="paramname"><span class="paramname"><em>conn</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="_s_q_l_data_base_schema_handler_8cs_source.html#l00026">26</a> pliku <a class="el" href="_s_q_l_data_base_schema_handler_8cs_source.html">SQLDataBaseSchemaHandler.cs</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="_s_q_l_data_base_schema_handler_8cs_source.html#l00089">InitializeDatabase()</a>.</p>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_schema_handler_a5d02ce1fcd8cf73820d7562e38b1da96_icgraph.png" border="0" usemap="#aclass_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_schema_handler_a5d02ce1fcd8cf73820d7562e38b1da96_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_schema_handler_a5d02ce1fcd8cf73820d7562e38b1da96_icgraph" id="aclass_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_schema_handler_a5d02ce1fcd8cf73820d7562e38b1da96_icgraph">
+<area shape="rect" title=" " alt="" coords="583,5,858,48"/>
+<area shape="rect" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_schema_handler.html#af8ca1afe0a5d458689aa57e334b71d55" title=" " alt="" coords="283,5,535,48"/>
+<area shape="poly" title=" " alt="" coords="565,27,535,29,535,24,570,27"/>
+<area shape="rect" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler.html#aae74c636a3cc06579f65b9bfb2d9f09d" title="Tworzy handler bazy danych SQLite." alt="" coords="5,5,235,48"/>
+<area shape="poly" title=" " alt="" coords="264,27,235,29,235,24,270,27"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="adbe9618fc9e5910ae03b8bfd2ea5c903" name="adbe9618fc9e5910ae03b8bfd2ea5c903"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbe9618fc9e5910ae03b8bfd2ea5c903">&#9670;&#160;</a></span>InitializeStudiesTable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DICOMApp.Repository.SQLDataBaseSchemaHandler.InitializeStudiesTable </td>
+          <td>(</td>
+          <td class="paramtype">SqliteConnection</td>          <td class="paramname"><span class="paramname"><em>conn</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="_s_q_l_data_base_schema_handler_8cs_source.html#l00073">73</a> pliku <a class="el" href="_s_q_l_data_base_schema_handler_8cs_source.html">SQLDataBaseSchemaHandler.cs</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="_s_q_l_data_base_schema_handler_8cs_source.html#l00089">InitializeDatabase()</a>.</p>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_schema_handler_adbe9618fc9e5910ae03b8bfd2ea5c903_icgraph.png" border="0" usemap="#aclass_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_schema_handler_adbe9618fc9e5910ae03b8bfd2ea5c903_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_schema_handler_adbe9618fc9e5910ae03b8bfd2ea5c903_icgraph" id="aclass_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_schema_handler_adbe9618fc9e5910ae03b8bfd2ea5c903_icgraph">
+<area shape="rect" title=" " alt="" coords="583,5,854,48"/>
+<area shape="rect" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_schema_handler.html#af8ca1afe0a5d458689aa57e334b71d55" title=" " alt="" coords="283,5,535,48"/>
+<area shape="poly" title=" " alt="" coords="565,27,536,29,536,24,570,27"/>
+<area shape="rect" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler.html#aae74c636a3cc06579f65b9bfb2d9f09d" title="Tworzy handler bazy danych SQLite." alt="" coords="5,5,235,48"/>
+<area shape="poly" title=" " alt="" coords="264,27,235,29,235,24,270,27"/>
+</map>
+</div>
+
+</div>
+</div>
+<hr/>Dokumentacja dla tej klasy została wygenerowana z pliku:<ul>
+<li>C:/Users/emili/Documents/DICOM-App/Repository/<a class="el" href="_s_q_l_data_base_schema_handler_8cs_source.html">SQLDataBaseSchemaHandler.cs</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="namespace_d_i_c_o_m_app.html">DICOMApp</a></li><li class="navelem"><a href="namespace_d_i_c_o_m_app_1_1_repository.html">Repository</a></li><li class="navelem"><a href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_schema_handler.html">SQLDataBaseSchemaHandler</a></li>
+    <li class="footer">Wygenerowano za pomocą <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

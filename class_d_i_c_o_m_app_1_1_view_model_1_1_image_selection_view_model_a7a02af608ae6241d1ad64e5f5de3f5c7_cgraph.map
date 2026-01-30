@@ -1,0 +1,7 @@
+<map id="DICOMApp.ViewModel.ImageSelectionViewModel.OnStudySelection" name="DICOMApp.ViewModel.ImageSelectionViewModel.OnStudySelection">
+<area shape="rect" id="Node000001" title="Metoda wywoływana po zmianie wybranej wartosci w liscie badań Ustawia listę obrazów do wyboru." alt="" coords="5,5,254,48"/>
+<area shape="rect" id="Node000002" href="$class_d_i_c_o_m_app_1_1_utils_1_1_d_i_c_o_m_directory_handler.html#ac9d19834f3cb65b4d563c9576158b55b" title="Zwraca listę obrazów dla danego badania pacjenta." alt="" coords="302,5,524,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="254,24,289,27,284,27,254,29"/>
+<area shape="rect" id="Node000003" href="$class_d_i_c_o_m_app_1_1_utils_1_1_app_directory_handler.html#afd9bbfc690ac0993d6ff302a727a220a" title=" " alt="" coords="572,5,772,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="524,24,559,27,554,27,525,29"/>
+</map>

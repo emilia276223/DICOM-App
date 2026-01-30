@@ -1,0 +1,23 @@
+<map id="DICOMApp.ViewModel.ImageSelectionViewModel.ImageSelectionViewModel" name="DICOMApp.ViewModel.ImageSelectionViewModel.ImageSelectionViewModel">
+<area shape="rect" id="Node000001" title="Konstruktor." alt="" coords="5,115,239,173"/>
+<area shape="rect" id="Node000002" href="$class_d_i_c_o_m_app_1_1_view_model_1_1_image_selection_view_model.html#a782dd15f7bc75bb191d3f46db52c2ec6" title="Metoda dodająca listę pacjentów do listy." alt="" coords="294,5,530,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="181,112,286,64,325,52,321,55,288,69,183,116"/>
+<area shape="rect" id="Node000004" href="$class_d_i_c_o_m_app_1_1_utils_1_1_d_i_c_o_m_directory_handler.html#ae3dda751b0e069e6bb119d53420a291a" title="Zwraca listę pacjentów w katalogu DICOM." alt="" coords="585,101,807,144"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="238,115,286,108,359,103,433,102,572,110,567,111,433,108,359,108,287,113,240,120"/>
+<area shape="rect" id="Node000006" href="$class_d_i_c_o_m_app_1_1_view_model_1_1_image_selection_view_model.html#ad3f56e7dbc19663549de954c52a9c921" title="Metoda wywoływana po zmianie wybranej wartosci w liscie obrazów Wykonuje akcje uruchamiana w momencie..." alt="" coords="287,123,537,165"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="239,141,274,143,269,145,240,147"/>
+<area shape="rect" id="Node000007" href="$class_d_i_c_o_m_app_1_1_view_model_1_1_image_selection_view_model.html#a5c9cc82940ac1ab3b6b79be9e02a1302" title="Metoda wywoływana po zmianie wybranej wartosci w liscie pacjentów Ustawia listę badań pacjenta do wyb..." alt="" coords="311,189,512,248"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="238,171,299,188,294,190,239,177"/>
+<area shape="rect" id="Node000009" href="$class_d_i_c_o_m_app_1_1_view_model_1_1_image_selection_view_model.html#a7a02af608ae6241d1ad64e5f5de3f5c7" title="Metoda wywoływana po zmianie wybranej wartosci w liscie badań Ustawia listę obrazów do wyboru." alt="" coords="288,272,536,315"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="158,171,217,216,288,258,304,266,298,266,285,262,214,220,157,176"/>
+<area shape="rect" id="Node000003" href="$class_d_i_c_o_m_app_1_1_view_model_1_1_image_selection_view_model.html#a8e298dd694d3e500c79c6072e54e2c83" title="Metoda dodająca pacjenta do listy pacjentów." alt="" coords="592,5,800,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="529,24,580,26,575,27,530,29"/>
+<area shape="rect" id="Node000005" href="$class_d_i_c_o_m_app_1_1_utils_1_1_app_directory_handler.html#afd9bbfc690ac0993d6ff302a727a220a" title=" " alt="" coords="855,197,1056,240"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="756,142,884,192,879,191,755,147"/>
+<area shape="rect" id="Node000008" href="$class_d_i_c_o_m_app_1_1_utils_1_1_d_i_c_o_m_directory_handler.html#a6b615d67e335578d2678291dd935bb9c" title="Zwraca listę badań dla danego pacjenta na podstawie jego ID." alt="" coords="585,197,807,240"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="513,216,572,218,567,219,513,221"/>
+<area shape="poly" id="edge8_Node000008_Node000005" title=" " alt="" coords="808,216,842,219,837,219,808,221"/>
+<area shape="rect" id="Node000010" href="$class_d_i_c_o_m_app_1_1_utils_1_1_d_i_c_o_m_directory_handler.html#ac9d19834f3cb65b4d563c9576158b55b" title="Zwraca listę obrazów dla danego badania pacjenta." alt="" coords="585,268,807,311"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="536,289,572,291,566,291,536,294"/>
+<area shape="poly" id="edge11_Node000010_Node000005" title=" " alt="" coords="777,265,857,245,862,244,778,270"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="DICOMApp.Data.DICOMImageData" name="DICOMApp.Data.DICOMImageData">
+<area shape="rect" id="Node000001" title="Klasa przechowująca obraz i jego metadane." alt="" coords="110,296,333,387"/>
+<area shape="rect" id="Node000002" href="$class_d_i_c_o_m_app_1_1_data_1_1_d_i_c_o_m_metadata.html" title="Klasa przechowująca metadane DICOM obrazu:" alt="" coords="5,37,219,192"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="151,190,195,281,190,281,148,194"/>
+<area shape="rect" id="Node000003" href="$class_d_i_c_o_m_app_1_1_data_1_1_image_data.html" title="Klasa przechowujaca dane obrazu Zawiera informacje o rozmiarze obrazu oraz tablicę pikseli (zapisanyc..." alt="" coords="243,5,422,224"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="287,222,264,273,259,283,255,279,259,271,283,225"/>
+</map>

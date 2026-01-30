@@ -1,0 +1,7 @@
+<map id="DICOMApp.MLModel.MLPlugin" name="DICOMApp.MLModel.MLPlugin">
+<area shape="rect" id="Node000001" title="Klasa umożliwiająca korzystanie z modelu zapisanego w pliku ONNX." alt="" coords="123,211,328,472"/>
+<area shape="rect" id="Node000002" href="$interface_d_i_c_o_m_app_1_1_interfaces_1_1_i_m_l_plugin.html" title="Interfejs dla klas umożliwiających predykcję na podstawie modelu AI." alt="" coords="5,27,210,117"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="134,128,171,210,166,211,133,133"/>
+<area shape="rect" id="Node000003" href="$class_d_i_c_o_m_app_1_1_m_l_model_1_1_o_n_n_x_tensor.html" title="Klasa obsługująca przetwarzanie danych dla modelu ONNX Z ImageData na Tensor oraz Tensor na ImageData..." alt="" coords="235,5,453,139"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="316,136,292,196,287,193,313,141"/>
+</map>

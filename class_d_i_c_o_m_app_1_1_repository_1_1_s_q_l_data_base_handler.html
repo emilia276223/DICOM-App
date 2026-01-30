@@ -1,0 +1,696 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pl">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>DICOM-App: Dokumentacja klasy DICOMApp.Repository.SQLDataBaseHandler</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">DICOM-App<span id="projectnumber">&#160;version1.0</span>
+   </div>
+   <div id="projectbrief">Aplikacja do przeglądania obrazów DICOM oraz korzystania z pluginów AI</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano za pomocą Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler.html','','class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Wczytywanie...</div>
+<div class="SRStatus" id="Searching">Szukanie...</div>
+<div class="SRStatus" id="NoMatches">Brak dopasowań</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Dokumentacja klasy DICOMApp.Repository.SQLDataBaseHandler</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Klasa obsługująca bazę danych SQLite do przechowywania informacji o pacjentach, badaniach i obrazach.  
+ <a href="#details">Więcej...</a></p>
+<div class="dynheader">
+Diagram dziedziczenia dla DICOMApp.Repository.SQLDataBaseHandler</div>
+<div class="dyncontent">
+<div class="center"><img src="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler__inherit__graph.png" border="0" usemap="#a_d_i_c_o_m_app_8_repository_8_s_q_l_data_base_handler_inherit__map" loading="lazy" alt="Inheritance graph"/></div>
+<map name="a_d_i_c_o_m_app_8_repository_8_s_q_l_data_base_handler_inherit__map" id="a_d_i_c_o_m_app_8_repository_8_s_q_l_data_base_handler_inherit__map">
+<area shape="rect" title="Klasa obsługująca bazę danych SQLite do przechowywania informacji o pacjentach, badaniach i obrazach." alt="" coords="78,299,280,651"/>
+<area shape="rect" href="interface_d_i_c_o_m_app_1_1_interfaces_1_1_i_data_handler.html" title="Interfejs klasy obsługującej zapisywanie i odczytywanie danych." alt="" coords="5,5,195,251"/>
+<area shape="poly" title=" " alt="" coords="132,263,142,299,136,299,131,268"/>
+<area shape="rect" title=" " alt="" coords="219,93,299,163"/>
+<area shape="poly" title=" " alt="" coords="249,175,222,300,217,298,247,179"/>
+</map>
+</div>
+<div class="dynheader">
+Diagram współpracy dla DICOMApp.Repository.SQLDataBaseHandler:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler__coll__graph.png" border="0" usemap="#a_d_i_c_o_m_app_8_repository_8_s_q_l_data_base_handler_coll__map" loading="lazy" alt="Collaboration graph"/></div>
+<map name="a_d_i_c_o_m_app_8_repository_8_s_q_l_data_base_handler_coll__map" id="a_d_i_c_o_m_app_8_repository_8_s_q_l_data_base_handler_coll__map">
+<area shape="rect" title="Klasa obsługująca bazę danych SQLite do przechowywania informacji o pacjentach, badaniach i obrazach." alt="" coords="131,441,334,772"/>
+<area shape="rect" href="interface_d_i_c_o_m_app_1_1_interfaces_1_1_i_data_handler.html" title="Interfejs klasy obsługującej zapisywanie i odczytywanie danych." alt="" coords="5,124,195,369"/>
+<area shape="poly" title=" " alt="" coords="151,381,174,441,169,442,150,386"/>
+<area shape="rect" title=" " alt="" coords="238,5,318,75"/>
+<area shape="poly" title=" " alt="" coords="265,87,260,124,243,287,236,442,231,441,238,287,255,124,264,92"/>
+<area shape="rect" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_connection_handler.html" title="Klasa obsługująca połączenie z bazą danych SQLite." alt="" coords="270,140,496,353"/>
+<area shape="poly" title=" " alt="" coords="302,86,331,140,326,140,302,91"/>
+<area shape="poly" title=" " alt="" coords="340,351,310,427,306,424,337,355"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Metody publiczne</h2></td></tr>
+<tr class="memitem:aae74c636a3cc06579f65b9bfb2d9f09d" id="r_aae74c636a3cc06579f65b9bfb2d9f09d"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#aae74c636a3cc06579f65b9bfb2d9f09d">SQLDataBaseHandler</a> ()</td></tr>
+<tr class="memdesc:aae74c636a3cc06579f65b9bfb2d9f09d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tworzy handler bazy danych SQLite.  <br /></td></tr>
+<tr class="memitem:a4b5c4ae3f4e0166a7ce7671ea21ee712" id="r_a4b5c4ae3f4e0166a7ce7671ea21ee712"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a4b5c4ae3f4e0166a7ce7671ea21ee712">CloseConnection</a> ()</td></tr>
+<tr class="memdesc:a4b5c4ae3f4e0166a7ce7671ea21ee712"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zamyka połączenie z bazą danych SQLite.  <br /></td></tr>
+<tr class="memitem:a078919e77b4ef8397eee1e1b65283b31" id="r_a078919e77b4ef8397eee1e1b65283b31"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a078919e77b4ef8397eee1e1b65283b31">SaveMagnifiedImageCenterInfo</a> (string imageID, double x, double y)</td></tr>
+<tr class="memdesc:a078919e77b4ef8397eee1e1b65283b31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zapisuje do obrazu informacje o srodku okna powększającego.  <br /></td></tr>
+<tr class="memitem:a8fa71632151040816ddc2a438d538e65" id="r_a8fa71632151040816ddc2a438d538e65"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a8fa71632151040816ddc2a438d538e65">SaveChosenPoints</a> (List&lt; double &gt; points, string imageID, double opticNerveLen, <a class="el" href="class_d_i_c_o_m_app_1_1_data_1_1_d_i_c_o_m_metadata.html">DICOMMetadata</a> info)</td></tr>
+<tr class="memdesc:a8fa71632151040816ddc2a438d538e65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zapisuje wyznaczone punkty do bazy danych lub pliku.<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">points</td><td>Punkty do zapisania</td></tr>
+    <tr><td class="paramname">imageID</td><td>ID obrazu, na którym zostały zaznaczone punkty</td></tr>
+    <tr><td class="paramname">opticNerveLen</td><td>Wyznaczona długość nerwu wzrokowego</td></tr>
+    <tr><td class="paramname">info</td><td>Metadane <a class="el" href="namespace_d_i_c_o_m_app_1_1_d_i_c_o_m.html">DICOM</a> obrazu</td></tr>
+  </table>
+  </dd>
+</dl>
+  <br /></td></tr>
+<tr class="memitem:aec1386137a7ddeef7d7f2a48e0c069ee" id="r_aec1386137a7ddeef7d7f2a48e0c069ee"><td class="memItemLeft">List&lt;(string, double)&gt;&#160;</td><td class="memItemRight"><a class="el" href="#aec1386137a7ddeef7d7f2a48e0c069ee">GetOpticNerveLenValuesForStudiesOfPatient</a> (string patientID)</td></tr>
+<tr class="memdesc:aec1386137a7ddeef7d7f2a48e0c069ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zwraća listę długości nerwu wzrokowego dla wszystkich badań danego pacjenta.  <br /></td></tr>
+<tr class="memitem:a6b3b624b5bf7399d2fdf7a256b1b8a13" id="r_a6b3b624b5bf7399d2fdf7a256b1b8a13"><td class="memItemLeft">List&lt; List&lt; string &gt; &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a6b3b624b5bf7399d2fdf7a256b1b8a13">GetAnonimizedData</a> ()</td></tr>
+<tr class="memdesc:a6b3b624b5bf7399d2fdf7a256b1b8a13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zwraća listę list zawierający zanonimizowane dane dotyczące zaznaczeń na obrazach.<dl class="section return"><dt>Zwraca</dt><dd></dd></dl>
+  <br /></td></tr>
+<tr class="memitem:a871d1e43cfdc022ac9178c1848e309b8" id="r_a871d1e43cfdc022ac9178c1848e309b8"><td class="memItemLeft">List&lt; List&lt; string &gt; &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a871d1e43cfdc022ac9178c1848e309b8">GetMagnifiedCentersData</a> ()</td></tr>
+<tr class="memdesc:a871d1e43cfdc022ac9178c1848e309b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zwraća listę srodków okanów powększających dla wszystkich obrazów danego pacjenta.<dl class="section return"><dt>Zwraca</dt><dd></dd></dl>
+  <br /></td></tr>
+<tr class="memitem:a4a93c94b03ced1b42e4b6e7ddd976282" id="r_a4a93c94b03ced1b42e4b6e7ddd976282"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a4a93c94b03ced1b42e4b6e7ddd976282">Dispose</a> ()</td></tr>
+<tr class="memdesc:a4a93c94b03ced1b42e4b6e7ddd976282"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zwolnia zasoby zarządzane przez klasę i zamyka połączenie z bazą danych.  <br /></td></tr>
+<tr class="memitem:addcf0205c3666d7b981f1e42ab3ece39" id="r_addcf0205c3666d7b981f1e42ab3ece39"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#addcf0205c3666d7b981f1e42ab3ece39">AddImageInfo</a> (<a class="el" href="class_d_i_c_o_m_app_1_1_data_1_1_d_i_c_o_m_metadata.html">DICOMMetadata</a> metadata, string imageID)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pro-methods" class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Metody chronione</h2></td></tr>
+<tr class="memitem:a9179c4759202b57534009c628d104b74" id="r_a9179c4759202b57534009c628d104b74"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a9179c4759202b57534009c628d104b74">Dispose</a> (bool disposing)</td></tr>
+<tr class="memdesc:a9179c4759202b57534009c628d104b74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zwalnia zasoby i zamyka połączenie z bazą danych.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Atrybuty prywatne</h2></td></tr>
+<tr class="memitem:a9e274630be4d248e94fad9eefe3961e7" id="r_a9e274630be4d248e94fad9eefe3961e7"><td class="memItemLeft"><a class="el" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_connection_handler.html">SQLDataBaseConnectionHandler</a>?&#160;</td><td class="memItemRight"><a class="el" href="#a9e274630be4d248e94fad9eefe3961e7">_sqlConnection</a></td></tr>
+<tr class="memitem:a1934d45042e51ed879dbf8803f528507" id="r_a1934d45042e51ed879dbf8803f528507"><td class="memItemLeft">SqliteConnection?&#160;</td><td class="memItemRight"><a class="el" href="#a1934d45042e51ed879dbf8803f528507">_conn</a></td></tr>
+<tr class="memitem:a9e719911a92f731b6cf6f0c3d1767bfc" id="r_a9e719911a92f731b6cf6f0c3d1767bfc"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a9e719911a92f731b6cf6f0c3d1767bfc">disposedValue</a></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Opis szczegółowy</h2>
+<div class="textblock"><p>Klasa obsługująca bazę danych SQLite do przechowywania informacji o pacjentach, badaniach i obrazach. </p>
+<p>Implementuje wzorzec IDisposable do prawidłowego zarządzania zasobami Implementuje interfejs <a class="el" href="interface_d_i_c_o_m_app_1_1_interfaces_1_1_i_data_handler.html" title="Interfejs klasy obsługującej zapisywanie i odczytywanie danych.">IDataHandler</a> do obsługi zapisu i odczytu danych </p>
+
+<p class="definition">Definicja w linii <a class="el" href="_s_q_l_data_base_handler_8cs_source.html#l00019">19</a> pliku <a class="el" href="_s_q_l_data_base_handler_8cs_source.html">SQLDataBaseHandler.cs</a>.</p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Dokumentacja konstruktora i destruktora</h2>
+<a id="aae74c636a3cc06579f65b9bfb2d9f09d" name="aae74c636a3cc06579f65b9bfb2d9f09d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae74c636a3cc06579f65b9bfb2d9f09d">&#9670;&#160;</a></span>SQLDataBaseHandler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DICOMApp.Repository.SQLDataBaseHandler.SQLDataBaseHandler </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Tworzy handler bazy danych SQLite. </p>
+
+<p class="definition">Definicja w linii <a class="el" href="_s_q_l_data_base_handler_8cs_source.html#l00029">29</a> pliku <a class="el" href="_s_q_l_data_base_handler_8cs_source.html">SQLDataBaseHandler.cs</a>.</p>
+
+<p class="reference">Odwołuje się do <a class="el" href="_s_q_l_data_base_handler_8cs_source.html#l00022">_conn</a>, <a class="el" href="_s_q_l_data_base_handler_8cs_source.html#l00021">_sqlConnection</a>, <a class="el" href="_app_directory_handler_8cs_source.html#l00053">DICOMApp.Utils.AppDirectoryHandler.GetDatabaseDirecory()</a>, <a class="el" href="_s_q_l_data_base_schema_handler_8cs_source.html#l00089">DICOMApp.Repository.SQLDataBaseSchemaHandler.InitializeDatabase()</a> i <a class="el" href="_app_directory_handler_8cs_source.html#l00012">DICOMApp.Utils.AppDirectoryHandler.Instance</a>.</p>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler_aae74c636a3cc06579f65b9bfb2d9f09d_cgraph.png" border="0" usemap="#aclass_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler_aae74c636a3cc06579f65b9bfb2d9f09d_cgraph" loading="lazy" alt=""/></div>
+<map name="aclass_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler_aae74c636a3cc06579f65b9bfb2d9f09d_cgraph" id="aclass_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler_aae74c636a3cc06579f65b9bfb2d9f09d_cgraph">
+<area shape="rect" title="Tworzy handler bazy danych SQLite." alt="" coords="5,84,235,127"/>
+<area shape="rect" href="class_d_i_c_o_m_app_1_1_utils_1_1_app_directory_handler.html#a80c1d50014ee9eadaa9269c4b55e96e8" title=" " alt="" coords="309,51,509,93"/>
+<area shape="poly" title=" " alt="" coords="234,90,296,84,291,86,236,95"/>
+<area shape="rect" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_schema_handler.html#af8ca1afe0a5d458689aa57e334b71d55" title=" " alt="" coords="283,117,535,160"/>
+<area shape="poly" title=" " alt="" coords="235,116,270,122,265,123,236,121"/>
+<area shape="rect" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_schema_handler.html#ad8e857564ece5f9665221a6f01961f5a" title=" " alt="" coords="586,5,856,48"/>
+<area shape="poly" title=" " alt="" coords="509,114,534,103,548,92,557,81,566,69,582,58,592,56,597,53,584,62,570,73,561,84,552,96,536,108,511,119"/>
+<area shape="rect" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_schema_handler.html#abeee3b9f824069453fd60174ee464ae3" title=" " alt="" coords="594,72,847,131"/>
+<area shape="poly" title=" " alt="" coords="535,121,581,118,576,119,536,126"/>
+<area shape="rect" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_schema_handler.html#a5d02ce1fcd8cf73820d7562e38b1da96" title=" " alt="" coords="583,155,858,197"/>
+<area shape="poly" title=" " alt="" coords="535,151,570,158,565,158,536,156"/>
+<area shape="rect" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_schema_handler.html#adbe9618fc9e5910ae03b8bfd2ea5c903" title=" " alt="" coords="585,221,856,264"/>
+<area shape="poly" title=" " alt="" coords="459,158,584,207,610,217,605,217,582,212,458,163"/>
+</map>
+</div>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Dokumentacja funkcji składowych</h2>
+<a id="addcf0205c3666d7b981f1e42ab3ece39" name="addcf0205c3666d7b981f1e42ab3ece39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#addcf0205c3666d7b981f1e42ab3ece39">&#9670;&#160;</a></span>AddImageInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DICOMApp.Repository.SQLDataBaseHandler.AddImageInfo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_d_i_c_o_m_app_1_1_data_1_1_d_i_c_o_m_metadata.html">DICOMMetadata</a></td>          <td class="paramname"><span class="paramname"><em>metadata</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>imageID</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Dodaje informacje o obrazie do bazy danych.<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">metadata</td><td>Metadane obrazu</td></tr>
+    <tr><td class="paramname">imageID</td><td>ID obrazu</td></tr>
+  </table>
+  </dd>
+</dl>
+ </p>
+<p>Dodaje dane o obrazie do bazy danych </p>
+
+<p>Implementuje <a class="el" href="interface_d_i_c_o_m_app_1_1_interfaces_1_1_i_data_handler.html#a6a47757234d964d5c81afdd64c16299e">DICOMApp.Interfaces.IDataHandler</a>.</p>
+
+<p class="definition">Definicja w linii <a class="el" href="_s_q_l_data_base_handler_8cs_source.html#l00276">276</a> pliku <a class="el" href="_s_q_l_data_base_handler_8cs_source.html">SQLDataBaseHandler.cs</a>.</p>
+
+<p class="reference">Odwołuje się do <a class="el" href="_s_q_l_data_base_handler_8cs_source.html#l00022">_conn</a>, <a class="el" href="_s_q_l_data_base_inserts_handler_8cs_source.html#l00065">DICOMApp.Repository.SQLDataBaseInsertsHandler.InsertImage()</a>, <a class="el" href="_s_q_l_data_base_inserts_handler_8cs_source.html#l00015">DICOMApp.Repository.SQLDataBaseInsertsHandler.InsertPatient()</a>, <a class="el" href="_s_q_l_data_base_inserts_handler_8cs_source.html#l00041">DICOMApp.Repository.SQLDataBaseInsertsHandler.InsertStudy()</a>, <a class="el" href="_d_i_c_o_m_metadata_8cs_source.html#l00017">DICOMApp.Data.DICOMMetadata.PatientID</a>, <a class="el" href="_d_i_c_o_m_metadata_8cs_source.html#l00022">DICOMApp.Data.DICOMMetadata.PatientName</a>, <a class="el" href="_d_i_c_o_m_metadata_8cs_source.html#l00027">DICOMApp.Data.DICOMMetadata.StudyDate</a> i <a class="el" href="_d_i_c_o_m_metadata_8cs_source.html#l00032">DICOMApp.Data.DICOMMetadata.StudyUID</a>.</p>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler_addcf0205c3666d7b981f1e42ab3ece39_cgraph.png" border="0" usemap="#aclass_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler_addcf0205c3666d7b981f1e42ab3ece39_cgraph" loading="lazy" alt=""/></div>
+<map name="aclass_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler_addcf0205c3666d7b981f1e42ab3ece39_cgraph" id="aclass_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler_addcf0205c3666d7b981f1e42ab3ece39_cgraph">
+<area shape="rect" title=" " alt="" coords="5,72,219,115"/>
+<area shape="rect" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_inserts_handler.html#a48c0e99018a645705515919c49363b0f" title="Dodanie obrazu jeśli jeszcze nie ma takiego w bazie." alt="" coords="267,5,480,48"/>
+<area shape="poly" title=" " alt="" coords="198,69,275,51,270,54,199,74"/>
+<area shape="rect" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_inserts_handler.html#a7aa9fd5c946479c98324095798129498" title="Dodanie pacjenta jeśli jeszcze nie ma takiego w bazie." alt="" coords="267,72,481,115"/>
+<area shape="poly" title=" " alt="" coords="219,91,254,93,249,94,220,96"/>
+<area shape="rect" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_inserts_handler.html#a14933642d45ca0b058ad8beaa2dd22e4" title="Dodanie badania jeśli jeszcze nie ma takiego w bazie." alt="" coords="267,139,480,181"/>
+<area shape="poly" title=" " alt="" coords="199,113,275,134,270,135,198,118"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a4b5c4ae3f4e0166a7ce7671ea21ee712" name="a4b5c4ae3f4e0166a7ce7671ea21ee712"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b5c4ae3f4e0166a7ce7671ea21ee712">&#9670;&#160;</a></span>CloseConnection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DICOMApp.Repository.SQLDataBaseHandler.CloseConnection </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Zamyka połączenie z bazą danych SQLite. </p>
+
+<p>Implementuje <a class="el" href="interface_d_i_c_o_m_app_1_1_interfaces_1_1_i_data_handler.html#a4119e004ba63e5509c568d009188a197">DICOMApp.Interfaces.IDataHandler</a>.</p>
+
+<p class="definition">Definicja w linii <a class="el" href="_s_q_l_data_base_handler_8cs_source.html#l00049">49</a> pliku <a class="el" href="_s_q_l_data_base_handler_8cs_source.html">SQLDataBaseHandler.cs</a>.</p>
+
+<p class="reference">Odwołuje się do <a class="el" href="_s_q_l_data_base_handler_8cs_source.html#l00022">_conn</a> i <a class="el" href="_s_q_l_data_base_handler_8cs_source.html#l00021">_sqlConnection</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="_s_q_l_data_base_handler_8cs_source.html#l00252">Dispose()</a>.</p>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler_a4b5c4ae3f4e0166a7ce7671ea21ee712_icgraph.png" border="0" usemap="#aclass_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler_a4b5c4ae3f4e0166a7ce7671ea21ee712_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler_a4b5c4ae3f4e0166a7ce7671ea21ee712_icgraph" id="aclass_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler_a4b5c4ae3f4e0166a7ce7671ea21ee712_icgraph">
+<area shape="rect" title="Zamyka połączenie z bazą danych SQLite." alt="" coords="267,5,480,48"/>
+<area shape="rect" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler.html#a9179c4759202b57534009c628d104b74" title="Zwalnia zasoby i zamyka połączenie z bazą danych." alt="" coords="5,5,219,48"/>
+<area shape="poly" title=" " alt="" coords="248,27,219,29,219,24,254,27"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a4a93c94b03ced1b42e4b6e7ddd976282" name="a4a93c94b03ced1b42e4b6e7ddd976282"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a93c94b03ced1b42e4b6e7ddd976282">&#9670;&#160;</a></span>Dispose() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DICOMApp.Repository.SQLDataBaseHandler.Dispose </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Zwolnia zasoby zarządzane przez klasę i zamyka połączenie z bazą danych. </p>
+<p>Implementacja interfejsu IDisposable </p>
+
+<p class="definition">Definicja w linii <a class="el" href="_s_q_l_data_base_handler_8cs_source.html#l00265">265</a> pliku <a class="el" href="_s_q_l_data_base_handler_8cs_source.html">SQLDataBaseHandler.cs</a>.</p>
+
+<p class="reference">Odwołuje się do <a class="el" href="_s_q_l_data_base_handler_8cs_source.html#l00265">Dispose()</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="_s_q_l_data_base_handler_8cs_source.html#l00265">Dispose()</a>.</p>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler_a4a93c94b03ced1b42e4b6e7ddd976282_cgraph.png" border="0" usemap="#aclass_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler_a4a93c94b03ced1b42e4b6e7ddd976282_cgraph" loading="lazy" alt=""/></div>
+<map name="aclass_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler_a4a93c94b03ced1b42e4b6e7ddd976282_cgraph" id="aclass_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler_a4a93c94b03ced1b42e4b6e7ddd976282_cgraph">
+<area shape="rect" title="Zwolnia zasoby zarządzane przez klasę i zamyka połączenie z bazą danych." alt="" coords="5,29,219,72"/>
+<area shape="poly" title=" " alt="" coords="71,28,70,19,77,10,91,5,112,3,135,5,150,14,145,14,134,10,112,8,92,10,80,15,75,21,76,30"/>
+</map>
+</div>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler_a4a93c94b03ced1b42e4b6e7ddd976282_icgraph.png" border="0" usemap="#aclass_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler_a4a93c94b03ced1b42e4b6e7ddd976282_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler_a4a93c94b03ced1b42e4b6e7ddd976282_icgraph" id="aclass_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler_a4a93c94b03ced1b42e4b6e7ddd976282_icgraph">
+<area shape="rect" title="Zwolnia zasoby zarządzane przez klasę i zamyka połączenie z bazą danych." alt="" coords="5,29,219,72"/>
+<area shape="poly" title=" " alt="" coords="145,14,134,10,112,8,92,10,80,15,75,21,76,30,71,28,70,19,77,10,91,5,112,3,135,5,150,14"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a9179c4759202b57534009c628d104b74" name="a9179c4759202b57534009c628d104b74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9179c4759202b57534009c628d104b74">&#9670;&#160;</a></span>Dispose() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void DICOMApp.Repository.SQLDataBaseHandler.Dispose </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>disposing</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Zwalnia zasoby i zamyka połączenie z bazą danych. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">disposing</td><td>Wskaźnik czy metoda została wywołana przez <a class="el" href="#a4a93c94b03ced1b42e4b6e7ddd976282" title="Zwolnia zasoby zarządzane przez klasę i zamyka połączenie z bazą danych.">Dispose()</a></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definicja w linii <a class="el" href="_s_q_l_data_base_handler_8cs_source.html#l00252">252</a> pliku <a class="el" href="_s_q_l_data_base_handler_8cs_source.html">SQLDataBaseHandler.cs</a>.</p>
+
+<p class="reference">Odwołuje się do <a class="el" href="_s_q_l_data_base_handler_8cs_source.html#l00049">CloseConnection()</a> i <a class="el" href="_s_q_l_data_base_handler_8cs_source.html#l00023">disposedValue</a>.</p>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler_a9179c4759202b57534009c628d104b74_cgraph.png" border="0" usemap="#aclass_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler_a9179c4759202b57534009c628d104b74_cgraph" loading="lazy" alt=""/></div>
+<map name="aclass_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler_a9179c4759202b57534009c628d104b74_cgraph" id="aclass_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler_a9179c4759202b57534009c628d104b74_cgraph">
+<area shape="rect" title="Zwalnia zasoby i zamyka połączenie z bazą danych." alt="" coords="5,5,219,48"/>
+<area shape="rect" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler.html#a4b5c4ae3f4e0166a7ce7671ea21ee712" title="Zamyka połączenie z bazą danych SQLite." alt="" coords="267,5,480,48"/>
+<area shape="poly" title=" " alt="" coords="219,24,254,27,249,27,219,29"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a6b3b624b5bf7399d2fdf7a256b1b8a13" name="a6b3b624b5bf7399d2fdf7a256b1b8a13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b3b624b5bf7399d2fdf7a256b1b8a13">&#9670;&#160;</a></span>GetAnonimizedData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt; List&lt; string &gt; &gt; DICOMApp.Repository.SQLDataBaseHandler.GetAnonimizedData </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Zwraća listę list zawierający zanonimizowane dane dotyczące zaznaczeń na obrazach.<dl class="section return"><dt>Zwraca</dt><dd></dd></dl>
+ </p>
+
+<p>Implementuje <a class="el" href="interface_d_i_c_o_m_app_1_1_interfaces_1_1_i_data_handler.html#a6e227d4f9a4fade33c150a21ec15ac2b">DICOMApp.Interfaces.IDataHandler</a>.</p>
+
+<p class="definition">Definicja w linii <a class="el" href="_s_q_l_data_base_handler_8cs_source.html#l00162">162</a> pliku <a class="el" href="_s_q_l_data_base_handler_8cs_source.html">SQLDataBaseHandler.cs</a>.</p>
+
+<p class="reference">Odwołuje się do <a class="el" href="_s_q_l_data_base_handler_8cs_source.html#l00022">_conn</a>.</p>
+
+</div>
+</div>
+<a id="a871d1e43cfdc022ac9178c1848e309b8" name="a871d1e43cfdc022ac9178c1848e309b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a871d1e43cfdc022ac9178c1848e309b8">&#9670;&#160;</a></span>GetMagnifiedCentersData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt; List&lt; string &gt; &gt; DICOMApp.Repository.SQLDataBaseHandler.GetMagnifiedCentersData </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Zwraća listę srodków okanów powększających dla wszystkich obrazów danego pacjenta.<dl class="section return"><dt>Zwraca</dt><dd></dd></dl>
+ </p>
+
+<p>Implementuje <a class="el" href="interface_d_i_c_o_m_app_1_1_interfaces_1_1_i_data_handler.html#ae09560ba49321d028a51b194757c15a1">DICOMApp.Interfaces.IDataHandler</a>.</p>
+
+<p class="definition">Definicja w linii <a class="el" href="_s_q_l_data_base_handler_8cs_source.html#l00211">211</a> pliku <a class="el" href="_s_q_l_data_base_handler_8cs_source.html">SQLDataBaseHandler.cs</a>.</p>
+
+<p class="reference">Odwołuje się do <a class="el" href="_s_q_l_data_base_handler_8cs_source.html#l00022">_conn</a>.</p>
+
+</div>
+</div>
+<a id="aec1386137a7ddeef7d7f2a48e0c069ee" name="aec1386137a7ddeef7d7f2a48e0c069ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec1386137a7ddeef7d7f2a48e0c069ee">&#9670;&#160;</a></span>GetOpticNerveLenValuesForStudiesOfPatient()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;(string, double)&gt; DICOMApp.Repository.SQLDataBaseHandler.GetOpticNerveLenValuesForStudiesOfPatient </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>patientID</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Zwraća listę długości nerwu wzrokowego dla wszystkich badań danego pacjenta. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">patientID</td><td>ID pacjenta</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>Lista krotek (data badania, długość nerwu wzrokowego) </dd></dl>
+
+<p>Implementuje <a class="el" href="interface_d_i_c_o_m_app_1_1_interfaces_1_1_i_data_handler.html#a686d9aa8532a15586f75d55a2cedd538">DICOMApp.Interfaces.IDataHandler</a>.</p>
+
+<p class="definition">Definicja w linii <a class="el" href="_s_q_l_data_base_handler_8cs_source.html#l00119">119</a> pliku <a class="el" href="_s_q_l_data_base_handler_8cs_source.html">SQLDataBaseHandler.cs</a>.</p>
+
+<p class="reference">Odwołuje się do <a class="el" href="_s_q_l_data_base_handler_8cs_source.html#l00022">_conn</a>.</p>
+
+</div>
+</div>
+<a id="a8fa71632151040816ddc2a438d538e65" name="a8fa71632151040816ddc2a438d538e65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fa71632151040816ddc2a438d538e65">&#9670;&#160;</a></span>SaveChosenPoints()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DICOMApp.Repository.SQLDataBaseHandler.SaveChosenPoints </td>
+          <td>(</td>
+          <td class="paramtype">List&lt; double &gt;</td>          <td class="paramname"><span class="paramname"><em>points</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>imageID</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>opticNerveLen</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_d_i_c_o_m_app_1_1_data_1_1_d_i_c_o_m_metadata.html">DICOMMetadata</a></td>          <td class="paramname"><span class="paramname"><em>info</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Zapisuje wyznaczone punkty do bazy danych lub pliku.<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">points</td><td>Punkty do zapisania</td></tr>
+    <tr><td class="paramname">imageID</td><td>ID obrazu, na którym zostały zaznaczone punkty</td></tr>
+    <tr><td class="paramname">opticNerveLen</td><td>Wyznaczona długość nerwu wzrokowego</td></tr>
+    <tr><td class="paramname">info</td><td>Metadane <a class="el" href="namespace_d_i_c_o_m_app_1_1_d_i_c_o_m.html">DICOM</a> obrazu</td></tr>
+  </table>
+  </dd>
+</dl>
+ </p>
+
+<p>Implementuje <a class="el" href="interface_d_i_c_o_m_app_1_1_interfaces_1_1_i_data_handler.html#af192df91639bd4a8a1e4bc0894fac4c0">DICOMApp.Interfaces.IDataHandler</a>.</p>
+
+<p class="definition">Definicja w linii <a class="el" href="_s_q_l_data_base_handler_8cs_source.html#l00078">78</a> pliku <a class="el" href="_s_q_l_data_base_handler_8cs_source.html">SQLDataBaseHandler.cs</a>.</p>
+
+<p class="reference">Odwołuje się do <a class="el" href="_s_q_l_data_base_handler_8cs_source.html#l00022">_conn</a>, <a class="el" href="_s_q_l_data_base_inserts_handler_8cs_source.html#l00065">DICOMApp.Repository.SQLDataBaseInsertsHandler.InsertImage()</a>, <a class="el" href="_s_q_l_data_base_inserts_handler_8cs_source.html#l00113">DICOMApp.Repository.SQLDataBaseInsertsHandler.InsertImageInfo()</a>, <a class="el" href="_s_q_l_data_base_inserts_handler_8cs_source.html#l00015">DICOMApp.Repository.SQLDataBaseInsertsHandler.InsertPatient()</a>, <a class="el" href="_s_q_l_data_base_inserts_handler_8cs_source.html#l00041">DICOMApp.Repository.SQLDataBaseInsertsHandler.InsertStudy()</a>, <a class="el" href="_d_i_c_o_m_metadata_8cs_source.html#l00017">DICOMApp.Data.DICOMMetadata.PatientID</a>, <a class="el" href="_d_i_c_o_m_metadata_8cs_source.html#l00022">DICOMApp.Data.DICOMMetadata.PatientName</a>, <a class="el" href="_d_i_c_o_m_metadata_8cs_source.html#l00027">DICOMApp.Data.DICOMMetadata.StudyDate</a> i <a class="el" href="_d_i_c_o_m_metadata_8cs_source.html#l00032">DICOMApp.Data.DICOMMetadata.StudyUID</a>.</p>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler_a8fa71632151040816ddc2a438d538e65_cgraph.png" border="0" usemap="#aclass_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler_a8fa71632151040816ddc2a438d538e65_cgraph" loading="lazy" alt=""/></div>
+<map name="aclass_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler_a8fa71632151040816ddc2a438d538e65_cgraph" id="aclass_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler_a8fa71632151040816ddc2a438d538e65_cgraph">
+<area shape="rect" title="Zapisuje wyznaczone punkty do bazy danych lub pliku." alt="" coords="5,105,219,148"/>
+<area shape="rect" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_inserts_handler.html#a48c0e99018a645705515919c49363b0f" title="Dodanie obrazu jeśli jeszcze nie ma takiego w bazie." alt="" coords="276,5,489,48"/>
+<area shape="poly" title=" " alt="" coords="158,102,266,58,289,52,285,54,268,62,161,107"/>
+<area shape="rect" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_inserts_handler.html#a651bf3154eeea28343f43a67cdab8df5" title="Dodanie informacji o punktach i długości nerwu wzrokowego do obrazu." alt="" coords="267,72,498,115"/>
+<area shape="poly" title=" " alt="" coords="218,111,254,109,249,110,220,116"/>
+<area shape="rect" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_inserts_handler.html#a7aa9fd5c946479c98324095798129498" title="Dodanie pacjenta jeśli jeszcze nie ma takiego w bazie." alt="" coords="275,139,490,181"/>
+<area shape="poly" title=" " alt="" coords="219,137,262,144,257,145,219,142"/>
+<area shape="rect" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_inserts_handler.html#a14933642d45ca0b058ad8beaa2dd22e4" title="Dodanie badania jeśli jeszcze nie ma takiego w bazie." alt="" coords="276,205,489,248"/>
+<area shape="poly" title=" " alt="" coords="160,146,268,191,290,200,284,200,266,196,159,151"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a078919e77b4ef8397eee1e1b65283b31" name="a078919e77b4ef8397eee1e1b65283b31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a078919e77b4ef8397eee1e1b65283b31">&#9670;&#160;</a></span>SaveMagnifiedImageCenterInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DICOMApp.Repository.SQLDataBaseHandler.SaveMagnifiedImageCenterInfo </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>imageID</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>y</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Zapisuje do obrazu informacje o srodku okna powększającego. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">imageID</td><td>ID obrazu, którego dane powięszenia zapisujemy</td></tr>
+    <tr><td class="paramname">x</td><td>Srodek okan powększającego w osi x</td></tr>
+    <tr><td class="paramname">y</td><td>Srodek okan powększającego w osi y</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implementuje <a class="el" href="interface_d_i_c_o_m_app_1_1_interfaces_1_1_i_data_handler.html#a396c2223d8f415405a3d3aa620f1e15e">DICOMApp.Interfaces.IDataHandler</a>.</p>
+
+<p class="definition">Definicja w linii <a class="el" href="_s_q_l_data_base_handler_8cs_source.html#l00065">65</a> pliku <a class="el" href="_s_q_l_data_base_handler_8cs_source.html">SQLDataBaseHandler.cs</a>.</p>
+
+<p class="reference">Odwołuje się do <a class="el" href="_s_q_l_data_base_handler_8cs_source.html#l00022">_conn</a> i <a class="el" href="_s_q_l_data_base_inserts_handler_8cs_source.html#l00089">DICOMApp.Repository.SQLDataBaseInsertsHandler.InsertMagnifiedImageCenterInfo()</a>.</p>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler_a078919e77b4ef8397eee1e1b65283b31_cgraph.png" border="0" usemap="#aclass_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler_a078919e77b4ef8397eee1e1b65283b31_cgraph" loading="lazy" alt=""/></div>
+<map name="aclass_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler_a078919e77b4ef8397eee1e1b65283b31_cgraph" id="aclass_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler_a078919e77b4ef8397eee1e1b65283b31_cgraph">
+<area shape="rect" title="Zapisuje do obrazu informacje o srodku okna powększającego." alt="" coords="5,13,289,56"/>
+<area shape="rect" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_inserts_handler.html#add19b5e191a1cd28276e5858d1d6b958" title="Dodanie informacji o srodku okna powiększającego do obrazu." alt="" coords="337,5,566,64"/>
+<area shape="poly" title=" " alt="" coords="289,32,324,35,318,35,289,37"/>
+</map>
+</div>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Dokumentacja atrybutów składowych</h2>
+<a id="a1934d45042e51ed879dbf8803f528507" name="a1934d45042e51ed879dbf8803f528507"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1934d45042e51ed879dbf8803f528507">&#9670;&#160;</a></span>_conn</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">SqliteConnection? DICOMApp.Repository.SQLDataBaseHandler._conn</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="_s_q_l_data_base_handler_8cs_source.html#l00022">22</a> pliku <a class="el" href="_s_q_l_data_base_handler_8cs_source.html">SQLDataBaseHandler.cs</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="_s_q_l_data_base_handler_8cs_source.html#l00276">AddImageInfo()</a>, <a class="el" href="_s_q_l_data_base_handler_8cs_source.html#l00049">CloseConnection()</a>, <a class="el" href="_s_q_l_data_base_handler_8cs_source.html#l00162">GetAnonimizedData()</a>, <a class="el" href="_s_q_l_data_base_handler_8cs_source.html#l00211">GetMagnifiedCentersData()</a>, <a class="el" href="_s_q_l_data_base_handler_8cs_source.html#l00119">GetOpticNerveLenValuesForStudiesOfPatient()</a>, <a class="el" href="_s_q_l_data_base_handler_8cs_source.html#l00078">SaveChosenPoints()</a>, <a class="el" href="_s_q_l_data_base_handler_8cs_source.html#l00065">SaveMagnifiedImageCenterInfo()</a> i <a class="el" href="_s_q_l_data_base_handler_8cs_source.html#l00029">SQLDataBaseHandler()</a>.</p>
+
+</div>
+</div>
+<a id="a9e274630be4d248e94fad9eefe3961e7" name="a9e274630be4d248e94fad9eefe3961e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e274630be4d248e94fad9eefe3961e7">&#9670;&#160;</a></span>_sqlConnection</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_connection_handler.html">SQLDataBaseConnectionHandler</a>? DICOMApp.Repository.SQLDataBaseHandler._sqlConnection</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="_s_q_l_data_base_handler_8cs_source.html#l00021">21</a> pliku <a class="el" href="_s_q_l_data_base_handler_8cs_source.html">SQLDataBaseHandler.cs</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="_s_q_l_data_base_handler_8cs_source.html#l00049">CloseConnection()</a> i <a class="el" href="_s_q_l_data_base_handler_8cs_source.html#l00029">SQLDataBaseHandler()</a>.</p>
+
+</div>
+</div>
+<a id="a9e719911a92f731b6cf6f0c3d1767bfc" name="a9e719911a92f731b6cf6f0c3d1767bfc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e719911a92f731b6cf6f0c3d1767bfc">&#9670;&#160;</a></span>disposedValue</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DICOMApp.Repository.SQLDataBaseHandler.disposedValue</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="_s_q_l_data_base_handler_8cs_source.html#l00023">23</a> pliku <a class="el" href="_s_q_l_data_base_handler_8cs_source.html">SQLDataBaseHandler.cs</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="_s_q_l_data_base_handler_8cs_source.html#l00252">Dispose()</a>.</p>
+
+</div>
+</div>
+<hr/>Dokumentacja dla tej klasy została wygenerowana z pliku:<ul>
+<li>C:/Users/emili/Documents/DICOM-App/Repository/<a class="el" href="_s_q_l_data_base_handler_8cs_source.html">SQLDataBaseHandler.cs</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="namespace_d_i_c_o_m_app.html">DICOMApp</a></li><li class="navelem"><a href="namespace_d_i_c_o_m_app_1_1_repository.html">Repository</a></li><li class="navelem"><a href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_handler.html">SQLDataBaseHandler</a></li>
+    <li class="footer">Wygenerowano za pomocą <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

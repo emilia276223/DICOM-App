@@ -1,0 +1,5 @@
+<map id="DICOMApp.ViewModel.HeatmapControlViewModel.HideHeatmap" name="DICOMApp.ViewModel.HeatmapControlViewModel.HideHeatmap">
+<area shape="rect" id="Node000001" title="Metoda ukrywająca aktualnie wyswietlaną heatmapę" alt="" coords="287,5,501,48"/>
+<area shape="rect" id="Node000002" href="$class_d_i_c_o_m_app_1_1_view_model_1_1_heatmap_control_view_model.html#af01eef456a687e5f751e56a6da7483d7" title="Metoda ustawiająca nowe heatmapy." alt="" coords="5,5,239,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="268,27,239,29,239,24,273,27"/>
+</map>

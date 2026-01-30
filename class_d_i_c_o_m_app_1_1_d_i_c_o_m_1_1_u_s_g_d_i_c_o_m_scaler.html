@@ -1,0 +1,435 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pl">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>DICOM-App: Dokumentacja klasy DICOMApp.DICOM.USGDICOMScaler</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">DICOM-App<span id="projectnumber">&#160;version1.0</span>
+   </div>
+   <div id="projectbrief">Aplikacja do przeglądania obrazów DICOM oraz korzystania z pluginów AI</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano za pomocą Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('class_d_i_c_o_m_app_1_1_d_i_c_o_m_1_1_u_s_g_d_i_c_o_m_scaler.html','','class_d_i_c_o_m_app_1_1_d_i_c_o_m_1_1_u_s_g_d_i_c_o_m_scaler-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Wczytywanie...</div>
+<div class="SRStatus" id="Searching">Szukanie...</div>
+<div class="SRStatus" id="NoMatches">Brak dopasowań</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Dokumentacja klasy DICOMApp.DICOM.USGDICOMScaler</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Klasa obsługująca skalowanie <a class="el" href="namespace_d_i_c_o_m_app_1_1_d_i_c_o_m.html">DICOM</a> dla obrazów ultrasonograficznych implementująca interfejs <a class="el" href="interface_d_i_c_o_m_app_1_1_interfaces_1_1_i_dicom_scaler.html" title="Interfejs klasy obsługującej skalowanie DICOM.">IDicomScaler</a>.  
+ <a href="#details">Więcej...</a></p>
+<div class="dynheader">
+Diagram dziedziczenia dla DICOMApp.DICOM.USGDICOMScaler</div>
+<div class="dyncontent">
+<div class="center"><img src="class_d_i_c_o_m_app_1_1_d_i_c_o_m_1_1_u_s_g_d_i_c_o_m_scaler__inherit__graph.png" border="0" usemap="#a_d_i_c_o_m_app_8_d_i_c_o_m_8_u_s_g_d_i_c_o_m_scaler_inherit__map" loading="lazy" alt="Inheritance graph"/></div>
+<map name="a_d_i_c_o_m_app_8_d_i_c_o_m_8_u_s_g_d_i_c_o_m_scaler_inherit__map" id="a_d_i_c_o_m_app_8_d_i_c_o_m_8_u_s_g_d_i_c_o_m_scaler_inherit__map">
+<area shape="rect" title="Klasa obsługująca skalowanie DICOM dla obrazów ultrasonograficznych implementująca interfejs IDicomSc..." alt="" coords="5,139,248,336"/>
+<area shape="rect" href="interface_d_i_c_o_m_app_1_1_interfaces_1_1_i_dicom_scaler.html" title="Interfejs klasy obsługującej skalowanie DICOM." alt="" coords="33,5,220,91"/>
+<area shape="poly" title=" " alt="" coords="128,103,129,139,124,138,126,108"/>
+</map>
+</div>
+<div class="dynheader">
+Diagram współpracy dla DICOMApp.DICOM.USGDICOMScaler:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_d_i_c_o_m_app_1_1_d_i_c_o_m_1_1_u_s_g_d_i_c_o_m_scaler__coll__graph.png" border="0" usemap="#a_d_i_c_o_m_app_8_d_i_c_o_m_8_u_s_g_d_i_c_o_m_scaler_coll__map" loading="lazy" alt="Collaboration graph"/></div>
+<map name="a_d_i_c_o_m_app_8_d_i_c_o_m_8_u_s_g_d_i_c_o_m_scaler_coll__map" id="a_d_i_c_o_m_app_8_d_i_c_o_m_8_u_s_g_d_i_c_o_m_scaler_coll__map">
+<area shape="rect" title="Klasa obsługująca skalowanie DICOM dla obrazów ultrasonograficznych implementująca interfejs IDicomSc..." alt="" coords="5,139,248,336"/>
+<area shape="rect" href="interface_d_i_c_o_m_app_1_1_interfaces_1_1_i_dicom_scaler.html" title="Interfejs klasy obsługującej skalowanie DICOM." alt="" coords="33,5,220,91"/>
+<area shape="poly" title=" " alt="" coords="128,103,129,139,124,138,126,108"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Metody publiczne</h2></td></tr>
+<tr class="memitem:a438cbb4ee0e8b2b8e2353e4257be6d79" id="r_a438cbb4ee0e8b2b8e2353e4257be6d79"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a438cbb4ee0e8b2b8e2353e4257be6d79">USGDICOMScaler</a> (DicomDataset dataset, DicomSequence regions)</td></tr>
+<tr class="memdesc:a438cbb4ee0e8b2b8e2353e4257be6d79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tworzy skaler dla pliku dicom na postawie podanych metadanych pliku.  <br /></td></tr>
+<tr class="memitem:a0e460f63de3bbf508136c20cbe7b8e45" id="r_a0e460f63de3bbf508136c20cbe7b8e45"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#a0e460f63de3bbf508136c20cbe7b8e45">GetActualLength</a> (Point start, Point end)</td></tr>
+<tr class="memdesc:a0e460f63de3bbf508136c20cbe7b8e45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wylicza rzeczywistą długość między dwoma punktami na obrazie <a class="el" href="namespace_d_i_c_o_m_app_1_1_d_i_c_o_m.html">DICOM</a>.<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">start</td><td>Punkt (Avalonia Point) początku odcinka do pomiaru</td></tr>
+    <tr><td class="paramname">end</td><td>Punkt (Avalonia Point) końca odcinka do pomiaru</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>Długość rzeczywista między dwoma punktami w milimetrach</dd></dl>
+  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-methods" class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Metody prywatne</h2></td></tr>
+<tr class="memitem:ac856a6b9375e4d95f9611957ce85b030" id="r_ac856a6b9375e4d95f9611957ce85b030"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ac856a6b9375e4d95f9611957ce85b030">checkUnitName</a> ()</td></tr>
+<tr class="memdesc:ac856a6b9375e4d95f9611957ce85b030"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sprawdza, czy Unit Name w metadanych pliku jest cm - jedyna możliwa wartość dla odległości.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Atrybuty prywatne</h2></td></tr>
+<tr class="memitem:a7c3f0949d28c8115fefcd5bad0561214" id="r_a7c3f0949d28c8115fefcd5bad0561214"><td class="memItemLeft">DicomDataset&#160;</td><td class="memItemRight"><a class="el" href="#a7c3f0949d28c8115fefcd5bad0561214">_region</a></td></tr>
+<tr class="memitem:ac349be9ecc2bd4759d0afc91e64abd83" id="r_ac349be9ecc2bd4759d0afc91e64abd83"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#ac349be9ecc2bd4759d0afc91e64abd83">_deltaY</a></td></tr>
+<tr class="memitem:a074e636c3f605191e8be889fb362753b" id="r_a074e636c3f605191e8be889fb362753b"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#a074e636c3f605191e8be889fb362753b">_deltaX</a></td></tr>
+<tr class="memitem:ae1ecaf1049d85cc86c10f615195f46fd" id="r_ae1ecaf1049d85cc86c10f615195f46fd"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#ae1ecaf1049d85cc86c10f615195f46fd">_unitsX</a></td></tr>
+<tr class="memitem:a395723def8c269fda45af79717835681" id="r_a395723def8c269fda45af79717835681"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#a395723def8c269fda45af79717835681">_unitsY</a></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Opis szczegółowy</h2>
+<div class="textblock"><p>Klasa obsługująca skalowanie <a class="el" href="namespace_d_i_c_o_m_app_1_1_d_i_c_o_m.html">DICOM</a> dla obrazów ultrasonograficznych implementująca interfejs <a class="el" href="interface_d_i_c_o_m_app_1_1_interfaces_1_1_i_dicom_scaler.html" title="Interfejs klasy obsługującej skalowanie DICOM.">IDicomScaler</a>. </p>
+
+<p class="definition">Definicja w linii <a class="el" href="_u_s_g_dicom_scaler_8cs_source.html#l00013">13</a> pliku <a class="el" href="_u_s_g_dicom_scaler_8cs_source.html">USGDicomScaler.cs</a>.</p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Dokumentacja konstruktora i destruktora</h2>
+<a id="a438cbb4ee0e8b2b8e2353e4257be6d79" name="a438cbb4ee0e8b2b8e2353e4257be6d79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a438cbb4ee0e8b2b8e2353e4257be6d79">&#9670;&#160;</a></span>USGDICOMScaler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DICOMApp.DICOM.USGDICOMScaler.USGDICOMScaler </td>
+          <td>(</td>
+          <td class="paramtype">DicomDataset</td>          <td class="paramname"><span class="paramname"><em>dataset</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DicomSequence</td>          <td class="paramname"><span class="paramname"><em>regions</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Tworzy skaler dla pliku dicom na postawie podanych metadanych pliku. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dataset</td><td>Dataset z metadanych pliku</td></tr>
+    <tr><td class="paramname">regions</td><td>Regiony z metadanych pliku</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definicja w linii <a class="el" href="_u_s_g_dicom_scaler_8cs_source.html#l00029">29</a> pliku <a class="el" href="_u_s_g_dicom_scaler_8cs_source.html">USGDicomScaler.cs</a>.</p>
+
+<p class="reference">Odwołuje się do <a class="el" href="_u_s_g_dicom_scaler_8cs_source.html#l00017">_deltaX</a>, <a class="el" href="_u_s_g_dicom_scaler_8cs_source.html#l00016">_deltaY</a>, <a class="el" href="_u_s_g_dicom_scaler_8cs_source.html#l00015">_region</a>, <a class="el" href="_u_s_g_dicom_scaler_8cs_source.html#l00020">_unitsX</a>, <a class="el" href="_u_s_g_dicom_scaler_8cs_source.html#l00021">_unitsY</a> i <a class="el" href="_u_s_g_dicom_scaler_8cs_source.html#l00047">checkUnitName()</a>.</p>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_d_i_c_o_m_app_1_1_d_i_c_o_m_1_1_u_s_g_d_i_c_o_m_scaler_a438cbb4ee0e8b2b8e2353e4257be6d79_cgraph.png" border="0" usemap="#aclass_d_i_c_o_m_app_1_1_d_i_c_o_m_1_1_u_s_g_d_i_c_o_m_scaler_a438cbb4ee0e8b2b8e2353e4257be6d79_cgraph" loading="lazy" alt=""/></div>
+<map name="aclass_d_i_c_o_m_app_1_1_d_i_c_o_m_1_1_u_s_g_d_i_c_o_m_scaler_a438cbb4ee0e8b2b8e2353e4257be6d79_cgraph" id="aclass_d_i_c_o_m_app_1_1_d_i_c_o_m_1_1_u_s_g_d_i_c_o_m_scaler_a438cbb4ee0e8b2b8e2353e4257be6d79_cgraph">
+<area shape="rect" title="Tworzy skaler dla pliku dicom na postawie podanych metadanych pliku." alt="" coords="5,5,263,48"/>
+<area shape="rect" href="class_d_i_c_o_m_app_1_1_d_i_c_o_m_1_1_u_s_g_d_i_c_o_m_scaler.html#ac856a6b9375e4d95f9611957ce85b030" title="Sprawdza, czy Unit Name w metadanych pliku jest cm &#45; jedyna możliwa wartość dla odległości." alt="" coords="311,5,603,48"/>
+<area shape="poly" title=" " alt="" coords="263,24,298,27,293,27,263,29"/>
+</map>
+</div>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Dokumentacja funkcji składowych</h2>
+<a id="ac856a6b9375e4d95f9611957ce85b030" name="ac856a6b9375e4d95f9611957ce85b030"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac856a6b9375e4d95f9611957ce85b030">&#9670;&#160;</a></span>checkUnitName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DICOMApp.DICOM.USGDICOMScaler.checkUnitName </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sprawdza, czy Unit Name w metadanych pliku jest cm - jedyna możliwa wartość dla odległości. </p>
+<dl class="exception"><dt>Wyjątki</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">Exception</td><td>Wyrzucane, gdy unit są inne niż cm</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definicja w linii <a class="el" href="_u_s_g_dicom_scaler_8cs_source.html#l00047">47</a> pliku <a class="el" href="_u_s_g_dicom_scaler_8cs_source.html">USGDicomScaler.cs</a>.</p>
+
+<p class="reference">Odwołuje się do <a class="el" href="_u_s_g_dicom_scaler_8cs_source.html#l00020">_unitsX</a> i <a class="el" href="_u_s_g_dicom_scaler_8cs_source.html#l00021">_unitsY</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="_u_s_g_dicom_scaler_8cs_source.html#l00029">USGDICOMScaler()</a>.</p>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_d_i_c_o_m_app_1_1_d_i_c_o_m_1_1_u_s_g_d_i_c_o_m_scaler_ac856a6b9375e4d95f9611957ce85b030_icgraph.png" border="0" usemap="#aclass_d_i_c_o_m_app_1_1_d_i_c_o_m_1_1_u_s_g_d_i_c_o_m_scaler_ac856a6b9375e4d95f9611957ce85b030_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_d_i_c_o_m_app_1_1_d_i_c_o_m_1_1_u_s_g_d_i_c_o_m_scaler_ac856a6b9375e4d95f9611957ce85b030_icgraph" id="aclass_d_i_c_o_m_app_1_1_d_i_c_o_m_1_1_u_s_g_d_i_c_o_m_scaler_ac856a6b9375e4d95f9611957ce85b030_icgraph">
+<area shape="rect" title="Sprawdza, czy Unit Name w metadanych pliku jest cm &#45; jedyna możliwa wartość dla odległości." alt="" coords="311,5,603,48"/>
+<area shape="rect" href="class_d_i_c_o_m_app_1_1_d_i_c_o_m_1_1_u_s_g_d_i_c_o_m_scaler.html#a438cbb4ee0e8b2b8e2353e4257be6d79" title="Tworzy skaler dla pliku dicom na postawie podanych metadanych pliku." alt="" coords="5,5,263,48"/>
+<area shape="poly" title=" " alt="" coords="293,27,263,29,263,24,298,27"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a0e460f63de3bbf508136c20cbe7b8e45" name="a0e460f63de3bbf508136c20cbe7b8e45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e460f63de3bbf508136c20cbe7b8e45">&#9670;&#160;</a></span>GetActualLength()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double DICOMApp.DICOM.USGDICOMScaler.GetActualLength </td>
+          <td>(</td>
+          <td class="paramtype">Point</td>          <td class="paramname"><span class="paramname"><em>start</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Point</td>          <td class="paramname"><span class="paramname"><em>end</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wylicza rzeczywistą długość między dwoma punktami na obrazie <a class="el" href="namespace_d_i_c_o_m_app_1_1_d_i_c_o_m.html">DICOM</a>.<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">start</td><td>Punkt (Avalonia Point) początku odcinka do pomiaru</td></tr>
+    <tr><td class="paramname">end</td><td>Punkt (Avalonia Point) końca odcinka do pomiaru</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>Długość rzeczywista między dwoma punktami w milimetrach</dd></dl>
+ </p>
+
+<p>Implementuje <a class="el" href="interface_d_i_c_o_m_app_1_1_interfaces_1_1_i_dicom_scaler.html#a6a57e09d8df5a0b2ac94bfad2cb8bfbc">DICOMApp.Interfaces.IDicomScaler</a>.</p>
+
+<p class="definition">Definicja w linii <a class="el" href="_u_s_g_dicom_scaler_8cs_source.html#l00069">69</a> pliku <a class="el" href="_u_s_g_dicom_scaler_8cs_source.html">USGDicomScaler.cs</a>.</p>
+
+<p class="reference">Odwołuje się do <a class="el" href="_u_s_g_dicom_scaler_8cs_source.html#l00017">_deltaX</a> i <a class="el" href="_u_s_g_dicom_scaler_8cs_source.html#l00016">_deltaY</a>.</p>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Dokumentacja atrybutów składowych</h2>
+<a id="a074e636c3f605191e8be889fb362753b" name="a074e636c3f605191e8be889fb362753b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a074e636c3f605191e8be889fb362753b">&#9670;&#160;</a></span>_deltaX</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double DICOMApp.DICOM.USGDICOMScaler._deltaX</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="_u_s_g_dicom_scaler_8cs_source.html#l00017">17</a> pliku <a class="el" href="_u_s_g_dicom_scaler_8cs_source.html">USGDicomScaler.cs</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="_u_s_g_dicom_scaler_8cs_source.html#l00069">GetActualLength()</a> i <a class="el" href="_u_s_g_dicom_scaler_8cs_source.html#l00029">USGDICOMScaler()</a>.</p>
+
+</div>
+</div>
+<a id="ac349be9ecc2bd4759d0afc91e64abd83" name="ac349be9ecc2bd4759d0afc91e64abd83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac349be9ecc2bd4759d0afc91e64abd83">&#9670;&#160;</a></span>_deltaY</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double DICOMApp.DICOM.USGDICOMScaler._deltaY</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="_u_s_g_dicom_scaler_8cs_source.html#l00016">16</a> pliku <a class="el" href="_u_s_g_dicom_scaler_8cs_source.html">USGDicomScaler.cs</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="_u_s_g_dicom_scaler_8cs_source.html#l00069">GetActualLength()</a> i <a class="el" href="_u_s_g_dicom_scaler_8cs_source.html#l00029">USGDICOMScaler()</a>.</p>
+
+</div>
+</div>
+<a id="a7c3f0949d28c8115fefcd5bad0561214" name="a7c3f0949d28c8115fefcd5bad0561214"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c3f0949d28c8115fefcd5bad0561214">&#9670;&#160;</a></span>_region</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DicomDataset DICOMApp.DICOM.USGDICOMScaler._region</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="_u_s_g_dicom_scaler_8cs_source.html#l00015">15</a> pliku <a class="el" href="_u_s_g_dicom_scaler_8cs_source.html">USGDicomScaler.cs</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="_u_s_g_dicom_scaler_8cs_source.html#l00029">USGDICOMScaler()</a>.</p>
+
+</div>
+</div>
+<a id="ae1ecaf1049d85cc86c10f615195f46fd" name="ae1ecaf1049d85cc86c10f615195f46fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1ecaf1049d85cc86c10f615195f46fd">&#9670;&#160;</a></span>_unitsX</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double DICOMApp.DICOM.USGDICOMScaler._unitsX</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="_u_s_g_dicom_scaler_8cs_source.html#l00020">20</a> pliku <a class="el" href="_u_s_g_dicom_scaler_8cs_source.html">USGDicomScaler.cs</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="_u_s_g_dicom_scaler_8cs_source.html#l00047">checkUnitName()</a> i <a class="el" href="_u_s_g_dicom_scaler_8cs_source.html#l00029">USGDICOMScaler()</a>.</p>
+
+</div>
+</div>
+<a id="a395723def8c269fda45af79717835681" name="a395723def8c269fda45af79717835681"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a395723def8c269fda45af79717835681">&#9670;&#160;</a></span>_unitsY</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double DICOMApp.DICOM.USGDICOMScaler._unitsY</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="_u_s_g_dicom_scaler_8cs_source.html#l00021">21</a> pliku <a class="el" href="_u_s_g_dicom_scaler_8cs_source.html">USGDicomScaler.cs</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="_u_s_g_dicom_scaler_8cs_source.html#l00047">checkUnitName()</a> i <a class="el" href="_u_s_g_dicom_scaler_8cs_source.html#l00029">USGDICOMScaler()</a>.</p>
+
+</div>
+</div>
+<hr/>Dokumentacja dla tej klasy została wygenerowana z pliku:<ul>
+<li>C:/Users/emili/Documents/DICOM-App/DICOM/<a class="el" href="_u_s_g_dicom_scaler_8cs_source.html">USGDicomScaler.cs</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="namespace_d_i_c_o_m_app.html">DICOMApp</a></li><li class="navelem"><a href="namespace_d_i_c_o_m_app_1_1_d_i_c_o_m.html">DICOM</a></li><li class="navelem"><a href="class_d_i_c_o_m_app_1_1_d_i_c_o_m_1_1_u_s_g_d_i_c_o_m_scaler.html">USGDICOMScaler</a></li>
+    <li class="footer">Wygenerowano za pomocą <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

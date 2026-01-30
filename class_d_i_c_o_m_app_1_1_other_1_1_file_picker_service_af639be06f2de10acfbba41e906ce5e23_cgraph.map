@@ -1,0 +1,5 @@
+<map id="DICOMApp.Other.FilePickerService.PickONNXFileAsync" name="DICOMApp.Other.FilePickerService.PickONNXFileAsync">
+<area shape="rect" id="Node000001" title="Metoda umożliwiająca wybranie pliku typu ONNX Domyślny folder to katalog z pobranymi plikami Umożliwi..." alt="" coords="5,5,198,48"/>
+<area shape="rect" id="Node000002" href="$class_d_i_c_o_m_app_1_1_other_1_1_file_picker_service.html#af2c92fd8937e3533d502a240d87140a3" title="Metoda umożliwiająca wybranie pliku z wybranego folderu." alt="" coords="246,5,433,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="198,24,233,26,228,27,198,29"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="DICOMApp.MLModel.ChangingMlModel" name="DICOMApp.MLModel.ChangingMlModel">
+<area shape="rect" id="Node000001" title="Klasa umożliwiająca zmiane modelu w czasie działania programu." alt="" coords="5,144,210,251"/>
+<area shape="rect" id="Node000002" href="$interface_d_i_c_o_m_app_1_1_interfaces_1_1_i_m_l_plugin.html" title="Interfejs dla klas umożliwiających predykcję na podstawie modelu AI." alt="" coords="5,5,210,96"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="109,109,110,145,105,143,107,113"/>
+</map>

@@ -1,0 +1,272 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pl">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>DICOM-App: Plik źródłowy C:/Users/emili/Documents/DICOM-App/ViewModel/Lines/LineViewModel.cs</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">DICOM-App<span id="projectnumber">&#160;version1.0</span>
+   </div>
+   <div id="projectbrief">Aplikacja do przeglądania obrazów DICOM oraz korzystania z pluginów AI</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano za pomocą Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_line_view_model_8cs_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Wczytywanie...</div>
+<div class="SRStatus" id="Searching">Szukanie...</div>
+<div class="SRStatus" id="NoMatches">Brak dopasowań</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">LineViewModel.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_line_view_model_8cs.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span>Avalonia;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using </span>CommunityToolkit.Mvvm.ComponentModel;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_d_i_c_o_m_app_1_1_interfaces.html">DICOMApp.Interfaces</a>;</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">using </span>System;</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">using </span>System.Collections.Generic;</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">using </span>System.Net;</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="foldopen" id="foldopen00008" data-start="{" data-end="}">
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="namespace_d_i_c_o_m_app_1_1_view_model_1_1_lines.html">    8</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_d_i_c_o_m_app_1_1_view_model_1_1_lines.html">DICOMApp.ViewModel.Lines</a></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>{</div>
+<div class="foldopen" id="foldopen00013" data-start="{" data-end="};">
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="class_d_i_c_o_m_app_1_1_view_model_1_1_lines_1_1_line_with_caps_view_model.html">   13</a></span>    <span class="keyword">public</span> <span class="keyword">partial class </span><a class="code hl_function" href="class_d_i_c_o_m_app_1_1_view_model_1_1_lines_1_1_line_with_caps_view_model.html#ad6d08746a799e57d658fe83524c970c6">LineWithCapsViewModel</a> : <a class="code hl_class" href="class_d_i_c_o_m_app_1_1_view_model_1_1_line_view_model_base.html">LineViewModelBase</a>, <a class="code hl_interface" href="interface_d_i_c_o_m_app_1_1_interfaces_1_1_i_line_view_model.html">ILineViewModel</a></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    {</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="class_d_i_c_o_m_app_1_1_view_model_1_1_lines_1_1_line_with_caps_view_model.html#a44251d9b7e26be66a29f65638b031c5f">   18</a></span>        [ObservableProperty] <span class="keyword">private</span> Point <a class="code hl_variable" href="class_d_i_c_o_m_app_1_1_view_model_1_1_lines_1_1_line_with_caps_view_model.html#ac28a2a4b51ecd8a79ef36d932fd5522f">_startPoint</a>, <a class="code hl_variable" href="class_d_i_c_o_m_app_1_1_view_model_1_1_lines_1_1_line_with_caps_view_model.html#a44251d9b7e26be66a29f65638b031c5f">_endingPoint</a>;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="class_d_i_c_o_m_app_1_1_view_model_1_1_lines_1_1_line_with_caps_view_model.html#abb48be49375e7fa53f95aec38dcabc07">   23</a></span>        [ObservableProperty] <span class="keyword">private</span> Point <a class="code hl_variable" href="class_d_i_c_o_m_app_1_1_view_model_1_1_lines_1_1_line_with_caps_view_model.html#a3856a71dee1d221f6c46d0abbae3f702">_capStart1</a>, <a class="code hl_variable" href="class_d_i_c_o_m_app_1_1_view_model_1_1_lines_1_1_line_with_caps_view_model.html#a7b0b7ea3ce7d3bf24f4ead63570683ba">_capStart2</a>, <a class="code hl_variable" href="class_d_i_c_o_m_app_1_1_view_model_1_1_lines_1_1_line_with_caps_view_model.html#abb48be49375e7fa53f95aec38dcabc07">_capEnd1</a>, <a class="code hl_variable" href="class_d_i_c_o_m_app_1_1_view_model_1_1_lines_1_1_line_with_caps_view_model.html#a3314dc2f55b78f1383635432d5402dc4">_capEnd2</a>;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        <span class="comment">// czy linia jest rozpoczęta</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="class_d_i_c_o_m_app_1_1_view_model_1_1_lines_1_1_line_with_caps_view_model.html#a63ddc98eeb48f13fdb49b17aca671bb7">   27</a></span>        <span class="keyword">private</span> <span class="keywordtype">bool</span> <a class="code hl_variable" href="class_d_i_c_o_m_app_1_1_view_model_1_1_lines_1_1_line_with_caps_view_model.html#a63ddc98eeb48f13fdb49b17aca671bb7">_isStartSet</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        <span class="comment">// długość wyświetlanych brzegów linii</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="class_d_i_c_o_m_app_1_1_view_model_1_1_lines_1_1_line_with_caps_view_model.html#a5782fada90e67ebe465e75d761f9425d">   30</a></span>        <span class="keyword">private</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="class_d_i_c_o_m_app_1_1_view_model_1_1_lines_1_1_line_with_caps_view_model.html#a5782fada90e67ebe465e75d761f9425d">_capLength</a> = 5;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span></div>
+<div class="foldopen" id="foldopen00040" data-start="{" data-end="}">
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="class_d_i_c_o_m_app_1_1_view_model_1_1_lines_1_1_line_with_caps_view_model.html#ad6d08746a799e57d658fe83524c970c6">   40</a></span>        <span class="keyword">public</span> <a class="code hl_function" href="class_d_i_c_o_m_app_1_1_view_model_1_1_lines_1_1_line_with_caps_view_model.html#ad6d08746a799e57d658fe83524c970c6">LineWithCapsViewModel</a>(<span class="keywordtype">string</span> color) </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        {</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>            <span class="comment">// ustawienie początku i końca linii</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>            StartPoint = <span class="keyword">new</span> Point(0,0);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>            EndingPoint = <span class="keyword">new</span> Point(0,0);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>            <span class="comment">// na starcie linia nie jest widoczna</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>            <a class="code hl_property" href="interface_d_i_c_o_m_app_1_1_interfaces_1_1_i_line_view_model.html#a9e6a2fd9f92c9f93f4b793bd0415e90f">IsVisible</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            <span class="comment">// zapisanie koloru linii</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            <a class="code hl_property" href="interface_d_i_c_o_m_app_1_1_interfaces_1_1_i_line_view_model.html#a0528b9bbc9d55b04b7cbc31a2bda661b">Color</a> = color;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            <span class="comment">// na początku linia ma długość 0</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            <a class="code hl_property" href="interface_d_i_c_o_m_app_1_1_interfaces_1_1_i_line_view_model.html#afbde9b343f5bb164658fdb1a3de58d19">PhysicalLength</a> = 0;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        }</div>
+</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span></div>
+<div class="foldopen" id="foldopen00061" data-start="{" data-end="}">
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="class_d_i_c_o_m_app_1_1_view_model_1_1_lines_1_1_line_with_caps_view_model.html#af5ecc87422859ff60cea1a96b133e0bf">   61</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_d_i_c_o_m_app_1_1_view_model_1_1_lines_1_1_line_with_caps_view_model.html#af5ecc87422859ff60cea1a96b133e0bf">SetLine</a>(Point start, Point end)</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        {</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            <a class="code hl_variable" href="class_d_i_c_o_m_app_1_1_view_model_1_1_lines_1_1_line_with_caps_view_model.html#a63ddc98eeb48f13fdb49b17aca671bb7">_isStartSet</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>            <a class="code hl_property" href="interface_d_i_c_o_m_app_1_1_interfaces_1_1_i_line_view_model.html#a9e6a2fd9f92c9f93f4b793bd0415e90f">IsVisible</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>            StartPoint = start;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            EndingPoint = end;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>            <a class="code hl_function" href="class_d_i_c_o_m_app_1_1_view_model_1_1_line_view_model_base.html#a403a7218cf07d74349bbc228b983ddcb">UpdateLength</a>(StartPoint, EndingPoint);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>            <a class="code hl_function" href="class_d_i_c_o_m_app_1_1_view_model_1_1_lines_1_1_line_with_caps_view_model.html#a7a8339810fd981ac4b46ca298599c70d">UpdateCaps</a>();</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        }</div>
+</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span></div>
+<div class="foldopen" id="foldopen00075" data-start="{" data-end="}">
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="class_d_i_c_o_m_app_1_1_view_model_1_1_lines_1_1_line_with_caps_view_model.html#a4bafd41ef1de9676eae9df779c6d2fe9">   75</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_d_i_c_o_m_app_1_1_view_model_1_1_lines_1_1_line_with_caps_view_model.html#a4bafd41ef1de9676eae9df779c6d2fe9">UpdateLine</a>(Point p)</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        {</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_d_i_c_o_m_app_1_1_view_model_1_1_lines_1_1_line_with_caps_view_model.html#a63ddc98eeb48f13fdb49b17aca671bb7">_isStartSet</a>)</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>            {</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>                EndingPoint = p;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>                <a class="code hl_property" href="interface_d_i_c_o_m_app_1_1_interfaces_1_1_i_line_view_model.html#a9e6a2fd9f92c9f93f4b793bd0415e90f">IsVisible</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>                <a class="code hl_function" href="class_d_i_c_o_m_app_1_1_view_model_1_1_line_view_model_base.html#a403a7218cf07d74349bbc228b983ddcb">UpdateLength</a>(StartPoint, EndingPoint);</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>            }</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>            <span class="comment">// ustawienie brzegów linii</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>            <a class="code hl_function" href="class_d_i_c_o_m_app_1_1_view_model_1_1_lines_1_1_line_with_caps_view_model.html#a7a8339810fd981ac4b46ca298599c70d">UpdateCaps</a>();</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        }</div>
+</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span></div>
+<div class="foldopen" id="foldopen00092" data-start="{" data-end="}">
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="class_d_i_c_o_m_app_1_1_view_model_1_1_lines_1_1_line_with_caps_view_model.html#a91e093b038890cdcc81f4502b39a8dc1">   92</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_d_i_c_o_m_app_1_1_view_model_1_1_lines_1_1_line_with_caps_view_model.html#a91e093b038890cdcc81f4502b39a8dc1">UpdateStart</a>(Point p)</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        {</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>            StartPoint = p;</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>            <a class="code hl_property" href="interface_d_i_c_o_m_app_1_1_interfaces_1_1_i_line_view_model.html#a9e6a2fd9f92c9f93f4b793bd0415e90f">IsVisible</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>            <a class="code hl_variable" href="class_d_i_c_o_m_app_1_1_view_model_1_1_lines_1_1_line_with_caps_view_model.html#a63ddc98eeb48f13fdb49b17aca671bb7">_isStartSet</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        }</div>
+</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span></div>
+<div class="foldopen" id="foldopen00103" data-start="{" data-end="}">
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="class_d_i_c_o_m_app_1_1_view_model_1_1_lines_1_1_line_with_caps_view_model.html#a7eb112b83b23322f1bb571ee363200f2">  103</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_d_i_c_o_m_app_1_1_view_model_1_1_lines_1_1_line_with_caps_view_model.html#a7eb112b83b23322f1bb571ee363200f2">UpdateEnd</a>(Point p)</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        {</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>            <a class="code hl_function" href="class_d_i_c_o_m_app_1_1_view_model_1_1_lines_1_1_line_with_caps_view_model.html#a4bafd41ef1de9676eae9df779c6d2fe9">UpdateLine</a>(p);</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>            <a class="code hl_variable" href="class_d_i_c_o_m_app_1_1_view_model_1_1_lines_1_1_line_with_caps_view_model.html#a63ddc98eeb48f13fdb49b17aca671bb7">_isStartSet</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>        }</div>
+</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span></div>
+<div class="foldopen" id="foldopen00112" data-start="{" data-end="}">
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno"><a class="line" href="class_d_i_c_o_m_app_1_1_view_model_1_1_lines_1_1_line_with_caps_view_model.html#a7a8339810fd981ac4b46ca298599c70d">  112</a></span>        <span class="keyword">private</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_d_i_c_o_m_app_1_1_view_model_1_1_lines_1_1_line_with_caps_view_model.html#a7a8339810fd981ac4b46ca298599c70d">UpdateCaps</a>()</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>        {</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>            <span class="keywordtype">double</span> dx = StartPoint.X - EndingPoint.X;</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>            <span class="keywordtype">double</span> dy = StartPoint.Y - EndingPoint.Y;</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>            <span class="keywordtype">double</span> len = Math.Sqrt(dx * dx + dy * dy);</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>            <span class="comment">// jeśli linia jest zbyt krótka nie ma bzegów</span></div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>            <span class="keywordflow">if</span> (Math.Abs(dx) &lt; 3 &amp;&amp; Math.Abs(dy) &lt; 3) {</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>                CapStart1 = StartPoint;</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>                CapStart2 = StartPoint;</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>                CapEnd1 = EndingPoint;</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>                CapEnd2 = EndingPoint;</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>                <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>            }</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>            <span class="comment">// jeśli linia jest inna to brzegi ustawiamy pod kątem prostym do linii</span></div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>            <span class="keywordtype">double</span> sin = <a class="code hl_variable" href="class_d_i_c_o_m_app_1_1_view_model_1_1_lines_1_1_line_with_caps_view_model.html#a5782fada90e67ebe465e75d761f9425d">_capLength</a> * dx / len;</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>            <span class="keywordtype">double</span> cos = <a class="code hl_variable" href="class_d_i_c_o_m_app_1_1_view_model_1_1_lines_1_1_line_with_caps_view_model.html#a5782fada90e67ebe465e75d761f9425d">_capLength</a> * dy / len; </div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>            CapStart1 = <span class="keyword">new</span> Point(StartPoint.X - cos, StartPoint.Y + sin);</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>            CapStart2 = <span class="keyword">new</span> Point(StartPoint.X + cos, StartPoint.Y - sin);</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>            CapEnd1 = <span class="keyword">new</span> Point(EndingPoint.X - cos, EndingPoint.Y + sin);</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>            CapEnd2 = <span class="keyword">new</span> Point(EndingPoint.X + cos, EndingPoint.Y - sin);</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>        }</div>
+</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span></div>
+<div class="foldopen" id="foldopen00139" data-start="{" data-end="}">
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno"><a class="line" href="class_d_i_c_o_m_app_1_1_view_model_1_1_lines_1_1_line_with_caps_view_model.html#a6dc77dda339af7cfec586225d5c307f4">  139</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_d_i_c_o_m_app_1_1_view_model_1_1_lines_1_1_line_with_caps_view_model.html#a6dc77dda339af7cfec586225d5c307f4">Show</a>()</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>        {</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>            <a class="code hl_property" href="interface_d_i_c_o_m_app_1_1_interfaces_1_1_i_line_view_model.html#a9e6a2fd9f92c9f93f4b793bd0415e90f">IsVisible</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>        }</div>
+</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span></div>
+<div class="foldopen" id="foldopen00147" data-start="{" data-end="}">
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno"><a class="line" href="class_d_i_c_o_m_app_1_1_view_model_1_1_lines_1_1_line_with_caps_view_model.html#a42da33142895f897f10c11f36df7f7a9">  147</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_d_i_c_o_m_app_1_1_view_model_1_1_lines_1_1_line_with_caps_view_model.html#a42da33142895f897f10c11f36df7f7a9">Hide</a>()</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>        {</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>            <a class="code hl_property" href="interface_d_i_c_o_m_app_1_1_interfaces_1_1_i_line_view_model.html#a9e6a2fd9f92c9f93f4b793bd0415e90f">IsVisible</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>        }</div>
+</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span></div>
+<div class="foldopen" id="foldopen00157" data-start="{" data-end="}">
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno"><a class="line" href="class_d_i_c_o_m_app_1_1_view_model_1_1_lines_1_1_line_with_caps_view_model.html#ac0d335debc23184aed99a898666df14d">  157</a></span>        <span class="keyword">public</span> List&lt;double&gt; <a class="code hl_function" href="class_d_i_c_o_m_app_1_1_view_model_1_1_lines_1_1_line_with_caps_view_model.html#ac0d335debc23184aed99a898666df14d">GetChosenPoints</a>()</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>        {</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>            <span class="keywordflow">return</span> [</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>                (double)StartPoint.X / (<span class="keywordtype">double</span>)CanvasWidth,</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>                (double)StartPoint.Y / (<span class="keywordtype">double</span>)CanvasHeight,</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>                (double)EndingPoint.X / (<span class="keywordtype">double</span>)CanvasWidth,</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>                (double)EndingPoint.Y / (<span class="keywordtype">double</span>)CanvasHeight</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>            ];</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>        }</div>
+</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>    }</div>
+</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>}</div>
+</div>
+<div class="ttc" id="aclass_d_i_c_o_m_app_1_1_view_model_1_1_line_view_model_base_html"><div class="ttname"><a href="class_d_i_c_o_m_app_1_1_view_model_1_1_line_view_model_base.html">DICOMApp.ViewModel.LineViewModelBase</a></div><div class="ttdoc">Abstrakcyjna klasa bazowa modelująca linie.</div><div class="ttdef"><b>Definicja</b> <a href="_line_view_model_base_8cs_source.html#l00018">LineViewModelBase.cs:19</a></div></div>
+<div class="ttc" id="aclass_d_i_c_o_m_app_1_1_view_model_1_1_line_view_model_base_html_a403a7218cf07d74349bbc228b983ddcb"><div class="ttname"><a href="class_d_i_c_o_m_app_1_1_view_model_1_1_line_view_model_base.html#a403a7218cf07d74349bbc228b983ddcb">DICOMApp.ViewModel.LineViewModelBase.UpdateLength</a></div><div class="ttdeci">void UpdateLength(Point start, Point end)</div><div class="ttdoc">Metoda ustawiająca długosc fizyczna linii Na podstawie podanego wcześniej skalera i skali obrazu.</div><div class="ttdef"><b>Definicja</b> <a href="_line_view_model_base_8cs_source.html#l00066">LineViewModelBase.cs:66</a></div></div>
+<div class="ttc" id="aclass_d_i_c_o_m_app_1_1_view_model_1_1_lines_1_1_line_with_caps_view_model_html_a3314dc2f55b78f1383635432d5402dc4"><div class="ttname"><a href="class_d_i_c_o_m_app_1_1_view_model_1_1_lines_1_1_line_with_caps_view_model.html#a3314dc2f55b78f1383635432d5402dc4">DICOMApp.ViewModel.Lines.LineWithCapsViewModel._capEnd2</a></div><div class="ttdeci">Point _capEnd2</div><div class="ttdef"><b>Definicja</b> <a href="#l00023">LineViewModel.cs:23</a></div></div>
+<div class="ttc" id="aclass_d_i_c_o_m_app_1_1_view_model_1_1_lines_1_1_line_with_caps_view_model_html_a3856a71dee1d221f6c46d0abbae3f702"><div class="ttname"><a href="class_d_i_c_o_m_app_1_1_view_model_1_1_lines_1_1_line_with_caps_view_model.html#a3856a71dee1d221f6c46d0abbae3f702">DICOMApp.ViewModel.Lines.LineWithCapsViewModel._capStart1</a></div><div class="ttdeci">Point _capStart1</div><div class="ttdoc">Punkty wyznaczające początki i końce brzegów linii.</div><div class="ttdef"><b>Definicja</b> <a href="#l00023">LineViewModel.cs:23</a></div></div>
+<div class="ttc" id="aclass_d_i_c_o_m_app_1_1_view_model_1_1_lines_1_1_line_with_caps_view_model_html_a42da33142895f897f10c11f36df7f7a9"><div class="ttname"><a href="class_d_i_c_o_m_app_1_1_view_model_1_1_lines_1_1_line_with_caps_view_model.html#a42da33142895f897f10c11f36df7f7a9">DICOMApp.ViewModel.Lines.LineWithCapsViewModel.Hide</a></div><div class="ttdeci">void Hide()</div><div class="ttdoc">Ukrycie linii.</div><div class="ttdef"><b>Definicja</b> <a href="#l00147">LineViewModel.cs:147</a></div></div>
+<div class="ttc" id="aclass_d_i_c_o_m_app_1_1_view_model_1_1_lines_1_1_line_with_caps_view_model_html_a44251d9b7e26be66a29f65638b031c5f"><div class="ttname"><a href="class_d_i_c_o_m_app_1_1_view_model_1_1_lines_1_1_line_with_caps_view_model.html#a44251d9b7e26be66a29f65638b031c5f">DICOMApp.ViewModel.Lines.LineWithCapsViewModel._endingPoint</a></div><div class="ttdeci">Point _endingPoint</div><div class="ttdef"><b>Definicja</b> <a href="#l00018">LineViewModel.cs:18</a></div></div>
+<div class="ttc" id="aclass_d_i_c_o_m_app_1_1_view_model_1_1_lines_1_1_line_with_caps_view_model_html_a4bafd41ef1de9676eae9df779c6d2fe9"><div class="ttname"><a href="class_d_i_c_o_m_app_1_1_view_model_1_1_lines_1_1_line_with_caps_view_model.html#a4bafd41ef1de9676eae9df779c6d2fe9">DICOMApp.ViewModel.Lines.LineWithCapsViewModel.UpdateLine</a></div><div class="ttdeci">void UpdateLine(Point p)</div><div class="ttdoc">Metoda ustawiająca końcówkę linii.</div><div class="ttdef"><b>Definicja</b> <a href="#l00075">LineViewModel.cs:75</a></div></div>
+<div class="ttc" id="aclass_d_i_c_o_m_app_1_1_view_model_1_1_lines_1_1_line_with_caps_view_model_html_a5782fada90e67ebe465e75d761f9425d"><div class="ttname"><a href="class_d_i_c_o_m_app_1_1_view_model_1_1_lines_1_1_line_with_caps_view_model.html#a5782fada90e67ebe465e75d761f9425d">DICOMApp.ViewModel.Lines.LineWithCapsViewModel._capLength</a></div><div class="ttdeci">int _capLength</div><div class="ttdef"><b>Definicja</b> <a href="#l00030">LineViewModel.cs:30</a></div></div>
+<div class="ttc" id="aclass_d_i_c_o_m_app_1_1_view_model_1_1_lines_1_1_line_with_caps_view_model_html_a63ddc98eeb48f13fdb49b17aca671bb7"><div class="ttname"><a href="class_d_i_c_o_m_app_1_1_view_model_1_1_lines_1_1_line_with_caps_view_model.html#a63ddc98eeb48f13fdb49b17aca671bb7">DICOMApp.ViewModel.Lines.LineWithCapsViewModel._isStartSet</a></div><div class="ttdeci">bool _isStartSet</div><div class="ttdef"><b>Definicja</b> <a href="#l00027">LineViewModel.cs:27</a></div></div>
+<div class="ttc" id="aclass_d_i_c_o_m_app_1_1_view_model_1_1_lines_1_1_line_with_caps_view_model_html_a6dc77dda339af7cfec586225d5c307f4"><div class="ttname"><a href="class_d_i_c_o_m_app_1_1_view_model_1_1_lines_1_1_line_with_caps_view_model.html#a6dc77dda339af7cfec586225d5c307f4">DICOMApp.ViewModel.Lines.LineWithCapsViewModel.Show</a></div><div class="ttdeci">void Show()</div><div class="ttdoc">Ustawienie linii na widoczną</div><div class="ttdef"><b>Definicja</b> <a href="#l00139">LineViewModel.cs:139</a></div></div>
+<div class="ttc" id="aclass_d_i_c_o_m_app_1_1_view_model_1_1_lines_1_1_line_with_caps_view_model_html_a7a8339810fd981ac4b46ca298599c70d"><div class="ttname"><a href="class_d_i_c_o_m_app_1_1_view_model_1_1_lines_1_1_line_with_caps_view_model.html#a7a8339810fd981ac4b46ca298599c70d">DICOMApp.ViewModel.Lines.LineWithCapsViewModel.UpdateCaps</a></div><div class="ttdeci">void UpdateCaps()</div><div class="ttdoc">Metoda ustawiająca brzegi linii tak, by były pod kątem prostym do linii.</div><div class="ttdef"><b>Definicja</b> <a href="#l00112">LineViewModel.cs:112</a></div></div>
+<div class="ttc" id="aclass_d_i_c_o_m_app_1_1_view_model_1_1_lines_1_1_line_with_caps_view_model_html_a7b0b7ea3ce7d3bf24f4ead63570683ba"><div class="ttname"><a href="class_d_i_c_o_m_app_1_1_view_model_1_1_lines_1_1_line_with_caps_view_model.html#a7b0b7ea3ce7d3bf24f4ead63570683ba">DICOMApp.ViewModel.Lines.LineWithCapsViewModel._capStart2</a></div><div class="ttdeci">Point _capStart2</div><div class="ttdef"><b>Definicja</b> <a href="#l00023">LineViewModel.cs:23</a></div></div>
+<div class="ttc" id="aclass_d_i_c_o_m_app_1_1_view_model_1_1_lines_1_1_line_with_caps_view_model_html_a7eb112b83b23322f1bb571ee363200f2"><div class="ttname"><a href="class_d_i_c_o_m_app_1_1_view_model_1_1_lines_1_1_line_with_caps_view_model.html#a7eb112b83b23322f1bb571ee363200f2">DICOMApp.ViewModel.Lines.LineWithCapsViewModel.UpdateEnd</a></div><div class="ttdeci">void UpdateEnd(Point p)</div><div class="ttdoc">Metoda ustawiająca końcówkę linii.</div><div class="ttdef"><b>Definicja</b> <a href="#l00103">LineViewModel.cs:103</a></div></div>
+<div class="ttc" id="aclass_d_i_c_o_m_app_1_1_view_model_1_1_lines_1_1_line_with_caps_view_model_html_a91e093b038890cdcc81f4502b39a8dc1"><div class="ttname"><a href="class_d_i_c_o_m_app_1_1_view_model_1_1_lines_1_1_line_with_caps_view_model.html#a91e093b038890cdcc81f4502b39a8dc1">DICOMApp.ViewModel.Lines.LineWithCapsViewModel.UpdateStart</a></div><div class="ttdeci">void UpdateStart(Point p)</div><div class="ttdoc">Metoda ustawiająca początek linii.</div><div class="ttdef"><b>Definicja</b> <a href="#l00092">LineViewModel.cs:92</a></div></div>
+<div class="ttc" id="aclass_d_i_c_o_m_app_1_1_view_model_1_1_lines_1_1_line_with_caps_view_model_html_abb48be49375e7fa53f95aec38dcabc07"><div class="ttname"><a href="class_d_i_c_o_m_app_1_1_view_model_1_1_lines_1_1_line_with_caps_view_model.html#abb48be49375e7fa53f95aec38dcabc07">DICOMApp.ViewModel.Lines.LineWithCapsViewModel._capEnd1</a></div><div class="ttdeci">Point _capEnd1</div><div class="ttdef"><b>Definicja</b> <a href="#l00023">LineViewModel.cs:23</a></div></div>
+<div class="ttc" id="aclass_d_i_c_o_m_app_1_1_view_model_1_1_lines_1_1_line_with_caps_view_model_html_ac0d335debc23184aed99a898666df14d"><div class="ttname"><a href="class_d_i_c_o_m_app_1_1_view_model_1_1_lines_1_1_line_with_caps_view_model.html#ac0d335debc23184aed99a898666df14d">DICOMApp.ViewModel.Lines.LineWithCapsViewModel.GetChosenPoints</a></div><div class="ttdeci">List&lt; double &gt; GetChosenPoints()</div><div class="ttdoc">Metoda zwracająca koordynaty początku i końca linii.</div><div class="ttdef"><b>Definicja</b> <a href="#l00157">LineViewModel.cs:157</a></div></div>
+<div class="ttc" id="aclass_d_i_c_o_m_app_1_1_view_model_1_1_lines_1_1_line_with_caps_view_model_html_ac28a2a4b51ecd8a79ef36d932fd5522f"><div class="ttname"><a href="class_d_i_c_o_m_app_1_1_view_model_1_1_lines_1_1_line_with_caps_view_model.html#ac28a2a4b51ecd8a79ef36d932fd5522f">DICOMApp.ViewModel.Lines.LineWithCapsViewModel._startPoint</a></div><div class="ttdeci">Point _startPoint</div><div class="ttdoc">Punkt początkowy i końcowy linii.</div><div class="ttdef"><b>Definicja</b> <a href="#l00018">LineViewModel.cs:18</a></div></div>
+<div class="ttc" id="aclass_d_i_c_o_m_app_1_1_view_model_1_1_lines_1_1_line_with_caps_view_model_html_ad6d08746a799e57d658fe83524c970c6"><div class="ttname"><a href="class_d_i_c_o_m_app_1_1_view_model_1_1_lines_1_1_line_with_caps_view_model.html#ad6d08746a799e57d658fe83524c970c6">DICOMApp.ViewModel.Lines.LineWithCapsViewModel.LineWithCapsViewModel</a></div><div class="ttdeci">LineWithCapsViewModel(string color)</div><div class="ttdoc">Konstruktor klasy.</div><div class="ttdef"><b>Definicja</b> <a href="#l00040">LineViewModel.cs:40</a></div></div>
+<div class="ttc" id="aclass_d_i_c_o_m_app_1_1_view_model_1_1_lines_1_1_line_with_caps_view_model_html_af5ecc87422859ff60cea1a96b133e0bf"><div class="ttname"><a href="class_d_i_c_o_m_app_1_1_view_model_1_1_lines_1_1_line_with_caps_view_model.html#af5ecc87422859ff60cea1a96b133e0bf">DICOMApp.ViewModel.Lines.LineWithCapsViewModel.SetLine</a></div><div class="ttdeci">void SetLine(Point start, Point end)</div><div class="ttdoc">Metoda ustawiająca początek i koniec linii.</div><div class="ttdef"><b>Definicja</b> <a href="#l00061">LineViewModel.cs:61</a></div></div>
+<div class="ttc" id="ainterface_d_i_c_o_m_app_1_1_interfaces_1_1_i_line_view_model_html"><div class="ttname"><a href="interface_d_i_c_o_m_app_1_1_interfaces_1_1_i_line_view_model.html">DICOMApp.Interfaces.ILineViewModel</a></div><div class="ttdoc">Interfejs modelujący linie.</div><div class="ttdef"><b>Definicja</b> <a href="_line_view_model_interface_8cs_source.html#l00009">LineViewModelInterface.cs:10</a></div></div>
+<div class="ttc" id="ainterface_d_i_c_o_m_app_1_1_interfaces_1_1_i_line_view_model_html_a0528b9bbc9d55b04b7cbc31a2bda661b"><div class="ttname"><a href="interface_d_i_c_o_m_app_1_1_interfaces_1_1_i_line_view_model.html#a0528b9bbc9d55b04b7cbc31a2bda661b">DICOMApp.Interfaces.ILineViewModel.Color</a></div><div class="ttdeci">string Color</div><div class="ttdoc">Kolor linii.</div><div class="ttdef"><b>Definicja</b> <a href="_line_view_model_interface_8cs_source.html#l00024">LineViewModelInterface.cs:24</a></div></div>
+<div class="ttc" id="ainterface_d_i_c_o_m_app_1_1_interfaces_1_1_i_line_view_model_html_a9e6a2fd9f92c9f93f4b793bd0415e90f"><div class="ttname"><a href="interface_d_i_c_o_m_app_1_1_interfaces_1_1_i_line_view_model.html#a9e6a2fd9f92c9f93f4b793bd0415e90f">DICOMApp.Interfaces.ILineViewModel.IsVisible</a></div><div class="ttdeci">bool IsVisible</div><div class="ttdoc">Czy linia jest widoczna.</div><div class="ttdef"><b>Definicja</b> <a href="_line_view_model_interface_8cs_source.html#l00014">LineViewModelInterface.cs:14</a></div></div>
+<div class="ttc" id="ainterface_d_i_c_o_m_app_1_1_interfaces_1_1_i_line_view_model_html_afbde9b343f5bb164658fdb1a3de58d19"><div class="ttname"><a href="interface_d_i_c_o_m_app_1_1_interfaces_1_1_i_line_view_model.html#afbde9b343f5bb164658fdb1a3de58d19">DICOMApp.Interfaces.ILineViewModel.PhysicalLength</a></div><div class="ttdeci">double PhysicalLength</div><div class="ttdoc">Długosc fizyczna linii.</div><div class="ttdef"><b>Definicja</b> <a href="_line_view_model_interface_8cs_source.html#l00019">LineViewModelInterface.cs:19</a></div></div>
+<div class="ttc" id="anamespace_d_i_c_o_m_app_1_1_interfaces_html"><div class="ttname"><a href="namespace_d_i_c_o_m_app_1_1_interfaces.html">DICOMApp.Interfaces</a></div><div class="ttdef"><b>Definicja</b> <a href="_i_data_handler_8cs_source.html#l00004">IDataHandler.cs:5</a></div></div>
+<div class="ttc" id="anamespace_d_i_c_o_m_app_1_1_view_model_1_1_lines_html"><div class="ttname"><a href="namespace_d_i_c_o_m_app_1_1_view_model_1_1_lines.html">DICOMApp.ViewModel.Lines</a></div><div class="ttdef"><b>Definicja</b> <a href="#l00008">LineViewModel.cs:9</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_f396504afdc959660871b003fa10164d.html">Documents</a></li><li class="navelem"><a href="dir_1afafb9ef185eaac7646cb0f4cd779d1.html">DICOM-App</a></li><li class="navelem"><a href="dir_5f210e51b13b10a343953cef959ae18d.html">ViewModel</a></li><li class="navelem"><a href="dir_575c96544ebee63045286e84f7d3a056.html">Lines</a></li><li class="navelem"><a href="_line_view_model_8cs.html">LineViewModel.cs</a></li>
+    <li class="footer">Wygenerowano za pomocą <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

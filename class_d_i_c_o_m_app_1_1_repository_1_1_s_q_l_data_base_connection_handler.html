@@ -1,0 +1,419 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pl">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>DICOM-App: Dokumentacja klasy DICOMApp.Repository.SQLDataBaseConnectionHandler</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">DICOM-App<span id="projectnumber">&#160;version1.0</span>
+   </div>
+   <div id="projectbrief">Aplikacja do przeglądania obrazów DICOM oraz korzystania z pluginów AI</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano za pomocą Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_connection_handler.html','','class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_connection_handler-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Wczytywanie...</div>
+<div class="SRStatus" id="Searching">Szukanie...</div>
+<div class="SRStatus" id="NoMatches">Brak dopasowań</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Dokumentacja klasy DICOMApp.Repository.SQLDataBaseConnectionHandler</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Klasa obsługująca połączenie z bazą danych SQLite.  
+ <a href="#details">Więcej...</a></p>
+<div class="dynheader">
+Diagram dziedziczenia dla DICOMApp.Repository.SQLDataBaseConnectionHandler</div>
+<div class="dyncontent">
+<div class="center"><img src="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_connection_handler__inherit__graph.png" border="0" usemap="#a_d_i_c_o_m_app_8_repository_8_s_q_l_data_base_connection_handler_inherit__map" loading="lazy" alt="Inheritance graph"/></div>
+<map name="a_d_i_c_o_m_app_8_repository_8_s_q_l_data_base_connection_handler_inherit__map" id="a_d_i_c_o_m_app_8_repository_8_s_q_l_data_base_connection_handler_inherit__map">
+<area shape="rect" title="Klasa obsługująca połączenie z bazą danych SQLite." alt="" coords="5,123,232,336"/>
+<area shape="rect" title=" " alt="" coords="79,5,159,75"/>
+<area shape="poly" title=" " alt="" coords="120,87,121,123,116,122,118,92"/>
+</map>
+</div>
+<div class="dynheader">
+Diagram współpracy dla DICOMApp.Repository.SQLDataBaseConnectionHandler:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_connection_handler__coll__graph.png" border="0" usemap="#a_d_i_c_o_m_app_8_repository_8_s_q_l_data_base_connection_handler_coll__map" loading="lazy" alt="Collaboration graph"/></div>
+<map name="a_d_i_c_o_m_app_8_repository_8_s_q_l_data_base_connection_handler_coll__map" id="a_d_i_c_o_m_app_8_repository_8_s_q_l_data_base_connection_handler_coll__map">
+<area shape="rect" title="Klasa obsługująca połączenie z bazą danych SQLite." alt="" coords="5,123,232,336"/>
+<area shape="rect" title=" " alt="" coords="79,5,159,75"/>
+<area shape="poly" title=" " alt="" coords="120,87,121,123,116,122,118,92"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Metody publiczne</h2></td></tr>
+<tr class="memitem:aff47024dce873fde45e1172d62ac3c04" id="r_aff47024dce873fde45e1172d62ac3c04"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#aff47024dce873fde45e1172d62ac3c04">SQLDataBaseConnectionHandler</a> (string dirPath, string dbFilePath)</td></tr>
+<tr class="memdesc:aff47024dce873fde45e1172d62ac3c04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tworzy handler połączenia z bazą danych SQLite.  <br /></td></tr>
+<tr class="memitem:a3b9df070412e984aaa8d996fea931931" id="r_a3b9df070412e984aaa8d996fea931931"><td class="memItemLeft">SqliteConnection&#160;</td><td class="memItemRight"><a class="el" href="#a3b9df070412e984aaa8d996fea931931">OpenConnection</a> ()</td></tr>
+<tr class="memdesc:a3b9df070412e984aaa8d996fea931931"><td class="mdescLeft">&#160;</td><td class="mdescRight">Otwiera połączenie z bazą danych SQLite.  <br /></td></tr>
+<tr class="memitem:ada65b29e8d7acd9df4585a8d38a1d3da" id="r_ada65b29e8d7acd9df4585a8d38a1d3da"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ada65b29e8d7acd9df4585a8d38a1d3da">Dispose</a> ()</td></tr>
+<tr class="memdesc:ada65b29e8d7acd9df4585a8d38a1d3da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zwalnia zasoby zarządzane przez klasę i zamyka połączenie z bazą danych.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pro-methods" class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Metody chronione</h2></td></tr>
+<tr class="memitem:ada1da8525956997e0a7df27ee84ed026" id="r_ada1da8525956997e0a7df27ee84ed026"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#ada1da8525956997e0a7df27ee84ed026">Dispose</a> (bool disposing)</td></tr>
+<tr class="memdesc:ada1da8525956997e0a7df27ee84ed026"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zamyka połączenie z bazą danych SQLite i zwalnia zasoby.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Atrybuty prywatne</h2></td></tr>
+<tr class="memitem:aae0ebdcd1e4b1a5ad956aa1383ec2d5d" id="r_aae0ebdcd1e4b1a5ad956aa1383ec2d5d"><td class="memItemLeft">string&#160;</td><td class="memItemRight"><a class="el" href="#aae0ebdcd1e4b1a5ad956aa1383ec2d5d">_dirPath</a></td></tr>
+<tr class="memitem:ab6a04a1273f91def131f35c8444b6496" id="r_ab6a04a1273f91def131f35c8444b6496"><td class="memItemLeft">string&#160;</td><td class="memItemRight"><a class="el" href="#ab6a04a1273f91def131f35c8444b6496">_dbFilePath</a></td></tr>
+<tr class="memitem:a87a88d16c0f89ad6753a474522fa15fb" id="r_a87a88d16c0f89ad6753a474522fa15fb"><td class="memItemLeft">SqliteConnection?&#160;</td><td class="memItemRight"><a class="el" href="#a87a88d16c0f89ad6753a474522fa15fb">_sqlConnection</a></td></tr>
+<tr class="memitem:a2389469c1971cae0d25e6b1d1fb20176" id="r_a2389469c1971cae0d25e6b1d1fb20176"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a2389469c1971cae0d25e6b1d1fb20176">disposedValue</a></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Opis szczegółowy</h2>
+<div class="textblock"><p>Klasa obsługująca połączenie z bazą danych SQLite. </p>
+<p>Implementuje wzorzec IDisposable do prawidłowego zarządzania zasobami </p>
+
+<p class="definition">Definicja w linii <a class="el" href="_s_q_l_data_base_connection_handler_8cs_source.html#l00013">13</a> pliku <a class="el" href="_s_q_l_data_base_connection_handler_8cs_source.html">SQLDataBaseConnectionHandler.cs</a>.</p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Dokumentacja konstruktora i destruktora</h2>
+<a id="aff47024dce873fde45e1172d62ac3c04" name="aff47024dce873fde45e1172d62ac3c04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff47024dce873fde45e1172d62ac3c04">&#9670;&#160;</a></span>SQLDataBaseConnectionHandler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DICOMApp.Repository.SQLDataBaseConnectionHandler.SQLDataBaseConnectionHandler </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>dirPath</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>dbFilePath</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Tworzy handler połączenia z bazą danych SQLite. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dirPath</td><td>Nazwa katalogu, w którym jest zapisany plik bazy danych</td></tr>
+    <tr><td class="paramname">dbFilePath</td><td>Pełna ścieżka do pliku bazy danych SQLite</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definicja w linii <a class="el" href="_s_q_l_data_base_connection_handler_8cs_source.html#l00024">24</a> pliku <a class="el" href="_s_q_l_data_base_connection_handler_8cs_source.html">SQLDataBaseConnectionHandler.cs</a>.</p>
+
+<p class="reference">Odwołuje się do <a class="el" href="_s_q_l_data_base_connection_handler_8cs_source.html#l00015">_dbFilePath</a> i <a class="el" href="_s_q_l_data_base_connection_handler_8cs_source.html#l00015">_dirPath</a>.</p>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Dokumentacja funkcji składowych</h2>
+<a id="ada65b29e8d7acd9df4585a8d38a1d3da" name="ada65b29e8d7acd9df4585a8d38a1d3da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada65b29e8d7acd9df4585a8d38a1d3da">&#9670;&#160;</a></span>Dispose() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DICOMApp.Repository.SQLDataBaseConnectionHandler.Dispose </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Zwalnia zasoby zarządzane przez klasę i zamyka połączenie z bazą danych. </p>
+
+<p class="definition">Definicja w linii <a class="el" href="_s_q_l_data_base_connection_handler_8cs_source.html#l00121">121</a> pliku <a class="el" href="_s_q_l_data_base_connection_handler_8cs_source.html">SQLDataBaseConnectionHandler.cs</a>.</p>
+
+<p class="reference">Odwołuje się do <a class="el" href="_s_q_l_data_base_connection_handler_8cs_source.html#l00121">Dispose()</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="_s_q_l_data_base_connection_handler_8cs_source.html#l00121">Dispose()</a>.</p>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_connection_handler_ada65b29e8d7acd9df4585a8d38a1d3da_cgraph.png" border="0" usemap="#aclass_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_connection_handler_ada65b29e8d7acd9df4585a8d38a1d3da_cgraph" loading="lazy" alt=""/></div>
+<map name="aclass_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_connection_handler_ada65b29e8d7acd9df4585a8d38a1d3da_cgraph" id="aclass_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_connection_handler_ada65b29e8d7acd9df4585a8d38a1d3da_cgraph">
+<area shape="rect" title="Zwalnia zasoby zarządzane przez klasę i zamyka połączenie z bazą danych." alt="" coords="5,29,220,72"/>
+<area shape="poly" title=" " alt="" coords="72,28,70,19,77,10,91,5,113,3,136,5,151,14,146,14,134,10,112,8,92,10,80,15,75,21,77,30"/>
+</map>
+</div>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_connection_handler_ada65b29e8d7acd9df4585a8d38a1d3da_icgraph.png" border="0" usemap="#aclass_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_connection_handler_ada65b29e8d7acd9df4585a8d38a1d3da_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_connection_handler_ada65b29e8d7acd9df4585a8d38a1d3da_icgraph" id="aclass_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_connection_handler_ada65b29e8d7acd9df4585a8d38a1d3da_icgraph">
+<area shape="rect" title="Zwalnia zasoby zarządzane przez klasę i zamyka połączenie z bazą danych." alt="" coords="5,29,220,72"/>
+<area shape="poly" title=" " alt="" coords="146,14,134,10,112,8,92,10,80,15,75,21,77,30,72,28,70,19,77,10,91,5,113,3,136,5,151,14"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ada1da8525956997e0a7df27ee84ed026" name="ada1da8525956997e0a7df27ee84ed026"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada1da8525956997e0a7df27ee84ed026">&#9670;&#160;</a></span>Dispose() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void DICOMApp.Repository.SQLDataBaseConnectionHandler.Dispose </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>disposing</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Zamyka połączenie z bazą danych SQLite i zwalnia zasoby. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">disposing</td><td>Indykator czy metoda jest wywoływana z Dispose</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definicja w linii <a class="el" href="_s_q_l_data_base_connection_handler_8cs_source.html#l00101">101</a> pliku <a class="el" href="_s_q_l_data_base_connection_handler_8cs_source.html">SQLDataBaseConnectionHandler.cs</a>.</p>
+
+<p class="reference">Odwołuje się do <a class="el" href="_s_q_l_data_base_connection_handler_8cs_source.html#l00016">_sqlConnection</a> i <a class="el" href="_s_q_l_data_base_connection_handler_8cs_source.html#l00017">disposedValue</a>.</p>
+
+</div>
+</div>
+<a id="a3b9df070412e984aaa8d996fea931931" name="a3b9df070412e984aaa8d996fea931931"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b9df070412e984aaa8d996fea931931">&#9670;&#160;</a></span>OpenConnection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SqliteConnection DICOMApp.Repository.SQLDataBaseConnectionHandler.OpenConnection </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Otwiera połączenie z bazą danych SQLite. </p>
+<p>Jeśli jest jakiś problem z otwieraniem pliku z bazą danych następuje skopiowanie aktualnego pliku bazy w inne miejsce i stworzenie nowego pliku bazy danych w tym miejscu </p>
+<dl class="section return"><dt>Zwraca</dt><dd>Zwraca otwarte połączenie SqliteConnection</dd></dl>
+<dl class="exception"><dt>Wyjątki</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">Exception</td><td>Wyrzucany w przypadku problemów z bazą danych</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>" </p>
+
+<p class="definition">Definicja w linii <a class="el" href="_s_q_l_data_base_connection_handler_8cs_source.html#l00040">40</a> pliku <a class="el" href="_s_q_l_data_base_connection_handler_8cs_source.html">SQLDataBaseConnectionHandler.cs</a>.</p>
+
+<p class="reference">Odwołuje się do <a class="el" href="_s_q_l_data_base_connection_handler_8cs_source.html#l00015">_dbFilePath</a>, <a class="el" href="_s_q_l_data_base_connection_handler_8cs_source.html#l00015">_dirPath</a> i <a class="el" href="_s_q_l_data_base_connection_handler_8cs_source.html#l00016">_sqlConnection</a>.</p>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Dokumentacja atrybutów składowych</h2>
+<a id="ab6a04a1273f91def131f35c8444b6496" name="ab6a04a1273f91def131f35c8444b6496"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6a04a1273f91def131f35c8444b6496">&#9670;&#160;</a></span>_dbFilePath</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string DICOMApp.Repository.SQLDataBaseConnectionHandler._dbFilePath</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="_s_q_l_data_base_connection_handler_8cs_source.html#l00015">15</a> pliku <a class="el" href="_s_q_l_data_base_connection_handler_8cs_source.html">SQLDataBaseConnectionHandler.cs</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="_s_q_l_data_base_connection_handler_8cs_source.html#l00040">OpenConnection()</a> i <a class="el" href="_s_q_l_data_base_connection_handler_8cs_source.html#l00024">SQLDataBaseConnectionHandler()</a>.</p>
+
+</div>
+</div>
+<a id="aae0ebdcd1e4b1a5ad956aa1383ec2d5d" name="aae0ebdcd1e4b1a5ad956aa1383ec2d5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae0ebdcd1e4b1a5ad956aa1383ec2d5d">&#9670;&#160;</a></span>_dirPath</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string DICOMApp.Repository.SQLDataBaseConnectionHandler._dirPath</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="_s_q_l_data_base_connection_handler_8cs_source.html#l00015">15</a> pliku <a class="el" href="_s_q_l_data_base_connection_handler_8cs_source.html">SQLDataBaseConnectionHandler.cs</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="_s_q_l_data_base_connection_handler_8cs_source.html#l00040">OpenConnection()</a> i <a class="el" href="_s_q_l_data_base_connection_handler_8cs_source.html#l00024">SQLDataBaseConnectionHandler()</a>.</p>
+
+</div>
+</div>
+<a id="a87a88d16c0f89ad6753a474522fa15fb" name="a87a88d16c0f89ad6753a474522fa15fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87a88d16c0f89ad6753a474522fa15fb">&#9670;&#160;</a></span>_sqlConnection</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">SqliteConnection? DICOMApp.Repository.SQLDataBaseConnectionHandler._sqlConnection</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="_s_q_l_data_base_connection_handler_8cs_source.html#l00016">16</a> pliku <a class="el" href="_s_q_l_data_base_connection_handler_8cs_source.html">SQLDataBaseConnectionHandler.cs</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="_s_q_l_data_base_connection_handler_8cs_source.html#l00101">Dispose()</a> i <a class="el" href="_s_q_l_data_base_connection_handler_8cs_source.html#l00040">OpenConnection()</a>.</p>
+
+</div>
+</div>
+<a id="a2389469c1971cae0d25e6b1d1fb20176" name="a2389469c1971cae0d25e6b1d1fb20176"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2389469c1971cae0d25e6b1d1fb20176">&#9670;&#160;</a></span>disposedValue</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DICOMApp.Repository.SQLDataBaseConnectionHandler.disposedValue</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="_s_q_l_data_base_connection_handler_8cs_source.html#l00017">17</a> pliku <a class="el" href="_s_q_l_data_base_connection_handler_8cs_source.html">SQLDataBaseConnectionHandler.cs</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="_s_q_l_data_base_connection_handler_8cs_source.html#l00101">Dispose()</a>.</p>
+
+</div>
+</div>
+<hr/>Dokumentacja dla tej klasy została wygenerowana z pliku:<ul>
+<li>C:/Users/emili/Documents/DICOM-App/Repository/<a class="el" href="_s_q_l_data_base_connection_handler_8cs_source.html">SQLDataBaseConnectionHandler.cs</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="namespace_d_i_c_o_m_app.html">DICOMApp</a></li><li class="navelem"><a href="namespace_d_i_c_o_m_app_1_1_repository.html">Repository</a></li><li class="navelem"><a href="class_d_i_c_o_m_app_1_1_repository_1_1_s_q_l_data_base_connection_handler.html">SQLDataBaseConnectionHandler</a></li>
+    <li class="footer">Wygenerowano za pomocą <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

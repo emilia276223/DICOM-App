@@ -1,0 +1,9 @@
+<map id="DICOMApp.Repository.DataExportHandler" name="DICOMApp.Repository.DataExportHandler">
+<area shape="rect" id="Node000001" title=" " alt="" coords="236,323,412,429"/>
+<area shape="rect" id="Node000002" href="$interface_d_i_c_o_m_app_1_1_interfaces_1_1_i_export_handler.html" title=" " alt="" coords="5,85,192,171"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="144,179,206,249,275,322,270,323,202,252,143,184"/>
+<area shape="rect" id="Node000003" href="$class_d_i_c_o_m_app_1_1_repository_1_1_c_s_v_export_hander.html" title="Klasa obsługująca eksport danych do pliku CSV." alt="" coords="217,32,431,224"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="326,222,326,307,322,304,322,226"/>
+<area shape="rect" id="Node000004" href="$interface_d_i_c_o_m_app_1_1_interfaces_1_1_i_data_handler.html" title="Interfejs klasy obsługującej zapisywanie i odczytywanie danych." alt="" coords="456,5,646,251"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="461,249,417,301,403,314,400,309,413,297,456,252"/>
+</map>

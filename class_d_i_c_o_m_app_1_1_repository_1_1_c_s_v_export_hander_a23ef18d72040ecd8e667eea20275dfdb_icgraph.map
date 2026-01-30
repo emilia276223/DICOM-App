@@ -1,0 +1,7 @@
+<map id="DICOMApp.Repository.CSVExportHander.WriteToCSV" name="DICOMApp.Repository.CSVExportHander.WriteToCSV">
+<area shape="rect" id="Node000001" title="Zapisuje dane do pliku CSV." alt="" coords="279,39,504,81"/>
+<area shape="rect" id="Node000002" href="$class_d_i_c_o_m_app_1_1_repository_1_1_c_s_v_export_hander.html#ace4b35c856796b0f5ee29fc5527bc240" title="Zapisuje wyeksportowane dane do pliku CSV Zakłada strukturę kolumn: image_uid, optic_nerve_length,..." alt="" coords="5,5,231,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="261,45,231,43,231,38,266,44"/>
+<area shape="rect" id="Node000003" href="$class_d_i_c_o_m_app_1_1_repository_1_1_c_s_v_export_hander.html#a1da3bb094cdbad25a6b73919b38e4e8f" title="Zapisuje dane dotyczące magnifikacji do pliku CSV Zakłada strukturę kolumn: image_uid,..." alt="" coords="5,72,231,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="261,76,232,82,231,77,266,75"/>
+</map>

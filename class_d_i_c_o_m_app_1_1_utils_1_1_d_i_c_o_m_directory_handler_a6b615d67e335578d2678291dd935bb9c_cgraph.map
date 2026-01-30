@@ -1,0 +1,5 @@
+<map id="DICOMApp.Utils.DICOMDirectoryHandler.GetStudiesForPatient" name="DICOMApp.Utils.DICOMDirectoryHandler.GetStudiesForPatient">
+<area shape="rect" id="Node000001" title="Zwraca listę badań dla danego pacjenta na podstawie jego ID." alt="" coords="5,5,228,48"/>
+<area shape="rect" id="Node000002" href="$class_d_i_c_o_m_app_1_1_utils_1_1_app_directory_handler.html#afd9bbfc690ac0993d6ff302a727a220a" title=" " alt="" coords="276,5,476,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="228,24,263,27,257,27,228,29"/>
+</map>

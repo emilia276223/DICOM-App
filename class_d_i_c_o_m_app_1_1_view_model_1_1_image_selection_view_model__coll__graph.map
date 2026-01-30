@@ -1,0 +1,10 @@
+<map id="DICOMApp.ViewModel.ImageSelectionViewModel" name="DICOMApp.ViewModel.ImageSelectionViewModel">
+<area shape="rect" id="Node000001" title="Klasa modelująca widok wyboru obrazów." alt="" coords="40,805,226,1083"/>
+<area shape="rect" id="Node000002" href="$class_d_i_c_o_m_app_1_1_view_model_1_1_view_model_base.html" title="Klasa bazowa modelu widoku." alt="" coords="5,124,250,193"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="131,208,135,806,129,805,125,209"/>
+<area shape="rect" id="Node000004" href="$class_d_i_c_o_m_app_1_1_view_model_1_1_element_list_view_model.html" title="Klasa modelująca widok listy elementów." alt="" coords="149,243,349,691"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="146,205,163,243,158,244,147,210"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="70,5,185,75"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="128,87,130,124,125,124,127,92"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="196,688,173,790,168,788,194,693"/>
+</map>

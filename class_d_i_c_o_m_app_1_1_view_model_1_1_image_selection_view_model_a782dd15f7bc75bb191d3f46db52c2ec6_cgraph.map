@@ -1,0 +1,5 @@
+<map id="DICOMApp.ViewModel.ImageSelectionViewModel.AddPatientsList" name="DICOMApp.ViewModel.ImageSelectionViewModel.AddPatientsList">
+<area shape="rect" id="Node000001" title="Metoda dodająca listę pacjentów do listy." alt="" coords="5,5,241,48"/>
+<area shape="rect" id="Node000002" href="$class_d_i_c_o_m_app_1_1_view_model_1_1_image_selection_view_model.html#a8e298dd694d3e500c79c6072e54e2c83" title="Metoda dodająca pacjenta do listy pacjentów." alt="" coords="289,5,496,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="241,24,276,27,270,27,241,29"/>
+</map>

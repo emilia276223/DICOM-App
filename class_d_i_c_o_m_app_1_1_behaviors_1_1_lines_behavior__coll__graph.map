@@ -1,0 +1,7 @@
+<map id="DICOMApp.Behaviors.LinesBehavior" name="DICOMApp.Behaviors.LinesBehavior">
+<area shape="rect" id="Node000001" title="Behavior synchronizujący linie pomiędzy oryginalnym obrazem a obrazem powiększonym." alt="" coords="96,376,301,568"/>
+<area shape="rect" id="Node000002" href="$interface_d_i_c_o_m_app_1_1_interfaces_1_1_i_line_view_model.html" title="Interfejs modelujący linie." alt="" coords="5,5,178,283"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="137,280,165,360,159,360,136,285"/>
+<area shape="rect" id="Node000003" href="$interface_d_i_c_o_m_app_1_1_behaviors_1_1_i_magnified_image_view_model.html" title="Interfejs okna powększającego z liniami powększonymi Stworzony na potrzeby oddzielenia trochę impleme..." alt="" coords="203,51,407,237"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="288,235,257,353,254,362,249,359,252,351,285,239"/>
+</map>

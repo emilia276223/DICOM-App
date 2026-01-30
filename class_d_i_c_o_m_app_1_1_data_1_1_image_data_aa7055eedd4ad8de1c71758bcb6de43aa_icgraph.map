@@ -1,0 +1,5 @@
+<map id="DICOMApp.Data.ImageData.GetFloatPixels" name="DICOMApp.Data.ImageData.GetFloatPixels">
+<area shape="rect" id="Node000001" title="Metoda zwracająca tablicę pikseli obrazu w formacie float Na podstawie tablicy pikseli w formacie ARG..." alt="" coords="286,5,479,48"/>
+<area shape="rect" id="Node000002" href="$class_d_i_c_o_m_app_1_1_m_l_model_1_1_o_n_n_x_tensor.html#af583c22b0134a859206970a5fbc6b8fd" title=" " alt="" coords="5,5,238,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="267,27,238,29,238,24,273,27"/>
+</map>

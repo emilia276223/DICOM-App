@@ -1,0 +1,9 @@
+<map id="DICOMApp.ViewModel.LineViewModelBase" name="DICOMApp.ViewModel.LineViewModelBase">
+<area shape="rect" id="Node000001" title="Abstrakcyjna klasa bazowa modelująca linie." alt="" coords="146,281,350,495"/>
+<area shape="rect" id="Node000002" href="$class_d_i_c_o_m_app_1_1_view_model_1_1_view_model_base.html" title="Klasa bazowa modelu widoku." alt="" coords="5,132,250,201"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="154,212,193,281,187,282,152,217"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="70,5,185,75"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="128,87,130,132,125,132,127,93"/>
+<area shape="rect" id="Node000004" href="$interface_d_i_c_o_m_app_1_1_interfaces_1_1_i_dicom_scaler.html" title="Interfejs klasy obsługującej skalowanie DICOM." alt="" coords="274,124,461,209"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="347,207,316,268,311,265,343,211"/>
+</map>

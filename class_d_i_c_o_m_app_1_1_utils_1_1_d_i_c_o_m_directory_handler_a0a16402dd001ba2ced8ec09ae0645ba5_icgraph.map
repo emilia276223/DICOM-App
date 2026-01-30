@@ -1,0 +1,7 @@
+<map id="DICOMApp.Utils.DICOMDirectoryHandler.GetFullImagePath" name="DICOMApp.Utils.DICOMDirectoryHandler.GetFullImagePath">
+<area shape="rect" id="Node000001" title="Konstruuje pełną ścieżkę do pliku DICOM na podstawie ID pacjenta, daty badania i nazwy pliku." alt="" coords="538,5,760,48"/>
+<area shape="rect" id="Node000002" href="$class_d_i_c_o_m_app_1_1_view_model_1_1_main_view_model.html#a7226c66da94667cadfe42d283aa19031" title="Metoda wyświetlająca wybrany obraz na podstawie podanych parametrów." alt="" coords="272,5,490,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="520,27,491,29,490,24,525,27"/>
+<area shape="rect" id="Node000003" href="$class_d_i_c_o_m_app_1_1_view_model_1_1_main_view_model.html#a4627217688e8011048213eeae3d80856" title="Konstruktor obiektu MainViewModel." alt="" coords="5,5,224,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="253,27,224,29,224,24,259,27"/>
+</map>
