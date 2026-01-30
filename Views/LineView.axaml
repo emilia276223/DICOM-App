@@ -1,0 +1,37 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+			 xmlns:shapes="using:Avalonia.Controls.Shapes"
+			 xmlns:vm="using:DICOMApp.ViewModel.Lines"
+			 x:DataType="vm:LineWithCapsViewModel"
+             x:Class="DICOMApp.LineView"
+			 >
+	<Canvas
+		Width="{Binding CanvasWidth}"
+		Height="{Binding CanvasHeight}"
+		>
+		<shapes:Line
+			StartPoint="{Binding StartPoint}"
+			EndPoint="{Binding EndingPoint}"
+			Stroke="{Binding Color}"
+			StrokeThickness="2"
+			IsVisible="{Binding IsVisible}"
+		/>
+		<shapes:Line
+			StartPoint="{Binding CapStart1}"
+			EndPoint="{Binding CapStart2}"
+			Stroke="{Binding Color}"
+			StrokeThickness="2"
+			IsVisible="{Binding IsVisible}"
+		/>
+		<shapes:Line
+			StartPoint="{Binding CapEnd1}"
+			EndPoint="{Binding CapEnd2}"
+			Stroke="{Binding Color}"
+			StrokeThickness="2"
+			IsVisible="{Binding IsVisible}"
+		/>
+	</Canvas>
+</UserControl>

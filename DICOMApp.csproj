@@ -1,0 +1,80 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <BuiltInComInteropSupport>true</BuiltInComInteropSupport>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <AvaloniaUseCompiledBindingsByDefault>true</AvaloniaUseCompiledBindingsByDefault>
+    <PlatformTarget>x64</PlatformTarget>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="Utils\Class1.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Assets\images\000021.jpeg" />
+    <None Remove="Assets\test.jpg" />
+    <None Remove="Assets\unet_keypoints.onnx" />
+  </ItemGroup>
+  <ItemGroup>
+    <AvaloniaResource Include="Assets\images\000021.dcm">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </AvaloniaResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\knn_mnist.onnx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assets\test.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assets\unet_keypoints.onnx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Avalonia" Version="11.3.8" />
+    <PackageReference Include="Avalonia.Desktop" Version="11.3.8" />
+    <PackageReference Include="Avalonia.Themes.Fluent" Version="11.3.8" />
+    <PackageReference Include="Avalonia.Fonts.Inter" Version="11.3.8" />
+    <!--Condition below is needed to remove Avalonia.Diagnostics package from build output in Release configuration.-->
+    <PackageReference Include="Avalonia.Diagnostics" Version="11.3.8">
+      <IncludeAssets Condition="'$(Configuration)' != 'Debug'">None</IncludeAssets>
+      <PrivateAssets Condition="'$(Configuration)' != 'Debug'">All</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Avalonia.Xaml.Interactivity" Version="11.3.0.6" />
+    <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.0" />
+    <PackageReference Include="fo-dicom" Version="5.2.5" />
+    <PackageReference Include="fo-dicom.Codecs" Version="5.16.5.1" />
+    <PackageReference Include="LiveChartsCore.SkiaSharpView.Avalonia" Version="2.0.0-rc6.1" />
+    <PackageReference Include="Microsoft.Data.Sqlite" Version="10.0.2" />
+    <PackageReference Include="Microsoft.ML" Version="5.0.0" />
+    <PackageReference Include="Microsoft.ML.OnnxRuntime" Version="1.23.2" />
+    <PackageReference Include="Microsoft.ML.OnnxTransformer" Version="5.0.0" />
+    <PackageReference Include="System.Drawing.Common" Version="10.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Views\MainView.axaml.cs">
+      <DependentUpon>MainView.axaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\PointerModeView.axaml.cs">
+      <DependentUpon>PointerModeView.axaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\ImageSelectionView.axaml.cs">
+      <DependentUpon>ImageSelectionView.axaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\ImageView.axaml.cs">
+      <DependentUpon>ImageView.axaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\LineView.axaml.cs">
+      <DependentUpon>LineView.axaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\XPointView.axaml.cs">
+      <DependentUpon>XPointView.axaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+</Project>

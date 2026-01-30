@@ -1,0 +1,81 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="550"
+		WindowState="Maximized"
+        x:Class="DICOMApp.MainWindow"
+        Title="Aplikacja do DICOMów"
+		xmlns:vm="using:DICOMApp.ViewModel"
+		x:DataType="vm:MainViewModel"
+		xmlns:views="clr-namespace:DICOMApp"
+		>
+
+	<DockPanel>
+		
+		<!--Panel górny-->
+		<Border DockPanel.Dock="Top">
+			<StackPanel Orientation="Horizontal" Margin="0">
+			
+
+				<Button Content="Zapisz zaznaczenie"
+							Command="{Binding SaveChosenPoints}"/>
+					
+				<views:FolderImportButton DataContext="{Binding}"/>
+					
+				<Button Content="Importuj nowy obraz"
+							Command="{Binding OpenNewImage}"/>
+					
+				<views:DataExportButton DataContext="{Binding}"/>
+				<views:ImageSelectionView DataContext="{Binding ImageSelectionVM}"/>
+
+				<Button Content="Zmień model AI"
+							Command="{Binding GetNewModel}"/>
+				
+			</StackPanel>
+		</Border>
+
+
+
+
+		<Grid DockPanel.Dock="Left" ColumnDefinitions="2*,2*,2*">
+
+			<!-- Obraz -->
+			<Border Grid.Column="0" Background="Black" VerticalAlignment="Stretch">
+					<views:ImageView DataContext="{Binding .}"/>
+			</Border>
+
+			<!-- Heatmapy -->
+			<!--
+			<Border Grid.Column="2">
+				<StackPanel Spacing="8" Orientation="Vertical">
+					<TextBlock Text="Heatmapy" FontSize="16" FontWeight="SemiBold"/>
+					<views:HeatmapControl DataContext="{Binding HeatmapHandler}"/>
+					<views:HeatmapView DataContext="{Binding}"/>
+				</StackPanel>
+			</Border>
+			-->
+			<!-- Wykres -->
+			
+			<Border Grid.Column="2">
+				<views:ChartView DataContext="{Binding ChartVM}"/>
+			</Border>
+			
+			<Grid Grid.Column="1" HorizontalAlignment="Stretch" RowDefinitions="Auto, *">
+				<!-- info -->
+				<Border Grid.Row="0">
+					<views:DicomInformationView DataContext="{Binding}"/>		
+				</Border>
+				 <!-- Powiększony obraz -->
+				<Border Background="Black" HorizontalAlignment="Stretch" Grid.Row="1">
+					<views:MagnifiedImageView DataContext="{Binding}"/>
+				</Border>
+			</Grid>
+
+
+			
+		</Grid>
+		
+	</DockPanel>
+
+</Window>

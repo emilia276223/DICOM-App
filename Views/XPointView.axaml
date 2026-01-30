@@ -1,0 +1,24 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+			 xmlns:shapes="using:Avalonia.Controls.Shapes"
+			 xmlns:vm="using:DICOMApp.ViewModel"
+			 x:DataType="vm:XPointViewModel"
+             x:Class="DICOMApp.XPointView">
+  <Grid>
+    <shapes:Line
+		StartPoint="{Binding Start1}"
+		EndPoint="{Binding End1}"
+		Stroke="{Binding Color}"
+		StrokeThickness="2"
+		IsVisible="{Binding IsVisible}"/>
+	  <shapes:Line
+		StartPoint="{Binding Start2}"
+		EndPoint="{Binding End2}"
+		Stroke="{Binding Color}"
+		StrokeThickness="2"
+		IsVisible="{Binding IsVisible}"/>
+  </Grid>
+</UserControl>

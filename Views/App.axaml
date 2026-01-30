@@ -1,0 +1,105 @@
+﻿<Application xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="DICOMApp.Views.App"
+             RequestedThemeVariant="Default">
+             <!-- "Default" ThemeVariant follows system theme variant. "Dark" or "Light" are other available options. -->
+    <Application.Resources>
+        <FontFamily x:Key="LatoFont">avares://DICOMApp/Assets/Fonts#Lato</FontFamily>
+    </Application.Resources>
+
+
+    <Application.Styles>
+        <FluentTheme/>
+        <Style Selector="Window">
+            <Setter Property="Background" Value="#222427"/>
+        </Style>
+
+        <Style Selector="DockPanel">
+            <Setter Property="Background" Value="#222427"/>
+        </Style>
+
+        <!-- Styl przyciskow -->
+        <Style Selector="Button">
+            <Setter Property="Padding" Value="12,6"/>
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="CornerRadius" Value="4"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Background" Value="#5A5F67"/>
+            <Setter Property="Foreground" Value="White"/>
+        </Style>
+
+        <Style Selector="Button:hover">
+            <Setter Property="Background" Value="#707579"/>    
+        </Style>
+
+        <Style Selector="Button:pressed">
+            <Setter Property="Background" Value="#43474D"/>
+        </Style>
+
+        <!-- Styl Popup -->
+        <Style Selector="Popup">
+            <Setter Property="Placement" Value="Bottom"/>
+            <Setter Property="MaxHeight" Value="300"/>
+            <Setter Property="IsLightDismissEnabled" Value="True"/>
+		</Style>
+
+        <!-- Styl bloków tekstu -->
+        <Style Selector="TextBlock">
+			<Setter Property="FontSize" Value="16"/>
+            <Setter Property="Margin" Value="10"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="TextAlignment" Value="Center"/>
+			<Setter Property="TextWrapping" Value="Wrap"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+        </Style>
+
+        <!-- Styl kontrolek Border -->
+        <Style Selector="Border">
+            <Setter Property="CornerRadius" Value="6"/>
+            <Setter Property="Padding" Value="10"/>
+            <Setter Property="Background" Value="#2C2F33"/>
+            <Setter Property="Margin" Value="5"/>
+        </Style>
+        <Style Selector="Border.Lighter">
+			<Setter Property="Background" Value="#3A3D42"/>
+        </Style>
+
+
+        <!-- Styl kontrolek RadioButton -->
+        <Style Selector="RadioButton">
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontSize" Value="14"/>
+        </Style>
+        <Style Selector="RadioButton:hover">
+            <Setter Property="Foreground" Value="#CFCFD1"/>
+        </Style>
+
+        <!-- Styl ListBox -->
+        <Style Selector="ListBox">
+            <Setter Property="Background" Value="#3A3D42"/>
+            <Setter Property="Foreground" Value="White"/>
+        </Style>
+        <Style Selector="ListBox:empty">
+			<Setter Property="Background" Value="#2C2F33"/>
+        </Style>
+
+        <!-- Style UniformGrid -->
+        <Style Selector="UniformGrid">
+			<Setter Property="Margin" Value="5"/>
+        </Style>
+
+        <!-- Style CheckBox -->
+		<Style Selector="CheckBox">
+			<Setter Property="Foreground" Value="White"/>
+			<Setter Property="FontSize" Value="14"/>
+		</Style>
+		<Style Selector="CheckBox:hover">
+			<Setter Property="Foreground" Value="#CFCFD1"/>
+		</Style>
+        <Style Selector="CheckBox:checked">
+			<Setter Property="Foreground" Value="White"/>
+        </Style>
+
+    </Application.Styles>
+</Application>

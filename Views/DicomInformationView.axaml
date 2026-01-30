@@ -1,0 +1,70 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+			 xmlns:views="clr-namespace:DICOMApp"
+			 xmlns:vm="using:DICOMApp.ViewModel"
+			 x:DataType="vm:MainViewModel"
+             x:Class="DICOMApp.DicomInformationView">
+	<StackPanel >
+		
+		<UniformGrid Columns="2">
+			<TextBlock Text="{Binding DicomMetadata.PatientName, StringFormat=Pacjent: {0}}"/>
+			<TextBlock Text="{Binding DicomMetadata.StudyDate, StringFormat=Data badania: {0}}"/>
+		</UniformGrid>
+		
+
+		
+
+		<Grid ColumnDefinitions="*, *">
+
+			<views:PointerModeView 
+					DataContext="{Binding PointerMode}"
+					Grid.Column="1"/>
+			<Border
+					Classes="Lighter"
+					VerticalAlignment="Stretch"
+					Grid.Column="0"> <!-- TODO: zmiana tła -->
+			<StackPanel VerticalAlignment="Center">
+				<TextBlock Text="Długości zaznaczonych linii: "
+							 Grid.Column="0"
+							 TextAlignment="Center"
+							 VerticalAlignment="Center"/>
+				<UniformGrid Rows="2"
+							 Grid.Column="1"
+							 IsVisible="{Binding !MagnifiedImageVM.IsVisible}">
+					<TextBlock  Text="{Binding LineVM.PhysicalLength, 
+								StringFormat= '{}{0} mm'}"
+								Foreground="{Binding LineVM.Color}"/>
+					<TextBlock  Text="{Binding LineVM2.PhysicalLength, 
+								StringFormat= '{}{0} mm'}"
+							    Foreground="{Binding LineVM2.Color}"/>
+				</UniformGrid>	
+
+				<UniformGrid Rows="2"
+							 Grid.Column="1"
+							 IsVisible="{Binding MagnifiedImageVM.IsVisible}"
+							 >
+					<TextBlock 
+						Text="{Binding MagnifiedImageVM.Line1.PhysicalLength, 
+						StringFormat= '{}{0} mm'}"
+						Foreground="{Binding MagnifiedImageVM.Line1.Color}"/>
+					<TextBlock 
+						Text="{Binding MagnifiedImageVM.Line2.PhysicalLength, 
+						StringFormat= '{}{0} mm'}"
+						Foreground="{Binding MagnifiedImageVM.Line2.Color}"/>
+				</UniformGrid>
+			
+				
+
+			</StackPanel>
+			</Border>
+			
+		</Grid>
+		<Border Classes="Lighter">
+			<CheckBox Content="Automatyczne zaznaczanie linii" 
+					  IsChecked="{Binding IsAIEnabled, Mode=TwoWay}"/>
+		</Border>
+	</StackPanel>
+</UserControl>

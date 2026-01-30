@@ -1,0 +1,59 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             xmlns:vm="using:DICOMApp.ViewModel"
+             x:DataType="vm:MainViewModel"
+			 xmlns:i="using:Avalonia.Xaml.Interactivity"
+			 xmlns:local="using:DICOMApp.Behaviors"
+			 xmlns:shapes="using:Avalonia.Controls.Shapes"
+			 xmlns:views="clr-namespace:DICOMApp"
+             x:Class="DICOMApp.ImageView">
+
+		<Grid RowDefinitions="*,Auto"
+			  VerticalAlignment="Stretch">
+			
+			<Grid Width="{Binding ImageVM.ImageWidth}" 
+				  Height="{Binding ImageVM.ImageHeight}"  >
+				<!-- Wyświetlenie obrazu -->
+				<Image Source="{Binding ImageVM.Bitmap}" 
+						Width="{Binding ImageVM.ImageWidth}" Height="{Binding ImageVM.ImageHeight}"
+						Grid.Row="0"
+						>
+					<i:Interaction.Behaviors>
+						<local:PointerPositionBehavior
+							PointerPressedCommand="{Binding PointerMode.OnPointerPressed}"
+							PointerReleasedCommand="{Binding PointerMode.OnPointerReleased}"
+							PointerMovedCommand="{Binding PointerMode.OnPointerMoved}"
+							/>
+					</i:Interaction.Behaviors>
+				</Image>
+
+				<!-- Rysowanie linii na obrazie -->
+				<Canvas Width="{Binding ImageVM.ImageWidth}" 
+						Height="{Binding ImageVM.ImageHeight}"
+						Grid.Row="0">
+					<views:LineView DataContext="{Binding LineVM}" />
+					<views:LineView DataContext="{Binding LineVM2}" />
+				</Canvas>
+			</Grid>
+			
+			<!-- Przewijanie obrazów -->
+			<Border Grid.Row="1" Margin="2" IsVisible="{Binding ImageSelectionVM.IsImageSelected}">
+				<Grid ColumnDefinitions="*,*">
+					<Button Content="Poprzedni obraz"
+							Grid.Column="0"
+							HorizontalAlignment="Stretch"
+							HorizontalContentAlignment="Center"
+							Command="{Binding ImageSelectionVM.GetPreviousImage}"/>
+					<Button Content="Następny obraz"
+							Grid.Column="1"
+							HorizontalAlignment="Stretch"
+							HorizontalContentAlignment="Center"
+							Command="{Binding ImageSelectionVM.GetNextImage}"/>
+				</Grid>
+			</Border>
+		</Grid>
+
+</UserControl>

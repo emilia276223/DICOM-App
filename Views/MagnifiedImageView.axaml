@@ -1,0 +1,34 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             xmlns:vm="using:DICOMApp.ViewModel"
+			 xmlns:i="using:Avalonia.Xaml.Interactivity"
+			 xmlns:local="using:DICOMApp.Behaviors"
+			 xmlns:views="clr-namespace:DICOMApp"
+             x:DataType="vm:MainViewModel"
+             x:Class="DICOMApp.MagnifiedImageView">
+	
+	<Grid>
+		<Image Source="{Binding MagnifiedImageVM.CurrentImage}" 
+				Width="{Binding MagnifiedImageVM.WindowShownSize}" Height="{Binding MagnifiedImageVM.WindowShownSize}" 
+				Stretch="Uniform"
+				IsVisible="{Binding MagnifiedImageVM.IsVisible}"
+				>
+			<i:Interaction.Behaviors> 
+				<local:PointerPositionBehavior
+					PointerPressedCommand="{Binding LinesB.UpdateStart}"
+					PointerReleasedCommand="{Binding LinesB.UpdateEnd}"
+					PointerMovedCommand="{Binding LinesB.UpdateLine}"
+					/>
+			</i:Interaction.Behaviors>
+		</Image>
+		<Canvas Width="{Binding MagnifiedImageVM.WindowShownSize}" Height="{Binding MagnifiedImageVM.WindowShownSize}">
+		<!--	<views:LineView DataContext="{Binding MagnifiedImageVM.Line1}" />
+			<views:LineView DataContext="{Binding MagnifiedImageVM.Line2}" /> -->
+			<views:XLineView DataContext="{Binding MagnifiedImageVM.Line1}" />
+			<views:XLineView DataContext="{Binding MagnifiedImageVM.Line2}" /> 
+		</Canvas>
+	</Grid>
+</UserControl>
