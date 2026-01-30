@@ -15,7 +15,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Remove="Assets\images\000021.jpeg" />
-    <None Remove="Assets\test.jpg" />
     <None Remove="Assets\unet_keypoints.onnx" />
   </ItemGroup>
   <ItemGroup>
@@ -24,12 +23,6 @@
     </AvaloniaResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Assets\knn_mnist.onnx">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Assets\test.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </EmbeddedResource>
     <EmbeddedResource Include="Assets\unet_keypoints.onnx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
