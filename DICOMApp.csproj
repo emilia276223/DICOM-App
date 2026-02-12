@@ -14,7 +14,10 @@
     <Compile Remove="Utils\Class1.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Remove="Assets\error_img.png" />
     <None Remove="Assets\images\000021.jpeg" />
+    <None Remove="Assets\knn_mnist.onnx" />
+    <None Remove="Assets\test.jpg" />
     <None Remove="Assets\unet_keypoints.onnx" />
   </ItemGroup>
   <ItemGroup>
