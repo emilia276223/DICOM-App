@@ -1,4 +1,4 @@
-🇵🇱 Polski | [🇬🇧 English](README.en.md)
+🇵🇱 Polski | [🇬🇧 English](README/README.en.md)
 
 # Aplikacja do przeglądania i edycji obrazów DICOM z możliwością podłączenia pluginów AI
 
@@ -41,7 +41,7 @@ Aplikacja wymaga zainstalowanej platformy `.NET 9.0`, którą można pobrać ze 
 6. Zobaczenie przebiegu zmian wykonanych pomiarów dla wybranego pacjenta
 7. Podłączenie modelu AI, który będzie automatycznie wykonywał zaznaczenia
 
-[Podręcznik użytkownika](README.user_guide_pl.md)
+[Podręcznik użytkownika](README/README.user_guide_pl.md)
 
 ## Dokumentacja
 Dokumentacja jest dostępna na stronie:
